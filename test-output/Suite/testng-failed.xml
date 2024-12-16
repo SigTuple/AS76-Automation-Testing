@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="product" value="AS76Reporting-RBC"/>
+  <parameter name="url" value="https://as76pbs.sigtuple.com/"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="utilities.ScreenshotListeners"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcSizeSubTabTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="clickedOnRBCTab"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- RBC.VerifySubTabOfRBC.VerifyUiOfRbcSizeSubTabTest -->
+      <class name="SessionManagement.LoginTest">
+        <methods>
+          <include name="driver"/>
+          <include name="tearDown"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- SessionManagement.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

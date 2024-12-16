@@ -1,0 +1,7 @@
+1.Verify image clarity at various zoom levels for all cell types present in the RBC size tab.---------->Verify the Split view of RBC tab
+
+2.Verify the auto navigation of patches in split view when different patches are selected.------------>Verify the Split view of RBC tab
+
+3.Verify the patch size for the reports scanned from the different devices------------->Verify the Patch Size of RBC
+
+4.Verify the how many patches are present in a row for RBC cells for these resolutions 1366*768, 1536*864, 2560*1440, 1440*900 and 1920*1080------->Verify the Patch Size of RBC

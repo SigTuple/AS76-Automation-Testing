@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="false">
+	<parameter name="browserType" value="chrome"/>
+    <parameter name="url" value="https://as76pbs.sigtuple.com/"/>
+    <parameter name="product" value="RBC"/>
+    <listeners>
+        <listener class-name="utilities.ScreenshotListeners"/>
+    </listeners>
+  <test name="Test">
+	
+    <classes>
+    <class name="SessionManagement.LoginTest"/>
+      <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcSizeSubTabTest"/>
+       <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcShapeSubTabTest"/>
+            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcInclusionSubTabTest"/>
+
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

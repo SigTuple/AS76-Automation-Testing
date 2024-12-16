@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="false">
+    <parameter name="browserType" value="chrome"/>
+    <parameter name="url" value="http://as76-pbs.sigtuple.com/"/>
+    <parameter name="product" value="AS76Reporting-RBC"/>
+    <listeners>
+        <listener class-name="utilities.ScreenshotListeners"/>
+    </listeners>
+    <test name="Test">
+
+        <classes>
+            <class name="SessionManagement.LoginTest"/>
+            <methods>
+                <include name="validlogin"/>
+            </methods>
+
+
+            <class name="WBC.VerifyWbcParametersTest.WBCParametersTest"/>
+            <methods>
+                <include name="verifySelctionOfWBCTab"/>
+                <include name="verifyTheColumnPresentInTheWBCTab"/>
+                <include name="verifyWBCCellsNames"/>
+                <include name="verifyTheWBCCellCountIsEqualToTotalCount"/>
+                <include name="verifyManualSubClassificationMessage"/>
+                <include name="VerifyTheReclassificationOfNeutrophilWithAllOtherCells"/>
+                <include name="VerifyTheReclassificationOfWBCToLargePlatelet"/>
+                <include name="VerifyTheReclassificationOfWBCToPlateletClumps"/>
+            </methods>
+
+            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcSizeSubTabTest"/>
+            <methods>
+                <include name="clickedOnRbcTab"/>
+                <include name="presenceOfSubTabNameOnRbc"/>
+                <include name="verifyHeaderNameOnSizeSubTab"/>
+                <include name="verifyTheCellNameAndItsOrderOnSizeSubTab"/>
+                <include name="noteTextMessageOnSizeTab"/>
+                <include name="significant_info"/>
+                <include name="defaultCellSelection"/>
+            </methods>
+            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcShapeSubTabTest"/>
+            <methods>
+                <include name="navigateToShapeTab"/>
+                <include name="columnOnShapeSubTab"/>
+                <include name="cellNameOnShapeSubTab"/>
+                <include name="noteMessageOnShapeTab"/>
+                <include name="significatntNonSignificantTextOnShapeTab"/>
+                <include name="defaultCellSelectionOnShapeTab"/>
+                <include name="astericMarkSOnManualSubClassification"/>
+                <include name="colourCodeOfSignificantCells"/>
+                <include name="colourCodeOfNonSignificantCells"/>
+            </methods>
+            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcColorSubTabTest"/>
+                    <methods>
+                        <include name="navigateToColorTab"/>
+                        <include name="columnOnColorSubTab"/>
+                        <include name="cellNameOnColorSubTab"/>
+                        <include name="noteMessageOnColorTab"/>
+                        <include name="significatntNonSignificantTextOnColorTab"/>
+                        <include name="defaultCellSelectionOnColorTab"/>
+                        <include name="astericMarkSOnManualSubClassification"/>
+                        <include name="colourCodeOfSignificantCells"/>
+                        <include name="colourCodeOfNonSignificantCells"/>
+
+                    </methods>
+            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcInclusionSubTabTest">
+                    <methods>
+                        <include name="navigateToInclusionTab"/>
+                        <include name="columnOnInclusionSubTab"/>
+                        <include name="cellNameOnInclusionSubTab"/>
+                        <include name="significatntNonSignificantTextOnInclusionTab"/>
+                        <include name="defaultCellSelectionOnInclusionTab"/>
+                        <include name="astericMarkSOnManualSubClassification"/>
+                        <include name="colourCodeOfSignificantCells"/>
+                        <include name="colourCodeOfNonSignificantCells"/>
+                    </methods>
+            <class name="RBC.VerifySplitViewOfRbcTab.VerifySplitViewOfRBCTabTest"/>
+                    <methods>
+                        <include name="presenceOfSplitViewOnSizeSubTab"/>
+                        <include name="presenceOfSplitViewOnShapeSubTab"/>
+                        <include name="presenceOfSplitViewOnColorSubTab"/>
+                        <include name="presenceOfSplitViewOnInclusionSubTab"/>
+                        <include name="samePatchesArePresentOnSplitAndPatchViewOnSizeTab"/>
+                        <include name="samePatchesArePresentOnSplitAndPatchViewOnShapeTab"/>
+                        <include name="samePatchesArePresentOnSplitAndPatchViewOnColorTab"/>
+                        <include name="manuallyGradedCellsNotPresentOnMicroscopicViewInSizeTab"/>
+                        <include name="manuallyGradedCellsNotPresentOnMicroscopicViewInShape"/>
+                    </methods>
+            <class name="RBC.VerifyTheRegradingOfRbcCellTypes.VerifyTheRegradingOfRbcCellTypesTest"/>
+            <methods>
+                <include name="percentageValueOfMacrocytesOnRbcSizeTabAfterRegrading"/>
+                <include name="percentageValueOfOvalocytesOnRbcShapeTabAfterRegrading"/>
+                <include name="percentageValueRbcColorTabAfterRegrading"/>
+                <include name="verifyingGradeValueAccordingToPercentageOnAnisocytosisCell"/>
+                <include name="verifyingGradeValueAccordingToPercentageOnPokilocytes"/>
+                <include name="verifyingGradeValueAccordingToPercentageOnHypochromicCell"/>
+                <include name="verifyRegradingInAnisocytosisCellTypes"/>
+                <include name="verifyRegradingInOvalocytesCellType"/>
+                <include name="verifyRegradingInHypochromicCellType"/>
+                <include name="verifyRegradingInInclusionCellType"/>
+                <include name="verifyingPercentageValueStruckOffAfterRegradingInMacrocytesCell"/>
+                <include name="verifyingPercentageValueStruckOffAfterRegradingInElliptocytes"/>
+            </methods>
+            <class name="RBC.VerifyThePatchSizeOfRBC.VerifyThePatchSizeOfRBCTest"/>
+            <methods>
+                <include name="verifyTheSizeOfPatchesInPixelForMacrocytesInSizeTab"/>
+                <include name="verifyTheSizeOfPatchesInPixelForMacrocytesInShapeTab"/>
+                <include name="verifyTheSizeOfPatchesInPixelForHypochromicCellsInColorTab"/>
+                <include name="verifyTheSizeOfPatchesInPixelForWBCTab"/>
+            </methods>
+
+             <class name="RBC.VerifyThePatchViewOfRBC.VerifyThePatchViewOfRBCTest"/>
+            <methods>
+                <include name="verifyTheSizeOfPatchesInPixelForMacrocytesInSizeTab"/>
+            </methods>
+
+
+
+        </classes>
+    </test>
+</suite>
