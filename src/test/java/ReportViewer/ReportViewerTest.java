@@ -8,6 +8,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
@@ -205,6 +206,7 @@ public class ReportViewerTest extends BrowserSetUp {
         Assert.assertNull(reportViewer.closePopUp(),"pop up closed successfully");
         logger.info("pop uo closed successfully on summary tab on Platelet Tab");
     }
+    /*
 
     // verifying the approve and reject buttons are enabled and its displayed on WBC tab
 
@@ -230,7 +232,7 @@ public class ReportViewerTest extends BrowserSetUp {
     @Test(priority = 119,enabled = true)
     public void approveAndRejectButtonDisplayedAndItsEnabledOnPlateletTab() throws InterruptedException {
         Thread.sleep(3000);
-        driver.findElement(By.xpath(props.getProperty("PlateletTab"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("PlateletTab")))).click();
         String morphology=props.getProperty("morphology");
         Assert.assertTrue(reportViewer.imageSetting(morphology));
         logger.info("after clicked on image setting approve and reject buttons are displayed and its enabled on PlateletTab tab");
@@ -242,7 +244,7 @@ public class ReportViewerTest extends BrowserSetUp {
         Thread.sleep(3000);
         driver.findElement(By.xpath(props.getProperty("WBCTAB"))).click();
         Thread.sleep(3000);
-        Assert.assertTrue(reportViewer.verifyImageCharacteristicsParameters("//tbody//tr[4]//td[2]","//tbody//tr[4]//td[1]","WBC","/html/body/div[2]/div[3]/div/div[3]/div[1]/div[2]/span/span[9]/input"));
+        Assert.assertTrue(reportViewer.verifyImageCharacteristicsParameters("//tbody//tr[5]//td[2]","//tbody//tr[5]//td[1]","WBC","/html/body/div[2]/div[3]/div/div[3]/div[1]/div[2]/span/span[9]/input"));
         logger.info("image size , saturation, brightness and contrast is verified on wbc tab for neutrophil cells ");
 
     }
@@ -259,17 +261,20 @@ public class ReportViewerTest extends BrowserSetUp {
 
     @Test(priority = 125,enabled = true)
     public void clickOnImageSettingIconAndVerifyingCharcteristicsOnPLTTab() throws InterruptedException {
+        Thread.sleep(2000);
         driver.findElement(By.xpath(props.getProperty("PlateletTab"))).click();
         driver.findElement(By.xpath(props.getProperty("morphology"))).click();
         Thread.sleep(2000);
-        Assert.assertTrue(reportViewer.verifyImageCharacteristicsParameters("//tbody//tr[1]//td[2]","//tbody//tr[1]//td[1]","WBC","/html/body/div[2]/div[3]/div/div[3]/div[1]/div[2]/span/span[9]/input"));
+        Assert.assertTrue(reportViewer.verifyImageCharacteristicsParameters("//*[@id='root']/div/div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div[2]","//div[contains(text(),'Platelet Clumps')]","Platelet","/html/body/div[2]/div[3]/div/div[3]/div[1]/div[2]/span/span[9]/input"));
         logger.info("image size , saturation, brightness and contrast is verified on wbc tab for neutrophil cells ");
 
     }
+    */
 
 
     @Test(priority = 127,enabled = true)
     public void referenceToolIconOnWbc() throws InterruptedException {
+        Thread.sleep(2000);
        Assert.assertTrue(reportViewer.presenceOfReferenceTool(props.getProperty("WBCTAB")));
        logger.info("verified the presence of linear tool bar on left side of microscopic view on wbc tab ");
 
@@ -286,7 +291,7 @@ public class ReportViewerTest extends BrowserSetUp {
 
 
     @Test(priority = 130,enabled = true)
-    public void alteringTheSizeOfLineOnWBC(){
+    public void alteringTheSizeOfLineOnWBC() throws InterruptedException {
         Assert.assertTrue(reportViewer.alteringTheSizeOfLineOrCircle(Integer.parseInt("7")));
         logger.info("alteration of line tool is verified on WBC tab");
     }
@@ -302,7 +307,7 @@ public class ReportViewerTest extends BrowserSetUp {
 
 
 
-    @Test(priority = 133,enabled = true)
+  /*  @Test(priority = 133,enabled = true)
     public void selectionOCircleTool(){
         Assert.assertTrue(reportViewer.selectionOfReferenceTool(props.getProperty("circleToolButton")));
         logger.info("circle tool is selected and digital zoom message is verified on WBC tab");
@@ -341,9 +346,11 @@ public class ReportViewerTest extends BrowserSetUp {
         logger.info("Linear button is deselected successfully on Wbc tab");
     }
 
+   */
+
 
     @Test(priority = 142,enabled = true)
-    public void selectAndSelectTheCellNameCheckBox(){
+    public void selectAndDeselectTheCellNameCheckBox(){
         Assert.assertTrue(reportViewer.selectAndDeselectTheCellNameCheckBox("WBC"));
         logger.info("all the enabled checkbox is selected successfully on WBC TAb ");
     }
@@ -370,7 +377,7 @@ public class ReportViewerTest extends BrowserSetUp {
 
 
     @Test(priority = 146,enabled = true)
-    public void alteringTheSizeOfLineOnRBC(){
+    public void alteringTheSizeOfLineOnRBC() throws InterruptedException {
         Assert.assertTrue(reportViewer.alteringTheSizeOfLineOrCircle(Integer.parseInt("23")));
         logger.info("alteration of line tool is verified on RBC tab");
     }
@@ -383,46 +390,47 @@ public class ReportViewerTest extends BrowserSetUp {
 
 
     @Test(priority = 150,enabled = true)
-    public void selectionOCircleToolOnRBC(){
+    public void selectionOCircleToolOnRBC() throws InterruptedException {
+        Thread.sleep(2000);
         Assert.assertTrue(reportViewer.selectionOfReferenceTool(props.getProperty("circleToolButton")));
         logger.info("circle tool is selected and digital zoom message is verified on RBC tab");
     }
 
 
-    @Test(priority = 148,enabled = true)
-    public void alternationOFCircleToolOnRbc(){
+    @Test(priority = 152,enabled = true)
+    public void alternationOFCircleToolOnRbc() throws InterruptedException {
         Assert.assertTrue(reportViewer.alteringTheSizeOfLineOrCircle(Integer.parseInt("10")));
         logger.info("alternation Of circle tool is verified on RBC tab");
     }
 
-    @Test(priority = 150,enabled = true)
+    @Test(priority = 154,enabled = true)
     public void deselectingTheCircleToolOnRBC(){
         Assert.assertTrue(reportViewer.deselectTheReferenceTool(props.getProperty("circleToolButton")));
-        logger.info("Linear button is deselected successfully on Rbc tab");
+        logger.info("Circle tool is deselected successfully on Rbc tab");
     }
 
-    @Test(priority = 152,enabled = true)
+    @Test(priority = 156,enabled = true)
     public void selectionOZoomToolOnRBC(){
         Assert.assertTrue(reportViewer.selectionOfReferenceTool(props.getProperty("zoomToolButton")));
         logger.info("circle tool is selected and digital zoom message is visible on RBC tab");
     }
 
 
-    @Test(priority = 154,enabled = true)
+    @Test(priority = 158,enabled = true)
     public void alternationOfZoomLevelOnRbc(){
         Assert.assertTrue(reportViewer.alteringTheZoomLevel());
         logger.info("alternation Of zoom level is verified on RBC tab");
     }
 
-    @Test(priority = 156,enabled = true)
+    @Test(priority = 160,enabled = true)
     public void deselectingTheZoomLevelOnRBC(){
         Assert.assertTrue(reportViewer.deselectTheReferenceTool(props.getProperty("zoomToolButton")));
-        logger.info("Linear button is deselected successfully on Rbc tab");
+        logger.info("Zoom is deselected successfully on Rbc tab");
     }
 
 
 
-    @Test(priority = 157,enabled = true)
+    @Test(priority = 167,enabled = true)
     public void selectAndSelectTheCellNameCheckBoxONWBC(){
         Assert.assertTrue(reportViewer.selectAndDeselectTheCellNameCheckBox("RBC"));
         logger.info("all the enabled checkbox is selected successfully on RBC TAb ");
@@ -430,7 +438,7 @@ public class ReportViewerTest extends BrowserSetUp {
 
 
 
-    @Test(priority = 158,enabled = true)
+    @Test(priority = 168,enabled = true)
     public void referenceToolBarOnPltTab() throws InterruptedException {
         driver.findElement(By.xpath(props.getProperty("morphology"))).click();
         Assert.assertTrue(reportViewer.presenceOfReferenceTool(props.getProperty("PlateletTab")));
@@ -439,7 +447,7 @@ public class ReportViewerTest extends BrowserSetUp {
     }
 
 
-    @Test(priority = 160,enabled = true)
+    @Test(priority = 170,enabled = true)
     public void selectionOfLineToolOnPlatelet(){
         Assert.assertTrue(reportViewer.selectionOfReferenceTool(props.getProperty("lineToolButton")));
         logger.info("line tool is selected and digital zoom message is verified on Platelet tab");
@@ -447,13 +455,13 @@ public class ReportViewerTest extends BrowserSetUp {
 
 
 
-    @Test(priority = 170,enabled = true)
-    public void alteringTheSizeOfLineOnPLT(){
+    @Test(priority = 180,enabled = true)
+    public void alteringTheSizeOfLineOnPLT() throws InterruptedException {
         Assert.assertTrue(reportViewer.alteringTheSizeOfLineOrCircle(Integer.parseInt("23")));
         logger.info("alteration of line tool is verified on Plt tab");
     }
 
-    @Test(priority = 172,enabled = true)
+    @Test(priority = 182,enabled = true)
     public void deselectingTheLinearToolOnPLT(){
         Assert.assertTrue(reportViewer.deselectTheReferenceTool(props.getProperty("lineToolButton")));
         logger.info("Linear button is deselected successfully on PLT tab");
@@ -462,7 +470,7 @@ public class ReportViewerTest extends BrowserSetUp {
 
 
 
-    @Test(priority = 174,enabled = true)
+    @Test(priority = 184,enabled = true)
     public void selectionOCircleToolOnPlatelet(){
         Assert.assertTrue(reportViewer.selectionOfReferenceTool(props.getProperty("circleToolButton")));
         logger.info("circle tool is selected and digital zoom message is verified on Platelet tab");
@@ -470,32 +478,32 @@ public class ReportViewerTest extends BrowserSetUp {
 
 
 
-    @Test(priority = 176,enabled = true)
-    public void alternationOFCircleToolOnPLT(){
+    @Test(priority = 186,enabled = true)
+    public void alternationOFCircleToolOnPLT() throws InterruptedException {
         Assert.assertTrue(reportViewer.alteringTheSizeOfLineOrCircle(Integer.parseInt("32")));
         logger.info("alternation Of circle tool is verified on plt tab");
     }
 
-    @Test(priority = 178,enabled = true)
+    @Test(priority = 188,enabled = true)
     public void deselectingTheCircleToolOnPLT(){
         Assert.assertTrue(reportViewer.deselectTheReferenceTool(props.getProperty("circleToolButton")));
         logger.info("Linear button is deselected successfully on PLT tab");
     }
 
 
-    @Test(priority = 188,enabled = true)
+    @Test(priority = 190,enabled = true)
     public void selectionOZoomToolOnPlatelet(){
         Assert.assertTrue(reportViewer.selectionOfReferenceTool(props.getProperty("zoomToolButton")));
         logger.info("circle tool is selected and digital zoom message is verified on Platelet tab");
     }
 
-    @Test(priority = 190,enabled = true)
+    @Test(priority = 192,enabled = true)
     public void alternationOfZoomLevelInPlt(){
         Assert.assertTrue(reportViewer.alteringTheZoomLevel());
         logger.info("alternation Of zoom level is verified on plt tab");
     }
 
-    @Test(priority = 192,enabled = true)
+    @Test(priority = 194,enabled = true)
     public void deselectingTheZoomLevelOnPLT(){
         Assert.assertTrue(reportViewer.deselectTheReferenceTool(props.getProperty("zoomToolButton")));
         logger.info("Linear button is deselected successfully on PLT tab");

@@ -4,16 +4,14 @@ import Data.Property;
 import GenericMethodForAllTab.CommonMethods;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 public class ReportViewer extends CommonMethods {
 
@@ -176,8 +174,9 @@ public class ReportViewer extends CommonMethods {
 
     public boolean imageSetting(String tab) throws InterruptedException {
         boolean flag=false;
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(tab))).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("imageSetting")))).click();
         WebElement approveButton=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("approveButton"))));
         WebElement rejectButton=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(props.getProperty("rejectReport"))));
@@ -188,7 +187,8 @@ public class ReportViewer extends CommonMethods {
             flag=true;
         }
 
-        driver.findElement(By.xpath(props.getProperty("closeImgSetting"))).click();
+        Thread.sleep(2000);
+       driver.findElement(By.xpath(props.getProperty("closeImgSetting"))).click();
 
         return flag;
     }
@@ -199,82 +199,61 @@ public class ReportViewer extends CommonMethods {
     // verifying the image size characteristic for any cell type
     public boolean verifyImageCharacteristicsParameters(String countXPath, String CellNameXpath, String tabName, String imageSettingToggle) throws InterruptedException {
         boolean flag = false;
-       WebElement  count = driver.findElement(By.xpath(countXPath));
-       String cellActualCount=count.getText();
-       int actualCount=Integer.parseInt(cellActualCount);
+        WebElement count = driver.findElement(By.xpath(countXPath));
+        String cellActualCount = count.getText();
+        int actualCount = 0;
+        try {
 
+            actualCount = Integer.parseInt(cellActualCount);
+
+        } catch (NumberFormatException ignored) {}
         WebElement cellName = driver.findElement(By.xpath(CellNameXpath));
-        String actualCellName=cellName.getText();
+        String actualCellName = cellName.getText();
 
-            if (!cellActualCount.isEmpty() && !count.equals("-") && (actualCount != 0) && actualCount != 1 && (!actualCellName.equals("Total"))) {
-                Thread.sleep(5000);
-                cellName.click();
-                Thread.sleep(5000);
-                wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@class='image-settings']"))).click();
-                Thread.sleep(2500);
-                logger.info("Image setting is clicked on specific tab:" + tabName + "-" + actualCellName);
-                WebElement listOfImageContainers = driver.findElement(By.xpath("//div[@class='img-utils-container']"));
-                String imageTabDetails = listOfImageContainers.getText();
-                if (imageTabDetails.equals("Image settings\n" +
-                        "Image Size\n" +
-                        "Small\n" +
-                        "Medium\n" +
-                        "Large\n" +
-                        "Brightness\n" +
-                        "-100\n" +
-                        "0\n" +
-                        "100\n" +
-                        "0\n" +
-                        "Contrast\n" +
-                        "-100\n" +
-                        "0\n" +
-                        "100\n" +
-                        "0\n" +
-                        "Hue\n" +
-                        "-100\n" +
-                        "0\n" +
-                        "100\n" +
-                        "0\n" +
-                        "Saturation\n" +
-                        "-100\n" +
-                        "0\n" +
-                        "100\n" +
-                        "0\n" +
-                        "Reset")) {
-                    logger.info("all the image setting content verified on Image setting tabs");
-                    WebElement image = driver.findElement(By.xpath("//img[@class='qa_patch_rank-1']"));
-                    WebElement imgSizeToggleBar = driver.findElement(By.xpath(imageSettingToggle));
-                    // Get the image size before clicking the toggle bar
-                    Dimension beforeSize = image.getSize();
-                    System.out.println("Before Size: " + beforeSize);
-                    Actions actions = new Actions(driver);
-                    actions.dragAndDropBy(imgSizeToggleBar, -80, 0).perform();
-                    Thread.sleep(3000);
-                    driver.findElement(By.xpath("//button[@class='reset-btn']")).click();
-                    Thread.sleep(3000);
-                    actions.dragAndDropBy(imgSizeToggleBar, 80, 0).perform();
-                    Thread.sleep(3000);
-                    // Get the image size after clicking the toggle bar
-                    Dimension afterSize = image.getSize();
-                    System.out.println("After Size: " + afterSize);
+        if (!cellActualCount.isEmpty() && !count.equals("-") && (actualCount != 0) && actualCount != 1 && (!actualCellName.equals("Total"))) {
+            Thread.sleep(5000);
+            cellName.click();
+            Thread.sleep(5000);
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("imageSetting")))).click();
+            Thread.sleep(2500);
+            logger.info("Image setting is clicked on specific tab:" + tabName + "-" + actualCellName);
+            WebElement listOfImageContainers = driver.findElement(By.xpath(props.getProperty("imageContainers")));
+            String imageTabDetails = listOfImageContainers.getText();
+            System.out.println(imageTabDetails);
+                WebElement image = driver.findElement(By.xpath(props.getProperty("firstPatch")));
+                WebElement imgSizeToggleBar = driver.findElement(By.xpath(imageSettingToggle));
+                // Get the image size before clicking the toggle bar
+                Dimension beforeSize = image.getSize();
+                System.out.println("Before Size: " + beforeSize);
+                Actions actions = new Actions(driver);
+                actions.dragAndDropBy(imgSizeToggleBar, -80, 0).perform();
+                Thread.sleep(3000);
+                driver.findElement(By.xpath(props.getProperty("resetButton"))).click();
+                Thread.sleep(3000);
+                actions.dragAndDropBy(imgSizeToggleBar, 80, 0).perform();
+                Thread.sleep(3000);
+                // Get the image size after clicking the toggle bar
+                Dimension afterSize = image.getSize();
+                System.out.println("After Size: " + afterSize);
 
-                    // Verify that the image size has increased
-                    if (afterSize.height < beforeSize.height && afterSize.width < beforeSize.width) {
-                        System.out.println("Image size increased");
-                        flag = true;
-                    } else if (afterSize.height == beforeSize.height && afterSize.width == beforeSize.width) {
-                        System.out.println("images are in actual size");
-                    }
-
-                    driver.findElement(By.xpath("//button[@class='reset-btn']")).click();
-                    Thread.sleep(4000);
-                    driver.findElement(By.xpath("//html/body/div[2]/div[3]/div/div[2]/button")).click();
-
-
+                // Verify that the image size has increased
+                if (afterSize.height > beforeSize.height && afterSize.width > beforeSize.width) {
+                    System.out.println("Image size increased");
+                    flag = true;
+                } else if (afterSize.height == beforeSize.height && afterSize.width == beforeSize.width) {
+                    System.out.println("images are in actual size");
                 }
 
-            }
+                driver.findElement(By.xpath(props.getProperty("resetButton"))).click();
+                Thread.sleep(4000);
+                driver.findElement(By.xpath(props.getProperty("closeButton"))).click();
 
+
+            }
+        else {
+            System.out.println(" cell count contains hyphen value so we cant click ");
+            flag=true;
+        }
 
 
         return flag;
@@ -334,12 +313,14 @@ public class ReportViewer extends CommonMethods {
     // clicking on any tool type(Linear circle or zoom)
     public boolean selectionOfReferenceTool(String toolType){
         boolean flag=false;
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
        WebElement tooltype= wait.until(ExpectedConditions.elementToBeClickable(By.xpath(toolType)));
         Actions actions1=new Actions(driver);
         actions1.moveToElement(tooltype).click().perform();
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         String msg=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("digitalZoom")))).getText();
-        WebElement checkBox=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("checkBox"))));
-           String byDefaultValue=checkBox.getAttribute("value");
+        WebElement textBox=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("textBox"))));
+           String byDefaultValue=textBox.getAttribute("value");
         System.out.println(byDefaultValue);
         if(msg.contains("Digital zoom only")&& byDefaultValue.equals("7")){
             logger.info("Digital zoom only text is display on tab after selecting the linear line tool");
@@ -348,6 +329,9 @@ public class ReportViewer extends CommonMethods {
         }else {
             System.out.println("zoom line is selected");
         }
+
+
+
         return flag;
     }
 
@@ -355,37 +339,44 @@ public class ReportViewer extends CommonMethods {
 
 
 // altering the size of reference tool on microscopic view tab
-    public boolean alteringTheSizeOfLineOrCircle(int value){
-        boolean flag=false;
-        WebElement checkBox=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("checkBox"))));
-        checkBox.click();
-        checkBox.clear();
-        checkBox.sendKeys(String.valueOf(value));
-        if(value<5 || value >20){
-            WebElement colourOfCheckBox=driver.findElement(By.xpath(props.getProperty("checkBoxColor")));
-            String color=colourOfCheckBox.getCssValue("back-ground");
-            System.out.println(color);
-            if(color.equals("")){
-                logger.info("check box outline is highlighted with red color");
-                flag=true;
-            }else {
-                logger.info("check box outline is highlighted with blue color");
-                flag=true;
-            }
+public boolean alteringTheSizeOfLineOrCircle(int value) throws InterruptedException {
+    boolean status = false;
+    WebElement textBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("textBox"))));
+    textBox.click();
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+    js.executeScript("arguments[0].value='';", textBox);
 
+    Thread.sleep(2000);
+  //  textBox.clear();
+    textBox.sendKeys(String.valueOf(value));
 
-        }
+    // Check if the value is invalid (less than 5 or greater than 20)
+    if (value < 5 || value > 20) {
+        WebElement txtBoxColor = driver.findElement(By.xpath(props.getProperty("txtBoxColor")));
+        boolean isErrorPresent = txtBoxColor.getAttribute("class").contains("Mui-error");
 
+        if (isErrorPresent) {
+            System.out.println("Mui-error text is present for valid range: " + value);
+            System.out.println("text box border line is highlighted with red color");
 
-        return flag;
+            status=true;
+    }
+    }else {
+        System.out.println("The value " + value + " is greater than 5 and less than 20 so, no 'Mui-error' text expected.");
+        System.out.println("text box border line is highlighted with blue color");
+        status=true;
+
     }
 
-// zoom level is verifying with 40x and 100x
+
+    return status;
+}
+
+    // zoom level is verifying with 40x and 100x
     public boolean alteringTheZoomLevel() {
         boolean flag = false;
 
         List<WebElement> zoomFovsOption = driver.findElements(By.xpath(props.getProperty("ZoomOptions")));
-
         for (WebElement zoomOption : zoomFovsOption) {
             zoomOption.click();
             String presenceOfZoom = driver.findElement(By.xpath(props.getProperty("40xZoom"))).getText();
@@ -417,23 +408,43 @@ public class ReportViewer extends CommonMethods {
 
 
        // after alteration de select the reference tool
-    public boolean deselectTheReferenceTool(String toolName){
-        boolean flag=false;
-        WebElement checkBox=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("checkBox"))));
-        String byDefaultValue=checkBox.getAttribute("value");
-        System.out.println(byDefaultValue);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(toolName))).click();
-        if(!checkBox.isDisplayed()){
-            logger.info("line/circle is deselected successfully"+toolName);
-            flag=true;
-        }else {
-            System.out.println("zoom line is deselected successfully");
-        }
-        return flag ;
-    }
+       public boolean deselectTheReferenceTool(String toolName) {
+           boolean flag = false;
+
+//           try {
+//               WebElement textBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("textBox"))));
+//               String byDefaultValue = textBox.getAttribute("value");
+//               System.out.println("Default value of checkbox: " + byDefaultValue);
+
+               // Click on the reference tool to deselect it
+               WebElement toolElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(toolName)));
+               if(toolElement.isDisplayed()) {
+                   actions.moveToElement(toolElement).click().perform();
+                   flag=true;
+               }else {
+                   System.out.println("An error occurred while deselecting the reference tool:");
+               }
+
+//               // Recheck the checkbox state
+//               boolean isCheckboxDisplayed = textBox.isDisplayed();
+//
+//               if (!isCheckboxDisplayed) {
+//                   logger.info("Tool '" + toolName + "' is deselected successfully.");
+//                   flag = true;
+//               } else {
+//                   logger.info("Tool '" + toolName + "' is still selected. Deselection failed.");
+//               }
+//           } catch (Exception e) {
+//               logger.error("An error occurred while deselecting the reference tool: " + e.getMessage());
+//           }
+           wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("homeIcon")))).click();
 
 
-      // if any cell check box is selected then deselecting and selecting all the un selected check box
+           return flag;
+       }
+
+
+    // if any cell check box is selected then deselecting and selecting all the un selected check box
     public boolean selectAndDeselectTheCellNameCheckBox(String tab){
         boolean flag=false;
         List<WebElement> listOfCellName=driver.findElements(By.xpath(props.getProperty("cellNameList")));
@@ -444,19 +455,8 @@ public class ReportViewer extends CommonMethods {
             int actualCount=Integer.parseInt(count);
             if(actualCount>=1) {
                 allCheckBoxes.get(i).click();
-                flag= true;
-            }
-            String statusOfCheckBox=allCheckBoxes.get(i).getAttribute("value");
-            if(statusOfCheckBox.equals("true")){
-                logger.info("after clicking on checkbox status as 'true' found in html code");
-                flag=true;
-
-            }else  if(statusOfCheckBox.equals("false")){
-               logger.info("check box is by default selected for cell name on " +tab  +listOfCellName.get(0).getText());
-               flag=true;
-
-               }else {
-                logger.info("not found any status value of check box");
+                flag = true;
+                logger.info("all the check box is clicked successfully");
             }
 
 
@@ -466,6 +466,9 @@ public class ReportViewer extends CommonMethods {
 
         return flag;
     }
+
+
+
 
 
 

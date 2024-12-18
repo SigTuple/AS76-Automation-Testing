@@ -41,7 +41,7 @@ public class Login {
 	    UserField.sendKeys(name);
 	    PWDField.sendKeys(PWD);
 	    }
-		WebElement submitButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@type='button']")));
+		WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='button']")));
 		if(submitButton.isDisplayed())
 		{
 			submitButton.click();
