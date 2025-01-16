@@ -15,6 +15,43 @@
                 <include name="validlogin"/>
             </methods>
 
+            <class name="ReportListing.VerifyTheListReportPageTest"/>
+            <methods>
+               <include name ="verifySigLogoAndPBS"/>
+                <include name ="verifyTheKebabMenuIcon"/>
+                <include name ="verifytheSearchAndFilterAndCheckbox"/>
+                <include name ="verifyTheFunctionalityOfTheMyReportCheckBox"/>
+                <include name ="verifyfunctionalityofmyreportcheckbox"/>
+                <include name ="verityHeader"/>
+                <include name ="verifyTheFunctionalityOfSearchField"/>
+                <include name ="verifyTheFunctionalityOfFilterIcon"/>
+                <include name ="verifyTheSameSlideIdonAdditionalInfo"/>
+                <include name ="verifyThePresenceOfFilterOption"/>
+                <include name ="verifyTheResetButton"/>
+                <include name ="verifyTheApplytButton"/>
+                <include name ="verifyTheClearFilterButton"/>
+                <include name ="verifyTheFilterCloseButton"/>
+                <include name ="verifyTheFunctionalityOfBookmarkButton"/>
+                <include name ="verifyTheFunctionalityOfBookmarkTextfield"/>
+                <include name ="verifyTheReassignReviewer"/>
+
+            </methods>
+
+            <class name="summary.SummaryTest"/>
+            <methods>
+                <include name="assign"/>
+                <include name="verifyTheWBCinfoIcon"/>
+                <include name="verifyTheRBCinfoIcon"/>
+                <include name="verifyThePlateletinfoIcon"/>
+                <include name="psImpression"/>
+                <include name="verifyPsImpressionSubheader"/>
+                <include name="verifyPsImpressionHeader"/>
+                <include name="manualRadioBtnTest"/>
+                <include name="calculatedRadioBtnTest"/>
+                <include name="VerifyThePresenceOfManualTxtFieldValue"/>
+                <include name="verifyThePresenceOfDiffrencialCount"/>
+            </methods>
+
 
             <class name="WBC.VerifyWbcParametersTest.WBCParametersTest"/>
             <methods>
@@ -25,8 +62,21 @@
                 <include name="verifyManualSubClassificationMessage"/>
                 <include name="VerifyTheReclassificationOfNeutrophilWithAllOtherCells"/>
                 <include name="VerifyTheReclassificationOfWBCToLargePlatelet"/>
-                <include name="VerifyTheReclassificationOfWBCToPlateletClumps"/>
             </methods>
+
+            <class name="WBC.VerifyWbcPatchesTest.WBCPatchesTest"/>
+            <methods>
+                <include name="verifyPresenceOfWBCPatches"/>
+                <include name="verifyPresenceOfNONWBCPatches"/>
+            </methods>
+
+            <class name="WBC.WBCSplitViewTest.WBCSplitViewTest"/>
+            <methods>
+                <include name="clickedOnSplitViewOnWBCTab"/>
+                <include name="verifyZoomInZoomOutFunctionality"/>
+                <include name="verifying_Home_Zoom_Functionality"/>
+            </methods>
+
 
             <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcSizeSubTabTest"/>
             <methods>

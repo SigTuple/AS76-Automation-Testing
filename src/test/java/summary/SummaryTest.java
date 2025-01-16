@@ -40,20 +40,20 @@ public class SummaryTest {
 
     }
     //verify the presence of the tool tip in Summary tab.
-    @Test(priority = 1 ,enabled = false)
+    @Test(priority = 1 ,enabled = true)
     public void verifyTheWBCinfoIcon() throws InterruptedException {
         Assert.assertTrue(summary.toolTipverifier(props.getProperty("wbcinfoicon") , (props.getProperty("toolTip")) ,"Please check the WBC tab for complete evaluation"));
         logger.info("Verify The WBC Info Icon");
     }
 
-    @Test(priority = 2 ,enabled = false)
+    @Test(priority = 2 ,enabled = true)
     public void verifyTheRBCinfoIcon() throws InterruptedException {
         Thread.sleep(5000);
         Assert.assertTrue(summary.toolTipverifier(props.getProperty("rbcinfoicon") , (props.getProperty("toolTip")) ,"Please check the RBC tab for complete evaluation"));
         logger.info("Verify The RBC Info Icon");
     }
 
-    @Test(priority = 3 ,enabled = false)
+    @Test(priority = 3 ,enabled = true)
     public void verifyThePlateletinfoIcon() throws InterruptedException {
         Assert.assertTrue(summary.toolTipverifier(props.getProperty("plateletinfoicon") , (props.getProperty("toolTip")) ,"Please check the Platelet tab for complete evaluation"));
         logger.info("Verify The Platelet Info Icon");

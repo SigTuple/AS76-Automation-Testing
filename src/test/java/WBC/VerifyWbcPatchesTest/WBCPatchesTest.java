@@ -41,8 +41,7 @@ public class WBCPatchesTest extends BrowserSetUp {
 	}
 	
 	@Test(priority = 3, enabled = true)
-	public void verifyPresenceOfNOnWBCPatches() {
-		test = extent.createTest("WBCPatchesTest");
+	public void verifyPresenceOfNONWBCPatches() {
 		boolean patch = wbc.verifyPresenceOfNonWBCPatches();
 		Assert.assertTrue(patch);
 		logger.info("Non WBC patches verified");

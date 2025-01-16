@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e36e434-e668-4b85-b9db-45722b65adae" name="Changes" comment="new project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/WBC/WBCSplitView/WBCSplitView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WBC/WBCSplitViewTest/WBCSplitViewTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AS76-SanitySuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AS76-SanitySuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mandara-Automation-Testing" beforeDir="false" afterPath="$PROJECT_DIR$/Mandara-Automation-Testing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GenericMethodForAllTab/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GenericMethodForAllTab/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/summary/SummaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/summary/SummaryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +87,11 @@
       <recent name="RBC.VerifySubTabOfRBC" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="WBC.WbcPatchSizeTest" />
       <recent name="Platelet" />
       <recent name="RBC.VerifyThePatchViewOfRBC" />
       <recent name="RBC.VerifyThePatchSizeOfRBC" />
       <recent name="RBC.VerifyTheRegradingOfRbcCellTypes" />
-      <recent name="RBC.VerifySubTabOfRBC" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG./Users/rupakumari/Downloads/AS76-REPORTING/testng.xml">

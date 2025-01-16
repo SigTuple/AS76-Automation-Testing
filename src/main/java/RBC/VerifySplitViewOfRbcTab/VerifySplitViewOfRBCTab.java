@@ -62,7 +62,7 @@ public class VerifySplitViewOfRBCTab extends CommonMethods {
     }
 
     // verify the presence of split view for all the cells in RBC tab
-    private boolean splitViewIcon(String cellName) throws InterruptedException {
+    public boolean splitViewIcon(String cellName) throws InterruptedException {
         WebElement splitView = driver.findElement(By.xpath(props.getProperty("splitview")));
         if (splitView.isDisplayed() && "split view".equals(splitView.getAttribute("alt"))) {
             splitView.click();

@@ -4,6 +4,7 @@
 package GenericMethodForAllTab;
 
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 import org.apache.log4j.LogManager;
@@ -36,6 +37,7 @@ public class CommonMethods {
 		props = Property.prop;
 		Property.readSessionManagement();
 		Property.readCommonMethodProperties();
+		Property.readRBCProperties();
 	}
 	//__________________ALL Tab Related common methods are written here________________________//
 
@@ -569,6 +571,65 @@ public class CommonMethods {
 		}
 
 	}
+
+
+
+
+
+
+
+	// verify the image zoom-in and zoom-out and home zoom functionality
+	public String verifyTheFunctionalityOfZoomIn_And_ZoomOut_Using_UI_icon(String btn_xpath, int steps) throws InterruptedException, IOException {
+		int count = 0;
+		WebElement zoom_in = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(btn_xpath)));
+		String zoom_level = null;
+
+		for (int i = 1; i <= steps; i++) {
+			count += 1;
+			zoom_in.click();
+			Thread.sleep(1000);
+			zoom_level = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scale_box")))).getText();
+			System.out.println("Zoom level at step " + i + " is: " + zoom_level);
+
+			if (count == 2) {
+				// Call verifyTheFunctionalityOf_Home_zoom() when count == 2
+				String homeZoomLevel = verifyTheFunctionalityOf_Home_zoom();
+				logger.info("Home zoom level after count == 2: " + homeZoomLevel);
+			}
+
+			if (count == steps) {
+				logger.info("Zoom in count is equal to steps");
+			}
+		}
+
+		return zoom_level;
+	}
+
+
+	// verify the home-zoom /reset functionality if patches are available
+
+
+	public String verifyTheFunctionalityOf_Home_zoom() throws InterruptedException {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("home_zoom")))).click();
+		Thread.sleep(2000);
+		String zoom_lvl = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scale_box")))).getText();
+		System.out.println("home zoom level is:" + zoom_lvl);
+
+		return zoom_lvl;
+	}
+
+
+	public boolean splitViewIcon(String cellName) throws InterruptedException {
+		WebElement splitView = driver.findElement(By.xpath(props.getProperty("splitview")));
+		if (splitView.isDisplayed() && "split view".equals(splitView.getAttribute("alt"))) {
+			splitView.click();
+			logger.info("Split view icon clicked on: " + cellName);
+			Thread.sleep(5000);
+			return true;
+		}
+		return false;
+	}
+
 
 }
 
