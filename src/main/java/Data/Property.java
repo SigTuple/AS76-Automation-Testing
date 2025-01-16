@@ -1,8 +1,6 @@
 package Data;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Properties;
 
 public class Property {
@@ -64,6 +62,29 @@ public class Property {
 	}
 
 
+    public static void readReportListingProperties() throws Exception  {
+
+		String path = new File("src/main/java/Data/ReportListing.properties")
+				.getAbsolutePath();
+		prop.load(new InputStreamReader(new FileInputStream(path), "UTF8"));
 
 
+	}
+	public static void readPlateletProperties() throws Exception  {
+
+		String path = new File("src/main/java/Data/Platelet.properties")
+				.getAbsolutePath();
+		prop.load(new InputStreamReader(new FileInputStream(path), "UTF8"));
+
+
+	}
+
+
+    public static void readReportSignOffProperties() throws IOException {
+		String path = new File("src/main/java/Data/Platelet.properties")
+				.getAbsolutePath();
+		prop.load(new InputStreamReader(new FileInputStream(path), "UTF8"));
+
+
+	}
 }

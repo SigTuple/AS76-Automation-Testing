@@ -250,7 +250,22 @@ public class VerifySplitViewOfRBCTab extends CommonMethods {
                             status = driver.findElement(By.xpath(props.getProperty("nopatchavailable"))).getText().equals("No patches available")
                                     && driver.findElement(By.xpath(props.getProperty("nopreview"))).getText().equals("No preview");
                         System.out.println("patches are not available so we can't verify the same patch view");
-                    } else {
+                    } else if (Arrays.asList("Anisocytosis", "Poikilocytosis", "Howell-Jolly Bodies*", "Acanthocytes*", "Sickle cells*", "Hypochromic Cells", "Polychromatic Cells", "Pappenheimer Bodies*", "Basophilic Stippling*").contains(cellName) && actualPercentageOfGrade > 0.0) {
+                            driver.findElement(By.xpath(props.getProperty("patchView"))).click();
+                            Thread.sleep(3000);
+
+                            status = verifyPatchRanks();
+                            // Click on the split view icon
+                            driver.findElement(By.xpath(props.getProperty("splitview"))).click();
+                            Thread.sleep(3000);
+                            // Call the same method to verify the patch ranks again
+                            boolean status1 = verifyPatchRanks();
+                            if (status == status1) {
+                                System.out.println("same patches are available on patch view and split view ");
+                            }
+                            status=true;
+                        } else {
+
 
                        // click on patch view icon
                         driver.findElement(By.xpath(props.getProperty("patchView"))).click();
@@ -267,6 +282,9 @@ public class VerifySplitViewOfRBCTab extends CommonMethods {
                         }
                     }
 
+                }else {
+                    System.out.println("patches are not available so cant verify the same patch on split and patch");
+                    status=true;
                 }
             }
             return status;

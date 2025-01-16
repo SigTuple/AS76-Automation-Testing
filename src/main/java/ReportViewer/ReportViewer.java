@@ -311,12 +311,15 @@ public class ReportViewer extends CommonMethods {
 
 
     // clicking on any tool type(Linear circle or zoom)
-    public boolean selectionOfReferenceTool(String toolType){
+    public boolean selectionOfReferenceTool(String toolType) throws InterruptedException {
         boolean flag=false;
-        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+       Thread.sleep(3000);
        WebElement tooltype= wait.until(ExpectedConditions.elementToBeClickable(By.xpath(toolType)));
         Actions actions1=new Actions(driver);
+        actions1.moveToElement(tooltype).build().perform();
+        Thread.sleep(2000);
         actions1.moveToElement(tooltype).click().perform();
+        Thread.sleep(3000);
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         String msg=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("digitalZoom")))).getText();
         WebElement textBox=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("textBox"))));
@@ -341,6 +344,7 @@ public class ReportViewer extends CommonMethods {
 // altering the size of reference tool on microscopic view tab
 public boolean alteringTheSizeOfLineOrCircle(int value) throws InterruptedException {
     boolean status = false;
+    Thread.sleep(3000);
     WebElement textBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("textBox"))));
     textBox.click();
     JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -361,7 +365,9 @@ public boolean alteringTheSizeOfLineOrCircle(int value) throws InterruptedExcept
 
             status=true;
     }
-    }else {
+
+    }
+    else  {
         System.out.println("The value " + value + " is greater than 5 and less than 20 so, no 'Mui-error' text expected.");
         System.out.println("text box border line is highlighted with blue color");
         status=true;
@@ -371,6 +377,11 @@ public boolean alteringTheSizeOfLineOrCircle(int value) throws InterruptedExcept
 
     return status;
 }
+
+
+
+
+
 
     // zoom level is verifying with 40x and 100x
     public boolean alteringTheZoomLevel() {

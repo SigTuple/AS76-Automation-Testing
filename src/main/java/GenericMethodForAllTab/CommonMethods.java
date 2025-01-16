@@ -59,7 +59,7 @@ public class CommonMethods {
 	public String openAnyReport(String reportStatus) throws InterruptedException {
 		Thread.sleep(4000);
 	boolean status=	openAReport(reportStatus);
-	if(status==true){
+	if(status){
 		System.out.println("report is selected");
 
 	}else {
@@ -92,7 +92,6 @@ public class CommonMethods {
 			else {
 
 				System.out.println("report is not selected");
-				flag=false;
 			}
 		}
 
@@ -437,12 +436,12 @@ public class CommonMethods {
 
 		// click operation for tab main and sub tab
 		public void clickOnSpecificTab(String tabName) {
-			WebElement respectiveTab = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath(props.getProperty("commonTabXpath1") + tabName + props.getProperty("commonTabXpath2"))));
+			WebElement respectiveTab = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("commonTabXpath1") + tabName + props.getProperty("commonTabXpath2"))));
 			if (respectiveTab.isDisplayed()) {
 				respectiveTab.click();
 				logger.info(tabName + " tab is selected");
 			}
+
 		}
 
 		// click on the view tabs
@@ -557,7 +556,23 @@ public class CommonMethods {
 			return false;
 		}
 
+	public void selectSpecificStatus(String Status) throws InterruptedException {
+		Thread.sleep(3000);
+		WebElement statusDropdowm = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("statusdropdowm"))));
+		statusDropdowm.click();
+		List<WebElement> listOfDD = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("statusDDList"))));
+		for ( WebElement option:listOfDD){
+			if(option.getText().equals(Status))
+			{
+				option.click();
+			}
+		}
+
 	}
+
+}
+
+
 
 
 

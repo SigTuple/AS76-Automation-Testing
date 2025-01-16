@@ -5,24 +5,158 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e36e434-e668-4b85-b9db-45722b65adae" name="Changes" comment="new project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Platelet/ReviewPatchesInPatchViewAndSplitView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Platelet/ReviewPlateleyMorphologyCellType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Platelet/ViewAndModifyThePlateletCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReportListing/VerifyTheListReportPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReportSignOff/verifyReportSignoff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/summary/Summary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Platelet/ReviewPatchesInPatchViewAndSplitViewTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Platelet/ReviewPlateleyMorphologyCellTypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Platelet/ViewAndModifyThePlateletCountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ReportListing/VerifyTheListReportPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ReportSignOff/verifyReportSignoffTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/summary/SummaryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FeatureNotToAutomate" beforeDir="false" afterPath="$PROJECT_DIR$/FeatureNotToBeAutomated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mandara-Automation-Testing" beforeDir="false" afterPath="$PROJECT_DIR$/Mandara-Automation-Testing" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/appLogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/ReportViewer.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/ReportViewer.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/AS76Reporting-RBC-17-12-1815.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-17-12-1819.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommonTools/ViewOriginalModifiedreports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommonTools/ViewOriginalModifiedreports.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommonTools/ViewReferenceLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommonTools/ViewReferenceLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/CommonMethod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/CommonMethod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Platelet.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Platelet.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Rbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Rbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/ReportListing.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/ReportListing.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/ReportSignOff.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/ReportSignOff.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Data/SessionManagement.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/SessionManagement.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Summary.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Summary.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Wbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Wbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GenericMethodForAllTab/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GenericMethodForAllTab/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ReportViewer/ReportViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportViewer/ReportViewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SessionManagement/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SessionManagement/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WBC/VerifyWbcParameters/WBCParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WBC/VerifyWbcParameters/WBCParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CommonTools/ViewOriginalModifiedreportsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommonTools/ViewOriginalModifiedreportsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CommonTools/ViewReferenceLibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommonTools/ViewReferenceLibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTabTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ReportViewer/ReportViewerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReportViewer/ReportViewerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/approveAndRejectButtonDisplayedAndItsEnabledOnPlateletTab.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/approveAndRejectButtonDisplayedAndItsEnabledOnPlateletTab.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/approveAndRejectButtonDisplayedAndItsEnabledOnRbcTab.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/approveAndRejectButtonDisplayedAndItsEnabledOnRbcTab.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/clickOnImageSettingIconAndVerifyingCharcteristicsOnPLTTab.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/clickOnImageSettingIconAndVerifyingCharcteristicsOnPLTTab.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/clickOnImageSettingIconAndVerifyingCharcteristicsOnWbcTab.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/clickOnImageSettingIconAndVerifyingCharcteristicsOnWbcTab.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScanTimeText.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScanTimeText.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/referenceToolBarOnPltTab.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/referenceToolBarOnPltTab.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/referenceToolIconOnWbc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/referenceToolIconOnWbc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/validlogin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/validlogin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyPresenceOfSlideDetailsOnSummaryTab.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/verifyPresenceOfSlideDetailsOnSummaryTab.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/VerifyTheReclassificationOfNeutrophilWithAllOtherCells.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/VerifyTheReclassificationOfWBCToLargePlatelet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/VerifyTheReclassificationOfWBCToPlateletClumps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/alteringTheSizeOfLineOnPLT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/alteringTheSizeOfLineOnRBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/alteringTheSizeOfLineOnWBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/alternationOFCircleTool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/alternationOFCircleToolOnPLT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/alternationOFCircleToolOnRbc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/alternationOfZoomLevel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/alternationOfZoomLevelInPlt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/alternationOfZoomLevelOnRbc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/approveAndRejectButtonDisplayedAndItsEnabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/approveAndRejectButtonDisplayedAndItsEnabledOnPlateletTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/approveAndRejectButtonDisplayedAndItsEnabledOnRbcTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/clickOnImageSettingIconAndVerifyingCharcteristicsOnPLTTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/clickOnImageSettingIconAndVerifyingCharcteristicsOnRbcTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/clickOnImageSettingIconAndVerifyingCharcteristicsOnWbcTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/clickedOnRbcTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/columnOnColorSubTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/columnOnInclusionSubTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/columnOnShapeSubTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/deselectingTheCircleTool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/deselectingTheCircleToolOnRBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/deselectingTheLineTool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/deselectingTheLineToolOnRBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/deselectingTheZoomLevel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/deselectingTheZoomLevelOnRBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/openToBeReviewedStatusReport.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/percentageValueOfElliptocytesOnRbcSizeTabAfterRegrading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/percentageValueOfMacrocytesOnRbcSizeTabAfterRegrading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/percentageValueOfMicrocytesOnRbcSizeTabAfterRegrading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/percentageValueOfOvalocytesOnRbcShapeTabAfterRegrading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/percentageValueOfTeardropCellsOnRbcSizeTabAfterRegrading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScanImageArea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScanImageAreaOnWbcTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScanTimeText.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScanTimeTextOnPlateletTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScanTimeTextOnRBCTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScanTimeTextOnWBCTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScannedByText.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScannedByTextOnPlateletTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScannedByTextOnRbcTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScannedByTextOnWbcTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScannedONText.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScannedONTextOnPlateletTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScannedONTextOnRbcTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/presenceOfScannedONTextOnWbcTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/referenceToolBarONRbcTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/referenceToolBarOnPltTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/referenceToolIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/referenceToolIconOnWbc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/samePatchesArePresentOnSplitAndPatchViewOnColorTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectAndDeselectTheCellNameCheckBox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectAndSelectTheCellNameCheckBoxONWBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectionOCircleTool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectionOCircleToolOnPlatelet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectionOCircleToolOnRBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectionOZoomTool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectionOZoomToolOnPlatelet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectionOZoomToolOnRBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectionOfLineTool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectionOfLineToolOnPlatelet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/selectionOfLineToolOnRBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/validlogin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyHeaderNameOnSizeSubTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyPresenceOfSlideDetailsOnPlateletTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyPresenceOfSlideDetailsOnRBCTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyPresenceOfSlideDetailsOnSummaryTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyPresenceOfSlideDetailsOnWBCTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyRegradingInBasophilicStipplingcellType.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyRegradingInInclusionCellType.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyRegradingInPappenheimerBodiescellType.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifySeelctionOfWBCTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifySelctionOfWBCTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheColumnPresentInTheWBCTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheSizeOfPatchesInPixelForHypochromicCellsInColorTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheSizeOfPatchesInPixelForMicrocytes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheSizeOfPatchesInPixelForPolychromaticCellsInColorTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheSizeOfPatchesInPixelForWBCTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheWBCCellCountIsEqualToTotalCount.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyWBCCellsNames.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyingGradeValueAccordingToPercentageOnAnisocytosisCell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyingGradeValueAccordingToPercentageOnMacrocytes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyingGradeValueAccordingToPercentageOnMicrocytes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyingGradeValueAccordingToPercentageOnOvalocytes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyingGradeValueAccordingToPercentageOnPokilocytes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyingGradeValueAccordingToPercentageOnTargetCells.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyingGradeValueAccordingToPercentageOnTeardropCells.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyingPercentageValueStruckOffAfterRegradingInFragmentedCells.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyingPercentageValueStruckOffAfterRegradingInMacrocytesCell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WBC/VerifyWbcParametersTest/WBCParametersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WBC/VerifyWbcParametersTest/WBCParametersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CommonTools/ViewOriginalModifiedreports.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CommonTools/ViewOriginalModifiedreports.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CommonTools/ViewReferenceLibrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CommonTools/ViewReferenceLibrary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Data/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Data/Property.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GenericMethodForAllTab/CommonMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GenericMethodForAllTab/CommonMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ReportViewer/ReportViewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReportViewer/ReportViewer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SessionManagement/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SessionManagement/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WBC/VerifyWbcParameters/WBCParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WBC/VerifyWbcParameters/WBCParameters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CommonTools/ViewOriginalModifiedreportsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CommonTools/ViewOriginalModifiedreportsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CommonTools/ViewReferenceLibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CommonTools/ViewReferenceLibraryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTabTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTabTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBCTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypesTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/ReportViewer/ReportViewerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ReportViewer/ReportViewerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WBC/VerifyWbcParametersTest/WBCParametersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WBC/VerifyWbcParametersTest/WBCParametersTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,30 +207,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/rupakumari/Downloads/AS76-REPORTING/src/main/java/summary",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rupakumari/Downloads/AS76-REPORTING/src/main/java/Data&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/summary" />
-      <recent name="$PROJECT_DIR$/src/main/java/WBC" />
-      <recent name="$PROJECT_DIR$/src/test/java/SessionManagement" />
-      <recent name="$PROJECT_DIR$/src/main/java/SessionManagement" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/Data" />
+      <recent name="$PROJECT_DIR$/src/test/java/ReportSignOff" />
+      <recent name="$PROJECT_DIR$/src/main/java/ReportSignOff" />
+      <recent name="$PROJECT_DIR$/src/test/java/CommonTools" />
+      <recent name="$PROJECT_DIR$/src/main/java/CommonTools" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="RBC.VerifySplitViewOfRbcTab" />
       <recent name="RBC.VerifySubTabOfRBC" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Platelet" />
       <recent name="RBC.VerifyThePatchViewOfRBC" />
       <recent name="RBC.VerifyThePatchSizeOfRBC" />
       <recent name="RBC.VerifyTheRegradingOfRbcCellTypes" />

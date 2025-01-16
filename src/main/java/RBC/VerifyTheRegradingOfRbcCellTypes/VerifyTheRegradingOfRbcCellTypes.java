@@ -260,27 +260,28 @@ public class VerifyTheRegradingOfRbcCellTypes extends CommonMethods {
                 break;  // Exit the loop once the selected radio button is found
             }
         }
-       // Now compare the grade Percentage and selectedGrade
-        if (gradePercentage == 0.0) {
-            // Check if the selected grade is also 0
-            if (selectedGrade == 0) {
-                logger.info("Grade value is correctly set to 0 when the percentage is 0.0 for cell " + actualCellName);
-                if (actualColors.equals("#32985d")) {
-                    logger.info("Non-significant grade: Correct green color code is present for cell " + actualCellName);
-                    flag = true;
-                } else {
-                    logger.error("Expected green color for non-significant grade but found: " + actualColors + " for cell " + actualCellName);
-                    throw new AssertionError("Color mismatch for non-significant grade in cell: " + actualCellName);
-                }
-            } else {
-                logger.error("Grade value should be 0 but found " + selectedGrade + " for cell " + actualCellName);
-                throw new AssertionError("Grade value mismatch for cell: " + actualCellName);
-            }
-        }
+
 
         // Check for Microcytes, Macrocytes, Poikilocytosis, Hypochromic Cells
         if (Arrays.asList("Microcytes", "Macrocytes", "Poikilocytosis", "Hypochromic Cells").contains(actualCellName)) {
-            if (gradePercentage >= 0.1 && gradePercentage <= 10.0) {
+
+            // Now compare the grade Percentage and selectedGrade
+            if (gradePercentage == 0) {
+                // Check if the selected grade is also 0
+                if (selectedGrade == 0) {
+                    logger.info("Grade value is correctly set to 0 when the percentage is 0.0 for cell " + actualCellName);
+                    if (actualColors.equals("#32985d")) {
+                        logger.info("Non-significant grade: Correct green color code is present for cell " + actualCellName);
+                        flag = true;
+                    } else {
+                        logger.error("Expected green color for non-significant grade but found: " + actualColors + " for cell " + actualCellName);
+                        throw new AssertionError("Color mismatch for non-significant grade in cell: " + actualCellName);
+                    }
+                } else {
+                    logger.error("Grade value should be 0 but found " + selectedGrade + " for cell " + actualCellName);
+                    throw new AssertionError("Grade value mismatch for cell: " + actualCellName);
+                }
+            }else if (gradePercentage >= 0.1 && gradePercentage <= 10.0) {
                 if (selectedGrade == 1 && actualColors.equals("#32985d")) {
                     logger.info("Non-significant grade: Correct green color code is present for cell " + actualCellName);
                     flag = true;
@@ -296,12 +297,42 @@ public class VerifyTheRegradingOfRbcCellTypes extends CommonMethods {
                     logger.error("Expected red color but found " + actualColors + " for cell " + actualCellName);
                     throw new AssertionError("Color mismatch for significant grade.");
                 }
+            }  else if (gradePercentage > 20.0) {
+                if (selectedGrade == 3) {
+                    logger.info("Grade value is correctly set to 3 when the percentage is greater than 20 for cell " + actualCellName);
+                    if ( actualColors.equals("#c61b1c")) {
+                        logger.info("Significant grade: Correct red color code is present for cell " + actualCellName);
+                        flag=true;
+                    } else {
+                        logger.error("Expected red color for significant grade but found: " + actualColors + " for cell " + actualCellName);
+                        throw new AssertionError("Color mismatch for significant grade in cell: " + actualCellName);
+                    }
+                } else {
+                    logger.error("Grade value should be 3 but found " + selectedGrade + " for cell " + actualCellName);
+                    throw new AssertionError("Grade value mismatch for cell: " + actualCellName);
+                }
             }
         }
 
         // Check for Elliptocytes, Teardrop cells, etc.
         else if (Arrays.asList("Elliptocytes", "Teardrop Cells", "Target Cells", "Echinocytes", "Acanthocytes*", "Spherocytes*", "Stomatocytes*", "Anisocytosis", "Polychromatic cells", "Basophilic stippling").contains(actualCellName)) {
-            if (gradePercentage > 0.0 && gradePercentage <= 5.0) {
+            // Now compare the grade Percentage and selectedGrade
+            if (gradePercentage == 0.0) {
+                // Check if the selected grade is also 0
+                if (selectedGrade == 0) {
+                    logger.info("Grade value is correctly set to 0 when the percentage is 0.0 for cell " + actualCellName);
+                    if (actualColors.equals("#32985d")) {
+                        logger.info("Non-significant grade: Correct green color code is present for cell " + actualCellName);
+                        flag = true;
+                    } else {
+                        logger.error("Expected green color for non-significant grade but found: " + actualColors + " for cell " + actualCellName);
+                        throw new AssertionError("Color mismatch for non-significant grade in cell: " + actualCellName);
+                    }
+                } else {
+                    logger.error("Grade value should be 0 but found " + selectedGrade + " for cell " + actualCellName);
+                    throw new AssertionError("Grade value mismatch for cell: " + actualCellName);
+                }
+            }else if (gradePercentage > 0.1 && gradePercentage <= 5.0) {
                 if (selectedGrade == 1 && actualColors.equals("#32985d")) {
                     logger.info("Non-significant grade: Correct green color code is present for cell " + actualCellName);
                     flag = true;
@@ -318,11 +349,42 @@ public class VerifyTheRegradingOfRbcCellTypes extends CommonMethods {
                     throw new AssertionError("Color mismatch for significant grade.");
                 }
             }
+            else if (gradePercentage > 20.0) {
+                if (selectedGrade == 3) {
+                    logger.info("Grade value is correctly set to 3 when the percentage is greater than 20 for cell " + actualCellName);
+                    if ( actualColors.equals("#c61b1c")) {
+                        logger.info("Significant grade: Correct red color code is present for cell " + actualCellName);
+                        flag=true;
+                    } else {
+                        logger.error("Expected red color for significant grade but found: " + actualColors + " for cell " + actualCellName);
+                        throw new AssertionError("Color mismatch for significant grade in cell: " + actualCellName);
+                    }
+                } else {
+                    logger.error("Grade value should be 3 but found " + selectedGrade + " for cell " + actualCellName);
+                    throw new AssertionError("Grade value mismatch for cell: " + actualCellName);
+                }
+            }
         }
 
         // Check for Ovalocytes
         else if (actualCellName.equals("Ovalocytes")) {
-            if (gradePercentage >= 0.0 && gradePercentage <= 6.0) {
+            // Now compare the grade Percentage and selectedGrade
+            if (gradePercentage == 0) {
+                // Check if the selected grade is also 0
+                if (selectedGrade == 0) {
+                    logger.info("Grade value is correctly set to 0 when the percentage is 0.0 for cell " + actualCellName);
+                    if (actualColors.equals("#32985d")) {
+                        logger.info("Non-significant grade: Correct green color code is present for cell " + actualCellName);
+                        flag = true;
+                    } else {
+                        logger.error("Expected green color for non-significant grade but found: " + actualColors + " for cell " + actualCellName);
+                        throw new AssertionError("Color mismatch for non-significant grade in cell: " + actualCellName);
+                    }
+                } else {
+                    logger.error("Grade value should be 0 but found " + selectedGrade + " for cell " + actualCellName);
+                    throw new AssertionError("Grade value mismatch for cell: " + actualCellName);
+                }
+            }else if (gradePercentage >= 0.1 && gradePercentage <= 6.0) {
                 if (selectedGrade == 1 && actualColors.equals("#32985d")) {
                     logger.info("Non-significant grade: Correct green color code is present for Ovalocytes.");
                     flag = true;
@@ -338,9 +400,40 @@ public class VerifyTheRegradingOfRbcCellTypes extends CommonMethods {
                     logger.error("Expected red color but found " + actualColors + " for Ovalocytes.");
                     throw new AssertionError("Color mismatch for significant grade.");
                 }
+
+            }  else if (gradePercentage > 20.0) {
+                if (selectedGrade == 3) {
+                    logger.info("Grade value is correctly set to 3 when the percentage is greater than 20 for cell " + actualCellName);
+                    if ( actualColors.equals("#c61b1c")) {
+                        logger.info("Significant grade: Correct red color code is present for cell " + actualCellName);
+                        flag=true;
+                    } else {
+                        logger.error("Expected red color for significant grade but found: " + actualColors + " for cell " + actualCellName);
+                        throw new AssertionError("Color mismatch for significant grade in cell: " + actualCellName);
+                    }
+                } else {
+                    logger.error("Grade value should be 3 but found " + selectedGrade + " for cell " + actualCellName);
+                    throw new AssertionError("Grade value mismatch for cell: " + actualCellName);
+                }
             }
         } else if (actualCellName.equals("Fragmented Cells")) {
-                if (gradePercentage >= 0.0 && gradePercentage <= 1.0) {
+            // Now compare the grade Percentage and selectedGrade
+            if (gradePercentage == 0) {
+                // Check if the selected grade is also 0
+                if (selectedGrade == 0) {
+                    logger.info("Grade value is correctly set to 0 when the percentage is 0.0 for cell " + actualCellName);
+                    if (actualColors.equals("#32985d")) {
+                        logger.info("Non-significant grade: Correct green color code is present for cell " + actualCellName);
+                        flag = true;
+                    } else {
+                        logger.error("Expected green color for non-significant grade but found: " + actualColors + " for cell " + actualCellName);
+                        throw new AssertionError("Color mismatch for non-significant grade in cell: " + actualCellName);
+                    }
+                } else {
+                    logger.error("Grade value should be 0 but found " + selectedGrade + " for cell " + actualCellName);
+                    throw new AssertionError("Grade value mismatch for cell: " + actualCellName);
+                }
+            }else if (gradePercentage >= 0.1 && gradePercentage <= 1.0) {
                     if (selectedGrade == 1 && actualColors.equals("#c61b1c")) {
                         logger.info("Significant grade: Correct red color code is present for Fragmented Cells with grade 1.");
                         flag = true;
@@ -365,28 +458,8 @@ public class VerifyTheRegradingOfRbcCellTypes extends CommonMethods {
                         throw new AssertionError("Color mismatch for significant grade in Fragmented Cells.");
                     }
                 }
-            }
-
-
-
-
-
-        // Check if percentage is greater than 20 and grade value is 3
-        else if (gradePercentage > 20.0) {
-            if (selectedGrade == 3) {
-                logger.info("Grade value is correctly set to 3 when the percentage is greater than 20 for cell " + actualCellName);
-                if ( actualColors.equals("#c61b1c")) {
-                    logger.info("Significant grade: Correct red color code is present for cell " + actualCellName);
-                    flag=true;
-                } else {
-                    logger.error("Expected red color for significant grade but found: " + actualColors + " for cell " + actualCellName);
-                    throw new AssertionError("Color mismatch for significant grade in cell: " + actualCellName);
-                }
-            } else {
-                logger.error("Grade value should be 3 but found " + selectedGrade + " for cell " + actualCellName);
-                throw new AssertionError("Grade value mismatch for cell: " + actualCellName);
-            }
         }
+
 
 
         return flag;

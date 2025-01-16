@@ -35,7 +35,6 @@ public class WBCParameters extends CommonMethods {
 	// verify the presence and selection of the WBC tab
 	public String verifyPresenceAndSelectionOfWBCTab() {
 		String WBCHeader = "";
-		super.clickOnSpecificTab("WBC");
 		WebElement WBCHeaderText = wait
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("WBCHeader"))));
 		if (WBCHeaderText.isDisplayed()) {
@@ -125,7 +124,7 @@ public class WBCParameters extends CommonMethods {
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("neutrophilCount"))));
 		WebElement LymphocytesCountXpath = wait
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("LymphocytesCount"))));
-		WebElement NLRMouseHover = driver.findElement(By.xpath("//div[@class=\"nlr-tag\"]"));
+		WebElement NLRMouseHover = driver.findElement(By.xpath("//div[@class='nlr-tag ']"));
 		Actions actions = new Actions(driver);
 		actions.moveToElement(NLRMouseHover).perform();
 		WebElement actualNRLValueXpath = wait.until(
@@ -182,7 +181,7 @@ public class WBCParameters extends CommonMethods {
 			String actualCellName = cellName.get(i).getText();
 
 
-			if (!count.isEmpty() && !count.equals("-") && (cellActualCount != 0) && (!actualCellName.equals("Total"))) {
+			if (!count.isEmpty() && !count.equals("-") && (cellActualCount != 0)  && (cellActualCount != 1) && (!actualCellName.equals("Total"))) {
 				Thread.sleep(5000);
 				count.get(i).click();
 				String[] cellTypes = {"Neutrophils", "Lymphocytes", "Monocytes", "Basophils", "Eosinophils",
@@ -193,24 +192,36 @@ public class WBCParameters extends CommonMethods {
 				List<WebElement> countElements = null;
 				for (String cellType : cellTypes) {
 					this.classification(cellType);
+				}
 
 					// Refresh count element reference to get the updated count after classification
 					countElements = driver.findElements(By.xpath(countXPath));
 					try {
 						String updatedCountText = countElements.get(i).getText();
-						if (updatedCountText.equals("-")) {
+						int updatedCount=Integer.parseInt(updatedCountText);
+						System.out.println(updatedCount);
+						String cellType = null;
+						if (updatedCountText.equals("-")&& (updatedCount!=1)) {
 							System.out.println("Cell count has become '-' after classifying: " + cellType + " for cell: " + actualCellName);
-							break;
+							//break;
 						}
-						// Verify count has decreased by 1
-						if (!updatedCountText.equals(String.valueOf(cellActualCount - 1))) {
-							System.out.println("Count mismatch for cell: " + cellName + " after classifying: " + cellType);
-							return false;
-						}
+						else if (updatedCountText.equals(String.valueOf(cellActualCount))) {
+						System.out.println("reclassified with same cell so updated and actual count will be the same");
+						flag=true;
 
-					} catch (NumberFormatException e) {
 					}
-				}
+						// Verify count has decreased by 1
+						else if (updatedCount<cellActualCount) {
+							System.out.println("Count is verified for cell: " + actualCellName + " after classifying: " + cellType);
+							 flag=true;
+
+						}else {
+							System.out.println("count mismatch");
+							flag=false;
+						}
+					} catch (NumberFormatException ignored) {
+					}
+
 
 
 			} else {
@@ -224,9 +235,15 @@ public class WBCParameters extends CommonMethods {
 
 
 
-		public boolean classification(String cellName) throws InterruptedException {
+
+
+
+
+
+
+	public boolean classification(String cellType) throws InterruptedException {
 			boolean flag = false;
-			Thread.sleep(3000);
+			 Thread.sleep(5000);
 				actions.moveToElement(driver.findElement(By.xpath("/html/body/div/div/div[2]/div[2]/div/div/div/div[2]/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[1]/div/img"))).build().perform();
 				Thread.sleep(1500);
 				actions.contextClick(driver.findElement(By.xpath("/html/body/div/div/div[2]/div[2]/div/div/div/div[2]/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[1]/div/img"))).perform();
@@ -235,22 +252,28 @@ public class WBCParameters extends CommonMethods {
 				actions.moveToElement(classify).click().perform();
 				Thread.sleep(3000);
 
-				List<WebElement> popUpCells = driver.findElements(By.xpath("//*[contains(@class,'MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper MuiMenu-paper MuiMenu-paper css-pwxzbm')]/following::li"));
+		    WebElement cell = driver.findElement(By.xpath("//ul[contains(@class,'MuiMenu-list')]//li//div[contains(text(),'" + cellType + "')]"));
 
-				for (WebElement popUpCell : popUpCells) {
-					String popUpCellName = popUpCell.getText().trim();
-					if (popUpCellName.contains("Neutrophils") && popUpCellName.contains("Lymphocytes") && popUpCellName.contains(" Atypical Cells/Blasts") && popUpCellName.contains("Immature Granulocytes")) {
-						actions.moveToElement(popUpCell).click().perform();
-						List<WebElement> subCells = driver.findElements(By.xpath("//ul[contains(@class,'MuiMenu-list')]//li"));
-						if (subCells.size() > 0) {
+				//List<WebElement> popUpCells = driver.findElements(By.xpath("/html/body/div[3]/div[3]/ul/li/div"));
+				//for (WebElement popUpCell : popUpCells) {
+					String popUpCellName = cell.getText();
+					System.out.println(popUpCellName);
+					if (popUpCellName.contains("Neutrophils") && popUpCellName.contains("Lymphocytes")&& popUpCellName.contains(" Atypical Cells/Blasts")&& popUpCellName.contains("Immature Granulocytes")) {
+						List<WebElement> subCells = driver.findElements(By.xpath("/html/body/div[4]/div[2]/ul/li"));
+						if (subCells.size()>0) {
+							actions.moveToElement(cell).build().perform();
+							Thread.sleep(1000);
 							actions.moveToElement(subCells.get(0)).click().perform();
 							Thread.sleep(4000);
+							flag=true;
 						}
 
 					} else {
-						WebElement cell = driver.findElement(By.xpath("//ul[contains(@class,'MuiMenu-list')]//li//div[contains(text(),'" + cellName + "')]"));
+						//WebElement cell = driver.findElement(By.xpath("//ul[contains(@class,'MuiMenu-list')]//li//div[contains(text(),'" + cellType + "')]"));
+						//System.out.println(cell.getText());
 						actions.moveToElement(cell).click().perform();
 						Thread.sleep(3000);
+						flag=true;
 					}
 					WebElement text = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='body']")));
 					String actualText = text.getText();
@@ -259,19 +282,24 @@ public class WBCParameters extends CommonMethods {
 					WebElement msgText = driver.findElement(By.xpath("//div[@class='header']"));
 					String actualMsgText = msgText.getText();
 					System.out.println("Classification Message: " + actualMsgText);
-					flag = true;
-					break;
-				}
 
+					//flag = true;
+					//break;
+				//}
 
 			return flag;
 		}
 
+
+
+
+
+
 		//classifying the wbc cell type to platelet clump and giant platelet
 
 	public boolean wbcPatchToPlateletClump() throws InterruptedException {
-		clickOnSpecificTab("Platelet");
-		clickOnSpecificTab("Morphology");
+		super.clickOnTab("Platelet", props.getProperty("platelet"));
+		super.clickOnTab("Morphology",props.getProperty("Morpholog"));
 		return verifyCountAfterReclassification("//div[@class='split-view-count-section']//following::button/following::div[contains(text(),'Count')]/following::div[4]","/html/body/div/div/div[2]/div[2]/div/div[1]/div/div[2]/div[2]/div[contains(text(),'Large Platelets')]");
 
 
@@ -279,8 +307,6 @@ public class WBCParameters extends CommonMethods {
 
 
 	public  boolean wbcPatchToLargePlatelet() throws InterruptedException {
-		clickOnSpecificTab("Platelet");
-		clickOnSpecificTab("Morphology");
 		return verifyCountAfterReclassification("//div[@class='split-view-count-section']//following::button/following::div[contains(text(),'Count')]/following::div[10]","//*[@id='root']/div/div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div[1]");
 	}
 

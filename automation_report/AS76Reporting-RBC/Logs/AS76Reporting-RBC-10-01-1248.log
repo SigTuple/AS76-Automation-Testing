@@ -1,0 +1,1109 @@
+2025-01-10 12:16:49 INFO  ScreenshotListeners:29 - 
+================:  valid Login :====================
+
+2025-01-10 12:16:54 INFO  LoginTest:49 - user Logged in successfully
+2025-01-10 12:16:54 INFO  ScreenshotListeners:29 - 
+================:  verify Sig Logo And P B S :====================
+
+2025-01-10 12:16:54 INFO  VerifyTheListReportPage:44 - Sigtuple logo is Loaded .
+2025-01-10 12:16:54 INFO  VerifyTheListReportPage:45 - PBS Text is loaded
+2025-01-10 12:16:54 INFO  VerifyTheListReportPageTest:41 -  Sigtuple logo and PBS is Present on the page
+2025-01-10 12:16:54 INFO  ScreenshotListeners:29 - 
+================:  verify The Kebab Menu Icon :====================
+
+2025-01-10 12:16:54 INFO  VerifyTheListReportPage:56 - Kebab menu icon is loaded
+2025-01-10 12:16:54 INFO  VerifyTheListReportPageTest:48 - Kebab menu is Displayed on the app 
+2025-01-10 12:16:54 INFO  ScreenshotListeners:29 - 
+================:  verifythe Search And Filter And Checkbox :====================
+
+2025-01-10 12:16:54 INFO  VerifyTheListReportPage:69 - Search  Field  is displayed
+2025-01-10 12:16:54 INFO  VerifyTheListReportPage:70 - Filter button is displayed
+2025-01-10 12:16:54 INFO  VerifyTheListReportPage:71 - clear filter is displayed
+2025-01-10 12:16:54 INFO  VerifyTheListReportPageTest:55 -  Search textbox and Filter is Present on the page
+2025-01-10 12:16:54 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of The My Report Check Box :====================
+
+2025-01-10 12:16:54 INFO  VerifyTheListReportPage:81 - My report check box is displayed
+2025-01-10 12:16:54 INFO  VerifyTheListReportPage:82 - My report check box is Active
+2025-01-10 12:16:54 INFO  VerifyTheListReportPageTest:62 - My report Check box  is Present on the page
+2025-01-10 12:16:54 INFO  ScreenshotListeners:29 - 
+================:  verifyfunctionalityofmyreportcheckbox :====================
+
+2025-01-10 12:16:59 INFO  VerifyTheListReportPage:338 -  My Report is enable
+2025-01-10 12:17:02 INFO  VerifyTheListReportPageTest:68 -  Verify the functionality of the my report check box
+2025-01-10 12:17:02 INFO  ScreenshotListeners:29 - 
+================:  verity Header :====================
+
+2025-01-10 12:17:02 INFO  VerifyTheListReportPage:95 -  Report List header is Displayed
+2025-01-10 12:17:02 INFO  VerifyTheListReportPageTest:77 - Header of the Report listing is displayed and verified
+2025-01-10 12:17:02 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Search Field :====================
+
+2025-01-10 12:17:12 INFO  VerifyTheListReportPage:116 - Matching the sample Slide Id is displayed
+2025-01-10 12:17:12 INFO  VerifyTheListReportPage:116 - Matching the sample Slide Id is displayed
+2025-01-10 12:17:12 INFO  VerifyTheListReportPage:116 - Matching the sample Slide Id is displayed
+2025-01-10 12:17:22 INFO  VerifyTheListReportPageTest:85 - Functionality of search text field is working fine
+2025-01-10 12:17:22 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Filter Icon :====================
+
+2025-01-10 12:17:22 INFO  VerifyTheListReportPage:141 - Filter icon is present and enabled
+2025-01-10 12:17:22 INFO  VerifyTheListReportPageTest:93 - Functionality of Filter icon is working Fine
+2025-01-10 12:17:22 INFO  ScreenshotListeners:29 - 
+================:  verify The Same Slide Idon Additional Info :====================
+
+2025-01-10 12:17:27 INFO  VerifyTheListReportPage:317 - Additional info icon loaded successfully
+2025-01-10 12:17:27 INFO  VerifyTheListReportPageTest:101 - Functionality Additional info icon is enable and same slide id is Displyed
+2025-01-10 12:17:27 INFO  ScreenshotListeners:29 - 
+================:  verify The Applyt Button :====================
+
+2025-01-10 12:18:09 ERROR BrowserSetUp:182 - verifyTheApplytButton -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //span[contains(@class,'dateComponent_day')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Nehas-MBP', ip: '192.168.0.177', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.1', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/lq/hsr567kj1sx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58057}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: 34d320a7dbaceb82da9185ddc85e6ab4
+
+2025-01-10 12:18:10 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/verifyTheApplytButton.png
+2025-01-10 12:18:10 INFO  ScreenshotListeners:29 - 
+================:  verify The Clear Filter Button :====================
+
+2025-01-10 12:18:10 INFO  VerifyTheListReportPage:297 - Clear Filter is enable
+2025-01-10 12:18:10 INFO  VerifyTheListReportPageTest:128 - Verify the functionality of the apply Button
+2025-01-10 12:18:10 INFO  ScreenshotListeners:29 - 
+================:  verify The Reset Button :====================
+
+2025-01-10 12:18:18 INFO  VerifyTheListReportPage:207 - scane date text field is enable
+2025-01-10 12:18:23 INFO  VerifyTheListReportPageTest:115 - Verify the functionality of the Rest Button
+2025-01-10 12:18:23 INFO  ScreenshotListeners:29 - 
+================:  verify The Filter Close Button :====================
+
+2025-01-10 12:18:33 INFO  VerifyTheListReportPage:367 -  Filter Options close button is displayed
+2025-01-10 12:18:35 INFO  VerifyTheListReportPageTest:135 - Verify the functionality of the Close Button
+2025-01-10 12:18:35 INFO  ScreenshotListeners:29 - 
+================:  verify The Presence Of Filter Option :====================
+
+2025-01-10 12:18:41 INFO  VerifyTheListReportPage:164 -  Filter Option are Loaded
+2025-01-10 12:18:48 INFO  VerifyTheListReportPageTest:108 - Verify the Filter Options
+2025-01-10 12:18:48 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Bookmark Button :====================
+
+2025-01-10 12:18:48 INFO  VerifyTheListReportPage:378 - Bookmark is already filled. Removing bookmark.
+2025-01-10 12:18:58 INFO  VerifyTheListReportPage:389 - Bookmark is displayed
+2025-01-10 12:18:58 INFO  VerifyTheListReportPageTest:142 - Verify the functionality of the Bookmark Button
+2025-01-10 12:18:58 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Bookmark Textfield :====================
+
+2025-01-10 12:19:00 INFO  VerifyTheListReportPage:411 - Bookmark is already filled. Removing bookmark.
+2025-01-10 12:19:08 INFO  VerifyTheListReportPage:430 - Comment Textfield is enable
+2025-01-10 12:19:08 INFO  VerifyTheListReportPageTest:149 - Verify the functionality of the Bookmark textfield 
+2025-01-10 12:19:08 INFO  ScreenshotListeners:29 - 
+================:  verify The Reassign Reviewer :====================
+
+2025-01-10 12:19:12 INFO  VerifyTheListReportPage:507 - user is drop down is available
+2025-01-10 12:19:13 INFO  VerifyTheListReportPageTest:163 - Functionality of assign is working 
+2025-01-10 12:19:13 INFO  ScreenshotListeners:29 - 
+================:  assign :====================
+
+2025-01-10 12:19:22 INFO  VerifyTheListReportPage:486 - user is drop down is available
+2025-01-10 12:19:22 INFO  SummaryTest:39 - Assign the report
+2025-01-10 12:19:22 INFO  ScreenshotListeners:29 - 
+================:  ps Impression :====================
+
+2025-01-10 12:19:23 INFO  SummaryTest:65 - Verify The PS impression text field
+2025-01-10 12:19:23 INFO  ScreenshotListeners:29 - 
+================:  verify Ps Impression Subheader :====================
+
+2025-01-10 12:19:23 INFO  SummaryTest:71 - Verify The PS impression Sub headers
+2025-01-10 12:19:23 INFO  ScreenshotListeners:29 - 
+================:  verify Ps Impression Header :====================
+
+2025-01-10 12:19:23 INFO  ScreenshotListeners:29 - 
+================:  manual Radio Btn Test :====================
+
+2025-01-10 12:19:24 INFO  Summary:144 - Manual Radio button is visible
+2025-01-10 12:19:24 INFO  SummaryTest:82 - Verify The functionality of radio button
+2025-01-10 12:19:24 INFO  ScreenshotListeners:29 - 
+================:  calculated Radio Btn Test :====================
+
+2025-01-10 12:19:24 INFO  Summary:158 -  Calculated Radio button is enable
+2025-01-10 12:19:24 INFO  SummaryTest:88 - Verify The functionality of radio button
+2025-01-10 12:19:24 INFO  ScreenshotListeners:29 - 
+================:  Verify The Presence Of Manual Txt Field Value :====================
+
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 0: Manual = 0.8, Calculated = 0.8
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 1: Manual = 14.0, Calculated = 14.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 2: Manual = 0.8, Calculated = 0.8
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 3: Manual = 59.3, Calculated = 59.3
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 4: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 5: Manual = 22.0, Calculated = 22.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 6: Manual = 3.0, Calculated = 3.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 7: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 8: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 9: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 10: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 11: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 12: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 13: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 14: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 15: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  Summary:180 - Value Match at Index 16: Manual = 0.0, Calculated = 0.0
+2025-01-10 12:19:25 INFO  SummaryTest:94 - Verify The Presence of values in manual text Field
+2025-01-10 12:19:25 INFO  ScreenshotListeners:29 - 
+================:  verify The Presence Of Diffrencial Count :====================
+
+2025-01-10 12:19:25 INFO  Summary:201 - The differential count note message is visible
+2025-01-10 12:19:25 INFO  ScreenshotListeners:29 - 
+================:  clicked On Rbc Tab :====================
+
+2025-01-10 12:19:34 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:19:34 INFO  ScreenshotListeners:29 - 
+================:  presence Of Sub Tab Name On Rbc :====================
+
+2025-01-10 12:19:34 INFO  VerifyUiOfRbcSizeSubTabTest:65 - all sub tab names are present on RBCInclusions
+2025-01-10 12:19:34 INFO  ScreenshotListeners:29 - 
+================:  verify Header Name On Size Sub Tab :====================
+
+2025-01-10 12:19:34 INFO  VerifyUiOfRbcSizeSubTabTest:79 - header name is verified on Size sub tab :Cell name
+Grade
+0
+1
+2
+3
+%
+2025-01-10 12:19:34 INFO  ScreenshotListeners:29 - 
+================:  verify The Cell Name And Its Order On Size Sub Tab :====================
+
+2025-01-10 12:19:34 INFO  VerifyUiOfRbcSizeSubTabTest:87 - cell name and its order is verified on Size sub tab
+2025-01-10 12:19:34 INFO  ScreenshotListeners:29 - 
+================:  note Text Message On Size Tab :====================
+
+2025-01-10 12:19:34 INFO  VerifyUiOfRbcSizeSubTabTest:95 - Note Text Message is verified on Size Tab:true
+2025-01-10 12:19:34 INFO  ScreenshotListeners:29 - 
+================:  significant_info :====================
+
+2025-01-10 12:19:34 INFO  VerifyUiOfRbcSizeSubTabTest:103 - significant and non significant text are verified on Rbc size tab
+2025-01-10 12:19:34 INFO  ScreenshotListeners:29 - 
+================:  default Cell Selection :====================
+
+2025-01-10 12:19:34 INFO  VerifyUiOfRbcSizeSubTabTest:111 - Default cell selection on RBC TAB is verified
+2025-01-10 12:19:34 INFO  ScreenshotListeners:29 - 
+================:  navigate To Shape Tab :====================
+
+2025-01-10 12:19:40 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:19:40 INFO  VerifyUiOfRbcShapeSubTabTest:49 - shape tab is clicked successfully
+2025-01-10 12:19:40 INFO  ScreenshotListeners:29 - 
+================:  column On Shape Sub Tab :====================
+
+2025-01-10 12:19:40 INFO  VerifyUiOfRbcShapeSubTabTest:63 - column name is verified on Shape sub TabCell name
+Grade
+0
+1
+2
+3
+%
+2025-01-10 12:19:40 INFO  ScreenshotListeners:29 - 
+================:  cell Name On Shape Sub Tab :====================
+
+2025-01-10 12:19:40 INFO  VerifyUiOfRbcShapeSubTabTest:70 - All cell names are verified on Shape sub tab
+2025-01-10 12:19:40 INFO  ScreenshotListeners:29 - 
+================:  note Message On Shape Tab :====================
+
+2025-01-10 12:19:40 INFO  VerifyUiOfRbcShapeSubTabTest:78 - Note message is verified on Shape tab:true
+2025-01-10 12:19:40 INFO  ScreenshotListeners:29 - 
+================:  significatnt Non Significant Text On Shape Tab :====================
+
+2025-01-10 12:19:40 INFO  VerifyUiOfRbcShapeSubTabTest:87 - Significant and non significant text are present on shape sub tab
+2025-01-10 12:19:40 INFO  ScreenshotListeners:29 - 
+================:  default Cell Selection On Shape Tab :====================
+
+2025-01-10 12:19:40 INFO  VerifyUiOfRbcShapeSubTabTest:96 - default cell selections are verified on Shape Tab 
+2025-01-10 12:19:40 INFO  ScreenshotListeners:29 - 
+================:  asteric Mark S On Manual Sub Classification :====================
+
+2025-01-10 12:19:40 INFO  VerifyUiOfRbcShapeSubTabTest:104 - manual sub-classification cells are verified on Shape tab
+2025-01-10 12:19:40 INFO  ScreenshotListeners:29 - 
+================:  colour Code Of Significant Cells :====================
+
+2025-01-10 12:19:40 INFO  VerifyUiOfRbcShapeSubTabTest:113 - red colours are verified for significant cells
+2025-01-10 12:19:40 INFO  ScreenshotListeners:29 - 
+================:  colour Code Of Non Significant Cells :====================
+
+2025-01-10 12:19:40 INFO  VerifyUiOfRbcShapeSubTabTest:123 - red colours are verified for significant cells
+2025-01-10 12:19:40 INFO  ScreenshotListeners:29 - 
+================:  navigate To Color Tab :====================
+
+2025-01-10 12:19:45 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:19:45 INFO  VerifyUiOfRbcColorSubTabTest:51 - Color tab is clicked successfully
+2025-01-10 12:19:45 INFO  ScreenshotListeners:29 - 
+================:  column On Color Sub Tab :====================
+
+2025-01-10 12:19:45 INFO  VerifyUiOfRbcColorSubTabTest:65 - column name is verified on Inclusion sub TabCell name
+Grade
+0
+1
+2
+3
+%
+2025-01-10 12:19:45 INFO  ScreenshotListeners:29 - 
+================:  cell Name On Color Sub Tab :====================
+
+2025-01-10 12:19:45 INFO  VerifyUiOfRbcColorSubTabTest:72 - All cell names are verified on Color sub tab
+2025-01-10 12:19:45 INFO  ScreenshotListeners:29 - 
+================:  note Message On Color Tab :====================
+
+2025-01-10 12:19:45 INFO  VerifyUiOfRbcColorSubTabTest:80 - Note message is verified on Color tab
+2025-01-10 12:19:45 INFO  ScreenshotListeners:29 - 
+================:  significatnt Non Significant Text On Color Tab :====================
+
+2025-01-10 12:19:45 INFO  VerifyUiOfRbcColorSubTabTest:89 - Significant and non significant text are present on Color sub tab
+2025-01-10 12:19:45 INFO  ScreenshotListeners:29 - 
+================:  default Cell Selection On Color Tab :====================
+
+2025-01-10 12:19:45 INFO  VerifyUiOfRbcColorSubTabTest:98 - default cell selections are verified on Color Tab 
+2025-01-10 12:19:45 INFO  ScreenshotListeners:29 - 
+================:  asteric Mark S On Manual Sub Classification :====================
+
+2025-01-10 12:19:45 INFO  VerifyUiOfRbcColorSubTabTest:106 - manual sub-classification cells are verified on Color tab
+2025-01-10 12:19:45 INFO  ScreenshotListeners:29 - 
+================:  colour Code Of Significant Cells :====================
+
+2025-01-10 12:19:45 INFO  VerifyUiOfRbcColorSubTabTest:115 - red colours are verified for significant cells: Color
+2025-01-10 12:19:45 INFO  ScreenshotListeners:29 - 
+================:  colour Code Of Non Significant Cells :====================
+
+2025-01-10 12:19:45 INFO  VerifyUiOfRbcColorSubTabTest:125 - red colours are verified for significant cells on Color Tab: Color
+2025-01-10 12:19:45 INFO  ScreenshotListeners:29 - 
+================:  navigate To Inclusion Tab :====================
+
+2025-01-10 12:19:50 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:19:50 INFO  VerifyUiOfRbcInclusionSubTabTest:51 - Inclusions tab is clicked successfully
+2025-01-10 12:19:50 INFO  ScreenshotListeners:29 - 
+================:  column On Inclusion Sub Tab :====================
+
+2025-01-10 12:19:50 INFO  VerifyUiOfRbcInclusionSubTabTest:65 - column name is verified on Inclusion sub TabCell name
+Grade
+0
+1
+2
+3
+%
+2025-01-10 12:19:50 INFO  ScreenshotListeners:29 - 
+================:  cell Name On Inclusion Sub Tab :====================
+
+2025-01-10 12:19:50 INFO  VerifyUiOfRbcInclusionSubTabTest:72 - All cell names are verified on Inclusion sub tab
+2025-01-10 12:19:50 INFO  ScreenshotListeners:29 - 
+================:  significatnt Non Significant Text On Inclusion Tab :====================
+
+2025-01-10 12:19:50 INFO  VerifyUiOfRbcInclusionSubTabTest:89 - Significant and non significant text are present on Inclusion sub tab
+2025-01-10 12:19:50 INFO  ScreenshotListeners:29 - 
+================:  default Cell Selection On Inclusion Tab :====================
+
+2025-01-10 12:19:50 INFO  VerifyUiOfRbcInclusionSubTabTest:98 - default cell selections are verified on Inclusion Tab 
+2025-01-10 12:19:50 INFO  ScreenshotListeners:29 - 
+================:  asteric Mark S On Manual Sub Classification :====================
+
+2025-01-10 12:19:51 INFO  VerifyUiOfRbcInclusionSubTabTest:106 - manual sub-classification cells are verified on Inclusion tab
+2025-01-10 12:19:51 INFO  ScreenshotListeners:29 - 
+================:  colour Code Of Significant Cells :====================
+
+2025-01-10 12:19:51 INFO  VerifyUiOfRbcInclusionSubTabTest:115 - red colours are verified for significant cells: Inclusion
+2025-01-10 12:19:51 INFO  ScreenshotListeners:29 - 
+================:  colour Code Of Non Significant Cells :====================
+
+2025-01-10 12:19:51 INFO  VerifyUiOfRbcInclusionSubTabTest:125 - red colours are verified for significant cells on Inclusion Tab: Inclusion
+2025-01-10 12:19:51 INFO  ScreenshotListeners:29 - 
+================:  presence Of Split View On Size Sub Tab :====================
+
+2025-01-10 12:19:56 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:19:56 INFO  VerifySplitViewOfRBCTab:122 - Clicked on cell: Microcytes
+2025-01-10 12:19:56 INFO  VerifySplitViewOfRBCTab:122 - Clicked on cell: Macrocytes
+2025-01-10 12:19:56 INFO  VerifySplitViewOfRBCTab:122 - Clicked on cell: Anisocytosis
+2025-01-10 12:19:56 INFO  VerifyUiOfRbcSizeSubTabTest:47 - split view icon is present & clickable on size tab for all the cells 
+2025-01-10 12:19:56 INFO  ScreenshotListeners:29 - 
+================:  presence Of Split View On Shape Sub Tab :====================
+
+2025-01-10 12:20:02 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:20:02 INFO  VerifySplitViewOfRBCTab:122 - Clicked on cell: Ovalocytes
+2025-01-10 12:20:02 INFO  VerifySplitViewOfRBCTab:122 - Clicked on cell: Elliptocytes
+2025-01-10 12:20:02 INFO  VerifySplitViewOfRBCTab:122 - Clicked on cell: Fragmented Cells
+2025-01-10 12:20:02 INFO  VerifySplitViewOfRBCTab:122 - Clicked on cell: Echinocytes
+2025-01-10 12:20:03 INFO  VerifySplitViewOfRBCTab:122 - Clicked on cell: Poikilocytosis
+2025-01-10 12:20:03 INFO  VerifyUiOfRbcSizeSubTabTest:56 - split view icon is present & clickable on shape tab for all the cells
+2025-01-10 12:20:03 INFO  ScreenshotListeners:29 - 
+================:  presence Of Split View On Color Sub Tab :====================
+
+2025-01-10 12:20:08 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:20:08 INFO  VerifyUiOfRbcSizeSubTabTest:65 - split view icon is present & clickable on Color tab for all the cells 
+2025-01-10 12:20:08 INFO  ScreenshotListeners:29 - 
+================:  presence Of Split View On Inclusion Sub Tab :====================
+
+2025-01-10 12:20:15 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:20:15 INFO  VerifyUiOfRbcSizeSubTabTest:76 - split view icon is present & clickable on Inclusion tab for all the cells 
+2025-01-10 12:20:15 INFO  ScreenshotListeners:29 - 
+================:  same Patches Are Present On Split And Patch View On Size Tab :====================
+
+2025-01-10 12:20:15 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Microcytes
+2025-01-10 12:20:28 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Macrocytes
+2025-01-10 12:20:41 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Anisocytosis
+2025-01-10 12:20:41 INFO  VerifyUiOfRbcSizeSubTabTest:85 - same patches are available on split view and patch view is verified on size tab 
+2025-01-10 12:20:41 INFO  ScreenshotListeners:29 - 
+================:  same Patches Are Present On Split And Patch View On Shape Tab :====================
+
+2025-01-10 12:20:41 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Ovalocytes
+2025-01-10 12:20:54 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Elliptocytes
+2025-01-10 12:21:07 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Teardrop Cells
+2025-01-10 12:21:20 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Fragmented Cells
+2025-01-10 12:21:32 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Target Cells
+2025-01-10 12:21:45 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Echinocytes
+2025-01-10 12:21:58 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Poikilocytosis
+2025-01-10 12:21:58 INFO  VerifyUiOfRbcSizeSubTabTest:94 - same patches are available on split view and patch view is verified on size tab 
+2025-01-10 12:21:58 INFO  ScreenshotListeners:29 - 
+================:  same Patches Are Present On Split And Patch View On Color Tab :====================
+
+2025-01-10 12:21:58 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Hypochromic Cells
+2025-01-10 12:21:58 INFO  VerifySplitViewOfRBCTab:247 - Clicked on cell: Polychromatic Cells
+2025-01-10 12:21:58 INFO  VerifyUiOfRbcSizeSubTabTest:105 - same patches are available on split view and patch view is verified on size tab 
+2025-01-10 12:21:58 INFO  ScreenshotListeners:29 - 
+================:  manually Graded Cells Not Present On Microscopic View In Size Tab :====================
+
+2025-01-10 12:22:03 INFO  VerifyUiOfRbcSizeSubTabTest:114 -  Acanthocytes manually graded cells are not present on microscopic view cell list in size tab 
+2025-01-10 12:22:03 INFO  ScreenshotListeners:29 - 
+================:  manually Graded Cells Not Present On Microscopic View In Shape :====================
+
+2025-01-10 12:22:07 INFO  VerifyUiOfRbcSizeSubTabTest:123 - manually graded cells are not present on microscopic view in shape tab 
+2025-01-10 12:22:07 INFO  ScreenshotListeners:29 - 
+================:  percentage Value Of Macrocytes On Rbc Size Tab After Regrading :====================
+
+2025-01-10 12:22:12 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:22:13 INFO  CommonMethods:555 - assigned reviwer is:
+2025-01-10 12:22:13 INFO  VerifyTheRegradingOfRbcCellTypes:187 - clicked on cell Macrocytes
+2025-01-10 12:22:14 INFO  VerifyTheRegradingOfRbcCellTypesTest:88 - Verified the calculation of % value for Macrocytes cell types present in the RBC size tab after regrading
+2025-01-10 12:22:14 INFO  ScreenshotListeners:29 - 
+================:  percentage Value Of Microcytes On Rbc Size Tab After Regrading :====================
+
+2025-01-10 12:22:14 INFO  VerifyTheRegradingOfRbcCellTypes:187 - clicked on cell Microcytes
+2025-01-10 12:22:14 INFO  VerifyTheRegradingOfRbcCellTypesTest:97 - Verified the calculation of % value for Microcytes cell types present in the RBC size tab after regrading
+2025-01-10 12:22:14 INFO  ScreenshotListeners:29 - 
+================:  percentage Value Of Ovalocytes On Rbc Shape Tab After Regrading :====================
+
+2025-01-10 12:22:19 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:22:20 INFO  VerifyTheRegradingOfRbcCellTypes:187 - clicked on cell Ovalocytes
+2025-01-10 12:22:21 INFO  VerifyTheRegradingOfRbcCellTypesTest:117 - Verified the calculation of % value for Ovalocytes cell types present in the RBC size tab after regrading
+2025-01-10 12:22:21 INFO  ScreenshotListeners:29 - 
+================:  percentage Value Of Elliptocytes On Rbc Size Tab After Regrading :====================
+
+2025-01-10 12:22:22 INFO  VerifyTheRegradingOfRbcCellTypes:187 - clicked on cell Elliptocytes
+2025-01-10 12:22:22 INFO  VerifyTheRegradingOfRbcCellTypesTest:125 - Verified the calculation of % value for Elliptocytes cell types present in the RBC size tab after regrading
+2025-01-10 12:22:22 INFO  ScreenshotListeners:29 - 
+================:  percentage Value Of Teardrop Cells On Rbc Size Tab After Regrading :====================
+
+2025-01-10 12:22:23 INFO  VerifyTheRegradingOfRbcCellTypes:187 - clicked on cell Teardrop Cells
+2025-01-10 12:22:23 INFO  VerifyTheRegradingOfRbcCellTypesTest:135 - Verified the calculation of % value for Teardrop Cells  types present in the RBC size tab after regrading
+2025-01-10 12:22:23 INFO  ScreenshotListeners:29 - 
+================:  percentage Value Of Fragmented Cells On Rbc Size Tab After Regrading :====================
+
+2025-01-10 12:22:24 INFO  VerifyTheRegradingOfRbcCellTypes:187 - clicked on cell Fragmented Cells
+2025-01-10 12:22:24 INFO  VerifyTheRegradingOfRbcCellTypesTest:143 - Verified the calculation of % value for Fragmented Cells types present in the RBC size tab after regrading
+2025-01-10 12:22:24 INFO  ScreenshotListeners:29 - 
+================:  percentage Value Of Target Cells On Rbc Size Tab After Regrading :====================
+
+2025-01-10 12:22:25 INFO  VerifyTheRegradingOfRbcCellTypes:187 - clicked on cell Target Cells
+2025-01-10 12:22:26 INFO  VerifyTheRegradingOfRbcCellTypesTest:152 - Verified the calculation of % value for Target Cells types present in the RBC size tab after regrading
+2025-01-10 12:22:26 INFO  ScreenshotListeners:29 - 
+================:  percentage Value Rbc Color Tab After Regrading :====================
+
+2025-01-10 12:22:31 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:22:31 INFO  VerifyTheRegradingOfRbcCellTypes:187 - clicked on cell Hypochromic Cells
+2025-01-10 12:22:32 INFO  VerifyTheRegradingOfRbcCellTypesTest:173 - Verified the calculation of % value for HypochromicCell cell types present in the RBC size tab after regrading
+2025-01-10 12:22:32 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Anisocytosis Cell :====================
+
+2025-01-10 12:22:40 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:22:59 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:22:59 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Anisocytosis
+2025-01-10 12:22:59 INFO  VerifyTheRegradingOfRbcCellTypes:354 - Grade value is correctly set to 3 when the percentage is greater than 20 for cell Anisocytosis
+2025-01-10 12:22:59 INFO  VerifyTheRegradingOfRbcCellTypes:356 - Significant grade: Correct red color code is present for cell Anisocytosis
+2025-01-10 12:22:59 INFO  VerifyTheRegradingOfRbcCellTypesTest:186 - Verified the correctness of the grade value according to the % present for Macrocytes cell types present in the RBC Size tab 
+2025-01-10 12:22:59 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Macrocytes :====================
+
+2025-01-10 12:23:00 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Macrocytes
+2025-01-10 12:23:00 INFO  VerifyTheRegradingOfRbcCellTypes:302 - Grade value is correctly set to 3 when the percentage is greater than 20 for cell Macrocytes
+2025-01-10 12:23:00 INFO  VerifyTheRegradingOfRbcCellTypes:304 - Significant grade: Correct red color code is present for cell Macrocytes
+2025-01-10 12:23:00 INFO  VerifyTheRegradingOfRbcCellTypesTest:194 - Verified the correctness of the grade value according to the % present for Microcytes cell types present in the RBC Size tab 
+2025-01-10 12:23:00 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Microcytes :====================
+
+2025-01-10 12:23:01 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Microcytes
+2025-01-10 12:23:01 INFO  VerifyTheRegradingOfRbcCellTypes:286 - Non-significant grade: Correct green color code is present for cell Microcytes
+2025-01-10 12:23:01 INFO  VerifyTheRegradingOfRbcCellTypesTest:204 - Verified the correctness of the grade value according to the % present for Microcytes cell types present in the RBC Size tab 
+2025-01-10 12:23:01 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Pokilocytes :====================
+
+2025-01-10 12:23:06 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:23:11 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Poikilocytosis
+2025-01-10 12:23:12 INFO  VerifyTheRegradingOfRbcCellTypes:294 - Significant grade: Correct red color code is present for cell Poikilocytosis
+2025-01-10 12:23:12 INFO  VerifyTheRegradingOfRbcCellTypesTest:215 - Verified the correctness of the grade value according to the % present for Poikilocytosis cell types present in the RBC Size tab 
+2025-01-10 12:23:12 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Ovalocytes :====================
+
+2025-01-10 12:23:12 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Ovalocytes
+2025-01-10 12:23:13 INFO  VerifyTheRegradingOfRbcCellTypes:397 - Significant grade: Correct red color code is present for Ovalocytes.
+2025-01-10 12:23:13 INFO  VerifyTheRegradingOfRbcCellTypesTest:224 - Verified the correctness of the grade value according to the % present for Ovalocytes cell types present in the RBC Size tab 
+2025-01-10 12:23:13 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Elliptocytes :====================
+
+2025-01-10 12:23:13 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Elliptocytes
+2025-01-10 12:23:13 INFO  VerifyTheRegradingOfRbcCellTypes:337 - Non-significant grade: Correct green color code is present for cell Elliptocytes
+2025-01-10 12:23:13 INFO  VerifyTheRegradingOfRbcCellTypesTest:234 - Verified the correctness of the grade value according to the % present for Elliptocytes cell types present in the RBC Size tab 
+2025-01-10 12:23:13 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Teardrop Cells :====================
+
+2025-01-10 12:23:13 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Teardrop Cells
+2025-01-10 12:23:13 ERROR VerifyTheRegradingOfRbcCellTypes:332 - Grade value should be 0 but found 1 for cell Teardrop Cells
+2025-01-10 12:23:13 ERROR BrowserSetUp:182 - verifyingGradeValueAccordingToPercentageOnTeardropCells -> FAILED due to below issues :
+java.lang.AssertionError: Grade value mismatch for cell: Teardrop Cells
+
+2025-01-10 12:23:14 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/verifyingGradeValueAccordingToPercentageOnTeardropCells.png
+2025-01-10 12:23:14 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Fragmented Cells :====================
+
+2025-01-10 12:23:14 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Fragmented Cells
+2025-01-10 12:23:14 INFO  VerifyTheRegradingOfRbcCellTypes:438 - Significant grade: Correct red color code is present for Fragmented Cells with grade 1.
+2025-01-10 12:23:14 INFO  VerifyTheRegradingOfRbcCellTypesTest:254 - Verified the correctness of the grade value according to the % present for Fragmented cells cell types present in the RBC Size tab 
+2025-01-10 12:23:14 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Target Cells :====================
+
+2025-01-10 12:23:14 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Target Cells
+2025-01-10 12:23:14 INFO  VerifyTheRegradingOfRbcCellTypes:323 - Grade value is correctly set to 0 when the percentage is 0.0 for cell Target Cells
+2025-01-10 12:23:14 INFO  VerifyTheRegradingOfRbcCellTypes:325 - Non-significant grade: Correct green color code is present for cell Target Cells
+2025-01-10 12:23:14 INFO  VerifyTheRegradingOfRbcCellTypesTest:263 - Verified the correctness of the grade value according to the % present for Target cells cell types present in the RBC Size tab 
+2025-01-10 12:23:14 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Echinocytes :====================
+
+2025-01-10 12:23:15 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Echinocytes
+2025-01-10 12:23:15 INFO  VerifyTheRegradingOfRbcCellTypes:337 - Non-significant grade: Correct green color code is present for cell Echinocytes
+2025-01-10 12:23:15 INFO  VerifyTheRegradingOfRbcCellTypesTest:274 - Verified the correctness of the grade value according to the % present for Echinocytes cell types present in the RBC Size tab 
+2025-01-10 12:23:15 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Hypochromic Cell :====================
+
+2025-01-10 12:23:20 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:23:20 INFO  VerifyTheRegradingOfRbcCellTypes:187 - clicked on cell Hypochromic Cells
+2025-01-10 12:23:21 INFO  VerifyTheRegradingOfRbcCellTypesTest:286 - Verified the calculation of % value for Hypochromic cell types present in the RBC size tab after regrading
+2025-01-10 12:23:21 INFO  ScreenshotListeners:29 - 
+================:  verifying Grade Value According To Percentage On Polychromatic :====================
+
+2025-01-10 12:23:21 INFO  VerifyTheRegradingOfRbcCellTypes:230 - clicked on cell Polychromatic Cells
+2025-01-10 12:23:21 ERROR BrowserSetUp:182 - verifyingGradeValueAccordingToPercentageOnPolychromatic -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-10 12:23:22 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/verifyingGradeValueAccordingToPercentageOnPolychromatic.png
+2025-01-10 12:23:22 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Anisocytosis Cell Types :====================
+
+2025-01-10 12:23:29 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:23:36 INFO  VerifyTheRegradingOfRbcCellTypesTest:308 - the user is able to regrade the  Anisocytosis cell types in the RBC size tab is verified.
+2025-01-10 12:23:36 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Microcytes Cell Type :====================
+
+2025-01-10 12:23:44 INFO  VerifyTheRegradingOfRbcCellTypesTest:320 - the user is able to regrade the  Microcytes cell types in the RBC size tab is verified.
+2025-01-10 12:23:44 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Macrocytes Cell Type :====================
+
+2025-01-10 12:23:53 INFO  VerifyTheRegradingOfRbcCellTypesTest:332 - the user is able to regrade the  Macrocytes cell types in the RBC size tab is verified.
+2025-01-10 12:23:53 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Ovalocytes Cell Type :====================
+
+2025-01-10 12:23:58 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:24:05 INFO  VerifyTheRegradingOfRbcCellTypesTest:348 - the user is able to regrade the  Ovalocytes cell types in the RBC Shape tab is verified.
+2025-01-10 12:24:05 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Acanthocytes Cell Type :====================
+
+2025-01-10 12:24:13 INFO  VerifyTheRegradingOfRbcCellTypesTest:361 - the user is able to regrade the  Poikilocytosis cell types in the RBC Shape tab is verified.
+2025-01-10 12:24:13 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Elliptocytes Cell Type :====================
+
+2025-01-10 12:24:21 INFO  VerifyTheRegradingOfRbcCellTypesTest:374 - the user is able to regrade the  Elliptocytes cell types in the RBC Shape tab is verified.
+2025-01-10 12:24:21 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Teardrop Cell Type :====================
+
+2025-01-10 12:24:29 INFO  VerifyTheRegradingOfRbcCellTypesTest:386 - the user is able to regrade the  Teardrop cell types in the Shape size tab is verified.
+2025-01-10 12:24:29 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Fragmented Cell Type :====================
+
+2025-01-10 12:24:37 INFO  VerifyTheRegradingOfRbcCellTypesTest:398 - the user is able to regrade the  Fragmented cell types in the RBC Shape tab is verified.
+2025-01-10 12:24:37 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Target Cell Type :====================
+
+2025-01-10 12:24:44 INFO  VerifyTheRegradingOfRbcCellTypesTest:408 - the user is able to regrade the Target cell types in the RBC Shape tab is verified.
+2025-01-10 12:24:44 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Echinocytes Cell Type :====================
+
+2025-01-10 12:24:53 INFO  VerifyTheRegradingOfRbcCellTypesTest:421 - the user is able to regrade the  Echinocytes cell types in the RBC Shape tab is verified.
+2025-01-10 12:24:53 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Hypochromic Cell Type :====================
+
+2025-01-10 12:24:58 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:25:05 INFO  VerifyTheRegradingOfRbcCellTypesTest:436 - the user is able to regrade the Hypochromic cell types in the RBC Color tab is verified.
+2025-01-10 12:25:05 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Polychromaticell Type :====================
+
+2025-01-10 12:25:13 INFO  VerifyTheRegradingOfRbcCellTypesTest:448 - the user is able to regrade the  Echinocytes cell types in the RBC Shape tab is verified.
+2025-01-10 12:25:13 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Inclusion Cell Type :====================
+
+2025-01-10 12:25:18 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:25:23 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Howell-Jolly Bodiesis successfully reset the regarding values
+2025-01-10 12:25:23 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Howell-Jolly Bodiesis successfully reset the regarding values
+2025-01-10 12:25:23 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Howell-Jolly Bodiesis successfully reset the regarding values
+2025-01-10 12:25:23 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Howell-Jolly Bodiesis successfully reset the regarding values
+2025-01-10 12:25:23 INFO  VerifyTheRegradingOfRbcCellTypesTest:461 - the user is able to regrade the Howell-JollyBodies Grade cell types in the RBC Inclusion tab is verified.
+2025-01-10 12:25:23 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Pappenheimer Bodiescell Type :====================
+
+2025-01-10 12:25:29 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Pappenheimer Bodiesis successfully reset the regarding values
+2025-01-10 12:25:29 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Pappenheimer Bodiesis successfully reset the regarding values
+2025-01-10 12:25:29 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Pappenheimer Bodiesis successfully reset the regarding values
+2025-01-10 12:25:29 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Pappenheimer Bodiesis successfully reset the regarding values
+2025-01-10 12:25:29 INFO  VerifyTheRegradingOfRbcCellTypesTest:474 - the user is able to regrade the Pappenheimer Bodies cell types in the RBC Inclusions tab is verified.
+2025-01-10 12:25:29 INFO  ScreenshotListeners:29 - 
+================:  verify Regrading In Basophilic Stipplingcell Type :====================
+
+2025-01-10 12:25:34 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Basophilic Stipplingis successfully reset the regarding values
+2025-01-10 12:25:34 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Basophilic Stipplingis successfully reset the regarding values
+2025-01-10 12:25:34 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Basophilic Stipplingis successfully reset the regarding values
+2025-01-10 12:25:34 INFO  VerifyTheRegradingOfRbcCellTypes:166 - Basophilic Stipplingis successfully reset the regarding values
+2025-01-10 12:25:34 INFO  VerifyTheRegradingOfRbcCellTypesTest:487 - the user is able to regrade the Basophilic Stippling cell types in the RBC Inclusions tab is verified.
+2025-01-10 12:25:34 INFO  ScreenshotListeners:29 - 
+================:  verifying Percentage Value Struck Off After Regrading In Macrocytes Cell :====================
+
+2025-01-10 12:25:40 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:25:48 ERROR BrowserSetUp:182 - verifyingPercentageValueStruckOffAfterRegradingInMacrocytesCell -> FAILED due to below issues :
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Macrocytes')]//following::div[3]/del"}
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.16.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Nehas-MBP', ip: '192.168.0.177', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.1', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/lq/hsr567kj1sx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58057}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: 34d320a7dbaceb82da9185ddc85e6ab4
+*** Element info: {Using=xpath, value=//*[contains(text(),'Macrocytes')]//following::div[3]/del}
+
+2025-01-10 12:25:49 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/verifyingPercentageValueStruckOffAfterRegradingInMacrocytesCell.png
+2025-01-10 12:25:49 INFO  ScreenshotListeners:29 - 
+================:  verifying Percentage Value Struck Off After Regrading In Microcytes Cell :====================
+
+2025-01-10 12:25:56 INFO  VerifyTheRegradingOfRbcCellTypesTest:514 -  Verify that the percentage value is getting struck off when the Microcytes Cell are regraded.
+2025-01-10 12:25:56 INFO  ScreenshotListeners:29 - 
+================:  verifying Percentage Value Struck Off After Regrading In Elliptocytes :====================
+
+2025-01-10 12:26:01 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:26:10 INFO  VerifyTheRegradingOfRbcCellTypesTest:526 -  Verify that the percentage value is getting struck off when the Elliptocytes Cell are regraded.
+2025-01-10 12:26:10 INFO  ScreenshotListeners:29 - 
+================:  verifying Percentage Value Struck Off After Regrading In Teardrop Cells :====================
+
+2025-01-10 12:26:18 INFO  VerifyTheRegradingOfRbcCellTypesTest:537 -  Verify that the percentage value is getting struck off when the Teardrop cells are regraded.
+2025-01-10 12:26:18 INFO  ScreenshotListeners:29 - 
+================:  verifying Percentage Value Struck Off After Regrading In Fragmented Cells :====================
+
+2025-01-10 12:26:25 INFO  VerifyTheRegradingOfRbcCellTypesTest:548 -  Verify that the percentage value is getting struck off when the Fragmented cells are regraded.
+2025-01-10 12:26:25 INFO  ScreenshotListeners:29 - 
+================:  verifying Percentage Value Struck Off After Regrading In Target Cells :====================
+
+2025-01-10 12:26:33 INFO  VerifyTheRegradingOfRbcCellTypesTest:559 -  Verify that the percentage value is getting struck off when the Target cells are regraded.
+2025-01-10 12:26:33 INFO  ScreenshotListeners:29 - 
+================:  verifying Percentage Value Struck Off After Regrading In Echinocytes :====================
+
+2025-01-10 12:26:41 INFO  VerifyTheRegradingOfRbcCellTypesTest:571 -  Verify that the percentage value is getting struck off when the Echinocytes cells are regraded.
+2025-01-10 12:26:41 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Pixel For Macrocytes In Size Tab :====================
+
+2025-01-10 12:26:46 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:26:49 INFO  VerifyThePatchSizeOfRBCTest:50 - The rendered patch size in pixels for the RBC cells in size tab is verified successfully
+2025-01-10 12:26:49 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Pixel For Microcytes :====================
+
+2025-01-10 12:26:51 INFO  VerifyThePatchSizeOfRBCTest:57 - The rendered patch size in pixels for the RBC cells in size tab is verified successfully
+2025-01-10 12:26:51 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Pixel For Macrocytes In Shape Tab :====================
+
+2025-01-10 12:26:56 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:26:58 INFO  VerifyThePatchSizeOfRBCTest:67 - The rendered patch size in pixels for the RBC ovalocytes cells is verified successfully
+2025-01-10 12:26:58 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Pixel For Hypochromic Cells In Color Tab :====================
+
+2025-01-10 12:27:03 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:27:06 INFO  VerifyThePatchSizeOfRBCTest:77 - The rendered patch size in pixels for the hypochromic cells in RBC size tab is verified successfully
+2025-01-10 12:27:06 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Pixel For Polychromatic Cells In Color Tab :====================
+
+2025-01-10 12:27:08 INFO  VerifyThePatchSizeOfRBCTest:84 - The rendered patch size in pixels for the Polychromatic cells in RBC color tab is verified successfully
+2025-01-10 12:27:08 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Pixel For W B C Tab :====================
+
+2025-01-10 12:27:13 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:27:19 INFO  VerifyThePatchSizeOfRBCTest:98 - The rendered patch size in pixels for the WBC neutrophills cell type is verified successfully
+2025-01-10 12:27:19 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Pixel For Macrocytes In Size Tab :====================
+
+2025-01-10 12:27:24 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:27:29 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:27:36 INFO  VerifyThePatchViewOfRBCTest:50 - Patches are displayed correctly on macrocytes cell in rbc size tab
+2025-01-10 12:27:36 INFO  ScreenshotListeners:29 - 
+================:  verify Presence Of Slide Details On Summary Tab :====================
+
+2025-01-10 12:27:39 INFO  ReportViewer:55 - slide details icon is clicked successfully
+2025-01-10 12:27:40 INFO  ReportViewer:60 - same slide id is present on slide details tab
+2025-01-10 12:27:40 INFO  ReportViewer:73 - Under review status found for assigned report on slide details pop up
+2025-01-10 12:27:40 INFO  WBCParametersTest:52 - slide details icon are present on tab and its clickable
+2025-01-10 12:27:40 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scan Image Area :====================
+
+2025-01-10 12:27:40 INFO  ReportViewer:137 - slide image text and image is present on slide details pop up 
+2025-01-10 12:27:40 INFO  WBCParametersTest:63 - slide image area present on slide details pop up is verified 
+2025-01-10 12:27:40 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scan Time Text :====================
+
+2025-01-10 12:27:40 INFO  WBCParametersTest:69 - 'scan time' text is verified on scan details pop up
+2025-01-10 12:27:40 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scanned By Text :====================
+
+2025-01-10 12:27:40 INFO  WBCParametersTest:76 -  presence of 'scanned by' text is verified on scan details pop up
+2025-01-10 12:27:40 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scanned O N Text :====================
+
+2025-01-10 12:27:40 INFO  WBCParametersTest:82 -  presence of 'scanned on' text is verified on scan details pop up
+2025-01-10 12:27:40 INFO  ScreenshotListeners:29 - 
+================:  pop Up Close On Summary Tab :====================
+
+2025-01-10 12:27:40 INFO  WBCParametersTest:88 - pop up closed successfully on summary tab
+2025-01-10 12:27:40 INFO  ScreenshotListeners:29 - 
+================:  verify Presence Of Slide Details On W B C Tab :====================
+
+2025-01-10 12:27:42 INFO  ReportViewer:55 - slide details icon is clicked successfully
+2025-01-10 12:27:43 INFO  ReportViewer:60 - same slide id is present on slide details tab
+2025-01-10 12:27:43 INFO  ReportViewer:73 - Under review status found for assigned report on slide details pop up
+2025-01-10 12:27:43 INFO  WBCParametersTest:97 - slide details icon are present on tab and its clickable on WBC tab
+2025-01-10 12:27:43 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scan Image Area On Wbc Tab :====================
+
+2025-01-10 12:27:43 INFO  ReportViewer:137 - slide image text and image is present on slide details pop up 
+2025-01-10 12:27:43 INFO  WBCParametersTest:103 - slide image area present on slide details pop up is verified on WBC tab 
+2025-01-10 12:27:43 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scan Time Text On W B C Tab :====================
+
+2025-01-10 12:27:43 INFO  WBCParametersTest:109 - 'scan time' text is verified on scan details pop up on WBC Tab
+2025-01-10 12:27:43 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scanned By Text On Wbc Tab :====================
+
+2025-01-10 12:27:43 INFO  WBCParametersTest:116 -  presence of 'scanned by' text is verified on scan details pop up on WBC tab
+2025-01-10 12:27:43 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scanned O N Text On Wbc Tab :====================
+
+2025-01-10 12:27:43 INFO  WBCParametersTest:122 -  presence of 'scanned on' text is verified on scan details pop up on WBC tab
+2025-01-10 12:27:43 INFO  ScreenshotListeners:29 - 
+================:  pop Up Close On W B C T Ab :====================
+
+2025-01-10 12:27:43 INFO  WBCParametersTest:128 - pop uo closed successfully on summary tab on WBC Tab
+2025-01-10 12:27:43 INFO  ScreenshotListeners:29 - 
+================:  verify Presence Of Slide Details On R B C Tab :====================
+
+2025-01-10 12:27:45 INFO  ReportViewer:55 - slide details icon is clicked successfully
+2025-01-10 12:27:46 INFO  ReportViewer:60 - same slide id is present on slide details tab
+2025-01-10 12:27:46 INFO  ReportViewer:73 - Under review status found for assigned report on slide details pop up
+2025-01-10 12:27:46 INFO  WBCParametersTest:136 - slide details icon are present on tab and its clickable
+2025-01-10 12:27:46 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scan Image Area On Rbc Tab :====================
+
+2025-01-10 12:27:46 INFO  ReportViewer:137 - slide image text and image is present on slide details pop up 
+2025-01-10 12:27:46 INFO  WBCParametersTest:143 - slide image area present on slide details pop up is verified on RBC tab 
+2025-01-10 12:27:46 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scan Time Text On R B C Tab :====================
+
+2025-01-10 12:27:46 INFO  WBCParametersTest:149 - 'scan time' text is verified on scan details pop up on RBC Tab
+2025-01-10 12:27:46 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scanned By Text On Rbc Tab :====================
+
+2025-01-10 12:27:46 INFO  WBCParametersTest:156 -  presence of 'scanned by' text is verified on scan details pop up on RBC tab
+2025-01-10 12:27:46 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scanned O N Text On Rbc Tab :====================
+
+2025-01-10 12:27:46 INFO  WBCParametersTest:162 -  presence of 'scanned on' text is verified on scan details pop up on RBC tab
+2025-01-10 12:27:46 INFO  ScreenshotListeners:29 - 
+================:  pop Up Close On R B C T Ab :====================
+
+2025-01-10 12:27:46 INFO  WBCParametersTest:168 - pop uo closed successfully on summary tab on RBC Tab
+2025-01-10 12:27:46 INFO  ScreenshotListeners:29 - 
+================:  verify Presence Of Slide Details On Platelet Tab :====================
+
+2025-01-10 12:27:48 INFO  ReportViewer:55 - slide details icon is clicked successfully
+2025-01-10 12:27:49 INFO  ReportViewer:60 - same slide id is present on slide details tab
+2025-01-10 12:27:49 INFO  ReportViewer:73 - Under review status found for assigned report on slide details pop up
+2025-01-10 12:27:49 INFO  WBCParametersTest:175 - slide details icon are present on tab and its clickable
+2025-01-10 12:27:49 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scan Image Area On Platelet Tab :====================
+
+2025-01-10 12:27:49 INFO  ReportViewer:137 - slide image text and image is present on slide details pop up 
+2025-01-10 12:27:49 INFO  WBCParametersTest:182 - slide image area present on slide details pop up is verified on Platelet tab 
+2025-01-10 12:27:49 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scan Time Text On Platelet Tab :====================
+
+2025-01-10 12:27:49 INFO  WBCParametersTest:188 - 'scan time' text is verified on scan details pop up on Platelet Tab
+2025-01-10 12:27:49 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scanned By Text On Platelet Tab :====================
+
+2025-01-10 12:27:49 INFO  WBCParametersTest:195 -  presence of 'scanned by' text is verified on scan details pop up on Platelet tab
+2025-01-10 12:27:49 INFO  ScreenshotListeners:29 - 
+================:  presence Of Scanned O N Text On Platelet Tab :====================
+
+2025-01-10 12:27:49 INFO  WBCParametersTest:201 -  presence of 'scanned on' text is verified on scan details pop up on Platelet tab
+2025-01-10 12:27:49 INFO  ScreenshotListeners:29 - 
+================:  pop Up Close On Platelet T Ab :====================
+
+2025-01-10 12:27:49 INFO  WBCParametersTest:207 - pop uo closed successfully on summary tab on Platelet Tab
+2025-01-10 12:27:49 INFO  ScreenshotListeners:29 - 
+================:  approve And Reject Button Displayed And Its Enabled :====================
+
+2025-01-10 12:27:52 INFO  ReportViewer:186 - approve and reject buttons are displayed and its enabled
+2025-01-10 12:27:54 INFO  WBCParametersTest:216 - after clicked on image setting approve and reject buttons are displayed and its enabled on WBC tab
+2025-01-10 12:27:54 INFO  ScreenshotListeners:29 - 
+================:  approve And Reject Button Displayed And Its Enabled On Rbc Tab :====================
+
+2025-01-10 12:27:58 INFO  ReportViewer:186 - approve and reject buttons are displayed and its enabled
+2025-01-10 12:28:00 INFO  WBCParametersTest:225 - after clicked on image setting approve and reject buttons are displayed and its enabled on RBC tab
+2025-01-10 12:28:00 INFO  ScreenshotListeners:29 - 
+================:  approve And Reject Button Displayed And Its Enabled On Platelet Tab :====================
+
+2025-01-10 12:28:36 ERROR BrowserSetUp:182 - approveAndRejectButtonDisplayedAndItsEnabledOnPlateletTab -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //img[@class='image-settings'] (tried for 30 second(s) with 500 milliseconds interval)
+
+2025-01-10 12:28:36 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/approveAndRejectButtonDisplayedAndItsEnabledOnPlateletTab.png
+2025-01-10 12:28:36 INFO  ScreenshotListeners:29 - 
+================:  click On Image Setting Icon And Verifying Charcteristics On Wbc Tab :====================
+
+2025-01-10 12:28:55 INFO  ReportViewer:219 - Image setting is clicked on specific tab:WBC-Lymphocytes
+2025-01-10 12:29:09 INFO  WBCParametersTest:248 - image size , saturation, brightness and contrast is verified on wbc tab for neutrophil cells 
+2025-01-10 12:29:09 INFO  ScreenshotListeners:29 - 
+================:  click On Image Setting Icon And Verifying Charcteristics On P L T Tab :====================
+
+2025-01-10 12:29:14 INFO  WBCParametersTest:269 - image size , saturation, brightness and contrast is verified on wbc tab for neutrophil cells 
+2025-01-10 12:29:14 INFO  ScreenshotListeners:29 - 
+================:  reference Tool Icon On Wbc :====================
+
+2025-01-10 12:29:21 INFO  ReportViewer:300 - Linear, circle, and zoom icons are present on microscopic view.
+2025-01-10 12:29:21 INFO  WBCParametersTest:278 - verified the presence of linear tool bar on left side of microscopic view on wbc tab 
+2025-01-10 12:29:21 INFO  ScreenshotListeners:29 - 
+================:  selection Of Line Tool :====================
+
+2025-01-10 12:29:38 INFO  ReportViewer:327 - Digital zoom only text is display on tab after selecting the linear line tool
+2025-01-10 12:29:38 INFO  ReportViewer:328 - by default value (7) is appeared after clicking on linear/ circle line
+2025-01-10 12:29:38 INFO  WBCParametersTest:289 - line tool is selected and digital zoom message is verified on WBC tab
+2025-01-10 12:29:38 INFO  ScreenshotListeners:29 - 
+================:  altering The Size Of Line On W B C :====================
+
+2025-01-10 12:29:40 INFO  WBCParametersTest:296 - alteration of line tool is verified on WBC tab
+2025-01-10 12:29:40 INFO  ScreenshotListeners:29 - 
+================:  deselecting The Line Tool :====================
+
+2025-01-10 12:29:41 INFO  WBCParametersTest:303 - Linear button is deselected successfully on Wbc tab
+2025-01-10 12:29:41 INFO  ScreenshotListeners:29 - 
+================:  selection O Circle Tool :====================
+
+2025-01-10 12:29:47 INFO  ReportViewer:327 - Digital zoom only text is display on tab after selecting the linear line tool
+2025-01-10 12:29:47 INFO  ReportViewer:328 - by default value (7) is appeared after clicking on linear/ circle line
+2025-01-10 12:29:47 INFO  WBCParametersTest:313 - circle tool is selected and digital zoom message is verified on WBC tab
+2025-01-10 12:29:47 INFO  ScreenshotListeners:29 - 
+================:  alternation O F Circle Tool :====================
+
+2025-01-10 12:29:49 ERROR BrowserSetUp:182 - alternationOFCircleTool -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-10 12:29:49 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/alternationOFCircleTool.png
+2025-01-10 12:29:49 INFO  ScreenshotListeners:29 - 
+================:  deselecting The Circle Tool :====================
+
+2025-01-10 12:29:50 INFO  WBCParametersTest:325 - Circle button is deselected successfully on Wbc tab
+2025-01-10 12:29:50 INFO  ScreenshotListeners:29 - 
+================:  selection O Zoom Tool :====================
+
+2025-01-10 12:30:26 ERROR BrowserSetUp:182 - selectionOZoomTool -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/main/div/div/main/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
+
+2025-01-10 12:30:26 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/selectionOZoomTool.png
+2025-01-10 12:30:26 INFO  ScreenshotListeners:29 - 
+================:  alternation Of Zoom Level :====================
+
+2025-01-10 12:30:56 ERROR BrowserSetUp:182 - alternationOfZoomLevel -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-10 12:30:56 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/alternationOfZoomLevel.png
+2025-01-10 12:30:56 INFO  ScreenshotListeners:29 - 
+================:  deselecting The Zoom Level :====================
+
+2025-01-10 12:30:56 INFO  WBCParametersTest:346 - Linear button is deselected successfully on Wbc tab
+2025-01-10 12:30:56 INFO  ScreenshotListeners:29 - 
+================:  select And Deselect The Cell Name Check Box :====================
+
+2025-01-10 12:31:27 INFO  ReportViewer:467 - all the check box is clicked successfully
+2025-01-10 12:31:27 INFO  ReportViewer:467 - all the check box is clicked successfully
+2025-01-10 12:31:27 INFO  ReportViewer:467 - all the check box is clicked successfully
+2025-01-10 12:31:27 INFO  ReportViewer:467 - all the check box is clicked successfully
+2025-01-10 12:31:27 INFO  ReportViewer:467 - all the check box is clicked successfully
+2025-01-10 12:31:27 INFO  ReportViewer:467 - all the check box is clicked successfully
+2025-01-10 12:31:27 INFO  ReportViewer:467 - all the check box is clicked successfully
+2025-01-10 12:31:28 INFO  ReportViewer:467 - all the check box is clicked successfully
+2025-01-10 12:31:28 INFO  WBCParametersTest:355 - all the enabled checkbox is selected successfully on WBC TAb 
+2025-01-10 12:31:28 INFO  ScreenshotListeners:29 - 
+================:  reference Tool Bar O N Rbc Tab :====================
+
+2025-01-10 12:31:32 INFO  ReportViewer:300 - Linear, circle, and zoom icons are present on microscopic view.
+2025-01-10 12:31:32 INFO  WBCParametersTest:365 - verified the presence of linear tool bar on left side of microscopic view on rbc tab 
+2025-01-10 12:31:32 INFO  ScreenshotListeners:29 - 
+================:  selection Of Line Tool On R B C :====================
+
+2025-01-10 12:31:40 INFO  ReportViewer:327 - Digital zoom only text is display on tab after selecting the linear line tool
+2025-01-10 12:31:40 INFO  ReportViewer:328 - by default value (7) is appeared after clicking on linear/ circle line
+2025-01-10 12:31:40 INFO  WBCParametersTest:375 - line tool is selected and digital zoom message is verified on RBC tab
+2025-01-10 12:31:40 INFO  ScreenshotListeners:29 - 
+================:  altering The Size Of Line On R B C :====================
+
+2025-01-10 12:31:43 ERROR BrowserSetUp:182 - alteringTheSizeOfLineOnRBC -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-10 12:31:43 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/alteringTheSizeOfLineOnRBC.png
+2025-01-10 12:31:43 INFO  ScreenshotListeners:29 - 
+================:  deselecting The Line Tool On R B C :====================
+
+2025-01-10 12:31:43 INFO  WBCParametersTest:388 - Linear button is deselected successfully on Rbc tab
+2025-01-10 12:31:43 INFO  ScreenshotListeners:29 - 
+================:  selection O Circle Tool On R B C :====================
+
+2025-01-10 12:31:53 INFO  ReportViewer:327 - Digital zoom only text is display on tab after selecting the linear line tool
+2025-01-10 12:31:53 INFO  ReportViewer:328 - by default value (7) is appeared after clicking on linear/ circle line
+2025-01-10 12:31:53 INFO  WBCParametersTest:396 - circle tool is selected and digital zoom message is verified on RBC tab
+2025-01-10 12:31:53 INFO  ScreenshotListeners:29 - 
+================:  alternation O F Circle Tool On Rbc :====================
+
+2025-01-10 12:31:55 INFO  WBCParametersTest:403 - alternation Of circle tool is verified on RBC tab
+2025-01-10 12:31:55 INFO  ScreenshotListeners:29 - 
+================:  deselecting The Circle Tool On R B C :====================
+
+2025-01-10 12:31:55 INFO  WBCParametersTest:409 - Circle tool is deselected successfully on Rbc tab
+2025-01-10 12:31:55 INFO  ScreenshotListeners:29 - 
+================:  selection O Zoom Tool On R B C :====================
+
+2025-01-10 12:32:31 ERROR BrowserSetUp:182 - selectionOZoomToolOnRBC -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/main/div/div/main/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
+
+2025-01-10 12:32:31 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/selectionOZoomToolOnRBC.png
+2025-01-10 12:32:31 INFO  ScreenshotListeners:29 - 
+================:  alternation Of Zoom Level On Rbc :====================
+
+2025-01-10 12:33:01 ERROR BrowserSetUp:182 - alternationOfZoomLevelOnRbc -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-10 12:33:02 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/alternationOfZoomLevelOnRbc.png
+2025-01-10 12:33:02 INFO  ScreenshotListeners:29 - 
+================:  deselecting The Zoom Level On R B C :====================
+
+2025-01-10 12:33:02 INFO  WBCParametersTest:428 - Zoom is deselected successfully on Rbc tab
+2025-01-10 12:33:02 INFO  ScreenshotListeners:29 - 
+================:  select And Select The Cell Name Check Box O N W B C :====================
+
+2025-01-10 12:33:32 INFO  ReportViewer:467 - all the check box is clicked successfully
+2025-01-10 12:33:32 INFO  ReportViewer:467 - all the check box is clicked successfully
+2025-01-10 12:33:32 INFO  WBCParametersTest:436 - all the enabled checkbox is selected successfully on RBC TAb 
+2025-01-10 12:33:32 INFO  ScreenshotListeners:29 - 
+================:  reference Tool Bar On Plt Tab :====================
+
+2025-01-10 12:34:02 ERROR BrowserSetUp:182 - referenceToolBarOnPltTab -> FAILED due to below issues :
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='plateleteMorphologyTab']"}
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.16.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Nehas-MBP', ip: '192.168.0.177', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.1', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/lq/hsr567kj1sx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58057}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: 34d320a7dbaceb82da9185ddc85e6ab4
+*** Element info: {Using=xpath, value=//button[@id='plateleteMorphologyTab']}
+
+2025-01-10 12:34:03 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/referenceToolBarOnPltTab.png
+2025-01-10 12:34:03 INFO  ScreenshotListeners:29 - 
+================:  selection Of Line Tool On Platelet :====================
+
+2025-01-10 12:34:43 INFO  ReportViewer:327 - Digital zoom only text is display on tab after selecting the linear line tool
+2025-01-10 12:34:43 INFO  ReportViewer:328 - by default value (7) is appeared after clicking on linear/ circle line
+2025-01-10 12:34:43 INFO  WBCParametersTest:453 - line tool is selected and digital zoom message is verified on Platelet tab
+2025-01-10 12:34:43 INFO  ScreenshotListeners:29 - 
+================:  altering The Size Of Line On P L T :====================
+
+2025-01-10 12:34:45 ERROR BrowserSetUp:182 - alteringTheSizeOfLineOnPLT -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-10 12:34:45 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/alteringTheSizeOfLineOnPLT.png
+2025-01-10 12:34:45 INFO  ScreenshotListeners:29 - 
+================:  deselecting The Linear Tool On P L T :====================
+
+2025-01-10 12:34:45 INFO  WBCParametersTest:467 - Linear button is deselected successfully on PLT tab
+2025-01-10 12:34:46 INFO  ScreenshotListeners:29 - 
+================:  selection O Circle Tool On Platelet :====================
+
+2025-01-10 12:34:52 INFO  ReportViewer:327 - Digital zoom only text is display on tab after selecting the linear line tool
+2025-01-10 12:34:52 INFO  ReportViewer:328 - by default value (7) is appeared after clicking on linear/ circle line
+2025-01-10 12:34:52 INFO  WBCParametersTest:476 - circle tool is selected and digital zoom message is verified on Platelet tab
+2025-01-10 12:34:52 INFO  ScreenshotListeners:29 - 
+================:  alternation O F Circle Tool On P L T :====================
+
+2025-01-10 12:34:54 ERROR BrowserSetUp:182 - alternationOFCircleToolOnPLT -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-10 12:34:54 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/alternationOFCircleToolOnPLT.png
+2025-01-10 12:34:54 INFO  ScreenshotListeners:29 - 
+================:  deselecting The Circle Tool On P L T :====================
+
+2025-01-10 12:34:54 INFO  WBCParametersTest:490 - Linear button is deselected successfully on PLT tab
+2025-01-10 12:34:54 INFO  ScreenshotListeners:29 - 
+================:  selection O Zoom Tool On Platelet :====================
+
+2025-01-10 12:35:30 ERROR BrowserSetUp:182 - selectionOZoomToolOnPlatelet -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/main/div/div/main/div[3]/div/p (tried for 30 second(s) with 500 milliseconds interval)
+
+2025-01-10 12:35:31 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/selectionOZoomToolOnPlatelet.png
+2025-01-10 12:35:31 INFO  ScreenshotListeners:29 - 
+================:  alternation Of Zoom Level In Plt :====================
+
+2025-01-10 12:36:01 ERROR BrowserSetUp:182 - alternationOfZoomLevelInPlt -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-10 12:36:02 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/alternationOfZoomLevelInPlt.png
+2025-01-10 12:36:02 INFO  ScreenshotListeners:29 - 
+================:  deselecting The Zoom Level On P L T :====================
+
+2025-01-10 12:36:02 INFO  WBCParametersTest:509 - Linear button is deselected successfully on PLT tab
+2025-01-10 12:36:02 INFO  ScreenshotListeners:29 - 
+================:  select And Select The Cell Name Check Box On Plt C :====================
+
+2025-01-10 12:36:32 ERROR BrowserSetUp:182 - selectAndSelectTheCellNameCheckBoxOnPltC -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-10 12:36:33 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/selectAndSelectTheCellNameCheckBoxOnPltC.png
+2025-01-10 12:36:33 INFO  ScreenshotListeners:29 - 
+================:  presence Of Count Sub Tab In Platelet :====================
+
+2025-01-10 12:36:38 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:36:53 INFO  ReviewPatchesInPatchViewAndSplitView:49 - count sub tab is present on platelet 
+2025-01-10 12:36:53 INFO  ReviewPatchesInPatchViewAndSplitViewTest:56 - Count tab is present on platelet 
+2025-01-10 12:36:53 INFO  ScreenshotListeners:29 - 
+================:  presence Of Morphology :====================
+
+2025-01-10 12:36:54 INFO  ReviewPatchesInPatchViewAndSplitViewTest:63 - Morphology tab is present on platelet main tab
+2025-01-10 12:36:54 INFO  ScreenshotListeners:29 - 
+================:  selection Of Fovs :====================
+
+2025-01-10 12:37:01 ERROR ReviewPatchesInPatchViewAndSplitView:84 - Mismatch in FOV navigation for FOV 1. Expected: FOV 1 / 9, but found: FOV 2 / 10
+2025-01-10 12:37:01 ERROR BrowserSetUp:182 - selectionOfFovs -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-10 12:37:02 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/selectionOfFovs.png
+2025-01-10 12:37:02 INFO  ScreenshotListeners:29 - 
+================:  edit The N M G Value :====================
+
+2025-01-10 12:37:05 ERROR BrowserSetUp:182 - editTheNMGValue -> FAILED due to below issues :
+java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3
+
+2025-01-10 12:37:05 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/editTheNMGValue.png
+2025-01-10 12:37:05 INFO  ScreenshotListeners:29 - 
+================:  verify The Swiching To Original Report :====================
+
+2025-01-10 12:37:09 INFO  ScreenshotListeners:29 - 
+================:  verify The Swiching To Modified Report :====================
+
+2025-01-10 12:37:14 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Size :====================
+
+2025-01-10 12:37:14 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Shape :====================
+
+2025-01-10 12:38:14 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Color :====================
+
+2025-01-10 12:39:15 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Inclusion :====================
+
+2025-01-10 12:40:15 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Size Split :====================
+
+2025-01-10 12:41:16 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Shape Split :====================
+
+2025-01-10 12:42:16 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Color Split :====================
+
+2025-01-10 12:43:17 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Inclusion Split :====================
+
+2025-01-10 12:44:18 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Size Microscopic :====================
+
+2025-01-10 12:45:18 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Shape Microscopic :====================
+
+2025-01-10 12:46:19 INFO  ScreenshotListeners:29 - 
+================:  verifythe Cbc Report In R B Cin Color Microscopic :====================
+
+2025-01-10 12:46:26 INFO  ScreenshotListeners:29 - 
+================:  verify Selction Of W B C Tab :====================
+
+2025-01-10 12:46:26 ERROR BrowserSetUp:182 - verifySelctionOfWBCTab -> FAILED due to below issues :
+org.openqa.selenium.WebDriverException: unknown error: Element <button class="cell-buttons cell-tab">...</button> is not clickable at point (135, 80). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-esi9ax" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);"></div>
+  (Session info: chrome=131.0.6778.205)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.16.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Nehas-MBP', ip: '192.168.0.177', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.1', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/lq/hsr567kj1sx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58057}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.205, webStorageEnabled: true}
+Session ID: 34d320a7dbaceb82da9185ddc85e6ab4
+
+2025-01-10 12:46:27 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/verifySelctionOfWBCTab.png
+2025-01-10 12:46:27 INFO  ScreenshotListeners:29 - 
+================:  verify The Column Present In The W B C Tab :====================
+
+2025-01-10 12:46:39 INFO  WBCParameters:56 - ,Cell name,Count,%
+2025-01-10 12:46:39 INFO  WBCParametersTest:50 - WBC tab is present and selected
+2025-01-10 12:46:39 INFO  ScreenshotListeners:29 - 
+================:  verify W B C Cells Names :====================
+
+2025-01-10 12:46:39 INFO  WBCParameters:68 - ,Neutrophils,Band Forms,Hypersegmented*,Neutrophils with Toxic Granules*,Lymphocytes,Reactive,Large Granular Lymphocytes*,Eosinophils,Monocytes,Basophils,Atypical Cells/Blasts,Atypical Cells*,Lymphoid Blasts*,Myeloid Blasts*,Immature Granulocytes,Promyelocytes,Myelocytes,Metamyelocytes,Immature Eosinophils*,Immature Basophils*,Promonocytes*,Prolymphocytes*,Hairy Cells*,Sezary Cells*,Plasma Cells*,Others*,Total,Non-WBC,NRBC,Smudge Cells,Degenerate Cells,Stain Artefacts,Unclassified,Rejected
+2025-01-10 12:46:39 INFO  WBCParametersTest:57 - WBC tab is present and selected
+2025-01-10 12:46:39 INFO  ScreenshotListeners:29 - 
+================:  verify The W B C Cell Count Is Equal To Total Count :====================
+
+2025-01-10 12:46:40 INFO  WBCParameters:97 - WBC cell counts are equals to the total count Actual count: 236 Expected total count: 236
+2025-01-10 12:46:40 INFO  WBCParametersTest:65 - sum of WBC coutns are eqaul to the total count
+2025-01-10 12:46:40 INFO  ScreenshotListeners:29 - 
+================:  verify Manual Sub Classification Message :====================
+
+2025-01-10 12:46:40 INFO  WBCParametersTest:72 - * Manual sub-classification message is present
+2025-01-10 12:46:40 INFO  ScreenshotListeners:29 - 
+================:  Verify The Reclassification Of Neutrophil With All Other Cells :====================
+
+2025-01-10 12:48:08 ERROR BrowserSetUp:182 - VerifyTheReclassificationOfNeutrophilWithAllOtherCells -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Classify')] (tried for 30 second(s) with 500 milliseconds interval)
+
+2025-01-10 12:48:08 INFO  BrowserSetUp:192 - Screenshot for this failed method : Screenshot/VerifyTheReclassificationOfNeutrophilWithAllOtherCells.png
+2025-01-10 12:48:08 INFO  ScreenshotListeners:29 - 
+================:  Verify The Reclassification Of W B C To Large Platelet :====================
+
+2025-01-10 12:48:13 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:48:19 INFO  CommonMethods:50 - clicked on tab successfully
+2025-01-10 12:48:19 INFO  WBCParametersTest:94 - after reclassification , count of neutrophils is verified for all the other cells
+2025-01-10 12:48:19 INFO  ScreenshotListeners:29 - 
+================:  Verify The Reclassification Of W B C To Platelet Clumps :====================
+
+2025-01-10 12:48:19 INFO  WBCParametersTest:102 - after reclassification , count of neutrophils is verified for all the other cells

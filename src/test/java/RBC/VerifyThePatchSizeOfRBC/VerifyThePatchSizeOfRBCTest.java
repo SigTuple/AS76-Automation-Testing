@@ -92,8 +92,8 @@ public class VerifyThePatchSizeOfRBCTest  extends BrowserSetUp {
         String tabName="WBC";
         common.clickOnTab(tabName, props.getProperty("WBCTab"));
         Thread.sleep(4000);
-        String neutrophills=props.getProperty("lymphocytes");
-        boolean status= verifyThePatchSizeOfRBC.verifyTheSizeOfPatchesInPixelForRBC(neutrophills,neutrophills+"/following::td[2]");
+        String lymphocytes=props.getProperty("lymphocytes");
+        boolean status= verifyThePatchSizeOfRBC.verifyTheSizeOfPatchesInPixelForRBC(lymphocytes,lymphocytes+"/following::td[2]");
         Assert.assertTrue(status);
         logger.info("The rendered patch size in pixels for the WBC neutrophills cell type is verified successfully");
     }

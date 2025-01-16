@@ -35,9 +35,9 @@ public class WBCParametersTest extends BrowserSetUp {
 
 	}
 	@Test(priority = 2, enabled = true)
-	public void verifySelctionOfWBCTab() {
+	public void verifySelctionOfWBCTab() throws InterruptedException {
 		test = extent.createTest("WBCParametersTest");
-		cms.clickOnSpecificTab("WBC");
+		cms.clickOnTab("WBC", props.getProperty("WBCTab"));
 		String header = wbc.verifyPresenceAndSelectionOfWBCTab();
 		Assert.assertEquals(header, "WBC");
 		logger.info("WBC tab is present and selected");
@@ -46,14 +46,14 @@ public class WBCParametersTest extends BrowserSetUp {
 	@Test(priority = 4, enabled = true)
 	public void verifyTheColumnPresentInTheWBCTab() {
 		String header = wbc.verifyTheColumnPresentInTheWBCTab();
-		Assert.assertEquals(header, ",Cell Name,Count,%");
+		Assert.assertEquals(header, ",Cell name,Count,%");
 		logger.info("WBC tab is present and selected");
 	}
 	
 	@Test(priority = 6, enabled = true)
 	public void verifyWBCCellsNames() {
 		String header = wbc.verifyWBCCells();
-		Assert.assertEquals(header, ",Neutrophils,Band Forms,Hypersegmented*,Neutrophils with Toxic Granules*,Lymphocytes,Reactive,Large Granular Lymphocytes*,Eosinophils,Monocytes,Basophils,Atypical Cells/Blasts,Atypical Cells*,Lymphoid Blasts*,Myeloid Blasts*,Immature Granulocytes,Promyelocytes,Myelocytes,Metamyelocytes,Immature Eosinophils*,Immature Basophils*,Promonocytes*,Prolymphocytes*,Hairy Cells*,Sezary Cells*,Plasma Cells*,Total,Non-WBC,NRBC,Smudge Cells,Degenerate Cells,Stain Artefacts,Unclassified,Rejected");
+		Assert.assertEquals(header, ",Neutrophils,Band Forms,Hypersegmented*,Neutrophils with Toxic Granules*,Lymphocytes,Reactive,Large Granular Lymphocytes*,Eosinophils,Monocytes,Basophils,Atypical Cells/Blasts,Atypical Cells*,Lymphoid Blasts*,Myeloid Blasts*,Immature Granulocytes,Promyelocytes,Myelocytes,Metamyelocytes,Immature Eosinophils*,Immature Basophils*,Promonocytes*,Prolymphocytes*,Hairy Cells*,Sezary Cells*,Plasma Cells*,Others*,Total,Non-WBC,NRBC,Smudge Cells,Degenerate Cells,Stain Artefacts,Unclassified,Rejected");
 		logger.info("WBC tab is present and selected");
 	}
 	
@@ -82,7 +82,7 @@ public class WBCParametersTest extends BrowserSetUp {
 
 	@Test(priority = 24, enabled = true)
 	public void VerifyTheReclassificationOfNeutrophilWithAllOtherCells() throws InterruptedException {
-		boolean reclassify=wbc.verifyCountAfterReclassification("//tbody//tr//td[2]","/html/body/div/div/div[2]/div[2]/div/div/div/div[1]/div[1]/table/tbody/tr/td[1]");
+		boolean reclassify=wbc.verifyCountAfterReclassification("//tbody//tr//td[2]","//table/tbody/tr/td[1]");
 		Assert.assertTrue(reclassify);
 		logger.info("after reclassification count of neutrophils is verified for all the other cells");
 	}

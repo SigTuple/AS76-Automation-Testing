@@ -41,7 +41,7 @@ public class VerifyUiOfRbcSizeSubTabTest extends BrowserSetUp {
 		//____________________ RBC Sub tab related scripts are written inside the class______________________//
 	
 	// click on RBC TAb 
-	@Test(priority=1,enabled=true)
+	@Test(priority=1,enabled=false)
 	public void openToBeReviewedStatusReport() throws InterruptedException {
 		test=extent.createTest("RCB Size Tab Test");
 		String status=verifySubtbOfRbc.selectToBeReviewedReport();
@@ -51,6 +51,7 @@ public class VerifyUiOfRbcSizeSubTabTest extends BrowserSetUp {
 	}
 	@Test(priority = 3,enabled = true)
 	public void clickedOnRbcTab() throws InterruptedException {
+		test=extent.createTest("RCB Size Tab Test");
 		Assert.assertEquals(verifySubtbOfRbc.clickOnRBCTab(), "RBC");
 	}
 

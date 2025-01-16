@@ -298,6 +298,7 @@ public class VerifyTheRegradingOfRbcCellTypesTest extends BrowserSetUp {
     // Verify that the user is able to regrade cell types present in the RBC size, shape and color tab.
     @Test(priority = 91, enabled = true)
     public void verifyRegradingInAnisocytosisCellTypes() throws InterruptedException {
+        Thread.sleep(2000);
         String tab = props.getProperty("TabXpath") + "'Size'" + props.getProperty("remainingXpath");
         common.clickOnTab("Size", tab);
         String cellname = props.getProperty("AnisocytosisCell");

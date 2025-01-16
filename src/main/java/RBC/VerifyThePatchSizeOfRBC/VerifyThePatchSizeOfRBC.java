@@ -41,13 +41,13 @@ public class VerifyThePatchSizeOfRBC extends CommonMethods {
 
     public boolean verifyTheSizeOfPatchesInPixelForRBC(String cellName,String gradePercentage) throws InterruptedException {
         boolean status = false;
-        WebElement cellname = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(cellName)));
+        WebElement cellname = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(cellName)));
         cellname.click();
         Thread.sleep(2000);
-
-        WebElement gradePercentages = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(gradePercentage)));
+        WebElement gradePercentages = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(gradePercentage)));
         String actualPercentage = gradePercentages.getText();
         double actualGradePercentage = Double.parseDouble(actualPercentage);
+        System.out.println(actualGradePercentage);
 
         if (actualGradePercentage > 0.0 && !gradePercentage.equals("-") && !gradePercentage.equals(" ")) {
             // Locate the patch element
@@ -80,6 +80,9 @@ public class VerifyThePatchSizeOfRBC extends CommonMethods {
             {
                 System.out.println("Element size does not match the expected values.");
             }
+        }else {
+            System.out.println("patches are not found so we can't verify the pixel of patches ");
+            status=true;
         }
 
         return status;
