@@ -113,7 +113,7 @@
                         <include name="colourCodeOfNonSignificantCells"/>
 
                     </methods>
-            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcInclusionSubTabTest">
+            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcInclusionSubTabTest"/>
                     <methods>
                         <include name="navigateToInclusionTab"/>
                         <include name="columnOnInclusionSubTab"/>
