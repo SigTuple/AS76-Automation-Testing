@@ -18,7 +18,7 @@ import java.util.Properties;
 
 import static utilities.BrowserSetUp.extent;
 
-public class WBCSplitViewTest {
+public class WBCSplitViewTest extends BrowserSetUp{
         private final Logger logger = LogManager.getLogger(WBC.WBCSplitViewTest.WBCSplitViewTest.class);
         public WebDriverWait wait;
         public WBCPatches wbc;

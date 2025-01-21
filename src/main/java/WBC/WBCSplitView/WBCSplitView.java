@@ -1,8 +1,8 @@
 package WBC.WBCSplitView;
 
+
 import Data.Property;
 import GenericMethodForAllTab.CommonMethods;
-import WBC.VerifyWbcPatches.WBCPatches;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -34,15 +34,15 @@ public class WBCSplitView  extends CommonMethods {
     // clicking to split view
 
     public  boolean clickedOnSplitView() throws InterruptedException {
-         return splitViewIcon("WBC");
+                return splitViewIcon("WBC");
 
     }
 
 
     // verifying the zoom-in and zoom-out functionality
 
-    public String zoom_in_zoom_out_functionality() throws IOException, InterruptedException {
-        return verifyTheFunctionalityOfZoomIn_And_ZoomOut_Using_UI_icon("",7);
+    public String zoom_in_zoom_out_functionality() throws IOException, InterruptedException, IOException {
+        return verifyTheFunctionalityOfZoomIn_And_ZoomOut_Using_UI_icon("//*[@id='pbs-volumeViewport']/div/div[3]/div[3]/button[1]",5);
     }
 
 

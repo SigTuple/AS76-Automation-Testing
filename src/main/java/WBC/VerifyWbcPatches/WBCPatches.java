@@ -34,7 +34,7 @@ public class WBCPatches extends CommonMethods {
 	public boolean verifyPresenceOfWBCPatches() {
 		boolean flag = false;
 		List<WebElement> WBCCountXpath = wait
-				.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//tr/td[2]")));
+				.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='cell-table-tab']//tr/td[2]")));
 		List<WebElement> WBCNameXpath = wait
 				.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("WBCCells"))));
 		for (int i = 0; i < 18; i++) {

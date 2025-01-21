@@ -9,6 +9,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Properties;
 
@@ -213,6 +215,7 @@ public class VerifyTheListReportPage extends CommonMethods {
 
     }
 
+
     //verify the functionality of apply button after selecting any option
     public boolean applybutton() throws InterruptedException {
         boolean flag = false;
@@ -221,37 +224,150 @@ public class VerifyTheListReportPage extends CommonMethods {
         actions = new Actions(driver);
         actions.moveToElement(filterbtn).click().perform();
         Thread.sleep(2000);
-        WebElement scandate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandate"))));
+        //  WebElement scandate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandate"))));
         WebElement scndaterange = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandaterange"))));
         scndaterange.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("startdatebtn")))).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("enddatebtn")))).click();
         Thread.sleep(2000);
-        String[] datew = scndaterange.getText().split(" - ");
-        String[] parts = datew[0].split("-");
-        // Ensure the array has three parts (MM, dd, yyyy)
-        String idealdate = null;
-        if (parts.length == 3) {
-            String month = parts[0].length() == 1 ? "0" + parts[0] : parts[0];
-            String day = parts[1].length() == 1 ? "0" + parts[1] : parts[1];
-            String year = parts[2];  // Year doesn't need formatting
-            idealdate = month + "/" + day + "/" + year;
-        }
-        // scandate.click();
+        // Extract selected date range and format it
+        String selectedDateRange = scndaterange.getText();
+        String[] dates = selectedDateRange.split(" - ");
+        System.out.println(dates[0]);
+        System.out.println(dates[1]);
+
+        LocalDate startDate = LocalDate.parse(dates[0], DateTimeFormatter.ofPattern("dd-M-yyyy"));
+        LocalDate endDate = LocalDate.parse(dates[1], DateTimeFormatter.ofPattern("dd-M-yyyy"));
+
+        // Click Apply button
         WebElement applybtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("applybtn"))));
-        // Use JavaScript to click
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         jsExecutor.executeScript("arguments[0].click();", applybtn);
-        //actions.moveToElement(resetbtn).click().perform();
         Thread.sleep(5000);
-        List<WebElement> dateinlist = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//span[contains(@class,'dateComponent_day')]")));
-      for (WebElement dateinl:dateinlist) {
+        // Locate elements containing dates in the report listing (adjust XPath as needed)
+        List<WebElement> reportDateElements = driver.findElements(By.xpath("//div[@class='time']")); // Replace with actual XPath
 
-          if (idealdate.contains(dateinl.getText())) {
-              flag = true;
-              logger.info("Apply Button  is enable");
-          }
-      }
+
+        // Verify if dates within the selected range are present in the report listing
+        for (WebElement reportDateElement : reportDateElements) {
+            String[] reportDateStringWithTime = reportDateElement.getText().replace(",", "x").split("x");
+            String reportDateString = reportDateStringWithTime[0];
+            System.out.println(reportDateString);
+
+            //String datePart = reportDateString.substring(0, 10); // Extract "15-Jan-2025"
+            LocalDate reportDate = LocalDate.parse(reportDateString, DateTimeFormatter.ofPattern("dd-MMM-yyyy"));
+            System.out.println(reportDate);
+            if (reportDate.compareTo(startDate) >= 0 && reportDate.compareTo(endDate) <= 0) {
+                flag = true;
+                logger.info("Report with date within selected range found: " + reportDate);
+                break;
+            }
+        }
+        Thread.sleep(2000);
+        WebElement clearfilter = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("clearfilter"))));
+        if (clearfilter.isEnabled()) {
+            clearfilter.click();
+            logger.info("Clear Filter is enable");
+
+        }
+        return flag;
+
+    }
+
+    //verify the functionality of apply button after selecting any option
+    public boolean assignedToFilter() throws InterruptedException {
+        boolean flag = false;
+        Thread.sleep(2000);
+        WebElement filterbtn = driver.findElement(By.xpath(props.getProperty("filterbtn")));
+        actions = new Actions(driver);
+        actions.moveToElement(filterbtn).click().perform();
+        Thread.sleep(2000);
+        WebElement assignedToOption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("assignedto"))));
+        assignedToOption.click();
+        List<WebElement> assignedToCheckboxes = driver.findElements(By.xpath("//div[contains(@class,'assignedToPage_container-body')]//li"));
+
+        // Select checkboxes for specific users (e.g., "user1", "user2")
+        for (WebElement checkbox : assignedToCheckboxes) {
+            String user = checkbox.getText();// Assuming the user name is stored in the "value" attribute
+            if (user.equals(props.getProperty("reviewer1"))) {
+                checkbox.findElement(By.xpath(".//input")).click();
+                logger.info("Click on the selected reviewer");
+                System.out.println(user);
+                break;
+            }
+        }
+
+        // Click Apply button
+        WebElement applybtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("applybtn"))));
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("arguments[0].click();", applybtn);
+
+        // Get the filtered report list
+        Thread.sleep(2000);
+        List<WebElement> filteredReportItems = driver.findElements(By.xpath("//div[@id='reportListingTable']//tr/td//input"));
+
+        // Verify report assignments
+        for (WebElement reportItem : filteredReportItems) {
+            String assignedTo = reportItem.getAttribute("value");
+
+            // Verify if the "Assigned To" value matches any of the selected users
+            if (assignedTo.contains(props.getProperty("reviewer1"))) {
+                logger.info("The assigned reviewer is showing ");
+                flag = true;
+                break;
+
+            } else {
+                logger.info("No Report is assign for " + props.getProperty("reviewer1" + " ."));
+            }
+
+        }
+        Thread.sleep(2000);
+        WebElement clearfilter = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("clearfilter"))));
+        if (clearfilter.isEnabled()) {
+            clearfilter.click();
+            logger.info("Clear Filter is enable");
+        } else {
+            logger.info("Clear Filter is not enable");
+        }
+        return flag;
+
+    }
+
+    //verify the functionality of apply button after selecting any option
+    public boolean statusFilter(String RStatus) throws InterruptedException {
+        boolean flag = false;
+        Thread.sleep(2000);
+        WebElement filterbtn = driver.findElement(By.xpath(props.getProperty("filterbtn")));
+        actions = new Actions(driver);
+        actions.moveToElement(filterbtn).click().perform();
+        Thread.sleep(2000);
+        WebElement statusOption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("statusBtn"))));
+        statusOption.click();
+        WebElement selectedOption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("stutusXpth1") + RStatus + props.getProperty("stutusXpth2"))));
+        selectedOption.click();
+        // Click Apply button
+        WebElement applybtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("applybtn"))));
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("arguments[0].click();", applybtn);
+        // Get the filtered report list
+        Thread.sleep(2000);
+        List<WebElement> filteredReportItems = driver.findElements(By.xpath("//div[@id='reportListingTable']//tr//span[contains(@class,'reportStatusComponent_text')]"));
+
+        for (WebElement reportItem : filteredReportItems) {
+            String actualFilterStatus = reportItem.getText();
+            if (actualFilterStatus.equals(RStatus)) {
+                logger.info("Report status as per selected filter option");
+                flag = true;
+            }
+        }
+        Thread.sleep(2000);
+        WebElement clearfilter = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("clearfilter"))));
+        if (clearfilter.isEnabled()) {
+            clearfilter.click();
+            logger.info("Clear Filter is enable");
+        } else {
+            logger.info("Clear Filter is not enable");
+        }
         return flag;
 
     }
@@ -259,41 +375,54 @@ public class VerifyTheListReportPage extends CommonMethods {
     //verify the functionality of clear filter report
     public boolean clearfilteroption() throws InterruptedException {
         boolean flag = false;
-        WebElement clearfilter = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("clearfilter"))));
-        if (!clearfilter.isEnabled()) {
-            WebElement filterbtn = driver.findElement(By.xpath(props.getProperty("filterbtn")));
-            actions = new Actions(driver);
-            actions.moveToElement(filterbtn).click().perform();
-            Thread.sleep(2000);
-            WebElement scandate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandate"))));
-            WebElement scndaterange = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandaterange"))));
-            scndaterange.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("startdatebtn")))).click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("enddatebtn")))).click();
-            Thread.sleep(2000);
-            String[] datew = scndaterange.getText().split(" - ");
-            String[] parts = datew[0].split("-");
-            // Ensure the array has three parts (MM, dd, yyyy)
-            String idealdate = null;
-            if (parts.length == 3) {
-                String month = parts[0].length() == 1 ? "0" + parts[0] : parts[0];
-                String day = parts[1].length() == 1 ? "0" + parts[1] : parts[1];
-                String year = parts[2];  // Year doesn't need formatting
-                idealdate = month + "/" + day + "/" + year;
+        Thread.sleep(2000);
+        WebElement filterbtn = driver.findElement(By.xpath(props.getProperty("filterbtn")));
+        actions = new Actions(driver);
+        actions.moveToElement(filterbtn).click().perform();
+        Thread.sleep(2000);
+        //  WebElement scandate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandate"))));
+        WebElement scndaterange = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandaterange"))));
+        scndaterange.click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("startdatebtn")))).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("enddatebtn")))).click();
+        Thread.sleep(2000);
+        // Extract selected date range and format it
+        String selectedDateRange = scndaterange.getText();
+        String[] dates = selectedDateRange.split(" - ");
+        System.out.println(dates[0]);
+        System.out.println(dates[1]);
+
+        LocalDate startDate = LocalDate.parse(dates[0], DateTimeFormatter.ofPattern("dd-M-yyyy"));
+        LocalDate endDate = LocalDate.parse(dates[1], DateTimeFormatter.ofPattern("dd-M-yyyy"));
+
+        // Click Apply button
+        WebElement applybtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("applybtn"))));
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("arguments[0].click();", applybtn);
+        Thread.sleep(5000);
+        // Locate elements containing dates in the report listing (adjust XPath as needed)
+        List<WebElement> reportDateElements = driver.findElements(By.xpath("//div[@class='time']")); // Replace with actual XPath
+
+
+        // Verify if dates within the selected range are present in the report listing
+        for (WebElement reportDateElement : reportDateElements) {
+            String[] reportDateStringWithTime = reportDateElement.getText().replace(",", "x").split("x");
+            String reportDateString = reportDateStringWithTime[0];
+            System.out.println(reportDateString);
+
+            //String datePart = reportDateString.substring(0, 10); // Extract "15-Jan-2025"
+            LocalDate reportDate = LocalDate.parse(reportDateString, DateTimeFormatter.ofPattern("dd-MMM-yyyy"));
+            System.out.println(reportDate);
+            if (reportDate.compareTo(startDate) >= 0 && reportDate.compareTo(endDate) <= 0) {
+                flag = true;
+                logger.info("Report with date within selected range found: " + reportDate);
+                break;
             }
-            WebElement applybtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("applybtn"))));
-            // Use JavaScript to click
-            JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-            jsExecutor.executeScript("arguments[0].click();", applybtn);
-            //actions.moveToElement(resetbtn).click().perform();
-            Thread.sleep(5000);
-            WebElement dateinlist = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(@class,'dateComponent_day')])[1]")));
-            System.out.println(dateinlist.getText());
-            System.out.println(idealdate);
         }
+        Thread.sleep(2000);
+        WebElement clearfilter = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("clearfilter"))));
         if (clearfilter.isEnabled()) {
             clearfilter.click();
-            flag = true;
             logger.info("Clear Filter is enable");
 
         }

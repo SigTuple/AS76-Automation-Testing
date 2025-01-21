@@ -10,12 +10,13 @@
     <test name="Test">
 
         <classes>
-            <class name="SessionManagement.LoginTest"/>
+            <class name="SessionManagement.LoginTest">
             <methods>
                 <include name="validlogin"/>
             </methods>
+            </class>
 
-            <class name="ReportListing.VerifyTheListReportPageTest"/>
+            <class name="ReportListing.VerifyTheListReportPageTest">
             <methods>
                <include name ="verifySigLogoAndPBS"/>
                 <include name ="verifyTheKebabMenuIcon"/>
@@ -34,10 +35,10 @@
                 <include name ="verifyTheFunctionalityOfBookmarkButton"/>
                 <include name ="verifyTheFunctionalityOfBookmarkTextfield"/>
                 <include name ="verifyTheReassignReviewer"/>
-
             </methods>
+            </class>
 
-            <class name="summary.SummaryTest"/>
+            <class name="summary.SummaryTest">
             <methods>
                 <include name="assign"/>
                 <include name="verifyTheWBCinfoIcon"/>
@@ -51,9 +52,10 @@
                 <include name="VerifyThePresenceOfManualTxtFieldValue"/>
                 <include name="verifyThePresenceOfDiffrencialCount"/>
             </methods>
+            </class>
 
 
-            <class name="WBC.VerifyWbcParametersTest.WBCParametersTest"/>
+            <class name="WBC.VerifyWbcParametersTest.WBCParametersTest">
             <methods>
                 <include name="verifySelctionOfWBCTab"/>
                 <include name="verifyTheColumnPresentInTheWBCTab"/>
@@ -63,22 +65,24 @@
                 <include name="VerifyTheReclassificationOfNeutrophilWithAllOtherCells"/>
                 <include name="VerifyTheReclassificationOfWBCToLargePlatelet"/>
             </methods>
+            </class>
 
-            <class name="WBC.VerifyWbcPatchesTest.WBCPatchesTest"/>
+            <class name="WBC.VerifyWbcPatchesTest.WBCPatchesTest">
             <methods>
                 <include name="verifyPresenceOfWBCPatches"/>
                 <include name="verifyPresenceOfNONWBCPatches"/>
             </methods>
+        </class>
 
-            <class name="WBC.WBCSplitViewTest.WBCSplitViewTest"/>
+           <!-- <class name="WBC.WBCSplitViewTest.WBCSplitViewTest"/>
             <methods>
                 <include name="clickedOnSplitViewOnWBCTab"/>
                 <include name="verifyZoomInZoomOutFunctionality"/>
                 <include name="verifying_Home_Zoom_Functionality"/>
-            </methods>
+            </methods>-->
 
 
-            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcSizeSubTabTest"/>
+            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcSizeSubTabTest">
             <methods>
                 <include name="clickedOnRbcTab"/>
                 <include name="presenceOfSubTabNameOnRbc"/>
@@ -88,7 +92,8 @@
                 <include name="significant_info"/>
                 <include name="defaultCellSelection"/>
             </methods>
-            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcShapeSubTabTest"/>
+            </class>
+            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcShapeSubTabTest">
             <methods>
                 <include name="navigateToShapeTab"/>
                 <include name="columnOnShapeSubTab"/>
@@ -100,7 +105,8 @@
                 <include name="colourCodeOfSignificantCells"/>
                 <include name="colourCodeOfNonSignificantCells"/>
             </methods>
-            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcColorSubTabTest"/>
+            </class>
+            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcColorSubTabTest">
                     <methods>
                         <include name="navigateToColorTab"/>
                         <include name="columnOnColorSubTab"/>
@@ -111,9 +117,9 @@
                         <include name="astericMarkSOnManualSubClassification"/>
                         <include name="colourCodeOfSignificantCells"/>
                         <include name="colourCodeOfNonSignificantCells"/>
-
                     </methods>
-            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcInclusionSubTabTest"/>
+            </class>
+            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcInclusionSubTabTest">
                     <methods>
                         <include name="navigateToInclusionTab"/>
                         <include name="columnOnInclusionSubTab"/>
@@ -124,7 +130,8 @@
                         <include name="colourCodeOfSignificantCells"/>
                         <include name="colourCodeOfNonSignificantCells"/>
                     </methods>
-            <class name="RBC.VerifySplitViewOfRbcTab.VerifySplitViewOfRBCTabTest"/>
+            </class>
+            <class name="RBC.VerifySplitViewOfRbcTab.VerifySplitViewOfRBCTabTest">
                     <methods>
                         <include name="presenceOfSplitViewOnSizeSubTab"/>
                         <include name="presenceOfSplitViewOnShapeSubTab"/>
@@ -136,7 +143,10 @@
                         <include name="manuallyGradedCellsNotPresentOnMicroscopicViewInSizeTab"/>
                         <include name="manuallyGradedCellsNotPresentOnMicroscopicViewInShape"/>
                     </methods>
-            <class name="RBC.VerifyTheRegradingOfRbcCellTypes.VerifyTheRegradingOfRbcCellTypesTest"/>
+            </class>
+
+
+            <class name="RBC.VerifyTheRegradingOfRbcCellTypes.VerifyTheRegradingOfRbcCellTypesTest">
             <methods>
                 <include name="percentageValueOfMacrocytesOnRbcSizeTabAfterRegrading"/>
                 <include name="percentageValueOfOvalocytesOnRbcShapeTabAfterRegrading"/>
@@ -151,18 +161,68 @@
                 <include name="verifyingPercentageValueStruckOffAfterRegradingInMacrocytesCell"/>
                 <include name="verifyingPercentageValueStruckOffAfterRegradingInElliptocytes"/>
             </methods>
-            <class name="RBC.VerifyThePatchSizeOfRBC.VerifyThePatchSizeOfRBCTest"/>
+            </class>
+
+
+
+            <class name="RBC.VerifyThePatchSizeOfRBC.VerifyThePatchSizeOfRBCTest">
             <methods>
                 <include name="verifyTheSizeOfPatchesInPixelForMacrocytesInSizeTab"/>
                 <include name="verifyTheSizeOfPatchesInPixelForMacrocytesInShapeTab"/>
                 <include name="verifyTheSizeOfPatchesInPixelForHypochromicCellsInColorTab"/>
                 <include name="verifyTheSizeOfPatchesInPixelForWBCTab"/>
             </methods>
-
-             <class name="RBC.VerifyThePatchViewOfRBC.VerifyThePatchViewOfRBCTest"/>
+            </class>
+             <class name="RBC.VerifyThePatchViewOfRBC.VerifyThePatchViewOfRBCTest">
             <methods>
                 <include name="verifyTheSizeOfPatchesInPixelForMacrocytesInSizeTab"/>
             </methods>
+        </class>
+
+            <class name="Platelet.ReviewPatchesInPatchViewAndSplitViewTest">
+            <methods>
+                <include name="presenceOfCountSubTabInPlatelet"/>
+                <include name="presenceOfMorphology"/>
+                <include name="selectionOfFovs"/>
+                <include name="editTheNMGValue"/>
+            </methods>
+            </class>
+
+            <class name="CommonTools.ViewOriginalModifiedreportsTest">
+            <methods>
+                <include name="presenceOfOriginalReport"/>
+                <include name="presenceOfModifiedReport"/>
+                <include name="verifyTheSwichingToOriginalReport"/>
+                <include name="verifyTheSwichingToModifiedReport"/>
+            </methods>
+            </class>
+            <class name="CommonTools.ViewReferenceLibraryTest">
+            <methods>
+                <include name="verifyReferencesInAllTabsAndSubTabs"/>
+                <include name="verifyReferencesAndDisclaimerInAllTabsAndSubTabs"/>
+                <include name="verifytheDefaultSelectionCellinWbc"/>
+                <include name="verifytheDefaultSelectionCellinWbcSplitView"/>
+                <include name="verifytheDefaultSelectionCellinWbcMicroscopicView"/>
+                <include name="verifytheDefaultSelectionCellinRbcSize"/>
+                <include name="verifytheDefaultSelectionCellinRbcShape"/>
+                <include name="verifytheDefaultSelectionCellinRbcColor"/>
+                <include name="verifytheDefaultSelectionCellinRbcInclustion"/>
+                <include name="verifytheDefaultSelectionCellinRbcSizeSplit"/>
+                <include name="verifytheDefaultSelectionCellinRbcSizeMicroscopic"/>
+                <include name="verifytheDefaultSelectionCellinPlatelet"/>
+                <include name="verifytheDefaultSelectionCellinPlateletSplit"/>
+                <include name="verifytheDefaultSelectionCellinPlateletMicroscopic"/>
+                <include name="verifytheCbcReportInSummary"/>
+                <include name="verifytheCbcReportInWBC"/>
+                <include name="verifytheCbcReportInWBCSplit"/>
+                <include name="verifytheCbcReportInWBCMicroscopic"/>
+                <include name="verifytheCbcReportInRBCinSizeSplit"/>
+                <include name="verifytheCbcReportInRBCinSizeMicroscopic"/>
+            </methods>\
+            </class>
+
+
+
 
 
 

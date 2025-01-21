@@ -5,14 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e36e434-e668-4b85-b9db-45722b65adae" name="Changes" comment="new project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/WBC/WBCSplitView/WBCSplitView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WBC/WBCSplitViewTest/WBCSplitViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AS76-SanitySuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AS76-SanitySuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mandara-Automation-Testing" beforeDir="false" afterPath="$PROJECT_DIR$/Mandara-Automation-Testing" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GenericMethodForAllTab/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GenericMethodForAllTab/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/As76.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/appLogs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Rbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Rbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Wbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Wbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/summary/SummaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/summary/SummaryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReportListing/VerifyTheListReportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportListing/VerifyTheListReportPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WBC/VerifyWbcPatches/WBCPatches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WBC/VerifyWbcPatches/WBCPatches.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WBC/WBCSplitView/WBCSplitView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WBC/WBCSplitView/WBCSplitView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/VerifyTheReclassificationOfNeutrophilWithAllOtherCells.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/VerifyTheReclassificationOfNeutrophilWithAllOtherCells.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyPresenceOfWBCPatches.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/verifyPresenceOfWBCPatches.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifySelctionOfWBCTab.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/verifySelctionOfWBCTab.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheApplytButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheApplytButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheClearFilterButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheClearFilterButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheColumnPresentInTheWBCTab.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheColumnPresentInTheWBCTab.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheReassignReviewer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheReassignReviewer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheWBCCellCountIsEqualToTotalCount.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/verifyTheWBCCellCountIsEqualToTotalCount.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/verifyWBCCellsNames.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/verifyWBCCellsNames.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WBC/WBCSplitViewTest/WBCSplitViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WBC/WBCSplitViewTest/WBCSplitViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ReportListing/VerifyTheListReportPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReportListing/VerifyTheListReportPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WBC/VerifyWbcPatches/WBCPatches.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WBC/VerifyWbcPatches/WBCPatches.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WBC/WBCSplitView/WBCSplitView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Platelet/ReviewPatchesInPatchViewAndSplitViewTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Platelet/ReviewPatchesInPatchViewAndSplitViewTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WBC/WBCSplitViewTest/WBCSplitViewTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/BrowserSetUp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/BrowserSetUp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/BrowserSetUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/BrowserSetUp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +54,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "manjunath-cg"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SigTuple/AS76-Automation-Testing.git",
+    "accountId": "655851fd-17f3-45ca-8511-6813687ac32c"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Data/SessionManagement.properties" root0="FORCE_HIGHLIGHTING" />
@@ -43,13 +77,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -67,7 +94,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/rupakumari/Downloads/AS76-REPORTING 2",
+    "TestNG./Users/rupakumari/Downloads/AS76-REPORTING/AS76-SanitySuite.xml.executor": "Run",
+    "TestNG./Users/rupakumari/Downloads/AS76-REPORTING/testng.xml.executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/manjunathcg/Downloads/AS76-Automation-Testing-main",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -76,11 +106,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/Data" />
       <recent name="$PROJECT_DIR$/src/test/java/ReportSignOff" />
       <recent name="$PROJECT_DIR$/src/main/java/ReportSignOff" />
       <recent name="$PROJECT_DIR$/src/test/java/CommonTools" />
-      <recent name="$PROJECT_DIR$/src/main/java/CommonTools" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="RBC.VerifySplitViewOfRbcTab" />
@@ -94,20 +124,7 @@
       <recent name="RBC.VerifyTheRegradingOfRbcCellTypes" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/rupakumari/Downloads/AS76-REPORTING/testng.xml">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="AS76-REPORTING" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="AS76-REPORTING" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG./Users/rupakumari/Downloads/AS76-REPORTING/AS76-SanitySuite.xml">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="AS76-REPORTING" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,64 +145,6 @@
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
-    </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="As76" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SessionManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SessionManagement" />
-      <option name="MAIN_CLASS_NAME" value="SessionManagement.LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/rupakumari/Downloads/AS76-REPORTING/AS76-SanitySuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="As76" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/AS76-SanitySuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/rupakumari/Downloads/AS76-REPORTING/RBC.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="As76" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/RBC.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/rupakumari/Downloads/AS76-REPORTING/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="As76" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="16" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
       <module name="AS76-REPORTING" />
@@ -252,10 +211,81 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="AS76-REPORTING" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="AS76-REPORTING" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="As76" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SessionManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SessionManagement" />
+      <option name="MAIN_CLASS_NAME" value="SessionManagement.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/rupakumari/Downloads/AS76-REPORTING/AS76-SanitySuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="As76" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/AS76-SanitySuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/rupakumari/Downloads/AS76-REPORTING/RBC.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="As76" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/RBC.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/rupakumari/Downloads/AS76-REPORTING/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="As76" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/rupakumari/Downloads/AS76-REPORTING/testng.xml" />
         <item itemvalue="TestNG./Users/rupakumari/Downloads/AS76-REPORTING/AS76-SanitySuite.xml" />
+        <item itemvalue="TestNG./Users/rupakumari/Downloads/AS76-REPORTING/testng.xml" />
         <item itemvalue="TestNG./Users/rupakumari/Downloads/AS76-REPORTING/RBC.xml" />
         <item itemvalue="TestNG.LoginTest" />
       </list>
@@ -277,7 +307,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

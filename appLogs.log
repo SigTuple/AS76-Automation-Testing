@@ -1,17 +1,3 @@
+2025-01-21 10:18:13 INFO  ScreenshotListeners:29 - 
 ================:  valid Login :====================
-
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-
-================:  verify Selction Of W B C Tab :====================
-
-================:  verify The Column Present In The W B C Tab :====================
-
-================:  verify W B C Cells Names :====================
-
-================:  verify The W B C Cell Count Is Equal To Total Count :====================
-
-================:  verify Manual Sub Classification Message :====================
-
-================:  Verify The Reclassification Of Neutrophil With All Other Cells :====================
 
