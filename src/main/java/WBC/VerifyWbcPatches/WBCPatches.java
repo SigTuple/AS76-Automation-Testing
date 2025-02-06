@@ -32,6 +32,7 @@ public class WBCPatches extends CommonMethods {
 
 	// Verify the user is able to view the WBC patches
 	public boolean verifyPresenceOfWBCPatches() {
+		this.clickOnSpecificTab("WBC");
 		boolean flag = false;
 		List<WebElement> WBCCountXpath = wait
 				.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='cell-table-tab']//tr/td[2]")));

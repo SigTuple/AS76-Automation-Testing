@@ -1,0 +1,105 @@
+2025-02-04 15:37:29 INFO  ScreenshotListeners:29 - 
+================:  valid Login :====================
+
+2025-02-04 15:37:35 INFO  LoginTest:49 - user Logged in successfully
+2025-02-04 15:37:35 INFO  ScreenshotListeners:29 - 
+================:  verify Sig Logo And P B S :====================
+
+2025-02-04 15:37:35 INFO  VerifyTheListReportPage:46 - Sigtuple logo is Loaded .
+2025-02-04 15:37:35 INFO  VerifyTheListReportPage:47 - PBS Text is loaded
+2025-02-04 15:37:35 INFO  VerifyTheListReportPageTest:41 -  Sigtuple logo and PBS is Present on the page
+2025-02-04 15:37:35 INFO  ScreenshotListeners:29 - 
+================:  assign :====================
+
+2025-02-04 15:38:06 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Factor Cancel Btn :====================
+
+2025-02-04 15:38:06 INFO  CommonMethods:444 - Platelet tab is selected
+2025-02-04 15:38:06 ERROR ViewAndModifyThePlateletCount:89 - Error while verifying Cancel functionality: element not interactable
+  (Session info: chrome=132.0.6834.160)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.16.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Macbook-Pro', ip: 'fe80:0:0:0:10ec:7e4c:24d5:5f4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '11.0.23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/bq/rhslv0zs6hl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52963}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 132.0.6834.160, webStorageEnabled: true}
+Session ID: f7fff8e4d8b074c5f5f98cde61ab3f74
+2025-02-04 15:38:06 ERROR BrowserSetUp:185 - verifyTheFunctionalityOfMultiplicationFactorCancelBtn -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-02-04 15:38:07 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheFunctionalityOfMultiplicationFactorCancelBtn.png
+2025-02-04 15:38:07 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Warning Msg :====================
+
+2025-02-04 15:38:08 INFO  ViewAndModifyThePlateletCount:113 - Entered multiplication factor: 2000
+2025-02-04 15:38:08 INFO  ViewAndModifyThePlateletCount:122 - Warning message displayed correctly: Please enter a value between 5000-50000
+2025-02-04 15:38:08 INFO  ViewAndModifyThePlateletCount:133 - Clicked the Cancel button.
+2025-02-04 15:38:09 INFO  ViewAndModifyThePlateletCount:140 - Changes successfully reverted after clicking Cancel.
+2025-02-04 15:38:09 INFO  ViewAndModifyThePlateletCountTest:53 - multiplication factor is working Fine
+2025-02-04 15:38:09 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Factor :====================
+
+2025-02-04 15:38:09 INFO  ViewAndModifyThePlateletCount:177 - Entered valid multiplication factor: 5000
+2025-02-04 15:38:39 ERROR ViewAndModifyThePlateletCount:208 - Error while verifying multiplication factor functionality: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()='Save'] (tried for 30 second(s) with 500 milliseconds interval)
+2025-02-04 15:38:39 ERROR BrowserSetUp:185 - verifyTheFunctionalityOfMultiplicationFactor -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-02-04 15:38:40 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheFunctionalityOfMultiplicationFactor.png
+2025-02-04 15:38:40 INFO  ScreenshotListeners:29 - 
+================:  verify Presence Of Cell Type :====================
+
+2025-02-04 15:38:40 INFO  CommonMethods:721 - Morphology Sub Tab is selected
+2025-02-04 15:38:40 INFO  ReviewPlateleyMorphologyCellTypeTest:49 - Morphology tab Cell Types is present on platelet main tab
+2025-02-04 15:38:40 INFO  ScreenshotListeners:29 - 
+================:  Verify Cell Count Of Large Platelet Is Equal To Patch :====================
+
+2025-02-04 15:38:41 INFO  ReviewPlateletMorphologyCellType:64 - Total patches found: 36
+2025-02-04 15:38:41 INFO  ReviewPlateletMorphologyCellType:89 - Total patches found for Large Platelets: 36
+2025-02-04 15:38:41 INFO  ReviewPlateletMorphologyCellType:95 - Expected count for Large Platelets: 113
+2025-02-04 15:38:41 WARN  ReviewPlateletMorphologyCellType:102 - Mismatch in Large Platelets count. Expected: 113, Actual: 36
+2025-02-04 15:38:41 INFO  ScreenshotListeners:29 - 
+================:  Verify Cell Count Of Platelet Clumps Is Equal To Patch :====================
+
+2025-02-04 15:38:41 INFO  ReviewPlateletMorphologyCellType:64 - Total patches found: 34
+2025-02-04 15:38:41 INFO  ReviewPlateletMorphologyCellType:89 - Total patches found for Platelet Clumps: 34
+2025-02-04 15:38:41 INFO  ReviewPlateletMorphologyCellType:95 - Expected count for Platelet Clumps: 34
+2025-02-04 15:38:41 INFO  ReviewPlateletMorphologyCellType:99 - Platelet Clumps count matches the patch count. Count: 34
+2025-02-04 15:38:41 INFO  ReviewPlateleyMorphologyCellTypeTest:62 - Verify the  Platelet clumps cell count is equal patch count
+2025-02-04 15:38:41 INFO  ScreenshotListeners:29 - 
+================:  Functionality Of Patch When Select The Patch In Large Platelets :====================
+
+2025-02-04 15:38:41 INFO  ReviewPlateletMorphologyCellType:64 - Total patches found: 36
+2025-02-04 15:38:41 INFO  ReviewPlateletMorphologyCellType:130 - Total patches found for Large Platelets: 36
+2025-02-04 15:38:42 INFO  ReviewPlateletMorphologyCellType:140 - Patch selected successfully in Large Platelets. Patch details: 
+2025-02-04 15:38:42 INFO  ReviewPlateleyMorphologyCellTypeTest:69 - Verify the Large platelet cell  patches are selecting
+2025-02-04 15:38:42 INFO  ScreenshotListeners:29 - 
+================:  Functionality Of Patch When Select The Patch In Platelet Clumps :====================
+
+2025-02-04 15:38:42 INFO  ReviewPlateletMorphologyCellType:64 - Total patches found: 34
+2025-02-04 15:38:42 INFO  ReviewPlateletMorphologyCellType:130 - Total patches found for Platelet Clumps: 34
+2025-02-04 15:38:43 INFO  ReviewPlateletMorphologyCellType:140 - Patch selected successfully in Platelet Clumps. Patch details: 
+2025-02-04 15:38:43 INFO  ReviewPlateleyMorphologyCellTypeTest:75 - Verify the  Platelet clumps cell patches are selecting
+2025-02-04 15:38:43 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Large Platelet :====================
+
+2025-02-04 15:38:44 INFO  ReviewPlateleyMorphologyCellTypeTest:82 - Verify the Size of patch
+2025-02-04 15:38:44 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Platelet Clumps :====================
+
+2025-02-04 15:38:46 INFO  ReviewPlateleyMorphologyCellTypeTest:88 - Verify the Size of patch
+2025-02-04 15:38:46 INFO  ScreenshotListeners:29 - 
+================:  test Zoom Functionality :====================
+
+2025-02-04 15:38:49 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 1
+2025-02-04 15:38:49 INFO  CommonMethods:651 - Zoom level at step 1: 20 μm
+2025-02-04 15:38:51 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 2
+2025-02-04 15:38:51 INFO  CommonMethods:651 - Zoom level at step 2: 50 μm
+2025-02-04 15:38:53 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 3
+2025-02-04 15:38:53 INFO  CommonMethods:651 - Zoom level at step 3: 100 μm
+2025-02-04 15:38:53 INFO  ReviewPlateleyMorphologyCellTypeTest:103 - Final zoom level after zoom-out: 100 μm
+2025-02-04 15:38:55 INFO  CommonMethods:626 - Clicked zoom-in button. Step: 1
+2025-02-04 15:38:55 INFO  CommonMethods:630 - Zoom level at step 1: 50 μm
+2025-02-04 15:39:02 INFO  CommonMethods:626 - Clicked zoom-in button. Step: 2
+2025-02-04 15:39:02 INFO  CommonMethods:630 - Zoom level at step 2: 50 μm
+2025-02-04 15:39:09 INFO  CommonMethods:626 - Clicked zoom-in button. Step: 3
+2025-02-04 15:39:09 INFO  CommonMethods:630 - Zoom level at step 3: 50 μm

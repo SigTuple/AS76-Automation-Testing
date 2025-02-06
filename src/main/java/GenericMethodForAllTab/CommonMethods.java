@@ -446,17 +446,18 @@ public class CommonMethods {
 
 		}
 
-		// click on the view tabs
-		public void clickOnSpecificViewtab(String viewTabName) {
-			viewTabName = viewTabName.toLowerCase();
-			WebElement respectiveViewTab = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-					props.getProperty("commonViewTabXpath1") + viewTabName + props.getProperty("commonViewTabXpath2"))));
-			if (respectiveViewTab.isDisplayed()) {
-				respectiveViewTab.click();
-				System.out.println(viewTabName + " tab is selected");
-			}
 
+	// click on the view tabs
+	public void clickOnSpecificViewtab(String viewTabName) {
+		//viewTabName = viewTabName.toLowerCase();
+		WebElement respectiveViewTab = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+				props.getProperty("commonViewTabXpath1") + viewTabName + props.getProperty("commanViewTabXpath2"))));
+		if (respectiveViewTab.isDisplayed()) {
+			respectiveViewTab.click();
+			System.out.println(viewTabName + " tab is selected");
 		}
+
+	}
 
 		// back to list report
 		public void clickOnBackTOListReportButton() {
@@ -562,7 +563,7 @@ public class CommonMethods {
 		Thread.sleep(3000);
 		WebElement statusDropdowm = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("statusdropdowm"))));
 		statusDropdowm.click();
-		List<WebElement> listOfDD = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("statusDDList"))));
+		List<WebElement> listOfDD = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("statusdropdowm"))));
 		for ( WebElement option:listOfDD){
 			if(option.getText().equals(Status))
 			{
@@ -591,13 +592,10 @@ public class CommonMethods {
 			zoom_level = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scale_box")))).getText();
 			System.out.println("Zoom level at step " + i + " is: " + zoom_level);
 
-			if (count == 2) {
+			if (count == steps) {
 				// Call verifyTheFunctionalityOf_Home_zoom() when count == 2
 				String homeZoomLevel = verifyTheFunctionalityOf_Home_zoom();
-				logger.info("Home zoom level after count == 2: " + homeZoomLevel);
-			}
-
-			if (count == steps) {
+				logger.info("Home zoom level after count "+steps+"== :" + homeZoomLevel);
 				logger.info("Zoom in count is equal to steps");
 			}
 		}
@@ -614,9 +612,75 @@ public class CommonMethods {
 		Thread.sleep(2000);
 		String zoom_lvl = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scale_box")))).getText();
 		System.out.println("home zoom level is:" + zoom_lvl);
-
 		return zoom_lvl;
 	}
+
+	public String zoomIn(String zoomInButtonXpath, int steps) {
+		String zoomLevel = null;
+		try {
+			WebElement zoomInButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(zoomInButtonXpath)));
+
+			for (int i = 1; i <= steps; i++) {
+				zoomInButton.click();
+				Thread.sleep(2000);
+				logger.info("Clicked zoom-in button. Step: " + i);
+
+				// Wait for the zoom level to update
+				zoomLevel = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scale_box")))).getText();
+				logger.info("Zoom level at step " + i + ": " + zoomLevel);
+			}
+		} catch (Exception e) {
+			logger.error("Error during zoom-in functionality: ", e);
+		}
+		return zoomLevel;
+	}
+
+
+	public String zoomOut(String zoomOutButtonXpath, int steps) {
+		String zoomLevel = null;
+		try {
+			WebElement zoomOutButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(zoomOutButtonXpath)));
+
+			for (int i = 1; i <= steps; i++) {
+				zoomOutButton.click();
+				Thread.sleep(2000);
+				logger.info("Clicked zoom-out button. Step: " + i);
+
+				// Wait for the zoom level to update
+				zoomLevel = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scale_box")))).getText();
+				logger.info("Zoom level at step " + i + ": " + zoomLevel);
+			}
+		} catch (Exception e) {
+			logger.error("Error during zoom-out functionality: ", e);
+		}
+		return zoomLevel;
+	}
+
+
+	public String homeZoom() {
+		String homeZoomLevel = null;
+		try {
+			WebElement homeZoomButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("home_zoom"))));
+			homeZoomButton.click();
+			logger.info("Clicked home zoom button.");
+			Thread.sleep(2000);
+
+			// Wait for the zoom level to reset
+			homeZoomLevel = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scale_box")))).getText();
+			logger.info("Home zoom level: " + homeZoomLevel);
+
+		} catch (Exception e) {
+			logger.error("Error during home zoom functionality: ", e);
+		}
+		return homeZoomLevel;
+	}
+
+
+
+
+
+
+
 
 
 	public boolean splitViewIcon(String cellName) throws InterruptedException {
@@ -629,6 +693,36 @@ public class CommonMethods {
 		}
 		return false;
 	}
+
+	public void scrollToElement(WebElement element) {
+		try {
+			// Use JavaScript to scroll the element into view
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].scrollIntoView(true);", element);
+
+			// Log the element's details for traceability
+			String elementDetails = element.getAttribute("id") != null ? element.getAttribute("id") : element.toString();
+			logger.info("Scrolled to element: " + elementDetails);
+
+			// Wait briefly to ensure scrolling is complete
+			Thread.sleep(500); // Adjust delay if needed
+		} catch (Exception e) {
+			logger.error("Error while scrolling to the element: " + e.getMessage(), e);
+		}
+	}
+
+
+	// click operation for tab main and sub tab
+	public void clickOnSpecificSubTab(String SubTabName) {
+		WebElement respectiveTab = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath(props.getProperty("commanSubTabXpath1") + SubTabName + props.getProperty("commanSubTabXpath2"))));
+		if (respectiveTab.isDisplayed()) {
+			respectiveTab.click();
+			logger.info(SubTabName + " Sub Tab is selected");
+		}
+	}
+
+
 
 
 }

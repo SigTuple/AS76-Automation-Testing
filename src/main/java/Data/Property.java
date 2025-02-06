@@ -12,7 +12,7 @@ public class Property {
 	        String path = new File("src/main/java/Data/SessionManagement.properties")
 	                .getAbsolutePath();
 	        prop.load(new InputStreamReader(new FileInputStream(path), "UTF8"));
-	       
+
 
 	    }
 
@@ -21,7 +21,7 @@ public class Property {
 	        String path = new File("src/main/java/Data/Rbc.properties")
 	                .getAbsolutePath();
 	        prop.load(new InputStreamReader(new FileInputStream(path), "UTF8"));
-	       
+
 
 	    }
 
@@ -86,5 +86,10 @@ public class Property {
 		prop.load(new InputStreamReader(new FileInputStream(path), "UTF8"));
 
 
+	}
+	public static void readCommonToolsProperties() throws Exception{
+
+		String path=new File("src/main/java/Data/CommonTools.properties").getAbsolutePath();
+		prop.load(new InputStreamReader(new FileInputStream(path),"UTF8"));
 	}
 }

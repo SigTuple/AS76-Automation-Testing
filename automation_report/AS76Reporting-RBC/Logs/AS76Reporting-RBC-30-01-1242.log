@@ -1,0 +1,71 @@
+2025-01-30 12:41:27 INFO  ScreenshotListeners:29 - 
+================:  valid Login :====================
+
+2025-01-30 12:41:32 INFO  LoginTest:49 - user Logged in successfully
+2025-01-30 12:41:33 INFO  ScreenshotListeners:29 - 
+================:  verify Sig Logo And P B S :====================
+
+2025-01-30 12:41:33 INFO  VerifyTheListReportPage:46 - Sigtuple logo is Loaded .
+2025-01-30 12:41:33 INFO  VerifyTheListReportPage:47 - PBS Text is loaded
+2025-01-30 12:41:33 INFO  VerifyTheListReportPageTest:41 -  Sigtuple logo and PBS is Present on the page
+2025-01-30 12:41:33 INFO  ScreenshotListeners:29 - 
+================:  assign :====================
+
+2025-01-30 12:42:12 INFO  ScreenshotListeners:29 - 
+================:  verify Selction Of W B C Tab :====================
+
+2025-01-30 12:42:17 INFO  CommonMethods:52 - clicked on tab successfully
+2025-01-30 12:42:17 INFO  WBCParameters:41 - WBC
+2025-01-30 12:42:17 INFO  WBCParametersTest:43 - WBC tab is present and selected
+2025-01-30 12:42:17 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Factor Cancel Btn :====================
+
+2025-01-30 12:42:18 INFO  CommonMethods:444 - Platelet tab is selected
+2025-01-30 12:42:19 INFO  ViewAndModifyThePlateletCount:55 - Entered valid multiplication factor: 5000
+2025-01-30 12:42:19 INFO  ViewAndModifyThePlateletCount:66 - Set as default for future reports.
+2025-01-30 12:42:20 INFO  ViewAndModifyThePlateletCount:75 - Clicked the Cancel button.
+2025-01-30 12:42:20 ERROR ViewAndModifyThePlateletCount:90 - Error while verifying Cancel functionality: stale element reference: element is not attached to the page document
+  (Session info: chrome=132.0.6834.111)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.16.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Macbook-Pro', ip: 'fe80:0:0:0:10ec:7e4c:24d5:5f4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '11.0.23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/bq/rhslv0zs6hl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63522}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 132.0.6834.111, webStorageEnabled: true}
+Session ID: d5167a12bf96d3db9264936ee8609acf
+2025-01-30 12:42:20 ERROR BrowserSetUp:185 - verifyTheFunctionalityOfMultiplicationFactorCancelBtn -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-30 12:42:20 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheFunctionalityOfMultiplicationFactorCancelBtn.png
+2025-01-30 12:42:20 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Warning Msg :====================
+
+2025-01-30 12:42:21 INFO  ViewAndModifyThePlateletCount:116 - Entered multiplication factor: 2000
+2025-01-30 12:42:21 INFO  ViewAndModifyThePlateletCount:125 - Warning message displayed correctly: Please enter a value between 5000-50000
+2025-01-30 12:42:21 INFO  ViewAndModifyThePlateletCount:147 - Clicked the Cancel button.
+2025-01-30 12:42:21 ERROR ViewAndModifyThePlateletCount:162 - Error while verifying Cancel functionality: stale element reference: element is not attached to the page document
+  (Session info: chrome=132.0.6834.111)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.16.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Macbook-Pro', ip: 'fe80:0:0:0:10ec:7e4c:24d5:5f4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '11.0.23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/bq/rhslv0zs6hl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63522}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 132.0.6834.111, webStorageEnabled: true}
+Session ID: d5167a12bf96d3db9264936ee8609acf
+2025-01-30 12:42:21 INFO  ViewAndModifyThePlateletCountTest:53 - multiplication factor is working Fine
+2025-01-30 12:42:21 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Factor :====================
+
+2025-01-30 12:42:21 INFO  ViewAndModifyThePlateletCount:192 - Entered valid multiplication factor: 5000
+2025-01-30 12:42:51 ERROR ViewAndModifyThePlateletCount:224 - Error while verifying multiplication factor functionality: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()='Save'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Macbook-Pro', ip: 'fe80:0:0:0:10ec:7e4c:24d5:5f4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '11.0.23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/bq/rhslv0zs6hl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63522}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 132.0.6834.111, webStorageEnabled: true}
+Session ID: d5167a12bf96d3db9264936ee8609acf
+2025-01-30 12:42:51 ERROR BrowserSetUp:185 - verifyTheFunctionalityOfMultiplicationFactor -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-30 12:42:53 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheFunctionalityOfMultiplicationFactor.png

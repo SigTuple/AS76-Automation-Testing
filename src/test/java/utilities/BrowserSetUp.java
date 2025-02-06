@@ -70,25 +70,28 @@ public class BrowserSetUp {
 //        }
 	}
 
-	private static void initChromeDriver(String browserType, String url) {
-		System.out.println("Launching google chrome with new profile..");
-		System.setProperty("webdriver.chrome.driver", chromepath);
-		// Workspace directory
-		String downloadDirectory = System.getProperty("user.dir");
-		ChromeOptions options = new ChromeOptions();
+    private static void initChromeDriver(String browserType, String url) {
+        System.out.println("Launching google chrome with new profile..");
+        System.setProperty("webdriver.chrome.driver", chromepath);
+        // Workspace directory
+
+        String downloadDirectory = "/Users/manjunathcg/Downloads/AS76-Automation-Testing-main/download";
+
+        ChromeOptions options = new ChromeOptions();
         options.setAcceptInsecureCerts(true);
-		// setting the preferences to download the report in to the work space directory
-		options.setExperimentalOption("prefs", new HashMap<String, Object>() {
-			{
-				put("download.default_directory", downloadDirectory);
-			}
-		});
-		//Chrome drive lauch
+
+        // Set download directory
+        HashMap<String, Object> chromePrefs = new HashMap<>();
+        chromePrefs.put("download.default_directory", downloadDirectory);
+        chromePrefs.put("download.prompt_for_download", false);
+        chromePrefs.put("profile.default_content_settings.popups", 0);
+        options.setExperimentalOption("prefs", chromePrefs);
+        //Chrome drive lauch
 //		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver(options);
-		driver.manage().deleteAllCookies();
-		driver.manage().window().fullscreen();
-		driver.navigate().to(url);
+        driver = new ChromeDriver(options);
+        driver.manage().deleteAllCookies();
+        driver.manage().window().fullscreen();
+        driver.navigate().to(url);
 		
 		//Below are the browser type which might help in future
 //        if(browserType.equals("chrome"))

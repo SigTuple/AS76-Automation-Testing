@@ -138,7 +138,7 @@ public class VerifyTheListReportPageTest extends BrowserSetUp {
     //Verify the functionality of Bookmarks for any status Reports
     @Test(priority = 15 ,enabled = true)
     public  void verifyTheFunctionalityOfBookmarkButton() throws InterruptedException {
-        Assert.assertTrue(verifyTheListReportPage.bookmarkSavedtatus());
+        Assert.assertTrue(verifyTheListReportPage.bookmarkSavedStatus());
         logger.info("Verify the functionality of the Bookmark Button");
     }
 

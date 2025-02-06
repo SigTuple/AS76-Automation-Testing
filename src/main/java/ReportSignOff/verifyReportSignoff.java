@@ -1,6 +1,5 @@
 package ReportSignOff;
 
-import CommonTools.DownloadPatches;
 import Data.Property;
 import GenericMethodForAllTab.CommonMethods;
 import org.apache.log4j.LogManager;
@@ -42,8 +41,8 @@ public class verifyReportSignoff {
         props = Property.prop;
         Property.readSummaryProperties();
         Property.readReportListingProperties();
-        Property.readCommonMethodProperties();
         Property.readReportSignOffProperties();
+
     }
 
     // Verify the functionality of the Approve Report button
@@ -51,16 +50,17 @@ public class verifyReportSignoff {
         boolean flag = false;
         try {
             // Locate and click the "Approve report" button
-            WebElement approveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("approveButtonXpath"))));
+            WebElement approveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("approveBtn"))));
             approveButton.click();
             logger.info("Clicked on Approve Report button");
+            Thread.sleep(5000);
 
             // Wait for the confirmation popup to appear
-            WebElement popupMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("approveWarningMsg"))));
+            WebElement popupMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Are you sure you want to approve?']")));
             logger.info("Confirmation popup displayed: " + popupMessage.getText());
 
             // Verify the popup contains the expected message
-            if (popupMessage.getText().contains("Are you sure you want to approve?")) {
+            if (popupMessage.getText().contains("Are you sure you want to approve")) {
                 // Click on the Confirm button
                 WebElement confirmButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("confirmBtn"))));
                 confirmButton.click();
@@ -651,7 +651,7 @@ public class verifyReportSignoff {
                 Thread.sleep(3000);
                 commonMethods.selectSpecificStatus("Reviewed");
                 Thread.sleep(3000);
-                WebElement searchField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("searchfield"))));
+                WebElement searchField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Search']")));
                 searchField.click();
                 searchField.sendKeys(exptedSlideID);
                 actions=new Actions(driver);
@@ -669,6 +669,7 @@ public class verifyReportSignoff {
                 actions.moveToElement(statusElement).click().perform();
                 downloadReport();
 
+
                  } else {
                 logger.error("Confirmation popup message is incorrect or not displayed.");
             }
@@ -680,7 +681,7 @@ public class verifyReportSignoff {
     }
 
     //Verify the Functionality of the back to report
-    public boolean backToReport(){
+    public boolean backToReport() throws InterruptedException {
         boolean flag=false;
         WebElement backToReportArrow = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("backToReportArrow"))));
         backToReportArrow.click();
@@ -688,6 +689,7 @@ public class verifyReportSignoff {
         if (backToReportBtn.isDisplayed()){
             backToReportBtn.click();
             logger.info("Click on back to report button");
+            Thread.sleep(2000);
             WBCdifferentialHeader=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("WBCdifferentialHeader")))).getText();
             if (WBCdifferentialHeader.contains("WBC differential count")){
                 System.out.println(WBCdifferentialHeader);
@@ -778,6 +780,7 @@ public class verifyReportSignoff {
                         logger.error("Report status mismatch. Expected: " + expectedStatus + ", Found: " + reportStatus);
                     }
                     commonMethods.clickOnBackTOListReportButton();
+                    Thread.sleep(3000);
                     commonMethods.selectSpecificStatus("Reviewed");
                     Thread.sleep(3000);
                     WebElement searchField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("searchfield"))));

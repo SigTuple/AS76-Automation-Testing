@@ -1,0 +1,202 @@
+2025-02-05 15:03:43 INFO  ScreenshotListeners:29 - 
+================:  valid Login :====================
+
+2025-02-05 15:03:49 INFO  LoginTest:49 - user Logged in successfully
+2025-02-05 15:03:49 INFO  ScreenshotListeners:29 - 
+================:  verify Sig Logo And P B S :====================
+
+2025-02-05 15:03:49 INFO  VerifyTheListReportPage:48 - Sigtuple logo is Loaded .
+2025-02-05 15:03:49 INFO  VerifyTheListReportPage:49 - PBS Text is loaded
+2025-02-05 15:03:49 INFO  VerifyTheListReportPageTest:41 -  Sigtuple logo and PBS is Present on the page
+2025-02-05 15:03:49 INFO  ScreenshotListeners:29 - 
+================:  verify The Kebab Menu Icon :====================
+
+2025-02-05 15:03:49 INFO  VerifyTheListReportPage:60 - Kebab menu icon is loaded
+2025-02-05 15:03:49 INFO  VerifyTheListReportPageTest:48 - Kebab menu is Displayed on the app 
+2025-02-05 15:03:49 INFO  ScreenshotListeners:29 - 
+================:  verifythe Search And Filter And Checkbox :====================
+
+2025-02-05 15:03:50 INFO  VerifyTheListReportPage:73 - Search  Field  is displayed
+2025-02-05 15:03:50 INFO  VerifyTheListReportPage:74 - Filter button is displayed
+2025-02-05 15:03:50 INFO  VerifyTheListReportPage:75 - clear filter is displayed
+2025-02-05 15:03:50 INFO  VerifyTheListReportPageTest:55 -  Search textbox and Filter is Present on the page
+2025-02-05 15:03:50 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of The My Report Check Box :====================
+
+2025-02-05 15:03:50 INFO  VerifyTheListReportPage:85 - My report check box is displayed
+2025-02-05 15:03:50 INFO  VerifyTheListReportPage:86 - My report check box is Active
+2025-02-05 15:03:50 INFO  VerifyTheListReportPageTest:62 - My report Check box  is Present on the page
+2025-02-05 15:03:50 INFO  ScreenshotListeners:29 - 
+================:  verifyfunctionalityofmyreportcheckbox :====================
+
+2025-02-05 15:04:00 INFO  VerifyTheListReportPage:507 -  My Report is enable
+2025-02-05 15:04:07 INFO  VerifyTheListReportPageTest:68 -  Verify the functionality of the my report check box
+2025-02-05 15:04:07 INFO  ScreenshotListeners:29 - 
+================:  verity Header :====================
+
+2025-02-05 15:04:07 INFO  VerifyTheListReportPage:99 -  Report List header is Displayed
+2025-02-05 15:04:07 INFO  VerifyTheListReportPageTest:77 - Header of the Report listing is displayed and verified
+2025-02-05 15:04:07 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Search Field :====================
+
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:18 INFO  VerifyTheListReportPage:120 - Matching the sample Slide Id is displayed
+2025-02-05 15:04:29 INFO  VerifyTheListReportPageTest:85 - Functionality of search text field is working fine
+2025-02-05 15:04:29 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Filter Icon :====================
+
+2025-02-05 15:04:29 INFO  VerifyTheListReportPage:144 - Filter icon is present and enabled
+2025-02-05 15:04:29 INFO  VerifyTheListReportPageTest:93 - Functionality of Filter icon is working Fine
+2025-02-05 15:04:29 INFO  ScreenshotListeners:29 - 
+================:  verify The Same Slide Idon Additional Info :====================
+
+2025-02-05 15:04:44 INFO  VerifyTheListReportPage:486 - Additional info icon loaded successfully
+2025-02-05 15:04:44 INFO  VerifyTheListReportPageTest:101 - Functionality Additional info icon is enable and same slide id is Displyed
+2025-02-05 15:04:44 INFO  ScreenshotListeners:29 - 
+================:  verify The Applyt Button :====================
+
+2025-02-05 15:05:23 ERROR BrowserSetUp:185 - verifyTheApplytButton -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'scanDatePage_container-date')]/span[text()='Select date range'] (tried for 30 second(s) with 500 milliseconds interval)
+
+2025-02-05 15:05:24 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheApplytButton.png
+2025-02-05 15:05:24 INFO  ScreenshotListeners:29 - 
+================:  verify The Clear Filter Button :====================
+
+2025-02-05 15:05:36 INFO  VerifyTheListReportPage:447 - Report within selected range found: 2025-02-05
+2025-02-05 15:05:36 INFO  VerifyTheListReportPage:456 - Clear Filter is enabled and clicked.
+2025-02-05 15:05:39 INFO  VerifyTheListReportPage:463 - Reports are restored after clearing the filter.
+2025-02-05 15:05:39 INFO  VerifyTheListReportPageTest:128 - Verify the functionality of the apply Button
+2025-02-05 15:05:39 INFO  ScreenshotListeners:29 - 
+================:  verify The Reset Button :====================
+
+2025-02-05 15:05:48 INFO  VerifyTheListReportPage:210 - scane date text field is enable
+2025-02-05 15:05:53 INFO  VerifyTheListReportPageTest:115 - Verify the functionality of the Rest Button
+2025-02-05 15:05:53 INFO  ScreenshotListeners:29 - 
+================:  verify The Filter Close Button :====================
+
+2025-02-05 15:06:03 INFO  VerifyTheListReportPage:536 -  Filter Options close button is displayed
+2025-02-05 15:06:05 INFO  VerifyTheListReportPageTest:135 - Verify the functionality of the Close Button
+2025-02-05 15:06:05 INFO  ScreenshotListeners:29 - 
+================:  verify The Presence Of Filter Option :====================
+
+2025-02-05 15:06:10 INFO  VerifyTheListReportPage:167 -  Filter Option are Loaded
+2025-02-05 15:06:17 INFO  VerifyTheListReportPageTest:108 - Verify the Filter Options
+2025-02-05 15:06:17 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Bookmark Button :====================
+
+2025-02-05 15:06:18 INFO  VerifyTheListReportPage:566 - Bookmark is displayed
+2025-02-05 15:06:18 INFO  VerifyTheListReportPageTest:142 - Verify the functionality of the Bookmark Button
+2025-02-05 15:06:18 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Bookmark Textfield :====================
+
+2025-02-05 15:06:20 INFO  VerifyTheListReportPage:580 - Bookmark is already filled. Removing bookmark.
+2025-02-05 15:06:29 INFO  VerifyTheListReportPage:599 - Comment Textfield is enable
+2025-02-05 15:06:29 INFO  VerifyTheListReportPageTest:149 - Verify the functionality of the Bookmark textfield 
+2025-02-05 15:06:29 INFO  ScreenshotListeners:29 - 
+================:  verify The Reassign Reviewer :====================
+
+2025-02-05 15:06:32 INFO  VerifyTheListReportPage:720 - user is drop down is available
+2025-02-05 15:06:33 INFO  VerifyTheListReportPageTest:163 - Functionality of assign is working 
+2025-02-05 15:06:33 INFO  ScreenshotListeners:29 - 
+================:  assign :====================
+
+2025-02-05 15:07:12 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Factor Cancel Btn :====================
+
+2025-02-05 15:07:12 INFO  CommonMethods:444 - Platelet tab is selected
+2025-02-05 15:07:43 ERROR ViewAndModifyThePlateletCount:89 - Error while verifying Cancel functionality: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='multiplication-factor']/img (tried for 30 second(s) with 500 milliseconds interval)
+2025-02-05 15:07:43 ERROR BrowserSetUp:185 - verifyTheFunctionalityOfMultiplicationFactorCancelBtn -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-02-05 15:07:44 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheFunctionalityOfMultiplicationFactorCancelBtn.png
+2025-02-05 15:07:44 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Warning Msg :====================
+
+2025-02-05 15:08:14 ERROR ViewAndModifyThePlateletCount:147 - Error while verifying Cancel functionality: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='multiplication-factor']/img (tried for 30 second(s) with 500 milliseconds interval)
+2025-02-05 15:08:14 ERROR BrowserSetUp:185 - verifyTheFunctionalityOfMultiplicationWarningMsg -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-02-05 15:08:15 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheFunctionalityOfMultiplicationWarningMsg.png
+2025-02-05 15:08:15 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Factor :====================
+
+2025-02-05 15:08:45 ERROR ViewAndModifyThePlateletCount:208 - Error while verifying multiplication factor functionality: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='multiplication-factor']/img (tried for 30 second(s) with 500 milliseconds interval)
+2025-02-05 15:08:45 ERROR BrowserSetUp:185 - verifyTheFunctionalityOfMultiplicationFactor -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-02-05 15:08:46 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheFunctionalityOfMultiplicationFactor.png
+2025-02-05 15:08:46 INFO  ScreenshotListeners:29 - 
+================:  verify Presence Of Cell Type :====================
+
+2025-02-05 15:08:46 INFO  CommonMethods:721 - Morphology Sub Tab is selected
+2025-02-05 15:08:46 INFO  ReviewPlateleyMorphologyCellTypeTest:49 - Morphology tab Cell Types is present on platelet main tab
+2025-02-05 15:08:46 INFO  ScreenshotListeners:29 - 
+================:  Verify Cell Count Of Large Platelet Is Equal To Patch :====================
+
+2025-02-05 15:08:48 INFO  ReviewPlateletMorphologyCellType:136 - Total patches found for Large Platelets: 2
+2025-02-05 15:08:48 INFO  ReviewPlateletMorphologyCellType:142 - Expected count for Large Platelets: 1
+2025-02-05 15:08:48 WARN  ReviewPlateletMorphologyCellType:149 - Mismatch in Large Platelets count. Expected: 1, Actual: 2
+2025-02-05 15:08:48 INFO  ScreenshotListeners:29 - 
+================:  Verify Cell Count Of Platelet Clumps Is Equal To Patch :====================
+
+2025-02-05 15:08:50 INFO  ReviewPlateletMorphologyCellType:136 - Total patches found for Platelet Clumps: 2
+2025-02-05 15:08:51 INFO  ReviewPlateletMorphologyCellType:142 - Expected count for Platelet Clumps: 1
+2025-02-05 15:08:51 WARN  ReviewPlateletMorphologyCellType:149 - Mismatch in Platelet Clumps count. Expected: 1, Actual: 2
+2025-02-05 15:08:51 INFO  ScreenshotListeners:29 - 
+================:  Functionality Of Patch When Select The Patch In Large Platelets :====================
+
+2025-02-05 15:08:53 INFO  ReviewPlateletMorphologyCellType:177 - Total patches found for Large Platelets: 2
+2025-02-05 15:08:53 INFO  ReviewPlateletMorphologyCellType:187 - Patch selected successfully in Large Platelets. Patch details: 
+2025-02-05 15:08:53 INFO  ReviewPlateleyMorphologyCellTypeTest:69 - Verify the Large platelet cell  patches are selecting
+2025-02-05 15:08:53 INFO  ScreenshotListeners:29 - 
+================:  Functionality Of Patch When Select The Patch In Platelet Clumps :====================
+
+2025-02-05 15:08:55 INFO  ReviewPlateletMorphologyCellType:177 - Total patches found for Platelet Clumps: 2
+2025-02-05 15:08:55 INFO  ReviewPlateletMorphologyCellType:187 - Patch selected successfully in Platelet Clumps. Patch details: 
+2025-02-05 15:08:55 INFO  ReviewPlateleyMorphologyCellTypeTest:75 - Verify the  Platelet clumps cell patches are selecting
+2025-02-05 15:08:55 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Large Platelet :====================
+
+2025-02-05 15:08:55 INFO  ReviewPlateleyMorphologyCellTypeTest:82 - Verify the Size of patch
+2025-02-05 15:08:55 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Platelet Clumps :====================
+
+2025-02-05 15:08:55 INFO  ReviewPlateleyMorphologyCellTypeTest:88 - Verify the Size of patch
+2025-02-05 15:08:55 INFO  ScreenshotListeners:29 - 
+================:  test Zoom Functionality :====================
+
+2025-02-05 15:08:58 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 1
+2025-02-05 15:08:58 INFO  CommonMethods:651 - Zoom level at step 1: 20 μm
+2025-02-05 15:09:00 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 2
+2025-02-05 15:09:00 INFO  CommonMethods:651 - Zoom level at step 2: 50 μm
+2025-02-05 15:09:02 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 3
+2025-02-05 15:09:02 INFO  CommonMethods:651 - Zoom level at step 3: 100 μm
+2025-02-05 15:09:02 INFO  ReviewPlateleyMorphologyCellTypeTest:103 - Final zoom level after zoom-out: 100 μm
+2025-02-05 15:09:04 INFO  CommonMethods:626 - Clicked zoom-in button. Step: 1
+2025-02-05 15:09:04 INFO  CommonMethods:630 - Zoom level at step 1: 50 μm
+2025-02-05 15:09:06 INFO  CommonMethods:626 - Clicked zoom-in button. Step: 2
+2025-02-05 15:09:06 INFO  CommonMethods:630 - Zoom level at step 2: 20 μm
+2025-02-05 15:09:08 INFO  CommonMethods:626 - Clicked zoom-in button. Step: 3
+2025-02-05 15:09:08 INFO  CommonMethods:630 - Zoom level at step 3: 10 μm
+2025-02-05 15:09:08 INFO  ReviewPlateleyMorphologyCellTypeTest:109 - Final zoom level after zoom-in: 10 μm
+2025-02-05 15:09:08 INFO  CommonMethods:665 - Clicked home zoom button.
+2025-02-05 15:09:10 INFO  CommonMethods:670 - Home zoom level: 1000 μm
+2025-02-05 15:09:10 INFO  ReviewPlateleyMorphologyCellTypeTest:116 - Final zoom level after resetting to home: 1000 μm

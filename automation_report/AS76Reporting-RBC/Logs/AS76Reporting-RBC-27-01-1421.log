@@ -1,0 +1,1908 @@
+2025-01-27 12:21:20 INFO  ScreenshotListeners:29 - 
+================:  valid Login :====================
+
+2025-01-27 12:21:26 INFO  LoginTest:49 - user Logged in successfully
+2025-01-27 12:21:26 INFO  ScreenshotListeners:29 - 
+================:  verify Sig Logo And P B S :====================
+
+2025-01-27 12:21:26 INFO  VerifyTheListReportPage:46 - Sigtuple logo is Loaded .
+2025-01-27 12:21:26 INFO  VerifyTheListReportPage:47 - PBS Text is loaded
+2025-01-27 12:21:26 INFO  VerifyTheListReportPageTest:41 -  Sigtuple logo and PBS is Present on the page
+2025-01-27 12:21:26 INFO  ScreenshotListeners:29 - 
+================:  assign :====================
+
+2025-01-27 12:21:43 INFO  ScreenshotListeners:29 - 
+================:  verify Selction Of W B C Tab :====================
+
+2025-01-27 12:21:49 INFO  CommonMethods:52 - clicked on tab successfully
+2025-01-27 12:21:49 INFO  WBCParameters:41 - WBC
+2025-01-27 12:21:49 INFO  WBCParametersTest:43 - WBC tab is present and selected
+2025-01-27 12:21:49 INFO  ScreenshotListeners:29 - 
+================:  verify The Column Present In The W B C Tab :====================
+
+2025-01-27 12:21:49 INFO  WBCParameters:54 - ,Cell name,Count,%
+2025-01-27 12:21:49 INFO  WBCParametersTest:50 - WBC tab is present and selected
+2025-01-27 12:21:49 INFO  ScreenshotListeners:29 - 
+================:  verify W B C Cells Names :====================
+
+2025-01-27 12:21:50 INFO  WBCParameters:66 - ,Neutrophils,Band Forms,Hypersegmented*,Neutrophils with Toxic Granules*,Lymphocytes,Reactive,Large Granular Lymphocytes*,Eosinophils,Monocytes,Basophils,Atypical Cells/Blasts,Atypical Cells*,Lymphoid Blasts*,Myeloid Blasts*,Immature Granulocytes,Promyelocytes,Myelocytes,Metamyelocytes,Immature Eosinophils*,Immature Basophils*,Promonocytes*,Prolymphocytes*,Hairy Cells*,Sezary Cells*,Plasma Cells*,Others*,Total,Non-WBC,NRBC,Smudge Cells,Degenerate Cells,Stain Artefacts,Unclassified,Rejected
+2025-01-27 12:21:50 INFO  WBCParametersTest:57 - WBC tab is present and selected
+2025-01-27 12:21:50 INFO  ScreenshotListeners:29 - 
+================:  verify The W B C Cell Count Is Equal To Total Count :====================
+
+2025-01-27 12:21:51 INFO  WBCParameters:95 - WBC cell counts are equals to the total count Actual count: 176 Expected total count: 176
+2025-01-27 12:21:51 INFO  WBCParametersTest:65 - sum of WBC coutns are eqaul to the total count
+2025-01-27 12:21:51 INFO  ScreenshotListeners:29 - 
+================:  verify Manual Sub Classification Message :====================
+
+2025-01-27 12:21:51 INFO  WBCParametersTest:72 - * Manual sub-classification message is present
+2025-01-27 12:21:51 INFO  ScreenshotListeners:29 - 
+================:  Verify The Reclassification Of Neutrophil With All Other Cells :====================
+
+2025-01-27 12:21:51 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 12:21:51 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:21:52 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:21:52 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 12:21:52 INFO  WBCParameters:272 - Classification completed: Neutrophils to Band Forms
+2025-01-27 12:21:52 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 12:21:52 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 12:21:52 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:22:23 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 12:22:25 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 12:22:25 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:22:25 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:22:25 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 12:22:25 INFO  WBCParameters:272 - Classification completed: Neutrophils to Lymphocytes
+2025-01-27 12:22:25 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 12:22:25 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 12:22:26 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:22:56 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 12:22:58 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 12:22:58 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:22:58 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:22:58 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 12:22:59 INFO  WBCParameters:272 - Classification completed: Neutrophils to Monocytes
+2025-01-27 12:22:59 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 12:22:59 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 12:22:59 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:23:29 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 12:23:31 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 12:23:31 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:23:31 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:23:32 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 12:23:32 INFO  WBCParameters:272 - Classification completed: Neutrophils to Basophils
+2025-01-27 12:23:32 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 12:23:32 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 12:23:32 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:24:02 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 12:24:04 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 12:24:04 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:24:04 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:24:05 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 12:24:05 INFO  WBCParameters:272 - Classification completed: Neutrophils to Eosinophils
+2025-01-27 12:24:05 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 12:24:05 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 12:24:06 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:24:36 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 12:24:38 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 12:24:38 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:24:38 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:24:39 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 12:24:39 INFO  WBCParameters:272 - Classification completed: Neutrophils to Atypical Cells/Blasts
+2025-01-27 12:24:39 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 12:24:39 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 12:24:39 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:25:10 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 12:25:12 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 12:25:12 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:25:12 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:25:12 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 12:25:12 INFO  WBCParameters:272 - Classification completed: Neutrophils to Immature Granulocytes
+2025-01-27 12:25:12 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 12:25:12 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 12:25:12 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:25:43 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 12:25:45 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 12:25:45 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:25:45 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:25:46 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 12:25:46 INFO  WBCParameters:272 - Classification completed: Neutrophils to Immature Eosinophils
+2025-01-27 12:25:46 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 12:25:46 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 12:25:46 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:26:16 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 12:26:18 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 12:26:18 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:26:18 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:26:18 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 12:26:19 INFO  WBCParameters:272 - Classification completed: Neutrophils to Immature Basophils
+2025-01-27 12:26:19 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 12:26:19 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 12:26:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:26:49 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 12:26:51 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 12:26:51 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:26:51 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:26:51 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 12:26:51 INFO  WBCParameters:272 - Classification completed: Neutrophils to Promonocytes
+2025-01-27 12:26:51 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 12:26:51 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 12:26:51 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:27:22 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 12:27:24 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 12:27:24 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:27:24 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:27:24 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 12:27:24 INFO  WBCParameters:272 - Classification completed: Neutrophils to Prolymphocytes
+2025-01-27 12:27:24 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 12:27:24 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 12:27:24 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:27:55 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 12:27:57 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 12:27:57 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:27:57 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:27:57 INFO  WBCParameters:267 - Selected cell type directly: Hairy Cells
+2025-01-27 12:27:57 INFO  WBCParameters:272 - Classification completed: Neutrophils to Hairy Cells
+2025-01-27 12:27:57 INFO  WBCParameters:295 - Classification succeeded for cell type: Hairy Cells
+2025-01-27 12:27:57 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 1
+2025-01-27 12:27:57 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:28:27 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 12:28:29 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 2
+2025-01-27 12:28:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:28:30 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:28:30 INFO  WBCParameters:267 - Selected cell type directly: Sezary Cells
+2025-01-27 12:28:30 INFO  WBCParameters:272 - Classification completed: Neutrophils to Sezary Cells
+2025-01-27 12:28:30 INFO  WBCParameters:295 - Classification succeeded for cell type: Sezary Cells
+2025-01-27 12:28:30 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 1
+2025-01-27 12:28:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:29:01 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 12:29:03 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 2
+2025-01-27 12:29:03 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:29:03 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:29:03 INFO  WBCParameters:267 - Selected cell type directly: Plasma Cells
+2025-01-27 12:29:03 INFO  WBCParameters:272 - Classification completed: Neutrophils to Plasma Cells
+2025-01-27 12:29:03 INFO  WBCParameters:295 - Classification succeeded for cell type: Plasma Cells
+2025-01-27 12:29:04 INFO  WBCParameters:233 - Count successfully decreased for cell: Neutrophils. Initial: 51, Updated: 39
+2025-01-27 12:29:04 INFO  WBCParameters:192 - Skipping cell: Band Forms with count: 1
+2025-01-27 12:29:04 INFO  WBCParameters:192 - Skipping cell: Hypersegmented* with count: -
+2025-01-27 12:29:04 INFO  WBCParameters:192 - Skipping cell: Neutrophils with Toxic Granules* with count: -
+2025-01-27 12:29:04 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 12:29:05 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:29:05 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:29:05 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 12:29:05 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Band Forms
+2025-01-27 12:29:05 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 12:29:05 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 12:29:06 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:29:36 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 12:29:38 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 12:29:38 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:29:38 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:29:38 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 12:29:38 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Lymphocytes
+2025-01-27 12:29:38 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 12:29:38 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 12:29:38 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:30:09 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 12:30:11 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 12:30:11 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:30:11 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:30:12 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 12:30:12 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Monocytes
+2025-01-27 12:30:12 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 12:30:12 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 12:30:12 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:30:42 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 12:30:44 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 12:30:44 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:30:44 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:30:44 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 12:30:45 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Basophils
+2025-01-27 12:30:45 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 12:30:45 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 12:30:45 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:31:15 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 12:31:17 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 12:31:17 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:31:17 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:31:17 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 12:31:18 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Eosinophils
+2025-01-27 12:31:18 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 12:31:18 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 12:31:18 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:31:48 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 12:31:50 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 12:31:50 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:31:50 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:31:51 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 12:31:51 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Atypical Cells/Blasts
+2025-01-27 12:31:51 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 12:31:51 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 12:31:51 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:32:21 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 12:32:23 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 12:32:23 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:32:23 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:32:23 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 12:32:24 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Immature Granulocytes
+2025-01-27 12:32:24 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 12:32:24 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 12:32:24 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:32:54 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 12:32:56 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 12:32:56 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:32:56 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:32:56 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 12:32:57 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Immature Eosinophils
+2025-01-27 12:32:57 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 12:32:57 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 12:32:57 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:33:27 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 12:33:29 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 12:33:29 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:33:29 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:33:29 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 12:33:30 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Immature Basophils
+2025-01-27 12:33:30 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 12:33:30 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 12:33:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:34:00 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 12:34:02 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 12:34:02 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:34:02 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:34:03 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 12:34:03 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Promonocytes
+2025-01-27 12:34:03 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 12:34:03 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 12:34:03 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:34:33 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 12:34:35 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 12:34:35 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:34:35 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:34:36 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 12:34:36 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Prolymphocytes
+2025-01-27 12:34:36 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 12:34:36 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 12:34:36 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:35:06 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 12:35:08 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 12:35:08 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:35:08 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:35:09 INFO  WBCParameters:267 - Selected cell type directly: Hairy Cells
+2025-01-27 12:35:09 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Hairy Cells
+2025-01-27 12:35:09 INFO  WBCParameters:295 - Classification succeeded for cell type: Hairy Cells
+2025-01-27 12:35:09 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 1
+2025-01-27 12:35:09 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:35:40 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 12:35:42 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 2
+2025-01-27 12:35:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:35:42 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:35:42 INFO  WBCParameters:267 - Selected cell type directly: Sezary Cells
+2025-01-27 12:35:42 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Sezary Cells
+2025-01-27 12:35:42 INFO  WBCParameters:295 - Classification succeeded for cell type: Sezary Cells
+2025-01-27 12:35:42 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 1
+2025-01-27 12:35:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:36:13 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 12:36:15 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 2
+2025-01-27 12:36:15 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:36:15 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:36:15 INFO  WBCParameters:267 - Selected cell type directly: Plasma Cells
+2025-01-27 12:36:15 INFO  WBCParameters:272 - Classification completed: Lymphocytes to Plasma Cells
+2025-01-27 12:36:15 INFO  WBCParameters:295 - Classification succeeded for cell type: Plasma Cells
+2025-01-27 12:36:16 INFO  WBCParameters:233 - Count successfully decreased for cell: Lymphocytes. Initial: 62, Updated: 50
+2025-01-27 12:36:16 INFO  WBCParameters:192 - Skipping cell: Reactive with count: 1
+2025-01-27 12:36:16 INFO  WBCParameters:192 - Skipping cell: Large Granular Lymphocytes* with count: -
+2025-01-27 12:36:16 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 12:36:16 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:36:16 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:36:16 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 12:36:16 INFO  WBCParameters:272 - Classification completed: Eosinophils to Band Forms
+2025-01-27 12:36:16 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 12:36:16 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 12:36:17 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:36:47 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 12:36:49 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 12:36:49 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:36:49 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:36:49 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 12:36:50 INFO  WBCParameters:272 - Classification completed: Eosinophils to Lymphocytes
+2025-01-27 12:36:50 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 12:36:50 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 12:36:50 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:37:20 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 12:37:22 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 12:37:22 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:37:22 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:37:22 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 12:37:23 INFO  WBCParameters:272 - Classification completed: Eosinophils to Monocytes
+2025-01-27 12:37:23 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 12:37:23 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 12:37:23 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:37:53 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 12:37:55 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 12:37:55 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:37:55 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:37:56 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 12:37:56 INFO  WBCParameters:272 - Classification completed: Eosinophils to Basophils
+2025-01-27 12:37:56 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 12:37:56 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 12:37:56 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:38:26 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 12:38:28 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 12:38:28 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:38:28 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:38:28 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 12:38:29 INFO  WBCParameters:272 - Classification completed: Eosinophils to Eosinophils
+2025-01-27 12:38:29 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 12:38:29 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 12:38:29 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:38:59 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 12:39:01 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 12:39:01 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:39:01 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:39:01 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 12:39:02 INFO  WBCParameters:272 - Classification completed: Eosinophils to Atypical Cells/Blasts
+2025-01-27 12:39:02 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 12:39:02 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 12:39:02 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:39:32 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 12:39:34 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 12:39:34 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:39:34 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:39:34 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 12:39:34 INFO  WBCParameters:272 - Classification completed: Eosinophils to Immature Granulocytes
+2025-01-27 12:39:34 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 12:39:34 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 12:39:35 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:40:05 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 12:40:07 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 12:40:07 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:40:07 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:40:07 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 12:40:07 INFO  WBCParameters:272 - Classification completed: Eosinophils to Immature Eosinophils
+2025-01-27 12:40:07 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 12:40:07 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 12:40:07 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:40:38 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 12:40:40 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 12:40:40 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:40:40 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:40:40 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 12:40:40 INFO  WBCParameters:272 - Classification completed: Eosinophils to Immature Basophils
+2025-01-27 12:40:40 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 12:40:40 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 12:40:40 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:41:10 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 12:41:12 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 12:41:12 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:41:12 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:41:13 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 12:41:13 INFO  WBCParameters:272 - Classification completed: Eosinophils to Promonocytes
+2025-01-27 12:41:13 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 12:41:13 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 12:41:13 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:41:43 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 12:41:45 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 12:41:45 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:41:45 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:41:46 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 12:41:46 INFO  WBCParameters:272 - Classification completed: Eosinophils to Prolymphocytes
+2025-01-27 12:41:46 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 12:41:46 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 12:41:46 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:42:17 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 12:42:19 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 12:42:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:42:19 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:42:19 INFO  WBCParameters:267 - Selected cell type directly: Hairy Cells
+2025-01-27 12:42:19 INFO  WBCParameters:272 - Classification completed: Eosinophils to Hairy Cells
+2025-01-27 12:42:19 INFO  WBCParameters:295 - Classification succeeded for cell type: Hairy Cells
+2025-01-27 12:42:19 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 1
+2025-01-27 12:42:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:42:49 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 12:42:51 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 2
+2025-01-27 12:42:52 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:42:52 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:42:52 INFO  WBCParameters:267 - Selected cell type directly: Sezary Cells
+2025-01-27 12:42:52 INFO  WBCParameters:272 - Classification completed: Eosinophils to Sezary Cells
+2025-01-27 12:42:52 INFO  WBCParameters:295 - Classification succeeded for cell type: Sezary Cells
+2025-01-27 12:42:52 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 1
+2025-01-27 12:42:52 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:43:22 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 12:43:24 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 2
+2025-01-27 12:43:54 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 12:43:56 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 3
+2025-01-27 12:44:26 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 12:44:28 ERROR WBCParameters:311 - Classification failed for cell type: Plasma Cells after 3 attempts.
+2025-01-27 12:44:28 WARN  WBCParameters:209 - Skipping further actions for cell type: Plasma Cells due to repeated failures.
+2025-01-27 12:44:29 ERROR WBCParameters:223 - Error parsing updated count for cell: Eosinophils
+2025-01-27 12:44:29 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 12:44:29 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:44:29 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:44:30 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 12:44:30 INFO  WBCParameters:272 - Classification completed: Monocytes to Band Forms
+2025-01-27 12:44:30 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 12:44:30 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 12:44:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:45:00 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 12:45:02 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 12:45:02 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:45:03 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:45:03 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 12:45:03 INFO  WBCParameters:272 - Classification completed: Monocytes to Lymphocytes
+2025-01-27 12:45:03 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 12:45:03 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 12:45:03 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:45:33 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 12:45:35 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 12:45:35 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:45:35 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:45:36 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 12:45:36 INFO  WBCParameters:272 - Classification completed: Monocytes to Monocytes
+2025-01-27 12:45:36 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 12:45:36 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 12:45:36 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:46:06 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 12:46:08 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 12:46:08 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:46:08 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:46:08 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 12:46:09 INFO  WBCParameters:272 - Classification completed: Monocytes to Basophils
+2025-01-27 12:46:09 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 12:46:09 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 12:46:09 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:46:39 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 12:46:41 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 12:46:41 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:46:41 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:46:41 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 12:46:42 INFO  WBCParameters:272 - Classification completed: Monocytes to Eosinophils
+2025-01-27 12:46:42 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 12:46:42 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 12:46:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:47:12 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 12:47:14 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 12:47:14 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:47:14 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:47:15 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 12:47:15 INFO  WBCParameters:272 - Classification completed: Monocytes to Atypical Cells/Blasts
+2025-01-27 12:47:15 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 12:47:15 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 12:47:15 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:47:45 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 12:47:47 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 12:47:47 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:47:47 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:47:47 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 12:47:47 INFO  WBCParameters:272 - Classification completed: Monocytes to Immature Granulocytes
+2025-01-27 12:47:47 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 12:47:47 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 12:47:47 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:48:18 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 12:48:20 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 12:48:20 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:48:20 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:48:20 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 12:48:20 INFO  WBCParameters:272 - Classification completed: Monocytes to Immature Eosinophils
+2025-01-27 12:48:20 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 12:48:20 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 12:48:21 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:48:51 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 12:48:53 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 12:48:53 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:48:53 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:48:53 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 12:48:53 INFO  WBCParameters:272 - Classification completed: Monocytes to Immature Basophils
+2025-01-27 12:48:53 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 12:48:53 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 12:48:53 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:49:24 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 12:49:26 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 12:49:26 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:49:26 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:49:26 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 12:49:26 INFO  WBCParameters:272 - Classification completed: Monocytes to Promonocytes
+2025-01-27 12:49:26 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 12:49:26 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 12:49:27 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:49:57 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 12:49:59 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 12:49:59 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:49:59 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:49:59 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 12:49:59 INFO  WBCParameters:272 - Classification completed: Monocytes to Prolymphocytes
+2025-01-27 12:49:59 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 12:49:59 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 12:50:00 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:50:30 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 12:50:32 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 12:50:32 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:50:32 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:50:32 INFO  WBCParameters:267 - Selected cell type directly: Hairy Cells
+2025-01-27 12:50:32 INFO  WBCParameters:272 - Classification completed: Monocytes to Hairy Cells
+2025-01-27 12:50:32 INFO  WBCParameters:295 - Classification succeeded for cell type: Hairy Cells
+2025-01-27 12:50:32 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 1
+2025-01-27 12:50:32 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:51:02 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 12:51:04 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 2
+2025-01-27 12:51:04 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:51:05 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:51:05 INFO  WBCParameters:267 - Selected cell type directly: Sezary Cells
+2025-01-27 12:51:05 INFO  WBCParameters:272 - Classification completed: Monocytes to Sezary Cells
+2025-01-27 12:51:05 INFO  WBCParameters:295 - Classification succeeded for cell type: Sezary Cells
+2025-01-27 12:51:05 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 1
+2025-01-27 12:51:05 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:51:35 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 12:51:37 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 2
+2025-01-27 12:51:38 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:51:38 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:51:38 INFO  WBCParameters:267 - Selected cell type directly: Plasma Cells
+2025-01-27 12:51:38 INFO  WBCParameters:272 - Classification completed: Monocytes to Plasma Cells
+2025-01-27 12:51:38 INFO  WBCParameters:295 - Classification succeeded for cell type: Plasma Cells
+2025-01-27 12:51:38 INFO  WBCParameters:233 - Count successfully decreased for cell: Monocytes. Initial: 20, Updated: 8
+2025-01-27 12:51:39 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 12:51:39 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:51:39 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:51:39 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 12:51:39 INFO  WBCParameters:272 - Classification completed: Basophils to Band Forms
+2025-01-27 12:51:39 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 12:51:39 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 12:51:39 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:52:10 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 12:52:12 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 12:52:12 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:52:12 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:52:12 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 12:52:12 INFO  WBCParameters:272 - Classification completed: Basophils to Lymphocytes
+2025-01-27 12:52:12 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 12:52:12 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 12:52:12 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:52:43 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 12:52:45 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 12:52:45 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:52:45 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:52:45 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 12:52:45 INFO  WBCParameters:272 - Classification completed: Basophils to Monocytes
+2025-01-27 12:52:45 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 12:52:45 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 12:52:45 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:53:15 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 12:53:17 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 12:53:17 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:53:17 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:53:18 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 12:53:18 INFO  WBCParameters:272 - Classification completed: Basophils to Basophils
+2025-01-27 12:53:18 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 12:53:18 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 12:53:18 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:53:48 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 12:53:50 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 12:53:50 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:53:50 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:53:50 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 12:53:51 INFO  WBCParameters:272 - Classification completed: Basophils to Eosinophils
+2025-01-27 12:53:51 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 12:53:51 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 12:53:51 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:54:21 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 12:54:23 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 12:54:23 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:54:23 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:54:24 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 12:54:24 INFO  WBCParameters:272 - Classification completed: Basophils to Atypical Cells/Blasts
+2025-01-27 12:54:24 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 12:54:24 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 12:54:24 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:54:55 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 12:54:57 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 12:54:57 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:54:57 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:54:57 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 12:54:57 INFO  WBCParameters:272 - Classification completed: Basophils to Immature Granulocytes
+2025-01-27 12:54:57 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 12:54:57 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 12:54:58 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:55:28 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 12:55:30 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 12:55:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:55:30 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:55:30 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 12:55:30 INFO  WBCParameters:272 - Classification completed: Basophils to Immature Eosinophils
+2025-01-27 12:55:30 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 12:55:30 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 12:55:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:56:01 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 12:56:03 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 12:56:03 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:56:03 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:56:03 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 12:56:03 INFO  WBCParameters:272 - Classification completed: Basophils to Immature Basophils
+2025-01-27 12:56:03 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 12:56:03 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 12:56:04 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:56:34 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 12:56:36 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 12:56:36 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:56:36 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:56:36 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 12:56:36 INFO  WBCParameters:272 - Classification completed: Basophils to Promonocytes
+2025-01-27 12:56:36 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 12:56:36 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 12:56:36 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:57:07 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 12:57:09 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 12:57:09 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:57:09 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:57:09 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 12:57:09 INFO  WBCParameters:272 - Classification completed: Basophils to Prolymphocytes
+2025-01-27 12:57:09 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 12:57:09 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 12:57:09 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:57:40 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 12:57:42 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 12:57:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:57:42 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:57:42 INFO  WBCParameters:267 - Selected cell type directly: Hairy Cells
+2025-01-27 12:57:42 INFO  WBCParameters:272 - Classification completed: Basophils to Hairy Cells
+2025-01-27 12:57:42 INFO  WBCParameters:295 - Classification succeeded for cell type: Hairy Cells
+2025-01-27 12:57:42 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 1
+2025-01-27 12:57:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:58:12 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 12:58:14 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 2
+2025-01-27 12:58:15 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:58:15 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:58:15 INFO  WBCParameters:267 - Selected cell type directly: Sezary Cells
+2025-01-27 12:58:15 INFO  WBCParameters:272 - Classification completed: Basophils to Sezary Cells
+2025-01-27 12:58:15 INFO  WBCParameters:295 - Classification succeeded for cell type: Sezary Cells
+2025-01-27 12:58:15 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 1
+2025-01-27 12:58:15 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:58:46 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 12:58:48 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 2
+2025-01-27 12:58:48 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:58:48 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:58:48 INFO  WBCParameters:267 - Selected cell type directly: Plasma Cells
+2025-01-27 12:58:48 INFO  WBCParameters:272 - Classification completed: Basophils to Plasma Cells
+2025-01-27 12:58:48 INFO  WBCParameters:295 - Classification succeeded for cell type: Plasma Cells
+2025-01-27 12:58:49 INFO  WBCParameters:233 - Count successfully decreased for cell: Basophils. Initial: 13, Updated: 1
+2025-01-27 12:58:49 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 12:58:49 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:58:49 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:58:49 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 12:58:49 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Band Forms
+2025-01-27 12:58:49 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 12:58:49 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 12:58:49 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:59:20 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 12:59:22 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 12:59:22 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:59:22 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:59:22 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 12:59:22 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Lymphocytes
+2025-01-27 12:59:22 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 12:59:22 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 12:59:22 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:59:52 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 12:59:54 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 12:59:54 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 12:59:55 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 12:59:55 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 12:59:55 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Monocytes
+2025-01-27 12:59:55 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 12:59:55 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 12:59:55 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:00:25 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 13:00:27 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 13:00:27 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:00:27 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:00:27 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 13:00:28 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Basophils
+2025-01-27 13:00:28 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 13:00:28 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 13:00:28 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:00:58 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 13:01:00 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 13:01:00 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:01:00 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:01:00 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 13:01:01 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Eosinophils
+2025-01-27 13:01:01 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 13:01:01 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 13:01:01 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:01:31 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 13:01:33 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 13:01:33 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:01:33 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:01:33 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 13:01:33 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Atypical Cells/Blasts
+2025-01-27 13:01:33 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 13:01:33 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 13:01:33 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:02:04 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 13:02:06 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 13:02:06 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:02:06 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:02:06 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 13:02:06 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Immature Granulocytes
+2025-01-27 13:02:06 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 13:02:06 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 13:02:06 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:02:36 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:02:38 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 13:02:39 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:02:39 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:02:39 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 13:02:39 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Immature Eosinophils
+2025-01-27 13:02:39 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 13:02:39 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 13:02:39 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:03:09 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:03:11 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 13:03:12 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:03:12 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:03:12 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 13:03:12 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Immature Basophils
+2025-01-27 13:03:12 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 13:03:12 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 13:03:12 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:03:42 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 13:03:44 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 13:03:44 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:03:44 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:03:45 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 13:03:45 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Promonocytes
+2025-01-27 13:03:45 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 13:03:45 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 13:03:45 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:04:15 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 13:04:17 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 13:04:17 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:04:17 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:04:17 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 13:04:17 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Prolymphocytes
+2025-01-27 13:04:17 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 13:04:17 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 13:04:18 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:04:48 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 13:04:50 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 13:04:50 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:04:50 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:04:51 INFO  WBCParameters:267 - Selected cell type directly: Hairy Cells
+2025-01-27 13:04:51 INFO  WBCParameters:272 - Classification completed: Atypical Cells/Blasts to Hairy Cells
+2025-01-27 13:04:51 INFO  WBCParameters:295 - Classification succeeded for cell type: Hairy Cells
+2025-01-27 13:04:51 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 1
+2025-01-27 13:04:51 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:05:21 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 13:05:23 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 2
+2025-01-27 13:05:53 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 13:05:56 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 3
+2025-01-27 13:06:26 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 13:06:28 ERROR WBCParameters:311 - Classification failed for cell type: Sezary Cells after 3 attempts.
+2025-01-27 13:06:28 WARN  WBCParameters:209 - Skipping further actions for cell type: Sezary Cells due to repeated failures.
+2025-01-27 13:06:28 ERROR WBCParameters:223 - Error parsing updated count for cell: Atypical Cells/Blasts
+2025-01-27 13:06:28 INFO  WBCParameters:192 - Skipping cell: Atypical Cells* with count: -
+2025-01-27 13:06:28 INFO  WBCParameters:192 - Skipping cell: Lymphoid Blasts* with count: -
+2025-01-27 13:06:28 INFO  WBCParameters:192 - Skipping cell: Myeloid Blasts* with count: -
+2025-01-27 13:06:28 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 13:06:29 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:06:29 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:06:29 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 13:06:29 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Band Forms
+2025-01-27 13:06:29 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 13:06:29 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 13:06:29 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:06:59 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 13:07:01 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 13:07:01 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:07:01 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:07:02 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 13:07:02 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Lymphocytes
+2025-01-27 13:07:02 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 13:07:02 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 13:07:02 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:07:32 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 13:07:34 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 13:07:34 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:07:34 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:07:34 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 13:07:34 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Monocytes
+2025-01-27 13:07:34 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 13:07:34 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 13:07:35 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:08:05 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 13:08:07 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 13:08:07 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:08:07 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:08:07 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 13:08:07 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Basophils
+2025-01-27 13:08:07 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 13:08:07 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 13:08:08 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:08:38 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 13:08:40 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 13:08:40 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:08:40 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:08:40 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 13:08:40 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Eosinophils
+2025-01-27 13:08:40 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 13:08:40 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 13:08:40 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:09:10 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 13:09:12 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 13:09:13 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:09:13 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:09:13 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 13:09:13 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Atypical Cells/Blasts
+2025-01-27 13:09:13 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 13:09:13 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 13:09:13 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:09:43 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 13:09:45 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 13:09:45 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:09:45 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:09:46 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 13:09:46 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Immature Granulocytes
+2025-01-27 13:09:46 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 13:09:46 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 13:09:46 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:10:16 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:10:18 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 13:10:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:10:19 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:10:19 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 13:10:19 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Immature Eosinophils
+2025-01-27 13:10:19 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 13:10:19 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 13:10:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:10:49 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:10:51 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 13:10:51 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:10:51 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:10:52 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 13:10:52 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Immature Basophils
+2025-01-27 13:10:52 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 13:10:52 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 13:10:52 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:11:22 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 13:11:24 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 13:11:24 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:11:24 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:11:25 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 13:11:25 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Promonocytes
+2025-01-27 13:11:25 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 13:11:25 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 13:11:25 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:11:56 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 13:11:58 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 13:11:58 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:11:58 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:11:58 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 13:11:58 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Prolymphocytes
+2025-01-27 13:11:58 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 13:11:58 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 13:11:58 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:12:28 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 13:12:30 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 13:12:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:12:30 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:12:31 INFO  WBCParameters:267 - Selected cell type directly: Hairy Cells
+2025-01-27 13:12:31 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Hairy Cells
+2025-01-27 13:12:31 INFO  WBCParameters:295 - Classification succeeded for cell type: Hairy Cells
+2025-01-27 13:12:31 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 1
+2025-01-27 13:12:31 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:13:01 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 13:13:04 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 2
+2025-01-27 13:13:04 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:13:04 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:13:04 INFO  WBCParameters:267 - Selected cell type directly: Sezary Cells
+2025-01-27 13:13:04 INFO  WBCParameters:272 - Classification completed: Immature Granulocytes to Sezary Cells
+2025-01-27 13:13:04 INFO  WBCParameters:295 - Classification succeeded for cell type: Sezary Cells
+2025-01-27 13:13:04 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 1
+2025-01-27 13:13:04 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:13:34 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 13:13:36 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 2
+2025-01-27 13:14:07 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 13:14:09 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 3
+2025-01-27 13:14:39 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 13:14:41 ERROR WBCParameters:311 - Classification failed for cell type: Plasma Cells after 3 attempts.
+2025-01-27 13:14:41 WARN  WBCParameters:209 - Skipping further actions for cell type: Plasma Cells due to repeated failures.
+2025-01-27 13:14:42 ERROR WBCParameters:223 - Error parsing updated count for cell: Immature Granulocytes
+2025-01-27 13:14:42 INFO  WBCParameters:192 - Skipping cell: Promyelocytes with count: -
+2025-01-27 13:14:42 INFO  WBCParameters:192 - Skipping cell: Myelocytes with count: -
+2025-01-27 13:14:42 INFO  WBCParameters:192 - Skipping cell: Metamyelocytes with count: -
+2025-01-27 13:14:42 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 13:14:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:14:42 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:14:42 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 13:14:43 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Band Forms
+2025-01-27 13:14:43 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 13:14:43 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 13:14:43 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:15:13 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 13:15:15 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 13:15:15 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:15:15 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:15:15 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 13:15:15 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Lymphocytes
+2025-01-27 13:15:15 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 13:15:15 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 13:15:16 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:15:46 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 13:15:48 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 13:15:48 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:15:48 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:15:48 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 13:15:48 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Monocytes
+2025-01-27 13:15:48 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 13:15:48 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 13:15:48 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:16:18 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 13:16:20 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 13:16:20 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:16:21 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:16:21 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 13:16:21 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Basophils
+2025-01-27 13:16:21 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 13:16:21 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 13:16:21 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:16:51 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 13:16:53 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 13:16:53 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:16:53 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:16:54 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 13:16:54 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Eosinophils
+2025-01-27 13:16:54 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 13:16:54 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 13:16:54 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:17:24 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 13:17:26 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 13:17:27 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:17:27 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:17:27 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 13:17:27 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Atypical Cells/Blasts
+2025-01-27 13:17:27 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 13:17:27 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 13:17:27 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:17:57 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 13:17:59 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 13:17:59 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:17:59 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:18:00 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 13:18:00 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Immature Granulocytes
+2025-01-27 13:18:00 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 13:18:00 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 13:18:00 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:18:30 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:18:32 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 13:18:32 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:18:33 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:18:33 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 13:18:33 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Immature Eosinophils
+2025-01-27 13:18:33 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 13:18:33 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 13:18:33 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:19:03 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:19:05 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 13:19:05 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:19:05 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:19:06 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 13:19:06 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Immature Basophils
+2025-01-27 13:19:06 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 13:19:06 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 13:19:06 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:19:36 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 13:19:38 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 13:19:38 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:19:38 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:19:38 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 13:19:39 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Promonocytes
+2025-01-27 13:19:39 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 13:19:39 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 13:19:39 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:20:09 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 13:20:11 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 13:20:11 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:20:11 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:20:11 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 13:20:11 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Prolymphocytes
+2025-01-27 13:20:11 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 13:20:11 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 13:20:11 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:20:42 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 13:20:44 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 13:20:44 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:20:44 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:20:44 INFO  WBCParameters:267 - Selected cell type directly: Hairy Cells
+2025-01-27 13:20:44 INFO  WBCParameters:272 - Classification completed: Immature Eosinophils to Hairy Cells
+2025-01-27 13:20:44 INFO  WBCParameters:295 - Classification succeeded for cell type: Hairy Cells
+2025-01-27 13:20:44 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 1
+2025-01-27 13:20:44 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:21:14 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 13:21:16 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 2
+2025-01-27 13:21:47 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 13:21:49 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 3
+2025-01-27 13:22:20 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 13:22:22 ERROR WBCParameters:311 - Classification failed for cell type: Sezary Cells after 3 attempts.
+2025-01-27 13:22:22 WARN  WBCParameters:209 - Skipping further actions for cell type: Sezary Cells due to repeated failures.
+2025-01-27 13:22:22 ERROR WBCParameters:223 - Error parsing updated count for cell: Immature Eosinophils*
+2025-01-27 13:22:22 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 13:22:22 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:22:22 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:22:23 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 13:22:23 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Band Forms
+2025-01-27 13:22:23 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 13:22:23 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 13:22:23 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:22:53 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 13:22:55 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 13:22:55 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:22:55 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:22:56 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 13:22:56 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Lymphocytes
+2025-01-27 13:22:56 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 13:22:56 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 13:22:56 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:23:26 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 13:23:28 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 13:23:28 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:23:28 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:23:28 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 13:23:29 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Monocytes
+2025-01-27 13:23:29 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 13:23:29 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 13:23:29 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:23:59 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 13:24:01 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 13:24:01 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:24:01 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:24:01 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 13:24:02 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Basophils
+2025-01-27 13:24:02 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 13:24:02 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 13:24:02 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:24:32 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 13:24:34 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 13:24:34 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:24:34 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:24:34 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 13:24:35 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Eosinophils
+2025-01-27 13:24:35 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 13:24:35 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 13:24:35 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:25:05 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 13:25:07 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 13:25:07 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:25:07 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:25:07 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 13:25:08 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Atypical Cells/Blasts
+2025-01-27 13:25:08 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 13:25:08 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 13:25:08 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:25:38 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 13:25:40 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 13:25:40 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:25:40 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:25:40 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 13:25:40 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Immature Granulocytes
+2025-01-27 13:25:40 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 13:25:40 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 13:25:41 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:26:11 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:26:13 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 13:26:13 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:26:13 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:26:13 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 13:26:13 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Immature Eosinophils
+2025-01-27 13:26:13 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 13:26:13 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 13:26:13 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:26:44 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:26:46 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 13:26:46 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:26:46 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:26:46 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 13:26:46 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Immature Basophils
+2025-01-27 13:26:46 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 13:26:46 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 13:26:46 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:27:16 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 13:27:18 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 13:27:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:27:19 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:27:19 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 13:27:19 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Promonocytes
+2025-01-27 13:27:19 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 13:27:19 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 13:27:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:27:49 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 13:27:51 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 13:27:51 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:27:51 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:27:52 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 13:27:52 INFO  WBCParameters:272 - Classification completed: Immature Basophils to Prolymphocytes
+2025-01-27 13:27:52 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 13:27:52 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 13:27:52 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:28:22 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 13:28:24 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 13:28:54 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 13:28:56 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 3
+2025-01-27 13:29:27 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 13:29:29 ERROR WBCParameters:311 - Classification failed for cell type: Hairy Cells after 3 attempts.
+2025-01-27 13:29:29 WARN  WBCParameters:209 - Skipping further actions for cell type: Hairy Cells due to repeated failures.
+2025-01-27 13:29:29 ERROR WBCParameters:223 - Error parsing updated count for cell: Immature Basophils*
+2025-01-27 13:29:30 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 13:29:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:29:30 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:29:30 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 13:29:30 INFO  WBCParameters:272 - Classification completed: Promonocytes to Band Forms
+2025-01-27 13:29:30 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 13:29:30 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 13:29:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:30:01 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 13:30:03 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 13:30:03 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:30:03 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:30:03 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 13:30:04 INFO  WBCParameters:272 - Classification completed: Promonocytes to Lymphocytes
+2025-01-27 13:30:04 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 13:30:04 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 13:30:04 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:30:34 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 13:30:36 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 13:30:36 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:30:36 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:30:36 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 13:30:37 INFO  WBCParameters:272 - Classification completed: Promonocytes to Monocytes
+2025-01-27 13:30:37 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 13:30:37 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 13:30:37 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:31:07 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 13:31:09 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 13:31:09 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:31:09 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:31:09 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 13:31:10 INFO  WBCParameters:272 - Classification completed: Promonocytes to Basophils
+2025-01-27 13:31:10 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 13:31:10 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 13:31:10 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:31:40 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 13:31:42 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 13:31:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:31:42 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:31:42 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 13:31:42 INFO  WBCParameters:272 - Classification completed: Promonocytes to Eosinophils
+2025-01-27 13:31:42 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 13:31:42 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 13:31:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:32:13 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 13:32:15 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 13:32:15 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:32:15 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:32:15 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 13:32:16 INFO  WBCParameters:272 - Classification completed: Promonocytes to Atypical Cells/Blasts
+2025-01-27 13:32:16 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 13:32:16 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 13:32:16 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:32:46 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 13:32:48 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 13:32:48 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:32:48 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:32:48 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 13:32:49 INFO  WBCParameters:272 - Classification completed: Promonocytes to Immature Granulocytes
+2025-01-27 13:32:49 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 13:32:49 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 13:32:49 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:33:19 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:33:21 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 13:33:21 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:33:21 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:33:21 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 13:33:21 INFO  WBCParameters:272 - Classification completed: Promonocytes to Immature Eosinophils
+2025-01-27 13:33:21 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 13:33:21 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 13:33:21 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:33:52 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:33:54 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 13:33:54 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:33:54 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:33:54 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 13:33:54 INFO  WBCParameters:272 - Classification completed: Promonocytes to Immature Basophils
+2025-01-27 13:33:54 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 13:33:54 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 13:33:54 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:34:24 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 13:34:26 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 13:34:27 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:34:27 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:34:27 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 13:34:27 INFO  WBCParameters:272 - Classification completed: Promonocytes to Promonocytes
+2025-01-27 13:34:27 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 13:34:27 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 13:34:27 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:34:57 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 13:34:59 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 13:34:59 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:35:00 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:35:00 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 13:35:00 INFO  WBCParameters:272 - Classification completed: Promonocytes to Prolymphocytes
+2025-01-27 13:35:00 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 13:35:00 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 13:35:00 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:35:30 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 13:35:32 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 13:36:02 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 13:36:04 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 3
+2025-01-27 13:36:35 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 13:36:37 ERROR WBCParameters:311 - Classification failed for cell type: Hairy Cells after 3 attempts.
+2025-01-27 13:36:37 WARN  WBCParameters:209 - Skipping further actions for cell type: Hairy Cells due to repeated failures.
+2025-01-27 13:36:37 ERROR WBCParameters:223 - Error parsing updated count for cell: Promonocytes*
+2025-01-27 13:36:38 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 13:36:38 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:36:38 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:36:38 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 13:36:38 INFO  WBCParameters:272 - Classification completed: Prolymphocytes to Band Forms
+2025-01-27 13:36:38 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 13:36:38 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 13:36:38 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:37:08 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 13:37:10 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 13:37:10 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:37:10 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:37:11 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 13:37:11 INFO  WBCParameters:272 - Classification completed: Prolymphocytes to Lymphocytes
+2025-01-27 13:37:11 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 13:37:11 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 13:37:11 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:37:41 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 13:37:43 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 13:37:44 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:37:44 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:37:44 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 13:37:44 INFO  WBCParameters:272 - Classification completed: Prolymphocytes to Monocytes
+2025-01-27 13:37:44 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 13:37:44 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 13:37:44 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:38:15 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 13:38:17 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 13:38:17 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:38:17 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:38:17 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 13:38:17 INFO  WBCParameters:272 - Classification completed: Prolymphocytes to Basophils
+2025-01-27 13:38:17 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 13:38:17 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 13:38:17 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:38:48 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 13:38:50 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 13:38:50 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:38:50 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:38:50 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 13:38:50 INFO  WBCParameters:272 - Classification completed: Prolymphocytes to Eosinophils
+2025-01-27 13:38:50 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 13:38:50 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 13:38:50 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:39:20 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 13:39:22 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 13:39:22 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:39:22 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:39:23 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 13:39:23 INFO  WBCParameters:272 - Classification completed: Prolymphocytes to Atypical Cells/Blasts
+2025-01-27 13:39:23 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 13:39:23 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 13:39:23 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:39:53 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 13:39:55 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 13:39:55 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:39:55 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:39:56 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 13:39:56 INFO  WBCParameters:272 - Classification completed: Prolymphocytes to Immature Granulocytes
+2025-01-27 13:39:56 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 13:39:56 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 13:39:56 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:40:26 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:40:28 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 13:40:28 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:40:28 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:40:29 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 13:40:29 INFO  WBCParameters:272 - Classification completed: Prolymphocytes to Immature Eosinophils
+2025-01-27 13:40:29 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 13:40:29 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 13:40:29 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:40:59 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:41:01 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 13:41:01 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:41:02 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:41:02 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 13:41:02 INFO  WBCParameters:272 - Classification completed: Prolymphocytes to Immature Basophils
+2025-01-27 13:41:02 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 13:41:02 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 13:41:02 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:41:32 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 13:41:34 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 13:41:34 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:41:35 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:41:35 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 13:41:35 INFO  WBCParameters:272 - Classification completed: Prolymphocytes to Promonocytes
+2025-01-27 13:41:35 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 13:41:35 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 13:41:35 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:42:05 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 13:42:07 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 13:42:38 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 13:42:40 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 3
+2025-01-27 13:43:10 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 13:43:12 ERROR WBCParameters:311 - Classification failed for cell type: Prolymphocytes after 3 attempts.
+2025-01-27 13:43:12 WARN  WBCParameters:209 - Skipping further actions for cell type: Prolymphocytes due to repeated failures.
+2025-01-27 13:43:12 ERROR WBCParameters:223 - Error parsing updated count for cell: Prolymphocytes*
+2025-01-27 13:43:12 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 13:43:13 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:43:13 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:43:13 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 13:43:13 INFO  WBCParameters:272 - Classification completed: Hairy Cells to Band Forms
+2025-01-27 13:43:13 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 13:43:13 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 13:43:13 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:43:43 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 13:43:45 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 13:43:45 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:43:45 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:43:46 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 13:43:46 INFO  WBCParameters:272 - Classification completed: Hairy Cells to Lymphocytes
+2025-01-27 13:43:46 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 13:43:46 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 13:43:46 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:44:16 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 13:44:18 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 13:44:18 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:44:18 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:44:18 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 13:44:19 INFO  WBCParameters:272 - Classification completed: Hairy Cells to Monocytes
+2025-01-27 13:44:19 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 13:44:19 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 13:44:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:44:49 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 13:44:51 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 13:44:51 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:44:51 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:44:51 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 13:44:51 INFO  WBCParameters:272 - Classification completed: Hairy Cells to Basophils
+2025-01-27 13:44:51 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 13:44:51 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 13:44:51 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:45:22 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 13:45:24 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 13:45:24 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:45:24 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:45:24 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 13:45:24 INFO  WBCParameters:272 - Classification completed: Hairy Cells to Eosinophils
+2025-01-27 13:45:24 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 13:45:24 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 13:45:24 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:45:54 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 13:45:56 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 13:45:56 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:45:56 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:45:57 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 13:45:57 INFO  WBCParameters:272 - Classification completed: Hairy Cells to Atypical Cells/Blasts
+2025-01-27 13:45:57 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 13:45:57 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 13:45:57 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:46:27 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 13:46:29 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 13:46:29 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:46:29 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:46:30 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 13:46:30 INFO  WBCParameters:272 - Classification completed: Hairy Cells to Immature Granulocytes
+2025-01-27 13:46:30 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 13:46:30 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 13:46:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:47:00 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:47:02 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 13:47:02 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:47:02 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:47:02 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 13:47:03 INFO  WBCParameters:272 - Classification completed: Hairy Cells to Immature Eosinophils
+2025-01-27 13:47:03 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 13:47:03 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 13:47:03 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:47:33 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:47:35 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 13:48:05 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:48:07 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 3
+2025-01-27 13:48:37 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:48:39 ERROR WBCParameters:311 - Classification failed for cell type: Immature Basophils after 3 attempts.
+2025-01-27 13:48:39 WARN  WBCParameters:209 - Skipping further actions for cell type: Immature Basophils due to repeated failures.
+2025-01-27 13:48:39 ERROR WBCParameters:223 - Error parsing updated count for cell: Hairy Cells*
+2025-01-27 13:48:40 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 13:48:40 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:48:40 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:48:40 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 13:48:40 INFO  WBCParameters:272 - Classification completed: Sezary Cells to Band Forms
+2025-01-27 13:48:40 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 13:48:40 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 13:48:40 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:49:11 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 13:49:13 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 13:49:13 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:49:13 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:49:13 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 13:49:13 INFO  WBCParameters:272 - Classification completed: Sezary Cells to Lymphocytes
+2025-01-27 13:49:13 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 13:49:13 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 13:49:13 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:49:44 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 13:49:46 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 13:49:46 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:49:46 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:49:46 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 13:49:46 INFO  WBCParameters:272 - Classification completed: Sezary Cells to Monocytes
+2025-01-27 13:49:46 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 13:49:46 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 13:49:46 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:50:17 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 13:50:19 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 13:50:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:50:19 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:50:19 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 13:50:19 INFO  WBCParameters:272 - Classification completed: Sezary Cells to Basophils
+2025-01-27 13:50:19 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 13:50:19 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 13:50:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:50:50 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 13:50:52 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 13:50:52 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:50:52 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:50:52 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 13:50:52 INFO  WBCParameters:272 - Classification completed: Sezary Cells to Eosinophils
+2025-01-27 13:50:52 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 13:50:52 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 13:50:52 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:51:23 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 13:51:25 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 13:51:25 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:51:25 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:51:25 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 13:51:25 INFO  WBCParameters:272 - Classification completed: Sezary Cells to Atypical Cells/Blasts
+2025-01-27 13:51:25 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 13:51:25 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 13:51:25 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:51:55 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 13:51:57 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 13:51:57 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:51:58 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:51:58 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 13:51:58 INFO  WBCParameters:272 - Classification completed: Sezary Cells to Immature Granulocytes
+2025-01-27 13:51:58 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 13:51:58 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 13:51:58 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:52:28 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:52:30 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 13:52:30 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:52:31 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:52:31 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 13:52:31 INFO  WBCParameters:272 - Classification completed: Sezary Cells to Immature Eosinophils
+2025-01-27 13:52:31 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 13:52:31 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 13:52:31 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:53:01 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:53:03 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 13:53:33 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:53:35 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 3
+2025-01-27 13:54:05 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 13:54:07 ERROR WBCParameters:311 - Classification failed for cell type: Immature Basophils after 3 attempts.
+2025-01-27 13:54:07 WARN  WBCParameters:209 - Skipping further actions for cell type: Immature Basophils due to repeated failures.
+2025-01-27 13:54:08 ERROR WBCParameters:223 - Error parsing updated count for cell: Sezary Cells*
+2025-01-27 13:54:08 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 13:54:08 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:54:08 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:54:08 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 13:54:09 INFO  WBCParameters:272 - Classification completed: Plasma Cells to Band Forms
+2025-01-27 13:54:09 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 13:54:09 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 13:54:09 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:54:39 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 13:54:41 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 13:54:41 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:54:41 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:54:41 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 13:54:41 INFO  WBCParameters:272 - Classification completed: Plasma Cells to Lymphocytes
+2025-01-27 13:54:42 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 13:54:42 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 13:54:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:55:12 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 13:55:14 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 13:55:14 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:55:14 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:55:14 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 13:55:14 INFO  WBCParameters:272 - Classification completed: Plasma Cells to Monocytes
+2025-01-27 13:55:14 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 13:55:14 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 13:55:14 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:55:44 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 13:55:46 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 13:55:46 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:55:47 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:55:47 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 13:55:47 INFO  WBCParameters:272 - Classification completed: Plasma Cells to Basophils
+2025-01-27 13:55:47 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 13:55:47 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 13:55:47 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:56:17 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 13:56:19 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 13:56:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:56:19 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:56:20 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 13:56:20 INFO  WBCParameters:272 - Classification completed: Plasma Cells to Eosinophils
+2025-01-27 13:56:20 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 13:56:20 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 13:56:20 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:56:50 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 13:56:52 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 13:56:52 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:56:52 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:56:52 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 13:56:52 INFO  WBCParameters:272 - Classification completed: Plasma Cells to Atypical Cells/Blasts
+2025-01-27 13:56:52 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 13:56:52 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 13:56:53 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:57:23 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 13:57:25 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 13:57:25 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:57:25 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:57:25 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 13:57:25 INFO  WBCParameters:272 - Classification completed: Plasma Cells to Immature Granulocytes
+2025-01-27 13:57:25 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 13:57:25 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 13:57:26 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:57:56 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:57:58 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 13:58:28 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:58:30 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 3
+2025-01-27 13:59:00 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 13:59:02 ERROR WBCParameters:311 - Classification failed for cell type: Immature Eosinophils after 3 attempts.
+2025-01-27 13:59:02 WARN  WBCParameters:209 - Skipping further actions for cell type: Immature Eosinophils due to repeated failures.
+2025-01-27 13:59:02 ERROR WBCParameters:223 - Error parsing updated count for cell: Plasma Cells*
+2025-01-27 13:59:02 INFO  WBCParameters:192 - Skipping cell: Others* with count: -
+2025-01-27 13:59:02 INFO  WBCParameters:192 - Skipping cell: Total with count: 176
+2025-01-27 13:59:02 INFO  WBCParameters:192 - Skipping cell: Non-WBC with count: 
+2025-01-27 13:59:02 INFO  WBCParameters:192 - Skipping cell: NRBC with count: -
+2025-01-27 13:59:02 INFO  WBCParameters:192 - Skipping cell: Smudge Cells with count: -
+2025-01-27 13:59:02 INFO  WBCParameters:192 - Skipping cell: Degenerate Cells with count: -
+2025-01-27 13:59:02 INFO  WBCParameters:192 - Skipping cell: Stain Artefacts with count: -
+2025-01-27 13:59:03 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 13:59:03 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:59:03 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:59:03 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 13:59:04 INFO  WBCParameters:272 - Classification completed: Unclassified to Band Forms
+2025-01-27 13:59:04 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 13:59:04 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 13:59:04 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:59:34 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 13:59:36 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 13:59:36 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 13:59:36 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 13:59:37 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 13:59:37 INFO  WBCParameters:272 - Classification completed: Unclassified to Lymphocytes
+2025-01-27 13:59:37 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 13:59:37 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 13:59:37 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:00:07 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 14:00:09 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 14:00:09 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:00:09 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:00:09 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 14:00:10 INFO  WBCParameters:272 - Classification completed: Unclassified to Monocytes
+2025-01-27 14:00:10 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 14:00:10 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 14:00:10 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:00:40 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 14:00:42 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 14:00:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:00:42 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:00:42 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 14:00:42 INFO  WBCParameters:272 - Classification completed: Unclassified to Basophils
+2025-01-27 14:00:42 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 14:00:42 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 14:00:42 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:01:12 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 14:01:15 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 14:01:15 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:01:15 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:01:15 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 14:01:15 INFO  WBCParameters:272 - Classification completed: Unclassified to Eosinophils
+2025-01-27 14:01:15 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 14:01:15 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 14:01:15 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:01:45 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 14:01:47 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 14:01:47 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:01:47 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:01:48 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 14:01:48 INFO  WBCParameters:272 - Classification completed: Unclassified to Atypical Cells/Blasts
+2025-01-27 14:01:48 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 14:01:48 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 14:01:48 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:02:18 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 14:02:20 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 14:02:21 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:02:21 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:02:21 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 14:02:21 INFO  WBCParameters:272 - Classification completed: Unclassified to Immature Granulocytes
+2025-01-27 14:02:21 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 14:02:21 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 14:02:21 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:02:51 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 14:02:53 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 14:02:53 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:02:54 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:02:54 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 14:02:54 INFO  WBCParameters:272 - Classification completed: Unclassified to Immature Eosinophils
+2025-01-27 14:02:54 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 14:02:54 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 14:02:54 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:03:24 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 14:03:26 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 14:03:27 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:03:27 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:03:27 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 14:03:27 INFO  WBCParameters:272 - Classification completed: Unclassified to Immature Basophils
+2025-01-27 14:03:27 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 14:03:27 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 14:03:27 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:03:57 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 14:03:59 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 14:03:59 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:03:59 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:03:59 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 14:04:00 INFO  WBCParameters:272 - Classification completed: Unclassified to Promonocytes
+2025-01-27 14:04:00 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 14:04:00 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 14:04:00 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:04:30 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 14:04:32 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 14:04:32 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:04:32 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:04:32 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 14:04:33 INFO  WBCParameters:272 - Classification completed: Unclassified to Prolymphocytes
+2025-01-27 14:04:33 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 14:04:33 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 14:04:33 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:05:03 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 14:05:05 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 14:05:05 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:05:05 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:05:05 INFO  WBCParameters:267 - Selected cell type directly: Hairy Cells
+2025-01-27 14:05:05 INFO  WBCParameters:272 - Classification completed: Unclassified to Hairy Cells
+2025-01-27 14:05:05 INFO  WBCParameters:295 - Classification succeeded for cell type: Hairy Cells
+2025-01-27 14:05:05 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 1
+2025-01-27 14:05:05 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:05:36 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 14:05:38 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 2
+2025-01-27 14:06:08 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 14:06:10 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 3
+2025-01-27 14:06:40 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 14:06:42 ERROR WBCParameters:311 - Classification failed for cell type: Sezary Cells after 3 attempts.
+2025-01-27 14:06:42 WARN  WBCParameters:209 - Skipping further actions for cell type: Sezary Cells due to repeated failures.
+2025-01-27 14:06:43 ERROR WBCParameters:223 - Error parsing updated count for cell: Unclassified
+2025-01-27 14:06:43 INFO  WBCParameters:292 - Attempting classification for cell type: Neutrophils -> Band Forms. Attempt: 1
+2025-01-27 14:06:43 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:06:43 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:06:44 INFO  WBCParameters:264 - Selected sub-cell type: Band Forms
+2025-01-27 14:06:44 INFO  WBCParameters:272 - Classification completed: Rejected to Band Forms
+2025-01-27 14:06:44 INFO  WBCParameters:295 - Classification succeeded for cell type: Neutrophils -> Band Forms
+2025-01-27 14:06:44 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 1
+2025-01-27 14:06:44 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:07:14 ERROR WBCParameters:276 - Error during classification for cell type: Lymphocytes
+2025-01-27 14:07:16 INFO  WBCParameters:292 - Attempting classification for cell type: Lymphocytes. Attempt: 2
+2025-01-27 14:07:16 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:07:16 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:07:16 INFO  WBCParameters:267 - Selected cell type directly: Lymphocytes
+2025-01-27 14:07:17 INFO  WBCParameters:272 - Classification completed: Rejected to Lymphocytes
+2025-01-27 14:07:17 INFO  WBCParameters:295 - Classification succeeded for cell type: Lymphocytes
+2025-01-27 14:07:17 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 1
+2025-01-27 14:07:17 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:07:47 ERROR WBCParameters:276 - Error during classification for cell type: Monocytes
+2025-01-27 14:07:49 INFO  WBCParameters:292 - Attempting classification for cell type: Monocytes. Attempt: 2
+2025-01-27 14:07:49 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:07:49 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:07:49 INFO  WBCParameters:267 - Selected cell type directly: Monocytes
+2025-01-27 14:07:49 INFO  WBCParameters:272 - Classification completed: Rejected to Monocytes
+2025-01-27 14:07:49 INFO  WBCParameters:295 - Classification succeeded for cell type: Monocytes
+2025-01-27 14:07:49 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 1
+2025-01-27 14:07:50 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:08:20 ERROR WBCParameters:276 - Error during classification for cell type: Basophils
+2025-01-27 14:08:22 INFO  WBCParameters:292 - Attempting classification for cell type: Basophils. Attempt: 2
+2025-01-27 14:08:22 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:08:22 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:08:22 INFO  WBCParameters:267 - Selected cell type directly: Basophils
+2025-01-27 14:08:23 INFO  WBCParameters:272 - Classification completed: Rejected to Basophils
+2025-01-27 14:08:23 INFO  WBCParameters:295 - Classification succeeded for cell type: Basophils
+2025-01-27 14:08:23 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 1
+2025-01-27 14:08:23 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:08:53 ERROR WBCParameters:276 - Error during classification for cell type: Eosinophils
+2025-01-27 14:08:55 INFO  WBCParameters:292 - Attempting classification for cell type: Eosinophils. Attempt: 2
+2025-01-27 14:08:55 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:08:55 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:08:55 INFO  WBCParameters:267 - Selected cell type directly: Eosinophils
+2025-01-27 14:08:55 INFO  WBCParameters:272 - Classification completed: Rejected to Eosinophils
+2025-01-27 14:08:55 INFO  WBCParameters:295 - Classification succeeded for cell type: Eosinophils
+2025-01-27 14:08:55 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 1
+2025-01-27 14:08:55 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:09:26 ERROR WBCParameters:276 - Error during classification for cell type: Atypical Cells/Blasts
+2025-01-27 14:09:28 INFO  WBCParameters:292 - Attempting classification for cell type: Atypical Cells/Blasts. Attempt: 2
+2025-01-27 14:09:28 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:09:28 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:09:28 INFO  WBCParameters:267 - Selected cell type directly: Atypical Cells/Blasts
+2025-01-27 14:09:28 INFO  WBCParameters:272 - Classification completed: Rejected to Atypical Cells/Blasts
+2025-01-27 14:09:28 INFO  WBCParameters:295 - Classification succeeded for cell type: Atypical Cells/Blasts
+2025-01-27 14:09:28 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 1
+2025-01-27 14:09:28 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:09:59 ERROR WBCParameters:276 - Error during classification for cell type: Immature Granulocytes
+2025-01-27 14:10:01 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Granulocytes. Attempt: 2
+2025-01-27 14:10:01 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:10:01 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:10:01 INFO  WBCParameters:267 - Selected cell type directly: Immature Granulocytes
+2025-01-27 14:10:01 INFO  WBCParameters:272 - Classification completed: Rejected to Immature Granulocytes
+2025-01-27 14:10:01 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Granulocytes
+2025-01-27 14:10:01 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 1
+2025-01-27 14:10:01 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:10:32 ERROR WBCParameters:276 - Error during classification for cell type: Immature Eosinophils
+2025-01-27 14:10:34 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Eosinophils. Attempt: 2
+2025-01-27 14:10:34 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:10:34 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:10:35 INFO  WBCParameters:267 - Selected cell type directly: Immature Eosinophils
+2025-01-27 14:10:35 INFO  WBCParameters:272 - Classification completed: Rejected to Immature Eosinophils
+2025-01-27 14:10:35 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Eosinophils
+2025-01-27 14:10:35 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 1
+2025-01-27 14:10:35 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:11:05 ERROR WBCParameters:276 - Error during classification for cell type: Immature Basophils
+2025-01-27 14:11:07 INFO  WBCParameters:292 - Attempting classification for cell type: Immature Basophils. Attempt: 2
+2025-01-27 14:11:07 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:11:07 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:11:07 INFO  WBCParameters:267 - Selected cell type directly: Immature Basophils
+2025-01-27 14:11:08 INFO  WBCParameters:272 - Classification completed: Rejected to Immature Basophils
+2025-01-27 14:11:08 INFO  WBCParameters:295 - Classification succeeded for cell type: Immature Basophils
+2025-01-27 14:11:08 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 1
+2025-01-27 14:11:08 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:11:38 ERROR WBCParameters:276 - Error during classification for cell type: Promonocytes
+2025-01-27 14:11:40 INFO  WBCParameters:292 - Attempting classification for cell type: Promonocytes. Attempt: 2
+2025-01-27 14:11:40 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:11:40 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:11:40 INFO  WBCParameters:267 - Selected cell type directly: Promonocytes
+2025-01-27 14:11:40 INFO  WBCParameters:272 - Classification completed: Rejected to Promonocytes
+2025-01-27 14:11:40 INFO  WBCParameters:295 - Classification succeeded for cell type: Promonocytes
+2025-01-27 14:11:40 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 1
+2025-01-27 14:11:41 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:12:11 ERROR WBCParameters:276 - Error during classification for cell type: Prolymphocytes
+2025-01-27 14:12:13 INFO  WBCParameters:292 - Attempting classification for cell type: Prolymphocytes. Attempt: 2
+2025-01-27 14:12:13 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:12:13 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:12:13 INFO  WBCParameters:267 - Selected cell type directly: Prolymphocytes
+2025-01-27 14:12:14 INFO  WBCParameters:272 - Classification completed: Rejected to Prolymphocytes
+2025-01-27 14:12:14 INFO  WBCParameters:295 - Classification succeeded for cell type: Prolymphocytes
+2025-01-27 14:12:14 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 1
+2025-01-27 14:12:14 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:12:44 ERROR WBCParameters:276 - Error during classification for cell type: Hairy Cells
+2025-01-27 14:12:46 INFO  WBCParameters:292 - Attempting classification for cell type: Hairy Cells. Attempt: 2
+2025-01-27 14:12:46 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:12:46 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:12:46 INFO  WBCParameters:267 - Selected cell type directly: Hairy Cells
+2025-01-27 14:12:46 INFO  WBCParameters:272 - Classification completed: Rejected to Hairy Cells
+2025-01-27 14:12:46 INFO  WBCParameters:295 - Classification succeeded for cell type: Hairy Cells
+2025-01-27 14:12:46 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 1
+2025-01-27 14:12:47 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:13:17 ERROR WBCParameters:276 - Error during classification for cell type: Sezary Cells
+2025-01-27 14:13:19 INFO  WBCParameters:292 - Attempting classification for cell type: Sezary Cells. Attempt: 2
+2025-01-27 14:13:19 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:13:19 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:13:19 INFO  WBCParameters:267 - Selected cell type directly: Sezary Cells
+2025-01-27 14:13:20 INFO  WBCParameters:272 - Classification completed: Rejected to Sezary Cells
+2025-01-27 14:13:20 INFO  WBCParameters:295 - Classification succeeded for cell type: Sezary Cells
+2025-01-27 14:13:20 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 1
+2025-01-27 14:13:20 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:13:50 ERROR WBCParameters:276 - Error during classification for cell type: Plasma Cells
+2025-01-27 14:13:52 INFO  WBCParameters:292 - Attempting classification for cell type: Plasma Cells. Attempt: 2
+2025-01-27 14:13:52 INFO  WBCParameters:249 - Hovered and right-clicked on the image.
+2025-01-27 14:13:52 INFO  WBCParameters:254 - Clicked on 'Classify' option.
+2025-01-27 14:13:53 INFO  WBCParameters:267 - Selected cell type directly: Plasma Cells
+2025-01-27 14:13:53 INFO  WBCParameters:272 - Classification completed: Rejected to Plasma Cells
+2025-01-27 14:13:53 INFO  WBCParameters:295 - Classification succeeded for cell type: Plasma Cells
+2025-01-27 14:13:53 INFO  WBCParameters:233 - Count successfully decreased for cell: Rejected. Initial: 207, Updated: 194
+2025-01-27 14:13:53 INFO  WBCParametersTest:87 - after reclassification count of neutrophils is verified for all the other cells
+2025-01-27 14:13:53 INFO  ScreenshotListeners:29 - 
+================:  verify The Report Sign Off And Verify P D F :====================
+
+2025-01-27 14:13:55 INFO  verifyReportSignoff:606 - Clicked on Approve Report button
+2025-01-27 14:13:55 INFO  verifyReportSignoff:610 - Confirmation popup displayed: Are you sure you want to approve?
+2025-01-27 14:13:56 INFO  verifyReportSignoff:617 - Clicked on Confirm button in the popup
+2025-01-27 14:13:56 INFO  verifyReportSignoff:621 - Successfully redirected to the next page: No changes can be made once report is approved!
+2025-01-27 14:13:56 INFO  verifyReportSignoff:626 - Clicked on Approve Report button on the Preview Page
+2025-01-27 14:13:56 INFO  verifyReportSignoff:630 - Confirmation popup displayed on the Preview Page: Approve the report without supporting images?
+Are you sure you don’t want to add supporting images to this report? This action is not reversible.
+Cancel
+Approve report
+2025-01-27 14:13:57 INFO  verifyReportSignoff:635 - Clicked on Approve button in the Preview Report popup
+2025-01-27 14:14:30 ERROR verifyReportSignoff:677 - Error during the report approval process: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(@class,'appBar_status')]/parent::div (tried for 30 second(s) with 500 milliseconds interval)
+2025-01-27 14:14:30 ERROR BrowserSetUp:185 - verifyTheReportSignOffAndVerifyPDF -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-27 14:14:30 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheReportSignOffAndVerifyPDF.png
+2025-01-27 14:14:30 INFO  ScreenshotListeners:29 - 
+================:  reopen Report :====================
+
+2025-01-27 14:15:14 ERROR BrowserSetUp:185 - reopenReport -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//input[@id='assigned_to' and @value=''])[1] (tried for 30 second(s) with 500 milliseconds interval)
+
+2025-01-27 14:15:14 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/reopenReport.png
+2025-01-27 14:15:14 INFO  ScreenshotListeners:29 - 
+================:  verify The Contents Of Reject Btn Popup In Summary :====================
+
+2025-01-27 14:15:15 INFO  verifyReportSignoff:708 - Clicked on the Reject Report button
+2025-01-27 14:15:15 INFO  verifyReportSignoff:712 - Pop-up content retrieved: 
+Are you sure you want to reject this report?
+No changes can be made once report is rejected!
+Cancel
+Reject report
+2025-01-27 14:15:15 INFO  verifyReportSignoff:724 - Verify the content of the pop up
+2025-01-27 14:15:15 INFO  verifyReportSignoffTest:1311 - All the Contents are available in Reject report Pop-Up
+2025-01-27 14:15:15 INFO  ScreenshotListeners:29 - 
+================:  verify The Contents Of Reject Btn Popup In W B C :====================
+
+2025-01-27 14:16:05 ERROR BrowserSetUp:185 - verifyTheContentsOfRejectBtnPopupInWBC -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button/span[contains(text(),'WBC')] (tried for 50 second(s) with 500 milliseconds interval)
+
+2025-01-27 14:16:06 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheContentsOfRejectBtnPopupInWBC.png
+2025-01-27 14:16:06 INFO  ScreenshotListeners:29 - 
+================:  verify The Contents Of Reject Btn Popup In R B C Size :====================
+
+2025-01-27 14:16:56 ERROR BrowserSetUp:185 - verifyTheContentsOfRejectBtnPopupInRBCSize -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button/span[contains(text(),'RBC')] (tried for 50 second(s) with 500 milliseconds interval)
+
+2025-01-27 14:16:56 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheContentsOfRejectBtnPopupInRBCSize.png
+2025-01-27 14:16:56 INFO  ScreenshotListeners:29 - 
+================:  verify The Contents Of Reject Btn Popup In R B C Shape :====================
+
+2025-01-27 14:17:47 ERROR BrowserSetUp:185 - verifyTheContentsOfRejectBtnPopupInRBCShape -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(text(),'Shape')] (tried for 50 second(s) with 500 milliseconds interval)
+
+2025-01-27 14:17:47 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheContentsOfRejectBtnPopupInRBCShape.png
+2025-01-27 14:17:47 INFO  ScreenshotListeners:29 - 
+================:  verify The Contents Of Reject Btn Popup In R B C Color :====================
+
+2025-01-27 14:18:37 ERROR BrowserSetUp:185 - verifyTheContentsOfRejectBtnPopupInRBCColor -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(text(),'Color')] (tried for 50 second(s) with 500 milliseconds interval)
+
+2025-01-27 14:18:38 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheContentsOfRejectBtnPopupInRBCColor.png
+2025-01-27 14:18:38 INFO  ScreenshotListeners:29 - 
+================:  verify The Contents Of Reject Btn Popup In R B C Inclusions :====================
+
+2025-01-27 14:19:28 ERROR BrowserSetUp:185 - verifyTheContentsOfRejectBtnPopupInRBCInclusions -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(text(),'Inclusions')] (tried for 50 second(s) with 500 milliseconds interval)
+
+2025-01-27 14:19:28 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheContentsOfRejectBtnPopupInRBCInclusions.png
+2025-01-27 14:19:28 INFO  ScreenshotListeners:29 - 
+================:  verify The Contents Of Reject Btn Popup In Platelets Count In Split :====================
+
+2025-01-27 14:20:19 ERROR BrowserSetUp:185 - verifyTheContentsOfRejectBtnPopupInPlateletsCountInSplit -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button/span[contains(text(),'Platelets')] (tried for 50 second(s) with 500 milliseconds interval)
+
+2025-01-27 14:20:19 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheContentsOfRejectBtnPopupInPlateletsCountInSplit.png
+2025-01-27 14:20:19 INFO  ScreenshotListeners:29 - 
+================:  verify The Contents Of Reject Btn Popup In Platelets Morphology :====================
+
+2025-01-27 14:21:09 ERROR BrowserSetUp:185 - verifyTheContentsOfRejectBtnPopupInPlateletsMorphology -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(text(),'Morphology')] (tried for 50 second(s) with 500 milliseconds interval)
+
+2025-01-27 14:21:10 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheContentsOfRejectBtnPopupInPlateletsMorphology.png
+2025-01-27 14:21:10 INFO  ScreenshotListeners:29 - 
+================:  verify The Reject From Report Preview Page :====================
+
+2025-01-27 14:21:40 ERROR verifyReportSignoff:807 - Error during the Reject Report functionality verification: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'appBar_slide-details__slide-id')]/span (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Macbook-Pro', ip: 'fe80:0:0:0:10ec:7e4c:24d5:5f4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '11.0.23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/bq/rhslv0zs6hl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57110}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.265, webStorageEnabled: true}
+Session ID: 9bf9bc3308331dc09729071424d58428
+2025-01-27 14:21:40 ERROR BrowserSetUp:185 - verifyTheRejectFromReportPreviewPage -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-27 14:21:40 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/verifyTheRejectFromReportPreviewPage.png

@@ -82,7 +82,7 @@ public class VerifyTheRegradingOfRbcCellTypesTest extends BrowserSetUp {
         test = extent.createTest("RCB Regrading");
         String tab = props.getProperty("TabXpath") + "'Size'" + props.getProperty("remainingXpath");
         common.clickOnTab("Size", tab);
-        common.assignReviewer("rupa");
+        common.assignReviewer("manju");
         boolean status=verifyTheRegradingOfRbcCellTypes.percentageValuesOfAllCellsInRbcTab(props.getProperty("Macrocytes"));
         Assert.assertTrue(status);
         logger.info("Verified the calculation of % value for Macrocytes cell types present in the RBC size tab after regrading");
@@ -177,9 +177,9 @@ public class VerifyTheRegradingOfRbcCellTypesTest extends BrowserSetUp {
     @Test(priority = 56,enabled = true)
     public void verifyingGradeValueAccordingToPercentageOnAnisocytosisCell () throws InterruptedException {
         driver.navigate().refresh();
-        common.clickOnTab("RBC","//*[contains(text(),'RBC')]");
+        common.clickOnSpecificTab("RBC");
         String tab = props.getProperty("TabXpath") + "'Size'" + props.getProperty("remainingXpath");
-        common.clickOnTab("Size", tab);
+        common.clickOnSpecificSubTab("Size");
         String cellname = props.getProperty("AnisocytosisCell");
         boolean status=verifyTheRegradingOfRbcCellTypes.gradeValueAccordingToPercentage(cellname);
         Assert.assertTrue(status);

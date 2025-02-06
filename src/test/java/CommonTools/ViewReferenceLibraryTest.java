@@ -229,7 +229,7 @@ public class ViewReferenceLibraryTest {
     }
     @Test(priority = 7 ,enabled = true)
     public void verifytheDefaultSelectionCellinRbcShape() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Shape");
+        commonMethods.clickOnSpecificSubTab("Shape");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
         String actualCellname = viewReferenceLibrary.verifyReferencesDefault(referencesiconXpath, "WBC");
@@ -238,7 +238,7 @@ public class ViewReferenceLibraryTest {
     }
     @Test(priority = 8 ,enabled = true)
     public void verifytheDefaultSelectionCellinRbcColor() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Color");
+        commonMethods.clickOnSpecificSubTab("Color");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
         String actualCellname = viewReferenceLibrary.verifyReferencesDefault(referencesiconXpath, "WBC");
@@ -247,7 +247,7 @@ public class ViewReferenceLibraryTest {
     }
     @Test(priority = 9 ,enabled = true)
     public void verifytheDefaultSelectionCellinRbcInclustion() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Inclusions");
+        commonMethods.clickOnSpecificSubTab("Inclusions");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
         String actualCellname = viewReferenceLibrary.verifyReferencesDefault(referencesiconXpath, "WBC");
@@ -256,7 +256,7 @@ public class ViewReferenceLibraryTest {
     }
     @Test(priority = 10 ,enabled = true)
     public void verifytheDefaultSelectionCellinRbcSizeSplit() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Size");
+        commonMethods.clickOnSpecificSubTab("Size");
         commonMethods.clickOnSpecificViewtab("Split view");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
@@ -266,7 +266,7 @@ public class ViewReferenceLibraryTest {
     }
     @Test(priority = 11 ,enabled = true)
     public void verifytheDefaultSelectionCellinRbcShapeSpit() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Shape");
+        commonMethods.clickOnSpecificSubTab("Shape");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
         String actualCellname = viewReferenceLibrary.verifyReferencesDefault(referencesiconXpath, "WBC");
@@ -275,7 +275,7 @@ public class ViewReferenceLibraryTest {
     }
     @Test(priority = 12 ,enabled = true)
     public void verifytheDefaultSelectionCellinRbcColorSplit() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Color");
+        commonMethods.clickOnSpecificSubTab("Color");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
         String actualCellname = viewReferenceLibrary.verifyReferencesDefault(referencesiconXpath, "WBC");
@@ -284,7 +284,7 @@ public class ViewReferenceLibraryTest {
     }
     @Test(priority = 13 ,enabled = true)
     public void verifytheDefaultSelectionCellinRbcInclustionSplit() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Inclusions");
+        commonMethods.clickOnSpecificSubTab("Inclusions");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
         String actualCellname = viewReferenceLibrary.verifyReferencesDefault(referencesiconXpath, "WBC");
@@ -294,7 +294,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 14 ,enabled = true)
     public void verifytheDefaultSelectionCellinRbcSizeMicroscopic() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Size");
+        commonMethods.clickOnSpecificSubTab("Size");
         commonMethods.clickOnSpecificViewtab("Microscopic view");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
@@ -304,7 +304,7 @@ public class ViewReferenceLibraryTest {
     }
     @Test(priority = 15,enabled = true)
     public void verifytheDefaultSelectionCellinRbcShapeMicroscopic() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Shape");
+        commonMethods.clickOnSpecificSubTab("Shape");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
         String actualCellname = viewReferenceLibrary.verifyReferencesDefault(referencesiconXpath, "WBC");
@@ -313,7 +313,7 @@ public class ViewReferenceLibraryTest {
     }
     @Test(priority = 16,enabled = true)
     public void verifytheDefaultSelectionCellinRbcColorMicroscopic() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Color");
+        commonMethods.clickOnSpecificSubTab("Color");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
         String actualCellname = viewReferenceLibrary.verifyReferencesDefault(referencesiconXpath, "WBC");
@@ -324,7 +324,7 @@ public class ViewReferenceLibraryTest {
     @Test(priority = 17 ,enabled = true)
     public void verifytheDefaultSelectionCellinPlatelet() throws InterruptedException {
         commonMethods.clickOnSpecificTab("Platelets");
-        commonMethods.clickOnSpecificTab("Morphology");
+        commonMethods.clickOnSpecificSubTab("Morphology");
         Thread.sleep(2000);
         String referencesiconXpath = props.getProperty("references");
         String actualCellname = viewReferenceLibrary.verifyReferencesDefault(referencesiconXpath, "WBC");
@@ -402,7 +402,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 25,enabled = true)
     public void verifytheCbcReportInRBCinShape() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Shape");
+        commonMethods.clickOnSpecificSubTab("Shape");
         //commonMethods.clickOnSpecificViewtab("Microscopic view");
         Thread.sleep(2000);
         String CBCXpath = props.getProperty("cbcReport");
@@ -413,7 +413,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 26,enabled = true)
     public void verifytheCbcReportInRBCinColor() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Color");
+        commonMethods.clickOnSpecificSubTab("Color");
         //commonMethods.clickOnSpecificViewtab("Microscopic view");
         Thread.sleep(2000);
         String CBCXpath = props.getProperty("cbcReport");
@@ -424,7 +424,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 27,enabled = true)
     public void verifytheCbcReportInRBCinInclusion() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Inclusion");
+        commonMethods.clickOnSpecificSubTab("Inclusion");
         //commonMethods.clickOnSpecificViewtab("Microscopic view");
         Thread.sleep(2000);
         String CBCXpath = props.getProperty("cbcReport");
@@ -436,7 +436,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 28,enabled = true)
     public void verifytheCbcReportInRBCinSizeSplit() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Size");
+        commonMethods.clickOnSpecificSubTab("Size");
         commonMethods.clickOnSpecificViewtab("Split view");
         Thread.sleep(2000);
         String CBCXpath = props.getProperty("cbcReport");
@@ -447,7 +447,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 29,enabled = true)
     public void verifytheCbcReportInRBCinShapeSplit() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Shape");
+        commonMethods.clickOnSpecificSubTab("Shape");
         //commonMethods.clickOnSpecificViewtab("Microscopic view");
         Thread.sleep(2000);
         String CBCXpath = props.getProperty("cbcReport");
@@ -458,7 +458,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 30,enabled = true)
     public void verifytheCbcReportInRBCinColorSplit() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Color");
+        commonMethods.clickOnSpecificSubTab("Color");
         //commonMethods.clickOnSpecificViewtab("Microscopic view");
         Thread.sleep(2000);
         String CBCXpath = props.getProperty("cbcReport");
@@ -469,7 +469,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 31,enabled = true)
     public void verifytheCbcReportInRBCinInclusionSplit() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Inclusion");
+        commonMethods.clickOnSpecificSubTab("Inclusion");
         //commonMethods.clickOnSpecificViewtab("Microscopic view");
         Thread.sleep(2000);
         String CBCXpath = props.getProperty("cbcReport");
@@ -480,7 +480,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 32,enabled = true)
     public void verifytheCbcReportInRBCinSizeMicroscopic() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Size");
+        commonMethods.clickOnSpecificSubTab("Size");
         commonMethods.clickOnSpecificViewtab("Microscopic view");
         Thread.sleep(2000);
         String CBCXpath = props.getProperty("cbcReport");
@@ -491,7 +491,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 33,enabled = true)
     public void verifytheCbcReportInRBCinShapeMicroscopic() throws InterruptedException {
-        commonMethods.clickOnSpecificTab("Shape");
+        commonMethods.clickOnSpecificSubTab("Shape");
         Thread.sleep(2000);
         String CBCXpath = props.getProperty("cbcReport");
         boolean actualCBCReport= viewReferenceLibrary.verifyTheCBCReport(CBCXpath, "RBC");
@@ -501,7 +501,7 @@ public class ViewReferenceLibraryTest {
 
     @Test(priority = 34,enabled = true)
     public void verifytheCbcReportInRBCinColorMicroscopic() throws InterruptedException {
-        commonMethods.clickOnKebabMenu("Color");
+        commonMethods.clickOnSpecificSubTab("Color");
         Thread.sleep(2000);
         String CBCXpath = props.getProperty("cbcReport");
         boolean actualCBCReport= viewReferenceLibrary.verifyTheCBCReport(CBCXpath, "RBC");

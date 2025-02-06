@@ -1,0 +1,155 @@
+2025-02-04 14:29:12 INFO  ScreenshotListeners:29 - 
+================:  valid Login :====================
+
+2025-02-04 14:29:18 INFO  LoginTest:49 - user Logged in successfully
+2025-02-04 14:29:18 INFO  ScreenshotListeners:29 - 
+================:  verify Sig Logo And P B S :====================
+
+2025-02-04 14:29:18 INFO  VerifyTheListReportPage:46 - Sigtuple logo is Loaded .
+2025-02-04 14:29:18 INFO  VerifyTheListReportPage:47 - PBS Text is loaded
+2025-02-04 14:29:18 INFO  VerifyTheListReportPageTest:41 -  Sigtuple logo and PBS is Present on the page
+2025-02-04 14:29:18 INFO  ScreenshotListeners:29 - 
+================:  assign :====================
+
+2025-02-04 14:29:28 INFO  VerifyTheListReportPage:668 - user is drop down is available
+2025-02-04 14:29:28 INFO  SummaryTest:39 - Assign the report
+2025-02-04 14:29:28 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Factor Cancel Btn :====================
+
+2025-02-04 14:29:28 INFO  CommonMethods:444 - Platelet tab is selected
+2025-02-04 14:29:30 INFO  ViewAndModifyThePlateletCount:55 - Entered valid multiplication factor: 5000
+2025-02-04 14:29:30 INFO  ViewAndModifyThePlateletCount:66 - Set as default for future reports.
+2025-02-04 14:29:30 INFO  ViewAndModifyThePlateletCount:75 - Clicked the Cancel button.
+2025-02-04 14:29:30 INFO  ViewAndModifyThePlateletCount:82 - Changes successfully reverted after clicking Cancel.
+2025-02-04 14:29:30 INFO  ViewAndModifyThePlateletCountTest:47 - multiplication factor is working Fine
+2025-02-04 14:29:30 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Warning Msg :====================
+
+2025-02-04 14:29:31 INFO  ViewAndModifyThePlateletCount:113 - Entered multiplication factor: 2000
+2025-02-04 14:29:31 INFO  ViewAndModifyThePlateletCount:122 - Warning message displayed correctly: Please enter a value between 5000-50000
+2025-02-04 14:29:31 INFO  ViewAndModifyThePlateletCount:133 - Clicked the Cancel button.
+2025-02-04 14:29:31 INFO  ViewAndModifyThePlateletCount:140 - Changes successfully reverted after clicking Cancel.
+2025-02-04 14:29:31 INFO  ViewAndModifyThePlateletCountTest:53 - multiplication factor is working Fine
+2025-02-04 14:29:31 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Factor :====================
+
+2025-02-04 14:29:31 INFO  ViewAndModifyThePlateletCount:177 - Entered valid multiplication factor: 5000
+2025-02-04 14:29:31 INFO  ViewAndModifyThePlateletCount:190 - Unset as default for future reports.
+2025-02-04 14:29:31 INFO  ViewAndModifyThePlateletCount:196 - Clicked the Save button.
+2025-02-04 14:29:31 INFO  ViewAndModifyThePlateletCount:201 - Multiplication factor successfully saved: 5000
+2025-02-04 14:29:31 INFO  ViewAndModifyThePlateletCountTest:59 - multiplication factor is working Fine
+2025-02-04 14:29:31 INFO  ScreenshotListeners:29 - 
+================:  verify Presence Of Cell Type :====================
+
+2025-02-04 14:29:32 INFO  CommonMethods:721 - Morphology Sub Tab is selected
+2025-02-04 14:29:32 INFO  ReviewPlateleyMorphologyCellTypeTest:49 - Morphology tab Cell Types is present on platelet main tab
+2025-02-04 14:29:32 INFO  ScreenshotListeners:29 - 
+================:  Verify Cell Count Of Large Platelet Is Equal To Patch :====================
+
+2025-02-04 14:29:32 INFO  ReviewPlateletMorphologyCellType:63 - Total patches found: 36
+2025-02-04 14:29:32 INFO  ReviewPlateletMorphologyCellType:88 - Total patches found for Large Platelets: 36
+2025-02-04 14:29:32 INFO  ReviewPlateletMorphologyCellType:94 - Expected count for Large Platelets: 126
+2025-02-04 14:29:32 WARN  ReviewPlateletMorphologyCellType:101 - Mismatch in Large Platelets count. Expected: 126, Actual: 36
+2025-02-04 14:29:32 INFO  ScreenshotListeners:29 - 
+================:  Verify Cell Count Of Platelet Clumps Is Equal To Patch :====================
+
+2025-02-04 14:29:33 INFO  ReviewPlateletMorphologyCellType:63 - Total patches found: 36
+2025-02-04 14:29:33 INFO  ReviewPlateletMorphologyCellType:88 - Total patches found for Platelet Clumps: 36
+2025-02-04 14:29:33 INFO  ReviewPlateletMorphologyCellType:94 - Expected count for Platelet Clumps: 37
+2025-02-04 14:29:33 WARN  ReviewPlateletMorphologyCellType:101 - Mismatch in Platelet Clumps count. Expected: 37, Actual: 36
+2025-02-04 14:29:33 INFO  ScreenshotListeners:29 - 
+================:  Functionality Of Patch When Select The Patch In Large Platelets :====================
+
+2025-02-04 14:29:33 INFO  ReviewPlateletMorphologyCellType:63 - Total patches found: 36
+2025-02-04 14:29:33 INFO  ReviewPlateletMorphologyCellType:129 - Total patches found for Large Platelets: 36
+2025-02-04 14:29:34 INFO  ReviewPlateletMorphologyCellType:139 - Patch selected successfully in Large Platelets. Patch details: 
+2025-02-04 14:29:34 INFO  ReviewPlateleyMorphologyCellTypeTest:69 - Verify the Large platelet cell  patches are selecting
+2025-02-04 14:29:34 INFO  ScreenshotListeners:29 - 
+================:  Functionality Of Patch When Select The Patch In Platelet Clumps :====================
+
+2025-02-04 14:29:34 INFO  ReviewPlateletMorphologyCellType:63 - Total patches found: 36
+2025-02-04 14:29:34 INFO  ReviewPlateletMorphologyCellType:129 - Total patches found for Platelet Clumps: 36
+2025-02-04 14:29:34 INFO  ReviewPlateletMorphologyCellType:139 - Patch selected successfully in Platelet Clumps. Patch details: 
+2025-02-04 14:29:34 INFO  ReviewPlateleyMorphologyCellTypeTest:75 - Verify the  Platelet clumps cell patches are selecting
+2025-02-04 14:29:34 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Large Platelet :====================
+
+2025-02-04 14:29:34 ERROR ReviewPlateletMorphologyCellType:183 - Error while verifying patch sizes: 
+java.lang.NumberFormatException: For input string: "161.594"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Platelet.ReviewPlateletMorphologyCellType.verifyPatchSizes(ReviewPlateletMorphologyCellType.java:168)
+	at Platelet.ReviewPlateleyMorphologyCellTypeTest.verifyTheSizeOfPatchesInLargePlatelet(ReviewPlateleyMorphologyCellTypeTest.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-02-04 14:29:34 INFO  ScreenshotListeners:29 - 
+================:  verify The Size Of Patches In Platelet Clumps :====================
+
+2025-02-04 14:29:35 ERROR ReviewPlateletMorphologyCellType:183 - Error while verifying patch sizes: 
+java.lang.NumberFormatException: For input string: "161.594"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Platelet.ReviewPlateletMorphologyCellType.verifyPatchSizes(ReviewPlateletMorphologyCellType.java:168)
+	at Platelet.ReviewPlateleyMorphologyCellTypeTest.verifyTheSizeOfPatchesInPlateletClumps(ReviewPlateleyMorphologyCellTypeTest.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-02-04 14:29:35 INFO  ScreenshotListeners:29 - 
+================:  test Zoom Functionality :====================
+
+2025-02-04 14:29:38 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 1
+2025-02-04 14:29:38 INFO  CommonMethods:651 - Zoom level at step 1: 20 μm
+2025-02-04 14:29:40 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 2
+2025-02-04 14:29:40 INFO  CommonMethods:651 - Zoom level at step 2: 50 μm
+2025-02-04 14:29:42 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 3
+2025-02-04 14:29:42 INFO  CommonMethods:651 - Zoom level at step 3: 100 μm
+2025-02-04 14:29:42 INFO  ReviewPlateleyMorphologyCellTypeTest:103 - Final zoom level after zoom-out: 100 μm
+2025-02-04 14:29:49 INFO  CommonMethods:626 - Clicked zoom-in button. Step: 1
+2025-02-04 14:29:49 INFO  CommonMethods:630 - Zoom level at step 1: 100 μm
+2025-02-04 14:29:56 INFO  CommonMethods:626 - Clicked zoom-in button. Step: 2
+2025-02-04 14:29:56 INFO  CommonMethods:630 - Zoom level at step 2: 100 μm
+2025-02-04 14:30:03 INFO  CommonMethods:626 - Clicked zoom-in button. Step: 3
+2025-02-04 14:30:03 INFO  CommonMethods:630 - Zoom level at step 3: 100 μm

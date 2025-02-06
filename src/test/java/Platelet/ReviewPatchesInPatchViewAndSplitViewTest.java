@@ -73,12 +73,51 @@ public class ReviewPatchesInPatchViewAndSplitViewTest extends BrowserSetUp {
     }
 
 
-    // verifying the user is able to eit the N M G Values
+    // verifying the user is able to edit the N M G Values
     @Test(priority = 8,enabled = true)
     public void editTheNMGValue() throws InterruptedException {
         Assert.assertNull(rppvs.editTheNMGValue());
         logger.info("user is able to change the n m g value on platelet tab");
     }
+
+    //Verify the default selection of split view in the platelet count
+    @Test(priority = 9,enabled = true)
+    public void testDefaultSelectionOfSplitView(){
+        Assert.assertTrue(rppvs.defaultSelctionOfSplitViewInPlatelet());
+        logger.info("Verify The Default selection of split view in the platelet count");
+
+    }
+
+
+    @Test(priority = 10,enabled = true)
+    public void VerifyRadioBtnManualLevelPlateletCount(){
+        Assert.assertTrue(rppvs.manualLevelPlateletCount());
+        logger.info("Verify the selection of the manual platelet level radio button");
+    }
+    //Verify the selection of any one platelet count level from the manual platelet level dropdown
+    @Test(priority = 11,enabled = true)
+    public void VerifyTheSelectManualLevelPlateletCount(){
+        Assert.assertTrue(rppvs.manualLevelPlateletCountSelectLevel("Increased"));
+        logger.info("Verify the selection of the manual platelet level By clicking on the dropdown");
+    }
+
+
+
+
+    @Test(priority = 12,enabled = true)
+    public void VerifyTheMessageBelowFov(){
+        Assert.assertTrue(rppvs.verifyMessageBelowFov());
+        logger.info("Verify the message below the FOV is as per Figma");
+    }
+
+
+    @Test(priority = 13,enabled = true)
+    public void VerifyTheWarningMessageWhenPlateletCountDetected(){
+        Assert.assertTrue(rppvs.warningMsgForPlateletClumpsDetected());
+        logger.info("Verify the message below the FOV is as per Figma");
+    }
+
+
 
 
 }

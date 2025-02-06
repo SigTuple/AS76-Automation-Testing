@@ -1,14 +1,12 @@
 package WBC.VerifyWbcParameters;
 
 import java.text.DecimalFormat;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
+
 import GenericMethodForAllTab.CommonMethods;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -160,76 +158,170 @@ public class WBCParameters extends CommonMethods {
 		}
 		return false;
 	}
+	public boolean verifyCountAfterReclassification(String countXPath, String cellNameXPath) throws InterruptedException {
+		boolean flag = true;
 
-	// verify the count value of cells after reclassification of any cells
+		// Fetch count and cell name elements
+		List<WebElement> countElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((By.xpath(countXPath))));
+		List<WebElement> cellNameElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((By.xpath(cellNameXPath))));
 
-	public boolean verifyCountAfterReclassification(String countXPath, String CellNameXpath) throws InterruptedException {
-		boolean flag = false;
-		List<WebElement> count = driver.findElements(By.xpath(countXPath));
-		List<WebElement> cellName = driver.findElements(By.xpath(CellNameXpath));
-		for (int i = 0; i < count.size(); i++) {
-			int cellActualCount = 0;
+		// Define cell types for classification
+		String[] cellTypes = {"Neutrophils", "Lymphocytes", "Monocytes", "Basophils", "Eosinophils",
+				"Atypical Cells/Blasts", "Immature Granulocytes", "Immature Eosinophils",
+				"Immature Basophils", "Promonocytes", "Prolymphocytes", "Hairy Cells",
+				"Sezary Cells", "Plasma Cells"};
+
+		Map<String, List<String>> cellToSubCells = new HashMap<>();
+		cellToSubCells.put("Neutrophils", Arrays.asList("Band Forms", "Hypersegmented","Neutrophils with Toxic Granules"));
+		cellToSubCells.put("Lymphocytes", Arrays.asList("Reactive", "Large Granular Lymphocytes"));
+		cellToSubCells.put("Atypical Cells/Blasts", Arrays.asList("Atypical Cells","Lymphoid Blasts","Myeloid Blasts"));
+		cellToSubCells.put("Immature Granulocytes", Arrays.asList("Promyelocytes","Myelocytes","Metamyelocytes"));
+
+
+
+		// Iterate through each cell
+		for (int i = 0; i < countElements.size(); i++) {
+			String actualCellName = cellNameElements.get(i).getText();
+			String countText = countElements.get(i).getText();
+			int initialCount = 0;
+
+			// Parse the count
 			try {
-				String countText = count.get(i).getText();
 				if (!countText.isEmpty() && !countText.equals("-")) {
-					cellActualCount = Integer.parseInt(countText);
+					initialCount = Integer.parseInt(countText);
 				}
 			} catch (NumberFormatException e) {
-				String actualCellName = "";
-				System.out.println("Error parsing count for cell: " + actualCellName);
+				logger.error("Error parsing count for cell: " + actualCellName);
+				continue;
 			}
-			String actualCellName = cellName.get(i).getText();
 
+			// Skip cells with invalid counts
+			if (initialCount == 0 || initialCount == 1 || actualCellName.equals("Total")) {
+				logger.info("Skipping cell: " + actualCellName + " with count: " + countText);
+				continue;
+			}
 
-			if (!count.isEmpty() && !count.equals("-") && (cellActualCount != 0)  && (cellActualCount != 1) && (!actualCellName.equals("Total"))) {
-				Thread.sleep(5000);
-				count.get(i).click();
-				String[] cellTypes = {"Neutrophils", "Lymphocytes", "Monocytes", "Basophils", "Eosinophils",
-						"Atypical Cells/Blasts", "Immature Granulocytes", "Immature Eosinophils",
-						"Immature Basophils", "Promonocytes", "Prolymphocytes", "Hairy Cells",
-						"Sezary Cells", "Plasma Cells"};
+			// Perform classification for each cell type
+			countElements.get(i).click();
+			for (String cellType : cellTypes) {
+				List<String> subCells = cellToSubCells.get(cellType); // Get sub-cells if present
 
-				List<WebElement> countElements = null;
-				for (String cellType : cellTypes) {
-					this.classification(cellType);
+				if (subCells != null) {
+					for (String subCell : subCells) {
+						boolean classified = retryClassification(cellType, subCell, 3); // Retry with sub-cell
+						if (!classified) {
+							logger.warn("Skipping further actions for cell type: " + cellType + " -> " + subCell + " due to repeated failures.");
+							break; // Exit loop for this cell type
+						}
+					}
+				} else {
+					boolean classified = retryClassification(cellType, 3); // Retry without sub-cell
+					if (!classified) {
+						logger.warn("Skipping further actions for cell type: " + cellType + " due to repeated failures.");
+						break; // Exit loop for this cell type
+					}
 				}
+			}
 
-					// Refresh count element reference to get the updated count after classification
-					countElements = driver.findElements(By.xpath(countXPath));
-					try {
-						String updatedCountText = countElements.get(i).getText();
-						int updatedCount=Integer.parseInt(updatedCountText);
-						System.out.println(updatedCount);
-						String cellType = null;
-						if (updatedCountText.equals("-")&& (updatedCount!=1)) {
-							System.out.println("Cell count has become '-' after classifying: " + cellType + " for cell: " + actualCellName);
-							//break;
-						}
-						else if (updatedCountText.equals(String.valueOf(cellActualCount))) {
-						System.out.println("reclassified with same cell so updated and actual count will be the same");
-						flag=true;
+			// Refresh count elements to get updated counts
+			countElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((By.xpath(countXPath))));
+			String updatedCountText = countElements.get(i).getText();
+			int updatedCount;
 
-					}
-						// Verify count has decreased by 1
-						else if (updatedCount<cellActualCount) {
-							System.out.println("Count is verified for cell: " + actualCellName + " after classifying: " + cellType);
-							 flag=true;
+			try {
+				updatedCount = Integer.parseInt(updatedCountText);
+			} catch (NumberFormatException e) {
+				logger.error("Error parsing updated count for cell: " + actualCellName);
+				continue;
+			}
 
-						}else {
-							System.out.println("count mismatch");
-							flag=false;
-						}
-					} catch (NumberFormatException ignored) {
-					}
-
-
-
+			// Validate the count
+			if (updatedCountText.equals("-") && updatedCount != 1) {
+				logger.info("Cell count has become '-' after reclassification for: " + actualCellName);
+			} else if (updatedCount == initialCount) {
+				logger.info("Reclassified with the same cell, count remains unchanged for: " + actualCellName);
+			} else if (updatedCount < initialCount) {
+				logger.info("Count successfully decreased for cell: " + actualCellName + ". Initial: " + initialCount + ", Updated: " + updatedCount);
 			} else {
-				System.out.println("Cell count is zero or hyphen, so we cannot classify: " + actualCellName);
-				flag = true;
+				logger.error("Count mismatch for cell: " + actualCellName + ". Initial: " + initialCount + ", Updated: " + updatedCount);
+				flag = false;
 			}
 		}
 		return flag;
+	}
+
+	public boolean classification(String cellType, String subCellType) {
+		boolean flag = false;
+
+		try {
+			// Locate and right-click on the image
+			WebElement imageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='patches-section ']//img")));
+			actions.moveToElement(imageElement).contextClick(imageElement).perform();
+			logger.info("Hovered and right-clicked on the image.");
+
+			// Click the 'Classify' option using JavaScript
+			WebElement classifyButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Classify')]")));
+			((JavascriptExecutor) driver).executeScript("arguments[0].click();", classifyButton);
+			logger.info("Clicked on 'Classify' option.");
+
+			// Wait for the classification menu and select the cell type
+			WebElement cellElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[contains(@class,'MuiMenu-list')]//li//div[contains(text(),'" + cellType + "')]")));
+			actions.moveToElement(cellElement).perform();
+
+			// Handle sub-cells if present
+			if (subCellType != null && !subCellType.isEmpty()) {
+				WebElement subCellElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//ul[contains(@class,'MuiMenu-list')])[3]//li[contains(text(),'" + subCellType + "')]")));
+				actions.moveToElement(subCellElement).click().perform();
+				logger.info("Selected sub-cell type: " + subCellType);
+			} else {
+				((JavascriptExecutor) driver).executeScript("arguments[0].click();", cellElement);
+				logger.info("Selected cell type directly: " + cellType);
+			}
+
+			// Wait for the classification confirmation
+			WebElement classificationMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='body']")));
+			logger.info("Classification completed: " + classificationMessage.getText());
+
+			flag = true;
+		} catch (Exception e) {
+			logger.error("Error during classification for cell type: " + cellType + (subCellType != null ? " -> " + subCellType : ""));
+		}
+
+		return flag;
+	}
+
+	public boolean retryClassification(String cellType, int maxRetries) {
+		return retryClassification(cellType, null, maxRetries);
+	}
+
+	public boolean retryClassification(String cellType, String subCellType, int maxRetries) {
+		boolean success = false;
+		int attempts = 0;
+
+		while (attempts < maxRetries) {
+			try {
+				logger.info("Attempting classification for cell type: " + cellType + (subCellType != null ? " -> " + subCellType : "") + ". Attempt: " + (attempts + 1));
+				success = classification(cellType, subCellType);
+				if (success) {
+					logger.info("Classification succeeded for cell type: " + cellType + (subCellType != null ? " -> " + subCellType : ""));
+					break;
+				}
+			} catch (Exception e) {
+				logger.error("Retry attempt failed for classification: " + e.getMessage());
+			}
+			attempts++;
+			// Small delay before retrying
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
+			}
+		}
+
+		if (!success) {
+			logger.error("Classification failed for cell type: " + cellType + (subCellType != null ? " -> " + subCellType : "") + " after " + maxRetries + " attempts.");
+		}
+		return success;
 	}
 
 
@@ -237,70 +329,12 @@ public class WBCParameters extends CommonMethods {
 
 
 
-
-
-
-
-	public boolean classification(String cellType) throws InterruptedException {
-			boolean flag = false;
-			 Thread.sleep(5000);
-				actions.moveToElement(driver.findElement(By.xpath("/html/body/div/div/div[2]/div[2]/div/div/div/div[2]/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[1]/div/img"))).build().perform();
-				Thread.sleep(1500);
-				actions.contextClick(driver.findElement(By.xpath("/html/body/div/div/div[2]/div[2]/div/div/div/div[2]/div[1]/div/div[2]/div[1]/div/div/div/div[1]/div[1]/div/img"))).perform();
-				Thread.sleep(1500);
-				WebElement classify = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Classify')]")));
-				actions.moveToElement(classify).click().perform();
-				Thread.sleep(3000);
-
-		    WebElement cell = driver.findElement(By.xpath("//ul[contains(@class,'MuiMenu-list')]//li//div[contains(text(),'" + cellType + "')]"));
-
-				//List<WebElement> popUpCells = driver.findElements(By.xpath("/html/body/div[3]/div[3]/ul/li/div"));
-				//for (WebElement popUpCell : popUpCells) {
-					String popUpCellName = cell.getText();
-					System.out.println(popUpCellName);
-					if (popUpCellName.contains("Neutrophils") && popUpCellName.contains("Lymphocytes")&& popUpCellName.contains(" Atypical Cells/Blasts")&& popUpCellName.contains("Immature Granulocytes")) {
-						List<WebElement> subCells = driver.findElements(By.xpath("/html/body/div[4]/div[2]/ul/li"));
-						if (subCells.size()>0) {
-							actions.moveToElement(cell).build().perform();
-							Thread.sleep(1000);
-							actions.moveToElement(subCells.get(0)).click().perform();
-							Thread.sleep(4000);
-							flag=true;
-						}
-
-					} else {
-						//WebElement cell = driver.findElement(By.xpath("//ul[contains(@class,'MuiMenu-list')]//li//div[contains(text(),'" + cellType + "')]"));
-						//System.out.println(cell.getText());
-						actions.moveToElement(cell).click().perform();
-						Thread.sleep(3000);
-						flag=true;
-					}
-					WebElement text = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='body']")));
-					String actualText = text.getText();
-					System.out.println("Classification Text: " + actualText);
-
-					WebElement msgText = driver.findElement(By.xpath("//div[@class='header']"));
-					String actualMsgText = msgText.getText();
-					System.out.println("Classification Message: " + actualMsgText);
-
-					//flag = true;
-					//break;
-				//}
-
-			return flag;
-		}
-
-
-
-
-
-
-		//classifying the wbc cell type to platelet clump and giant platelet
+	//classifying the wbc cell type to platelet clump and giant platelet
 
 	public boolean wbcPatchToPlateletClump() throws InterruptedException {
 		super.clickOnTab("Platelet", props.getProperty("platelet"));
 		super.clickOnTab("Morphology",props.getProperty("Morpholog"));
-		return verifyCountAfterReclassification("//div[@class='split-view-count-section']//following::button/following::div[contains(text(),'Count')]/following::div[4]","/html/body/div/div/div[2]/div[2]/div/div[1]/div/div[2]/div[2]/div[contains(text(),'Large Platelets')]");
+		return verifyCountAfterReclassificationPlatelet("//div[contains(@class,'platelet-morph-row')]/div[2]","//div[contains(@class,'platelet-morph-row')]/div[1]");
 
 
 	}
@@ -309,6 +343,100 @@ public class WBCParameters extends CommonMethods {
 	public  boolean wbcPatchToLargePlatelet() throws InterruptedException {
 		return verifyCountAfterReclassification("//div[@class='split-view-count-section']//following::button/following::div[contains(text(),'Count')]/following::div[10]","//*[@id='root']/div/div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div[1]");
 	}
+
+
+
+
+	public boolean verifyCountAfterReclassificationPlatelet(String countXPath, String cellNameXPath) throws InterruptedException {
+		boolean flag = true;
+
+		// Fetch count and cell name elements
+		List<WebElement> countElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((By.xpath(countXPath))));
+		List<WebElement> cellNameElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((By.xpath(cellNameXPath))));
+
+		// Define cell types for classification
+		String[] cellTypes = {"Large Platelets","Platelet Clumps"};
+
+		Map<String, List<String>> cellToSubCells = new HashMap<>();
+		cellToSubCells.put("Neutrophils", Arrays.asList("Band Forms", "Hypersegmented","Neutrophils with Toxic Granules"));
+		cellToSubCells.put("Lymphocytes", Arrays.asList("Reactive", "Large Granular Lymphocytes"));
+		cellToSubCells.put("Atypical Cells/Blasts", Arrays.asList("Atypical Cells","Lymphoid Blasts","Myeloid Blasts"));
+		cellToSubCells.put("Immature Granulocytes", Arrays.asList("Promyelocytes","Myelocytes","Metamyelocytes"));
+
+
+
+		// Iterate through each cell
+		for (int i = 0; i < countElements.size(); i++) {
+			String actualCellName = cellNameElements.get(i).getText();
+			String countText = countElements.get(i).getText();
+			int initialCount = 0;
+
+			// Parse the count
+			try {
+				if (!countText.isEmpty() && !countText.equals("-")) {
+					initialCount = Integer.parseInt(countText);
+				}
+			} catch (NumberFormatException e) {
+				logger.error("Error parsing count for cell: " + actualCellName);
+				continue;
+			}
+
+			// Skip cells with invalid counts
+			if (initialCount == 0 || initialCount == 1 || actualCellName.equals("Total")) {
+				logger.info("Skipping cell: " + actualCellName + " with count: " + countText);
+				continue;
+			}
+
+			// Perform classification for each cell type
+			countElements.get(i).click();
+			for (String cellType : cellTypes) {
+				List<String> subCells = cellToSubCells.get(cellType); // Get sub-cells if present
+
+				if (subCells != null) {
+					for (String subCell : subCells) {
+						boolean classified = retryClassification(cellType, subCell, 3); // Retry with sub-cell
+						if (!classified) {
+							logger.warn("Skipping further actions for cell type: " + cellType + " -> " + subCell + " due to repeated failures.");
+							break; // Exit loop for this cell type
+						}
+					}
+				} else {
+					boolean classified = retryClassification(cellType, 3); // Retry without sub-cell
+					if (!classified) {
+						logger.warn("Skipping further actions for cell type: " + cellType + " due to repeated failures.");
+						break; // Exit loop for this cell type
+					}
+				}
+			}
+
+			// Refresh count elements to get updated counts
+			countElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((By.xpath(countXPath))));
+			String updatedCountText = countElements.get(i).getText();
+			int updatedCount;
+
+			try {
+				updatedCount = Integer.parseInt(updatedCountText);
+			} catch (NumberFormatException e) {
+				logger.error("Error parsing updated count for cell: " + actualCellName);
+				continue;
+			}
+
+			// Validate the count
+			if (updatedCountText.equals("-") && updatedCount != 1) {
+				logger.info("Cell count has become '-' after reclassification for: " + actualCellName);
+			} else if (updatedCount == initialCount) {
+				logger.info("Reclassified with the same cell, count remains unchanged for: " + actualCellName);
+			} else if (updatedCount < initialCount) {
+				logger.info("Count successfully decreased for cell: " + actualCellName + ". Initial: " + initialCount + ", Updated: " + updatedCount);
+			} else {
+				logger.error("Count mismatch for cell: " + actualCellName + ". Initial: " + initialCount + ", Updated: " + updatedCount);
+				flag = false;
+			}
+		}
+		return flag;
+	}
+
+
 
 
 

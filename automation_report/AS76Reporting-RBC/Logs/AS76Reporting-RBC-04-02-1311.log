@@ -1,0 +1,83 @@
+2025-02-04 13:10:59 INFO  ScreenshotListeners:29 - 
+================:  valid Login :====================
+
+2025-02-04 13:11:05 INFO  LoginTest:49 - user Logged in successfully
+2025-02-04 13:11:05 INFO  ScreenshotListeners:29 - 
+================:  verify Sig Logo And P B S :====================
+
+2025-02-04 13:11:05 INFO  VerifyTheListReportPage:46 - Sigtuple logo is Loaded .
+2025-02-04 13:11:05 INFO  VerifyTheListReportPage:47 - PBS Text is loaded
+2025-02-04 13:11:05 INFO  VerifyTheListReportPageTest:41 -  Sigtuple logo and PBS is Present on the page
+2025-02-04 13:11:05 INFO  ScreenshotListeners:29 - 
+================:  assign :====================
+
+2025-02-04 13:11:19 INFO  VerifyTheListReportPage:668 - user is drop down is available
+2025-02-04 13:11:19 INFO  SummaryTest:39 - Assign the report
+2025-02-04 13:11:19 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Factor Cancel Btn :====================
+
+2025-02-04 13:11:19 INFO  CommonMethods:444 - Platelet tab is selected
+2025-02-04 13:11:22 INFO  ViewAndModifyThePlateletCount:55 - Entered valid multiplication factor: 5000
+2025-02-04 13:11:22 INFO  ViewAndModifyThePlateletCount:66 - Set as default for future reports.
+2025-02-04 13:11:22 INFO  ViewAndModifyThePlateletCount:75 - Clicked the Cancel button.
+2025-02-04 13:11:22 INFO  ViewAndModifyThePlateletCount:82 - Changes successfully reverted after clicking Cancel.
+2025-02-04 13:11:22 INFO  ViewAndModifyThePlateletCountTest:47 - multiplication factor is working Fine
+2025-02-04 13:11:22 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Warning Msg :====================
+
+2025-02-04 13:11:23 INFO  ViewAndModifyThePlateletCount:113 - Entered multiplication factor: 2000
+2025-02-04 13:11:23 INFO  ViewAndModifyThePlateletCount:122 - Warning message displayed correctly: Please enter a value between 5000-50000
+2025-02-04 13:11:23 INFO  ViewAndModifyThePlateletCount:133 - Clicked the Cancel button.
+2025-02-04 13:11:23 INFO  ViewAndModifyThePlateletCount:140 - Changes successfully reverted after clicking Cancel.
+2025-02-04 13:11:23 INFO  ViewAndModifyThePlateletCountTest:53 - multiplication factor is working Fine
+2025-02-04 13:11:23 INFO  ScreenshotListeners:29 - 
+================:  verify The Functionality Of Multiplication Factor :====================
+
+2025-02-04 13:11:23 INFO  ViewAndModifyThePlateletCount:177 - Entered valid multiplication factor: 5000
+2025-02-04 13:11:23 INFO  ViewAndModifyThePlateletCount:190 - Unset as default for future reports.
+2025-02-04 13:11:23 INFO  ViewAndModifyThePlateletCount:196 - Clicked the Save button.
+2025-02-04 13:11:23 INFO  ViewAndModifyThePlateletCount:201 - Multiplication factor successfully saved: 5000
+2025-02-04 13:11:23 INFO  ViewAndModifyThePlateletCountTest:59 - multiplication factor is working Fine
+2025-02-04 13:11:23 INFO  ScreenshotListeners:29 - 
+================:  verify Presence Of Cell Type :====================
+
+2025-02-04 13:11:24 INFO  CommonMethods:721 - Morphology Sub Tab is selected
+2025-02-04 13:11:24 INFO  ReviewPlateleyMorphologyCellTypeTest:49 - Morphology tab Cell Types is present on platelet main tab
+2025-02-04 13:11:24 INFO  ScreenshotListeners:29 - 
+================:  Verify Cell Count Of Large Platelet Is Equal To Patch :====================
+
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:63 - Total patches found: 1
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:88 - Total patches found for Large Platelets: 1
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:94 - Expected count for Large Platelets: 0
+2025-02-04 13:11:24 WARN  ReviewPlateletMorphologyCellType:101 - Mismatch in Large Platelets count. Expected: 0, Actual: 1
+2025-02-04 13:11:24 INFO  ScreenshotListeners:29 - 
+================:  Verify Cell Count Of Platelet Clumps Is Equal To Patch :====================
+
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:63 - Total patches found: 1
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:88 - Total patches found for Platelet Clumps: 1
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:94 - Expected count for Platelet Clumps: 1
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:98 - Platelet Clumps count matches the patch count. Count: 1
+2025-02-04 13:11:24 INFO  ReviewPlateleyMorphologyCellTypeTest:62 - Verify the  Platelet clumps cell count is equal patch count
+2025-02-04 13:11:24 INFO  ScreenshotListeners:29 - 
+================:  Functionality Of Patch When Select The Patch In Large Platelets :====================
+
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:63 - Total patches found: 1
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:129 - Total patches found for Large Platelets: 1
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:139 - Patch selected successfully in Large Platelets. Patch details: 
+2025-02-04 13:11:24 INFO  ReviewPlateleyMorphologyCellTypeTest:69 - Verify the Large platelet cell  patches are selecting
+2025-02-04 13:11:24 INFO  ScreenshotListeners:29 - 
+================:  Functionality Of Patch When Select The Patch In Platelet Clumps :====================
+
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:63 - Total patches found: 1
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:129 - Total patches found for Platelet Clumps: 1
+2025-02-04 13:11:24 INFO  ReviewPlateletMorphologyCellType:139 - Patch selected successfully in Platelet Clumps. Patch details: 
+2025-02-04 13:11:24 INFO  ReviewPlateleyMorphologyCellTypeTest:75 - Verify the  Platelet clumps cell patches are selecting
+2025-02-04 13:11:24 INFO  ScreenshotListeners:29 - 
+================:  test Zoom Functionality :====================
+
+2025-02-04 13:11:27 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 1
+2025-02-04 13:11:27 INFO  CommonMethods:651 - Zoom level at step 1: 20 μm
+2025-02-04 13:11:29 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 2
+2025-02-04 13:11:29 INFO  CommonMethods:651 - Zoom level at step 2: 50 μm
+2025-02-04 13:11:31 INFO  CommonMethods:647 - Clicked zoom-out button. Step: 3
+2025-02-04 13:11:31 INFO  CommonMethods:651 - Zoom level at step 3: 100 μm

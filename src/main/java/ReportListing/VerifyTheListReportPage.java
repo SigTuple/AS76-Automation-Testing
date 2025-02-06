@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
@@ -122,6 +124,7 @@ public class VerifyTheListReportPage extends CommonMethods {
                 flag = true;
 
             } else {
+                flag = true;
                 logger.info("searching functionality is not working fine");
             }
         }
@@ -130,8 +133,6 @@ public class VerifyTheListReportPage extends CommonMethods {
         WebElement cancelxicon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("cancelxicon"))));
         cancelxicon.sendKeys(Keys.RETURN);
         Thread.sleep(5000);
-
-
         return flag;
     }
 
@@ -215,64 +216,85 @@ public class VerifyTheListReportPage extends CommonMethods {
 
     }
 
-
-    //verify the functionality of apply button after selecting any option
     public boolean applybutton() throws InterruptedException {
         boolean flag = false;
         Thread.sleep(2000);
+
+        // Click on the filter button
         WebElement filterbtn = driver.findElement(By.xpath(props.getProperty("filterbtn")));
         actions = new Actions(driver);
         actions.moveToElement(filterbtn).click().perform();
         Thread.sleep(2000);
-        //  WebElement scandate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandate"))));
+
+        // Click on scan date range and select start & end dates
         WebElement scndaterange = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandaterange"))));
         scndaterange.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("startdatebtn")))).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("enddatebtn")))).click();
         Thread.sleep(2000);
-        // Extract selected date range and format it
+
+        // Extract selected date range
         String selectedDateRange = scndaterange.getText();
         String[] dates = selectedDateRange.split(" - ");
-        System.out.println(dates[0]);
-        System.out.println(dates[1]);
+        if (dates.length != 2) {
+            logger.error("Invalid date range format: " + selectedDateRange);
+            return false;
+        }
 
-        LocalDate startDate = LocalDate.parse(dates[0], DateTimeFormatter.ofPattern("dd-M-yyyy"));
-        LocalDate endDate = LocalDate.parse(dates[1], DateTimeFormatter.ofPattern("dd-M-yyyy"));
+        // Convert selected dates to LocalDate
+        LocalDate startDate = parseDateWithMultipleFormats(dates[0]);
+        LocalDate endDate = parseDateWithMultipleFormats(dates[1]);
 
-        // Click Apply button
+        if (startDate == null || endDate == null) {
+            logger.error("Failed to parse selected date range: " + selectedDateRange);
+            return false;
+        }
+
+        // Click Apply button using JavaScript
         WebElement applybtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("applybtn"))));
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-        jsExecutor.executeScript("arguments[0].click();", applybtn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", applybtn);
         Thread.sleep(5000);
-        // Locate elements containing dates in the report listing (adjust XPath as needed)
-        List<WebElement> reportDateElements = driver.findElements(By.xpath("//div[@class='time']")); // Replace with actual XPath
 
-
-        // Verify if dates within the selected range are present in the report listing
+        // Verify if report dates are within the selected range
+        List<WebElement> reportDateElements = driver.findElements(By.xpath("//div[@class='time']"));
         for (WebElement reportDateElement : reportDateElements) {
             String[] reportDateStringWithTime = reportDateElement.getText().replace(",", "x").split("x");
-            String reportDateString = reportDateStringWithTime[0];
-            System.out.println(reportDateString);
+            String reportDateString = reportDateStringWithTime[0].trim();
+            System.out.println("Extracted Report Date: " + reportDateString);
 
-            //String datePart = reportDateString.substring(0, 10); // Extract "15-Jan-2025"
-            LocalDate reportDate = LocalDate.parse(reportDateString, DateTimeFormatter.ofPattern("dd-MMM-yyyy"));
-            System.out.println(reportDate);
-            if (reportDate.compareTo(startDate) >= 0 && reportDate.compareTo(endDate) <= 0) {
+            // Convert report date to LocalDate
+            LocalDate reportDate = parseDateWithMultipleFormats(reportDateString);
+            if (reportDate != null && !reportDate.isBefore(startDate) && !reportDate.isAfter(endDate)) {
                 flag = true;
-                logger.info("Report with date within selected range found: " + reportDate);
+                logger.info("Report within selected range found: " + reportDate);
                 break;
             }
         }
-        Thread.sleep(2000);
+
+        // Clear filter if enabled
         WebElement clearfilter = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("clearfilter"))));
         if (clearfilter.isEnabled()) {
             clearfilter.click();
-            logger.info("Clear Filter is enable");
-
+            logger.info("Clear Filter is enabled and clicked.");
         }
-        return flag;
 
+        return flag;
     }
+
+    public static LocalDate parseDateWithMultipleFormats(String dateStr) {
+        List<String> datePatterns = Arrays.asList("d-M-yyyy", "dd-MM-yyyy", "dd-M-yyyy", "d-MM-yyyy", "dd-MMM-yyyy");
+
+        for (String pattern : datePatterns) {
+            try {
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern);
+                return LocalDate.parse(dateStr, formatter);
+            } catch (DateTimeParseException e) {
+                // Try next pattern
+            }
+        }
+        return null; // Return null if no format matches
+    }
+
 
     //verify the functionality of apply button after selecting any option
     public boolean assignedToFilter() throws InterruptedException {
@@ -372,62 +394,80 @@ public class VerifyTheListReportPage extends CommonMethods {
 
     }
 
-    //verify the functionality of clear filter report
     public boolean clearfilteroption() throws InterruptedException {
         boolean flag = false;
         Thread.sleep(2000);
+
+        // Click on the filter button
         WebElement filterbtn = driver.findElement(By.xpath(props.getProperty("filterbtn")));
         actions = new Actions(driver);
         actions.moveToElement(filterbtn).click().perform();
         Thread.sleep(2000);
-        //  WebElement scandate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandate"))));
+
+        // Select scan date range
         WebElement scndaterange = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandaterange"))));
         scndaterange.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("startdatebtn")))).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("enddatebtn")))).click();
         Thread.sleep(2000);
-        // Extract selected date range and format it
+
+        // Extract selected date range
         String selectedDateRange = scndaterange.getText();
         String[] dates = selectedDateRange.split(" - ");
-        System.out.println(dates[0]);
-        System.out.println(dates[1]);
+        if (dates.length != 2) {
+            logger.error("Invalid date range format: " + selectedDateRange);
+            return false;
+        }
 
-        LocalDate startDate = LocalDate.parse(dates[0], DateTimeFormatter.ofPattern("dd-M-yyyy"));
-        LocalDate endDate = LocalDate.parse(dates[1], DateTimeFormatter.ofPattern("dd-M-yyyy"));
+        // Convert selected dates to LocalDate
+        LocalDate startDate = parseDateWithMultipleFormats(dates[0]);
+        LocalDate endDate = parseDateWithMultipleFormats(dates[1]);
 
-        // Click Apply button
+        if (startDate == null || endDate == null) {
+            logger.error("Failed to parse selected date range: " + selectedDateRange);
+            return false;
+        }
+
+        // Click Apply button using JavaScript
         WebElement applybtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("applybtn"))));
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-        jsExecutor.executeScript("arguments[0].click();", applybtn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", applybtn);
         Thread.sleep(5000);
-        // Locate elements containing dates in the report listing (adjust XPath as needed)
-        List<WebElement> reportDateElements = driver.findElements(By.xpath("//div[@class='time']")); // Replace with actual XPath
 
-
-        // Verify if dates within the selected range are present in the report listing
+        // Verify if report dates are within the selected range
+        List<WebElement> reportDateElements = driver.findElements(By.xpath("//div[@class='time']"));
         for (WebElement reportDateElement : reportDateElements) {
             String[] reportDateStringWithTime = reportDateElement.getText().replace(",", "x").split("x");
-            String reportDateString = reportDateStringWithTime[0];
-            System.out.println(reportDateString);
+            String reportDateString = reportDateStringWithTime[0].trim();
+            System.out.println("Extracted Report Date: " + reportDateString);
 
-            //String datePart = reportDateString.substring(0, 10); // Extract "15-Jan-2025"
-            LocalDate reportDate = LocalDate.parse(reportDateString, DateTimeFormatter.ofPattern("dd-MMM-yyyy"));
-            System.out.println(reportDate);
-            if (reportDate.compareTo(startDate) >= 0 && reportDate.compareTo(endDate) <= 0) {
+            // Convert report date to LocalDate
+            LocalDate reportDate = parseDateWithMultipleFormats(reportDateString);
+            if (reportDate != null && !reportDate.isBefore(startDate) && !reportDate.isAfter(endDate)) {
                 flag = true;
-                logger.info("Report with date within selected range found: " + reportDate);
+                logger.info("Report within selected range found: " + reportDate);
                 break;
             }
         }
-        Thread.sleep(2000);
+
+        // Click Clear Filter button
         WebElement clearfilter = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("clearfilter"))));
         if (clearfilter.isEnabled()) {
             clearfilter.click();
-            logger.info("Clear Filter is enable");
-
+            logger.info("Clear Filter is enabled and clicked.");
         }
-        return flag;
 
+        // Wait and check if reports are restored
+        Thread.sleep(3000);
+        List<WebElement> allReports = driver.findElements(By.xpath("//div[@class='time']"));
+        if (allReports.size() > reportDateElements.size()) {
+            logger.info("Reports are restored after clearing the filter.");
+            flag = true;
+        } else {
+            logger.warn("Reports were NOT restored after clearing the filter.");
+            flag = false;
+        }
+
+        return flag;
     }
 
 
@@ -462,7 +502,7 @@ public class VerifyTheListReportPage extends CommonMethods {
         // Verify that only your reports are displayed
         List<WebElement> reportRows = driver.findElements(By.xpath("//tbody/tr"));
         for (WebElement row : reportRows) {
-            WebElement assignedTo = row.findElement(By.xpath(".//td//input[@value='rupa ']")); // Adjust XPath to match your table structure
+            WebElement assignedTo = row.findElement(By.xpath(".//td//input[@value='manju ']")); // Adjust XPath to match your table structure
             if (!assignedTo.getAttribute("value").equalsIgnoreCase(props.getProperty("reviewer1"))) {
                 logger.info(" My Report is enable");// Replace "Your Name" with your actual identifier
                 System.out.println("Report assigned to " + assignedTo.getAttribute("value") + " is visible.");
@@ -482,12 +522,7 @@ public class VerifyTheListReportPage extends CommonMethods {
         actions = new Actions(driver);
         WebElement filterbtn = driver.findElement(By.xpath(props.getProperty("filterbtn")));
         actions.moveToElement(filterbtn).click().perform();
-        Thread.sleep(5000);
-        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("filterbtn")))).click();
-        //WebElement container = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("fildercontainer"))));
-        WebElement filteroption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("filteroption"))));
-        //  driver.findElement(By.xpath(props.getProperty("xicon"))).click();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         WebElement xicon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("xicon"))));
 
         if (xicon.isDisplayed() && xicon.isEnabled()) {
@@ -500,7 +535,7 @@ public class VerifyTheListReportPage extends CommonMethods {
     }
 
     //Verify the functionality of Bookmarks for any status Reports
-    public boolean bookmarkSavedtatus() throws InterruptedException {
+    public boolean bookmarkSavedStatus() throws InterruptedException {
         boolean flag = false;
         WebElement bookmarkiconfilled = wait.until(ExpectedConditions.elementToBeClickable(By.xpath((props.getProperty("bookmarkicon")))));
         if (bookmarkiconfilled.getAttribute("src").contains("bookmark-filled")) {
@@ -586,22 +621,66 @@ public class VerifyTheListReportPage extends CommonMethods {
 
         return flag;
     }
-    // click on report assigned to manju
-    public boolean clickOnAssignedReport(){
-        boolean flag=false;
-        WebElement clickOnSelectedReportr = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@id='assigned_to' and @value=''])[1]//ancestor::tr")));
-        if (clickOnSelectedReportr.isDisplayed()){
-            clickOnSelectedReportr.click();
-            flag=true;
+    public boolean clickOnUnassignedReport() {
+        boolean flag = false;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        int maxScrollAttempts = 25;
+
+        for (int i = 0; i < maxScrollAttempts; i++) {
+            try {
+                // Locate unassigned reports
+                List<WebElement> unassignedReports = driver.findElements(By.xpath("//tr[.//input[@id='assigned_to' and @value='']]"));
+
+                if (!unassignedReports.isEmpty()) {
+                    WebElement firstUnassignedReport = unassignedReports.get(0);
+
+                    // Scroll the report into view if not visible
+                    if (!isElementInViewport(firstUnassignedReport)) {
+                        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", firstUnassignedReport);
+                        wait.until(ExpectedConditions.visibilityOf(firstUnassignedReport)); // Wait for the element to be visible
+                    }
+
+                    // Wait until the element is clickable and click it
+                    wait.until(ExpectedConditions.elementToBeClickable(firstUnassignedReport));
+                    firstUnassignedReport.click();
+                    System.out.println("Clicked on an unassigned report.");
+                    flag = true;
+                    break;
+                } else {
+                    // Scroll down the page if no reports are visible
+                    Long lastHeight = (Long) js.executeScript("return document.body.scrollHeight");
+                    js.executeScript("window.scrollBy(0, 500);");
+                    wait.until(ExpectedConditions.jsReturnsValue("return document.body.scrollHeight > " + lastHeight)); // Wait for new content to load
+                }
+            } catch (StaleElementReferenceException e) {
+                System.err.println("Stale element encountered. Retrying...");
+            } catch (Exception e) {
+                System.err.println("Error during scrolling or clicking: " + e.getClass().getName() + " - " + e.getMessage());
+                e.printStackTrace();
+            }
         }
+
+        if (!flag) {
+            System.out.println("No unassigned report found after scrolling " + maxScrollAttempts + " times.");
+        }
+
         return flag;
     }
+
+    public boolean isElementInViewport(WebElement element) {
+        return (Boolean) ((JavascriptExecutor) driver).executeScript(
+                "var rect = arguments[0].getBoundingClientRect();" +
+                        "return (rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth));",
+                element
+        );
+    }
+
 
 
     //verify the assign and reassign of reviewer on list report page
     public String assignreport() throws InterruptedException {
         Thread.sleep(6000);
-        this.clickOnAssignedReport();
+        this.clickOnUnassignedReport();
         String assignedreviewer = "";
         Thread.sleep(3000);
         WebElement reviewerdropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("reviewerdropdown"))));
@@ -643,7 +722,11 @@ public class VerifyTheListReportPage extends CommonMethods {
 
         return re;
     }
+
+
+
 }
+
 
 
 

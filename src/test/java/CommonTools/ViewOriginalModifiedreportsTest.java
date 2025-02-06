@@ -1,10 +1,13 @@
 package CommonTools;
 
 import Data.Property;
+import GenericMethodForAllTab.CommonMethods;
 import ReportListing.VerifyTheListReportPage;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
@@ -19,6 +22,7 @@ public class ViewOriginalModifiedreportsTest {
     private final Logger logger = LogManager.getLogger(ViewOriginalModifiedreportsTest.class);
     public WebDriverWait wait;
     public Properties props;
+    public CommonMethods commonMethods;
     public ViewOriginalModifiedreports viewOriginalModifiedreports;
     public ReportListing.VerifyTheListReportPage VerifyTheListReportPage;
 
@@ -30,15 +34,18 @@ public class ViewOriginalModifiedreportsTest {
         wait = new WebDriverWait(driver, 30);
         viewOriginalModifiedreports =new ViewOriginalModifiedreports(driver);
         VerifyTheListReportPage =new VerifyTheListReportPage(driver);
+        commonMethods=new CommonMethods(driver);
         props = Property.prop;
         Property.readSummaryProperties();
         Property.readReportListingProperties();
         Property.readCommonMethodProperties();
+        Property.readCommonToolsProperties();
 
     }
     //Verification of the presence of View original/modified reports options in the kebab menu icon.
     @Test(priority = 1,enabled = true)
     public void presenceOfOriginalReport(){
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Summary']"))).click();
         Assert.assertTrue(viewOriginalModifiedreports.originalReport());
         logger.info("Verified The presence of original report in kebab menu");
     }

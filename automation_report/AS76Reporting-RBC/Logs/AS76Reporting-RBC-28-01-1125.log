@@ -1,0 +1,68 @@
+2025-01-28 11:20:25 INFO  ScreenshotListeners:29 - 
+================:  valid Login :====================
+
+2025-01-28 11:20:35 ERROR BrowserSetUp:185 - validLogin -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: loginId (tried for 10 second(s) with 500 milliseconds interval)
+
+2025-01-28 11:20:35 INFO  ScreenshotListeners:29 - 
+================:  verify Sig Logo And P B S :====================
+
+2025-01-28 11:21:05 ERROR BrowserSetUp:185 - verifySigLogoAndPBS -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'pbs')]/img[@alt='sigtuple-logo'] (tried for 30 second(s) with 500 milliseconds interval)
+
+2025-01-28 11:21:05 INFO  ScreenshotListeners:29 - 
+================:  assign :====================
+
+2025-01-28 11:21:45 INFO  ScreenshotListeners:29 - 
+================:  verify Selction Of W B C Tab :====================
+
+2025-01-28 11:22:36 ERROR BrowserSetUp:185 - verifySelctionOfWBCTab -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="root"]/div/div[2]/div[1]/div[1]/div[1]/button[2] (tried for 50 second(s) with 500 milliseconds interval)
+
+2025-01-28 11:22:36 INFO  ScreenshotListeners:29 - 
+================:  presence Of Count Sub Tab In Platelet :====================
+
+2025-01-28 11:23:26 ERROR BrowserSetUp:185 - presenceOfCountSubTabInPlatelet -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id='root']/div/div[2]/div[1]/div[1]/div[1]/button[4] (tried for 50 second(s) with 500 milliseconds interval)
+
+2025-01-28 11:23:26 INFO  ScreenshotListeners:29 - 
+================:  presence Of Morphology :====================
+
+2025-01-28 11:23:56 ERROR BrowserSetUp:185 - presenceOfMorphology -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(text(),'Morphology')] (tried for 30 second(s) with 500 milliseconds interval)
+
+2025-01-28 11:23:56 INFO  ScreenshotListeners:29 - 
+================:  selection Of Fovs :====================
+
+2025-01-28 11:24:27 ERROR BrowserSetUp:185 - selectionOfFovs -> FAILED due to below issues :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(text(),'Count')] (tried for 30 second(s) with 500 milliseconds interval)
+
+2025-01-28 11:24:27 INFO  ScreenshotListeners:29 - 
+================:  edit The N M G Value :====================
+
+2025-01-28 11:24:27 ERROR BrowserSetUp:185 - editTheNMGValue -> FAILED due to below issues :
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.265)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.16.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Macbook-Pro', ip: 'fe80:0:0:0:10ec:7e4c:24d5:5f4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '11.0.23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/bq/rhslv0zs6hl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65463}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 131.0.6778.265, webStorageEnabled: true}
+Session ID: 328522bcd5c6dcfc29350a2e438b6749
+*** Element info: {Using=xpath, value=//div[@class='fov-table-section ']/div/div}
+
+2025-01-28 11:24:27 INFO  ScreenshotListeners:29 - 
+================:  test Default Selection Of Split View :====================
+
+2025-01-28 11:24:57 ERROR BrowserSetUp:185 - testDefaultSelectionOfSplitView -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-28 11:24:57 INFO  ScreenshotListeners:29 - 
+================:  Verify Radio Btn Manual Level Platelet Count :====================
+
+2025-01-28 11:25:28 INFO  ReviewPatchesInPatchViewAndSplitView:191 -  Manual radio button is not selected
+2025-01-28 11:25:28 ERROR BrowserSetUp:185 - VerifyRadioBtnManualLevelPlateletCount -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+

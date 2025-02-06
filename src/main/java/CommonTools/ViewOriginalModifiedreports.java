@@ -27,6 +27,8 @@ public class ViewOriginalModifiedreports {
         Property.readSummaryProperties();
         Property.readReportListingProperties();
         Property.readCommonMethodProperties();
+        Property.readSummaryProperties();
+        Property.readCommonToolsProperties();
     }
 
     //Verification of the presence of View original/modified reports options in the kebab menu icon.
@@ -105,7 +107,7 @@ public class ViewOriginalModifiedreports {
         Thread.sleep(6000);
         WebElement manualTxtField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='wbc-correction-input-neutrophil']")));
         String status= manualTxtField.getAttribute("class");
-        if (status.contains("Mui-disabled")){
+        if (!status.contains("Mui-disabled")){
             logger.info("Modified report is not present");
         }
         else {

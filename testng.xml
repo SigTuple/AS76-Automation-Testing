@@ -11,9 +11,9 @@
 
         <classes>
             <class name="SessionManagement.LoginTest"/>
-           <!-- <class name="ReportListing.VerifyTheListReportPageTest"/>
+           <class name="ReportListing.VerifyTheListReportPageTest"/>
             <class name="summary.SummaryTest"/>
-            <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcSizeSubTabTest"/>
+            <!-- <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcSizeSubTabTest"/>
             <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcShapeSubTabTest"/>
             <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcColorSubTabTest"/>
             <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcInclusionSubTabTest"/>
@@ -24,9 +24,10 @@
             <class name="ReportViewer.ReportViewerTest"/>
             <class name="Platelet.ReviewPatchesInPatchViewAndSplitViewTest"/>
             <class name="CommonTools.ViewOriginalModifiedreportsTest"/>
-            <class name="CommonTools.ViewReferenceLibraryTest"/>-->
+            <class name="CommonTools.ViewReferenceLibraryTest"/>
             <class name="WBC.VerifyWbcParametersTest.WBCParametersTest"/>
-            <class name="Platelet.ReviewPatchesInPatchViewAndSplitViewTest"/>
+            <class name="Platelet.ReviewPatchesInPatchViewAndSplitViewTest"/>-->
+            <class name="CommonTools.DownloadPatchesTest"></class>
 
 
 

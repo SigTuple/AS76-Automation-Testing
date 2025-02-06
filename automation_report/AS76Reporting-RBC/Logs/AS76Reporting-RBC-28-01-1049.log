@@ -1,0 +1,54 @@
+2025-01-28 10:41:48 INFO  ScreenshotListeners:29 - 
+================:  valid Login :====================
+
+2025-01-28 10:41:53 INFO  LoginTest:49 - user Logged in successfully
+2025-01-28 10:41:53 INFO  ScreenshotListeners:29 - 
+================:  verify Sig Logo And P B S :====================
+
+2025-01-28 10:41:53 INFO  VerifyTheListReportPage:46 - Sigtuple logo is Loaded .
+2025-01-28 10:41:53 INFO  VerifyTheListReportPage:47 - PBS Text is loaded
+2025-01-28 10:41:53 INFO  VerifyTheListReportPageTest:41 -  Sigtuple logo and PBS is Present on the page
+2025-01-28 10:41:53 INFO  ScreenshotListeners:29 - 
+================:  assign :====================
+
+2025-01-28 10:42:03 INFO  VerifyTheListReportPage:670 - user is drop down is available
+2025-01-28 10:42:03 INFO  SummaryTest:39 - Assign the report
+2025-01-28 10:42:03 INFO  ScreenshotListeners:29 - 
+================:  verify Selction Of W B C Tab :====================
+
+2025-01-28 10:42:08 INFO  CommonMethods:52 - clicked on tab successfully
+2025-01-28 10:42:08 INFO  WBCParameters:41 - WBC
+2025-01-28 10:42:08 INFO  WBCParametersTest:43 - WBC tab is present and selected
+2025-01-28 10:42:08 INFO  ScreenshotListeners:29 - 
+================:  presence Of Count Sub Tab In Platelet :====================
+
+2025-01-28 10:42:13 INFO  CommonMethods:52 - clicked on tab successfully
+2025-01-28 10:42:14 INFO  ReviewPatchesInPatchViewAndSplitView:49 - count sub tab is present on platelet 
+2025-01-28 10:42:14 INFO  ReviewPatchesInPatchViewAndSplitViewTest:58 - Count tab is present on platelet 
+2025-01-28 10:42:14 INFO  ScreenshotListeners:29 - 
+================:  presence Of Morphology :====================
+
+2025-01-28 10:42:14 INFO  ReviewPatchesInPatchViewAndSplitViewTest:65 - Morphology tab is present on platelet main tab
+2025-01-28 10:42:14 INFO  ScreenshotListeners:29 - 
+================:  selection Of Fovs :====================
+
+2025-01-28 10:42:21 ERROR ReviewPatchesInPatchViewAndSplitView:92 - Mismatch in FOV navigation for FOV 3. Expected: FOV 3 / 11, but found: FOV 2 / 10
+2025-01-28 10:42:21 ERROR BrowserSetUp:185 - selectionOfFovs -> FAILED due to below issues :
+java.lang.AssertionError: expected [true] but found [false]
+
+2025-01-28 10:42:22 INFO  BrowserSetUp:195 - Screenshot for this failed method : Screenshot/selectionOfFovs.png
+2025-01-28 10:42:22 INFO  ScreenshotListeners:29 - 
+================:  edit The N M G Value :====================
+
+2025-01-28 10:48:58 INFO  ReviewPatchesInPatchViewAndSplitViewTest:80 - user is able to change the n m g value on platelet tab
+2025-01-28 10:48:58 INFO  ScreenshotListeners:29 - 
+================:  test Default Selection Of Split View :====================
+
+2025-01-28 10:48:58 INFO  ReviewPatchesInPatchViewAndSplitView:150 - Split View is selected by default.
+2025-01-28 10:48:58 INFO  ReviewPatchesInPatchViewAndSplitView:162 - Patch View is disabled.
+2025-01-28 10:48:58 INFO  ReviewPatchesInPatchViewAndSplitViewTest:87 - Verify The Default selection of split view in the platelet count
+2025-01-28 10:48:58 INFO  ScreenshotListeners:29 - 
+================:  Verify Radio Btn Manual Level Platelet Count :====================
+
+2025-01-28 10:49:33 INFO  ReviewPatchesInPatchViewAndSplitView:200 -  Manual radio button is not selected
+2025-01-28 10:49:33 INFO  ReviewPatchesInPatchViewAndSplitViewTest:95 - Verify the selection of the manual platelet level radio button

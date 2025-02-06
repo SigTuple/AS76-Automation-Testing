@@ -1,40 +1,40 @@
-package WBC.WBCSplitView;
+package WBC.WbcSplitView;
 
 
 import Data.Property;
 import GenericMethodForAllTab.CommonMethods;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import summary.WBCDCC;
 
 import java.io.IOException;
 import java.util.Properties;
 
-public class WBCSplitView  extends CommonMethods {
+public class WbcSplitView extends CommonMethods {
 
 
-    private final Logger logger = LogManager.getLogger(WBCSplitView.class);
+    //private final Logger logger = LogManager.getLogger(WBCSplitView.class);
     public WebDriver driver;
     public WebDriverWait wait;
     public Properties props;
-    public WBCDCC wbcdcc;
+    // public WBCDCC wbcdcc;
 
     //Author: Santosh Budni
-    public WBCSplitView(WebDriver driver) throws Exception {
+    public WbcSplitView(WebDriver driver) throws Exception {
         super(driver);
         this.driver = driver;
         wait = new WebDriverWait(driver, 30);
         props = Property.prop;
         Property.readWBCProperties();
+        Property.readRBCProperties();
     }
 
 
     // clicking to split view
 
     public  boolean clickedOnSplitView() throws InterruptedException {
-                return splitViewIcon("WBC");
+        //this.clickOnSpecificTab("WBC");
+        this.clickOnSpecificViewtab("Split view");
+        return true;
 
     }
 
@@ -42,7 +42,7 @@ public class WBCSplitView  extends CommonMethods {
     // verifying the zoom-in and zoom-out functionality
 
     public String zoom_in_zoom_out_functionality() throws IOException, InterruptedException, IOException {
-        return verifyTheFunctionalityOfZoomIn_And_ZoomOut_Using_UI_icon("//*[@id='pbs-volumeViewport']/div/div[3]/div[3]/button[1]",5);
+        return  super.verifyTheFunctionalityOfZoomIn_And_ZoomOut_Using_UI_icon("//*[@id='pbs-volumeViewport']/div/div[3]/div[3]/button[1]",7);
     }
 
 
@@ -50,7 +50,7 @@ public class WBCSplitView  extends CommonMethods {
     // verify the functionality of home zoom
 
     public String home_Zoom_functionality() throws InterruptedException {
-        return verifyTheFunctionalityOf_Home_zoom();
+        return  super.verifyTheFunctionalityOf_Home_zoom();
     }
 
 }
