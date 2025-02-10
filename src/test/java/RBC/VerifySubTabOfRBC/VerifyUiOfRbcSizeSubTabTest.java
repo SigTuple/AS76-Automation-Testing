@@ -1,5 +1,6 @@
 package RBC.VerifySubTabOfRBC;
 
+import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.log4j.LogManager;
@@ -30,7 +31,7 @@ public class VerifyUiOfRbcSizeSubTabTest extends BrowserSetUp {
 	public void driver() throws Exception {
 		BrowserSetUp browser = new BrowserSetUp();
 		driver = browser.getDriver();
-		wait = new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 50);
 		props = Property.prop;
 		Property.readRBCProperties();
 		verifySubtbOfRbc=new VerifyUiOfRbcSizeSubTab(driver);

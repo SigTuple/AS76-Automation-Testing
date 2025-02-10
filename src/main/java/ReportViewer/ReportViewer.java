@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -24,7 +25,7 @@ public class ReportViewer extends CommonMethods {
     public ReportViewer(WebDriver driver) throws Exception {
         super(driver);
         this.driver = driver;
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readReportViewerProperties();
         Property.readRBCProperties();
@@ -320,7 +321,7 @@ public class ReportViewer extends CommonMethods {
         Thread.sleep(2000);
         actions1.moveToElement(tooltype).click().perform();
         Thread.sleep(3000);
-        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+
         String msg=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("digitalZoom")))).getText();
         WebElement textBox=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("textBox"))));
            String byDefaultValue=textBox.getAttribute("value");

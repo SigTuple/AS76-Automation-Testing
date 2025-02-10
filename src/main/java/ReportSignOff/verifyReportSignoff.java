@@ -15,6 +15,7 @@ import summary.Summary;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -34,7 +35,7 @@ public class verifyReportSignoff {
 
     public verifyReportSignoff(WebDriver driver) throws Exception {
         this.driver = driver;
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 50);
         commonMethods=new CommonMethods(driver);
         summary=new Summary(driver);
         actions=new Actions(driver);

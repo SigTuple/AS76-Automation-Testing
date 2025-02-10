@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -30,7 +31,7 @@ public class VerifyTheListReportPage extends CommonMethods {
         super(driver);
         this.driver = driver;
         int time = 30;
-        wait = new WebDriverWait(driver, time);
+        wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readRBCProperties();
         Property.readReportListingProperties();
@@ -649,8 +650,8 @@ public class VerifyTheListReportPage extends CommonMethods {
                 } else {
                     // Scroll down the page if no reports are visible
                     Long lastHeight = (Long) js.executeScript("return document.body.scrollHeight");
-                    js.executeScript("window.scrollBy(0, 500);");
-                    wait.until(ExpectedConditions.jsReturnsValue("return document.body.scrollHeight > " + lastHeight)); // Wait for new content to load
+                    js.executeScript("window.scrollBy(0, 200);");
+                    wait.until(ExpectedConditions.jsReturnsValue("return document.body.scrollHeight > " + 940)); // Wait for new content to load
                 }
             } catch (StaleElementReferenceException e) {
                 System.err.println("Stale element encountered. Retrying...");

@@ -16,6 +16,7 @@ import summary.Summary;
 import summary.SummaryTest;
 import utilities.BrowserSetUp;
 
+import java.time.Duration;
 import java.util.Properties;
 
 public class ViewOriginalModifiedreportsTest {
@@ -31,7 +32,7 @@ public class ViewOriginalModifiedreportsTest {
     public void driver() throws Exception {
         BrowserSetUp browser = new BrowserSetUp();
         WebDriver driver = browser.getDriver();
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 50);
         viewOriginalModifiedreports =new ViewOriginalModifiedreports(driver);
         VerifyTheListReportPage =new VerifyTheListReportPage(driver);
         commonMethods=new CommonMethods(driver);

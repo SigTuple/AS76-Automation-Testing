@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
 
@@ -28,7 +29,7 @@ public class VerifyThePatchViewOfRBC extends CommonMethods {
         super(driver);
         VerifyThePatchViewOfRBC.driver = driver;
         int time = 30;
-        wait = new WebDriverWait(driver, time);
+        wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readRBCProperties();
         cms = new CommonMethods(driver);

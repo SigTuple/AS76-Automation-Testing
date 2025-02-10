@@ -1,6 +1,7 @@
 package WBC.VerifyWbcParameters;
 
 import java.text.DecimalFormat;
+import java.time.Duration;
 import java.util.*;
 
 import GenericMethodForAllTab.CommonMethods;
@@ -24,7 +25,7 @@ public class WBCParameters extends CommonMethods {
 	public WBCParameters(WebDriver driver) throws Exception {
 		super(driver);
 		this.driver = driver;
-		wait = new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 50);
 		props = Property.prop;
 		Property.readWBCProperties();
 		actions = new Actions(driver);

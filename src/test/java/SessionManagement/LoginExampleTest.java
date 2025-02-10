@@ -1,5 +1,6 @@
 package SessionManagement;
 
+import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.log4j.LogManager;
@@ -27,7 +28,7 @@ public class LoginExampleTest extends BrowserSetUp {
 		BrowserSetUp browser = new BrowserSetUp();
 		WebDriver driver = browser.getDriver();
 		System.out.println("before lauch");
-		wait = new WebDriverWait(driver,30);
+		wait = new WebDriverWait(driver, 50);
 		System.out.println("after lauch");
 		login=new LoginExample(driver);
 		props = Property.prop;

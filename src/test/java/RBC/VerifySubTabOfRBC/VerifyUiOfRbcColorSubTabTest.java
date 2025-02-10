@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import utilities.BrowserSetUp;
 
+import java.time.Duration;
 import java.util.Properties;
 
 public class VerifyUiOfRbcColorSubTabTest extends BrowserSetUp {
@@ -30,7 +31,7 @@ public class VerifyUiOfRbcColorSubTabTest extends BrowserSetUp {
 	public void driver() throws Exception {
 		BrowserSetUp browser = new BrowserSetUp();
 		driver = browser.getDriver();
-		wait = new WebDriverWait(driver,time);
+		wait = new WebDriverWait(driver, 50);
 		props = Property.prop;
 		Property.readRBCProperties();
 		verifySubtbOfRbc=new VerifyUiOfRbcSizeSubTab(driver);

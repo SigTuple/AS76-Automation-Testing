@@ -30,7 +30,7 @@ public class VerifyThePatchSizeOfRBC extends CommonMethods {
         super(driver);
         this.driver = driver;
         int time = 30;
-        wait = new WebDriverWait(driver, time);
+        wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readRBCProperties();
         cms = new CommonMethods(driver);

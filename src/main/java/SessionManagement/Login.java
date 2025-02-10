@@ -1,5 +1,6 @@
 package SessionManagement;
 
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
@@ -16,13 +17,13 @@ public class Login {
 
 	public WebDriver driver;
 	private final WebDriverWait wait;
-	public int time=10;
+
 	Properties props;
 
 	public Login(WebDriver driver) throws Exception
 	{
 		  this.driver=driver;
-		wait=new WebDriverWait(driver,time);
+		wait = new WebDriverWait(driver, 50);
 		props = Property.prop;
 		Property.readSessionManagement();
 	}

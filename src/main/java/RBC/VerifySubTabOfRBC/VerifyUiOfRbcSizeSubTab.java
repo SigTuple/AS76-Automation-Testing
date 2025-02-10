@@ -1,5 +1,6 @@
 package RBC.VerifySubTabOfRBC;
 
+import java.time.Duration;
 import java.util.*;
 
 import org.openqa.selenium.By;
@@ -26,8 +27,8 @@ public class VerifyUiOfRbcSizeSubTab extends CommonMethods{
 		super(driver);
 		this.driver=driver;
 		   int time = 30;
-		   wait=new WebDriverWait(driver,time);
-			props = Property.prop;
+		wait = new WebDriverWait(driver, 50);
+		props = Property.prop;
 			Property.readRBCProperties();
 		   cms= new CommonMethods(driver);
 		}

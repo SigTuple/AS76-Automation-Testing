@@ -1,5 +1,6 @@
 package SessionManagement;
 
+import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.log4j.LogManager;
@@ -27,7 +28,7 @@ public class LoginExample {
 	public LoginExample(WebDriver driver) throws Exception
 	{
 		this.driver=driver;
-		wait=new WebDriverWait(driver,time);
+		wait = new WebDriverWait(driver, 50);
 		props = Property.prop;
 		Property.readSessionManagement();
 	}

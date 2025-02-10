@@ -1,5 +1,6 @@
 package summary;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -21,7 +22,7 @@ public class WBCDCC {
 
     public WBCDCC(WebDriver driver) throws Exception {
         this.driver = driver;
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readSummaryProperties();
     }

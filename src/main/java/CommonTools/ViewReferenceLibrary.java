@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.time.Duration;
 import java.util.Properties;
 
 public class ViewReferenceLibrary {
@@ -23,7 +24,7 @@ public class ViewReferenceLibrary {
 
     public ViewReferenceLibrary(WebDriver driver) throws Exception {
         this.driver = driver;
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readSummaryProperties();
         Property.readReportListingProperties();

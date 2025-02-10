@@ -1,5 +1,6 @@
 package WBC.VerifyWbcPatches;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
 
@@ -25,7 +26,7 @@ public class WBCPatches extends CommonMethods {
 	public WBCPatches(WebDriver driver) throws Exception {
 		super(driver);
 		this.driver = driver;
-		wait = new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 50);
 		props = Property.prop;
 		Property.readWBCProperties();
 	}

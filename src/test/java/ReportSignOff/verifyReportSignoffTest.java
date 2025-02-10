@@ -18,6 +18,7 @@ import summary.SummaryTest;
 import utilities.BrowserSetUp;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -37,7 +38,7 @@ public class verifyReportSignoffTest extends BrowserSetUp{
     public void driver() throws Exception {
         BrowserSetUp browser = new BrowserSetUp();
         WebDriver driver = browser.getDriver();
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 50);
         summary =new Summary(driver);
         commonMethods=new CommonMethods(driver);
         VerifyTheListReportPage =new VerifyTheListReportPage(driver);

@@ -16,7 +16,7 @@
             </methods>
             </class>
 
-       <!-- <class name="ReportListing.VerifyTheListReportPageTest">
+      <!-- <class name="ReportListing.VerifyTheListReportPageTest">
             <methods>
                  <include name ="verifySigLogoAndPBS"/>
                 <include name ="verifyTheKebabMenuIcon"/>
@@ -43,7 +43,7 @@
             <class name="summary.SummaryTest">
             <methods>
                 <include name="assign"/>
-              <!--  <include name="verifyTheWBCinfoIcon"/>
+             <!-- <include name="verifyTheWBCinfoIcon"/>
                 <include name="verifyTheRBCinfoIcon"/>
                 <include name="verifyThePlateletinfoIcon"/>
                 <include name="psImpression"/>
@@ -55,7 +55,7 @@
                 <include name="verifyThePresenceOfDiffrencialCount"/>-->
             </methods>
             </class>
-         <!--  <class name="WBC.VerifyWbcParametersTest.WBCParametersTest">
+        <!-- <class name="WBC.VerifyWbcParametersTest.WBCParametersTest">
              <methods>
                 <include name="verifySelctionOfWBCTab"/>
                   <include name="verifyTheColumnPresentInTheWBCTab"/>
@@ -80,7 +80,7 @@
                <include name="verifyZoomInZoomOutFunctionality"/>
                <include name="verifying_Home_Zoom_Functionality"/>
            </methods>
-      </class>-->
+      </class>
 
 
           <class name="RBC.VerifySubTabOfRBC.VerifyUiOfRbcSizeSubTabTest">
@@ -310,7 +310,6 @@
                     <include name="verifyTheCheckBoxSelectAndDeselect"/>
                     <include name="verifyTheModifyButtonAvailability"/>
                     <include name="verifyTextOnPsImpressionInPreviewReport"/>
-
                     <include name="verifyTheReportSignOffAndVerifyPDF"/>
                     <include name="reopenReport"/>
                     <include name="verifyTheContentsOfRejectBtnPopupInSummary"/>
@@ -323,13 +322,23 @@
                     <include name="verifyTheContentsOfRejectBtnPopupInPlateletsMorphology"/>
                     <include name="verifyTheRejectFromReportPreviewPage"/>
 
-
-
-
-
-
                 </methods>
+            </class>-->
+
+            <class name="ReportSignOff.verifyReportSignoffTest">
+            <methods>
+            <include name="verifyTheContentsOfRejectBtnPopupInSummary"/>
+            <include name="verifyTheContentsOfRejectBtnPopupInWBC"/>
+            <include name="verifyTheContentsOfRejectBtnPopupInRBCSize"/>
+            <include name="verifyTheContentsOfRejectBtnPopupInRBCShape"/>
+            <include name="verifyTheContentsOfRejectBtnPopupInRBCColor"/>
+            <include name="verifyTheContentsOfRejectBtnPopupInRBCInclusions"/>
+            <include name="verifyTheContentsOfRejectBtnPopupInPlateletsCountInSplit"/>
+            <include name="verifyTheContentsOfRejectBtnPopupInPlateletsMorphology"/>
+            <include name="verifyTheRejectFromReportPreviewPage"/>
+            </methods>
             </class>
+
 
 
         </classes>

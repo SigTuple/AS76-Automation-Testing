@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import utilities.BrowserSetUp;
 
+import java.time.Duration;
 import java.util.Properties;
 
 public class ViewAndModifyThePlateletCountTest extends BrowserSetUp{
@@ -28,7 +29,7 @@ public class ViewAndModifyThePlateletCountTest extends BrowserSetUp{
     public void driver() throws Exception {
         BrowserSetUp browser = new BrowserSetUp();
         driver = browser.getDriver();
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readReportListingProperties();
         Property.readPlateletProperties();

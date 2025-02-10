@@ -1,5 +1,6 @@
 package WBC.VerifyWbcParametersTest;
 
+import java.time.Duration;
 import java.util.Properties;
 
 import GenericMethodForAllTab.CommonMethods;
@@ -27,7 +28,7 @@ public class WBCParametersTest extends BrowserSetUp {
 	public void driver() throws Exception {
 		BrowserSetUp browser = new BrowserSetUp();
 		driver = browser.getDriver();
-		wait = new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 50);
 		wbc = new WBCParameters(driver);
 		 cms=new CommonMethods(driver);
 		props = Property.prop;

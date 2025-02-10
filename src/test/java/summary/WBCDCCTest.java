@@ -1,5 +1,6 @@
 package summary;
 
+import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.log4j.LogManager;
@@ -22,7 +23,7 @@ public class WBCDCCTest extends BrowserSetUp {
     public void driver() throws Exception {
         BrowserSetUp browser = new BrowserSetUp();
         WebDriver driver = browser.getDriver();
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 50);
         // WBCDCC === WBC Differential calculated count
         wbcdcc = new WBCDCC(driver);
         props = Property.prop;

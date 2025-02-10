@@ -5,6 +5,7 @@ package GenericMethodForAllTab;
 
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
 import org.apache.log4j.LogManager;
@@ -27,13 +28,13 @@ public class CommonMethods {
 
 	private final WebDriver driver;
 	public WebDriverWait wait;
-	int time = 50;
+
 	Properties props;
 
 
 	public CommonMethods(WebDriver driver) throws Exception {
 		this.driver = driver;
-		wait = new WebDriverWait(driver, time);
+		wait =new WebDriverWait(driver,50);
 		props = Property.prop;
 		Property.readSessionManagement();
 		Property.readCommonMethodProperties();

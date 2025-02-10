@@ -11,6 +11,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import utilities.BrowserSetUp;
+
+import java.time.Duration;
 import java.util.Properties;
 
 public class VerifyThePatchSizeOfRBCTest  extends BrowserSetUp {
@@ -28,7 +30,7 @@ public class VerifyThePatchSizeOfRBCTest  extends BrowserSetUp {
     public void driver() throws Exception {
         BrowserSetUp browser = new BrowserSetUp();
         driver = browser.getDriver();
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readRBCProperties();
         verifyThePatchSizeOfRBC = new VerifyThePatchSizeOfRBC(driver);

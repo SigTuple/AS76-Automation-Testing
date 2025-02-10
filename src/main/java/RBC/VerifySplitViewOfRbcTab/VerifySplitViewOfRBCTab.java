@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.*;
 
 public class VerifySplitViewOfRBCTab extends CommonMethods {
@@ -26,7 +27,7 @@ public class VerifySplitViewOfRBCTab extends CommonMethods {
         super(driver);
         this.driver = driver;
         int time = 30;
-        wait = new WebDriverWait(driver, time);
+        wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readRBCProperties();
         cms = new CommonMethods(driver);

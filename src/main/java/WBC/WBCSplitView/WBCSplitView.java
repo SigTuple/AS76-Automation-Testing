@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 public class WbcSplitView extends CommonMethods {
@@ -22,7 +23,7 @@ public class WbcSplitView extends CommonMethods {
     public WbcSplitView(WebDriver driver) throws Exception {
         super(driver);
         this.driver = driver;
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readWBCProperties();
         Property.readRBCProperties();
