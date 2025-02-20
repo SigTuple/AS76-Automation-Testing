@@ -92,4 +92,10 @@ public class Property {
 		String path=new File("src/main/java/Data/CommonTools.properties").getAbsolutePath();
 		prop.load(new InputStreamReader(new FileInputStream(path),"UTF8"));
 	}
+
+	public static void readHistoryProperties() throws Exception{
+
+		String path=new File("src/main/java/Data/History.properties").getAbsolutePath();
+		prop.load(new InputStreamReader(new FileInputStream(path),"UTF8"));
+	}
 }

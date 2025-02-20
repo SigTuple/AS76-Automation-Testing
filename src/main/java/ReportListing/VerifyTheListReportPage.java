@@ -7,15 +7,16 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
-import java.time.Duration;
-import java.time.LocalDate;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class VerifyTheListReportPage extends CommonMethods {
 
@@ -34,8 +35,10 @@ public class VerifyTheListReportPage extends CommonMethods {
         wait = new WebDriverWait(driver, 50);
         props = Property.prop;
         Property.readRBCProperties();
+        Property.readSummaryProperties();
         Property.readReportListingProperties();
         cms = new CommonMethods(driver);
+        actions = new Actions(driver);
     }
 
     //  Verify the logo of sigtuple and PBS.
@@ -157,13 +160,13 @@ public class VerifyTheListReportPage extends CommonMethods {
         actions.moveToElement(filterbtn).click().perform();
         Thread.sleep(5000);
         //wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("filterbtn")))).click();
-       // WebElement container = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("fildercontainer"))));
+        // WebElement container = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("fildercontainer"))));
         List<WebElement> filteroption = driver.findElements(By.xpath(props.getProperty("filteroption")));
         //  driver.findElement(By.xpath(props.getProperty("xicon"))).click();
 
         if (!filteroption.isEmpty()) {
-            for (WebElement ops :filteroption) {
-                    options = options + ops.getText() + "\n";
+            for (WebElement ops : filteroption) {
+                options = options + ops.getText() + "\n";
             }
             logger.info(" Filter Option are Loaded");
         }
@@ -183,7 +186,7 @@ public class VerifyTheListReportPage extends CommonMethods {
         actions.moveToElement(filterbtn).click().perform();
         Thread.sleep(2000);
         //WebElement scandate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandate"))));
-       // scandate.click();
+        // scandate.click();
         WebElement scndaterange = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandaterange"))));
         scndaterange.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("startdatebtn")))).click();
@@ -199,11 +202,10 @@ public class VerifyTheListReportPage extends CommonMethods {
         WebElement scndaterangep = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scandaterange"))));
         String place = scndaterangep.getText();
 
-       WebElement xicon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("xicon"))));
+        WebElement xicon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("xicon"))));
         // Use JavaScript to click
-         jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor = (JavascriptExecutor) driver;
         jsExecutor.executeScript("arguments[0].click();", xicon);
-
 
 
         System.out.println(place);
@@ -566,6 +568,92 @@ public class VerifyTheListReportPage extends CommonMethods {
         return flag;
     }
 
+    //verify the bookmark for the report
+    public boolean multipleBookmarkSavedStatus() {
+        boolean flag = false;
+
+        List<WebElement> allBookmarkIcons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("allBookmarkIcon"))));
+
+        for (WebElement bookmark : allBookmarkIcons) {
+            try {
+                // Re-fetch the element to avoid StaleElementReferenceException
+                bookmark = wait.until(ExpectedConditions.elementToBeClickable(bookmark));
+
+                // Check if the bookmark is already filled
+                if (bookmark.getAttribute("src").contains("bookmark-filled")) {
+                    logger.info("Bookmark is already filled. Removing bookmark.");
+                    bookmark.click();
+
+                    // Wait for confirmation button and click
+                    WebElement confirmBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("confirmbtn"))));
+                    confirmBtn.click();
+
+                    // Wait until the bookmark is removed
+                    wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(bookmark, "src", "bookmark-filled")));
+
+                    logger.info("Bookmark removed successfully.");
+                }
+
+                // Now, re-add the bookmark
+                logger.info("Adding bookmark.");
+                bookmark.click();
+
+                // Wait for the "Bookmark saved" message
+                WebElement savedMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Bookmark saved']")));
+
+                if (savedMsg.isDisplayed()) {
+                    logger.info("Bookmark successfully saved.");
+                    flag = true;
+                }
+            } catch (Exception e) {
+                logger.error("Error while handling bookmark: " + e.getMessage());
+            }
+        }
+
+        return flag;
+    }
+
+    //verify the bookmark for the report
+    public boolean multipleBookmarkRemovedStatus() {
+        boolean flag = false;
+
+        List<WebElement> allBookmarkIcons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(
+                By.xpath(props.getProperty("allBookmarkIcon"))
+        ));
+
+        for (WebElement bookmark : allBookmarkIcons) {
+            try {
+                // Re-fetch the element to avoid StaleElementReferenceException
+                bookmark = wait.until(ExpectedConditions.elementToBeClickable(bookmark));
+
+                // Check if the bookmark is already filled
+                if (bookmark.getAttribute("src").contains("bookmark-filled")) {
+                    logger.info("Bookmark is already filled. Removing bookmark.");
+                    bookmark.click();
+
+                    // Wait for confirmation button and click
+                    WebElement confirmBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("confirmbtn"))));
+                    confirmBtn.click();
+
+                    logger.info("Bookmark removed successfully.");
+
+
+                    // Wait for the "Bookmark saved" message
+                    WebElement savedMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Bookmark removed']")));
+
+                    if (savedMsg.isDisplayed() && savedMsg.getText().equals("Bookmark removed")) {
+                        logger.info("Bookmark successfully removed.");
+                        flag = true;
+                    }
+                }
+            } catch (Exception e) {
+                logger.error("Error while handling bookmark: " + e.getMessage());
+            }
+        }
+
+        return flag;
+    }
+
 
     //verify that the user is able to comment on bookmarked slides
     public boolean bookmarkComment() throws InterruptedException {
@@ -618,10 +706,177 @@ public class VerifyTheListReportPage extends CommonMethods {
             }
 
         }
+        return flag;
+    }
 
+    //bookmark comment for multiple report
+    public boolean multipleBookmarkComment() {
+        boolean flag = false;
+
+        List<WebElement> allBookmarkIcons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("allBookmarkIcon"))));
+
+        for (WebElement bookmark : allBookmarkIcons) {
+            try {
+                // Re-fetch the element to avoid StaleElementReferenceException
+                bookmark = wait.until(ExpectedConditions.elementToBeClickable(bookmark));
+
+                // Check if the bookmark is already filled
+                if (bookmark.getAttribute("src").contains("bookmark-filled")) {
+                    logger.info("Bookmark is already filled. Removing bookmark.");
+                    bookmark.click();
+
+                    // Wait for confirmation button and click
+                    WebElement confirmBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("confirmbtn"))));
+                    confirmBtn.click();
+
+                    // Wait until the bookmark is removed
+                    wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(bookmark, "src", "bookmark-filled")));
+                    logger.info("Bookmark removed successfully.");
+                    bookmark.click();
+                    Thread.sleep(2000);
+                    WebElement commenticon = bookmark.findElement(By.xpath("./parent::td/following::td[1]//img"));
+                    commenticon.click();
+                    Thread.sleep(2000);
+
+                    if (bookmark.isDisplayed() && commenticon.isDisplayed()) {
+                        WebElement commenttxtfield = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("commenttxtfield"))));
+                        commenttxtfield.click();
+                        commenttxtfield.sendKeys(props.getProperty("dummycomment"));
+                        commenttxtfield.click();
+                        String comment = commenttxtfield.getText();
+                        WebElement saveiconcomment = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("saveiconcomment"))));
+                        saveiconcomment.click();
+                        Thread.sleep(2000);
+                        if (comment.contains(props.getProperty("dummycomment"))) {
+                            flag = true;
+                            logger.info("Comment Textfield is enable");
+                        }
+
+                    }
+
+                } else {
+
+                    // Now, re-add the bookmark
+                    logger.info("Adding bookmark.");
+                    bookmark = wait.until(ExpectedConditions.elementToBeClickable(bookmark));
+                    bookmark.click();
+                    Thread.sleep(2000);
+
+                    WebElement commenticon = bookmark.findElement(By.xpath("./parent::td/following::td[1]//img"));
+                    commenticon.click();
+                    Thread.sleep(2000);
+
+                    if (bookmark.isDisplayed() && commenticon.isDisplayed()) {
+                        WebElement commenttxtfield = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("commenttxtfield"))));
+                        commenttxtfield.click();
+                        commenttxtfield.sendKeys(props.getProperty("dummycomment"));
+                        commenttxtfield.click();
+                        String comment = commenttxtfield.getText();
+                        WebElement saveiconcomment = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("saveiconcomment"))));
+                        saveiconcomment.click();
+                        Thread.sleep(2000);
+                        if (comment.contains(props.getProperty("dummycomment"))) {
+                            flag = true;
+                            logger.info("Comment Textfield is enable");
+                        }
+                    }
+                }
+
+            } catch (Exception e) {
+                logger.error("Error while handling bookmark: ");
+            }
+        }
 
         return flag;
     }
+
+    //Update bookmark comment for multiple report
+    public boolean multipleBookmarkCommentUpdate() {
+        boolean flag = false;
+
+        List<WebElement> allBookmarkIcons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("allBookmarkIcon"))));
+
+        for (WebElement bookmark : allBookmarkIcons) {
+            try {
+                // Re-fetch the element to avoid StaleElementReferenceException
+                bookmark = wait.until(ExpectedConditions.elementToBeClickable(bookmark));
+
+                // Check if the bookmark is already filled
+                if (bookmark.getAttribute("src").contains("bookmark-filled")) {
+                    Thread.sleep(2000);
+                    WebElement commenticon = bookmark.findElement(By.xpath("./parent::td/following::td[1]//img"));
+                    commenticon.click();
+                    Thread.sleep(2000);
+
+                    if (bookmark.isDisplayed() && commenticon.isDisplayed()) {
+                        WebElement commenttxtfield = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("commenttxtfield"))));
+                        commenttxtfield.click();
+                        commenttxtfield.sendKeys(props.getProperty("dummyComment2"));
+                        commenttxtfield.click();
+                        String comment = commenttxtfield.getText();
+                        WebElement saveiconcomment = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("saveiconcomment"))));
+                        saveiconcomment.click();
+                        Thread.sleep(2000);
+                        if (comment.contains("test")) {
+                            flag = true;
+                            logger.info("Comment Text field is enable");
+                        }
+                    }
+
+                } else {
+                    logger.info("Comment is not avaialble");
+                }
+
+            } catch (Exception e) {
+                logger.error("Error while handling bookmark: ");
+            }
+        }
+
+        return flag;
+    }
+
+    //Update bookmark comment for multiple report
+    public boolean multipleBookmarkCommentDelete() throws InterruptedException {
+        boolean flag = false;
+
+        List<WebElement> allBookmarkIcons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("allBookmarkIcon"))));
+
+        for (WebElement bookmark : allBookmarkIcons) {
+            try {
+                // Re-fetch the element to avoid StaleElementReferenceException
+                bookmark = wait.until(ExpectedConditions.elementToBeClickable(bookmark));
+
+                // Check if the bookmark is already filled
+                if (bookmark.getAttribute("src").contains("bookmark-filled")) {
+                    Thread.sleep(2000);
+                    WebElement commenticon = bookmark.findElement(By.xpath("./parent::td/following::td[1]//img"));
+                    if (commenticon.getAttribute("src").contains("comment-filled")) {
+                        commenticon.click();
+                        Thread.sleep(2000);
+
+
+                        WebElement deleteIconComment = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("deleteiconcomment"))));
+                        Actions actions1 = new Actions(driver);
+                        actions1.moveToElement(deleteIconComment).click().perform();
+                        flag = true;
+                        logger.info("Comment successfully deleted");
+                    }
+
+
+                } else {
+                    logger.info("Comment is not avaialble");
+                }
+
+            } catch (Exception e) {
+                logger.error("Error while handling bookmark: ");
+            }
+        }
+        driver.navigate().refresh();
+        Thread.sleep(3000);
+        return flag;
+    }
+
+
     public boolean clickOnUnassignedReport() {
         boolean flag = false;
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -677,11 +932,10 @@ public class VerifyTheListReportPage extends CommonMethods {
     }
 
 
-
     //verify the assign and reassign of reviewer on list report page
     public String assignreport() throws InterruptedException {
         Thread.sleep(6000);
-        this.clickOnUnassignedReport();
+        this.openAReport("To be reviewed");
         String assignedreviewer = "";
         Thread.sleep(3000);
         WebElement reviewerdropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("reviewerdropdown"))));
@@ -725,8 +979,572 @@ public class VerifyTheListReportPage extends CommonMethods {
     }
 
 
+    //Verification of the presence of the time zone option and the configured time zone.
+    public boolean PresenceOfTimezoneOption() throws InterruptedException {
+        boolean flag = false;
+        //Change Time Zone in Settings
+        Thread.sleep(2000);
+        WebElement profileIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("profileIcon"))));
+        actions.moveToElement(profileIcon).click().perform();
+        List<WebElement> ListOfProfileOption = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("ListOfProfileOption"))));
+        for (WebElement option : ListOfProfileOption) {
+            if (option.getText().contains("Time zone")) {
+                logger.info("Clicked on Time zone option");
+                wait.until(ExpectedConditions.elementToBeClickable(option));
+                Thread.sleep(2000);
+                actions.moveToElement(option).click().perform();
+                //option.click();
+                flag = true;
+                break;
 
-}
+            } else {
+                Assert.fail();
+            }
+        }
+        cms.clickOnBackTOListReportButton();
+        return flag;
+    }
+
+    //Verify the functionality of the Edit CTA
+    public boolean FunctionalityOfEditCTA( String ReqTimeZone) throws InterruptedException {
+        boolean flag = false;
+        //Change Time Zone in Settings
+        Thread.sleep(2000);
+        WebElement profileIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("profileIcon"))));
+        actions.moveToElement(profileIcon).click().perform();
+        List<WebElement> ListOfProfileOption = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("ListOfProfileOption"))));
+        for (WebElement option : ListOfProfileOption) {
+            if (option.getText().contains("Time zone")) {
+                logger.info("Clicked on Time zone option");
+                wait.until(ExpectedConditions.elementToBeClickable(option));
+                Thread.sleep(2000);
+                actions.moveToElement(option).click().perform();
+                //option.click();
+                break;
+
+            } else {
+                Assert.fail();
+            }
+        }
+        WebElement editTimeZoneBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("editTimeZoneBtn"))));
+        editTimeZoneBtn.click();
+        WebElement configuredTimeZone = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("configuredTimeZone"))));
+        String BeforeConfiguredTimeZone = configuredTimeZone.getText();
+
+        logger.info("Before Change Timezone: " + BeforeConfiguredTimeZone);
+
+        WebElement selectTimeZoneDD = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("selectTimeZoneDD"))));
+
+        Thread.sleep(2000);
+        selectTimeZoneDD.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+        selectTimeZoneDD.sendKeys(Keys.BACK_SPACE);
+        selectTimeZoneDD.click();
+        selectTimeZoneDD.sendKeys(ReqTimeZone);
+        selectTimeZoneDD.sendKeys(Keys.RETURN);
+        selectTimeZoneDD.sendKeys(Keys.chord(Keys.ARROW_DOWN));
+        selectTimeZoneDD.sendKeys(Keys.RETURN);
+        logger.info("Selecting the required option");
+        Thread.sleep(2000);
+        WebElement saveBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("saveBtn"))));
+        saveBtn.click();//"Success\nTime zone changed successfuly"
+
+
+        WebElement SuccessfulMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("SuccessfulMsg"))));
+        System.out.println(SuccessfulMsg.getText());
+        if (SuccessfulMsg.getText().equals("Success\nTime zone changed successfuly"))//"Success\nTime zone changed successfuly" only for execution purpose
+        {
+            flag = true;
+        }
+        logger.info("After Change Timezone: " + ReqTimeZone);
+        WebElement XIcon = driver.findElement(By.xpath(props.getProperty("XIcon")));
+        actions.moveToElement(XIcon).click().perform();
+        cms.clickOnBackTOListReportButton();
+        return flag;
+    }
+
+    //Verification of User Viewing Scanned on time within the Configured Time zone set on the reporting.
+    public boolean ConfigureTimeZoneIsSetOnTheReporting( String ReqTimeZone) throws InterruptedException {
+        boolean flag = false;
+        //Change Time Zone in Settings
+        Thread.sleep(2000);
+        WebElement profileIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("profileIcon"))));
+        actions.moveToElement(profileIcon).click().perform();
+        List<WebElement> ListOfProfileOption = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("ListOfProfileOption"))));
+        for (WebElement option : ListOfProfileOption) {
+            if (option.getText().contains("Time zone")) {
+                logger.info("Clicked on Time zone option");
+                wait.until(ExpectedConditions.elementToBeClickable(option));
+                Thread.sleep(2000);
+                actions.moveToElement(option).click().perform();
+                //option.click();
+                break;
+
+            } else {
+                Assert.fail();
+            }
+        }
+        WebElement editTimeZoneBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("editTimeZoneBtn"))));
+        editTimeZoneBtn.click();
+        WebElement configuredTimeZone = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("configuredTimeZone"))));
+        String BeforeConfiguredTimeZone = configuredTimeZone.getText();
+
+        logger.info("Before Change Timezone: " + BeforeConfiguredTimeZone);
+
+        WebElement selectTimeZoneDD = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("selectTimeZoneDD"))));
+
+        Thread.sleep(2000);
+        selectTimeZoneDD.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+        selectTimeZoneDD.sendKeys(Keys.BACK_SPACE);
+        selectTimeZoneDD.click();
+        selectTimeZoneDD.sendKeys(ReqTimeZone);
+        selectTimeZoneDD.sendKeys(Keys.RETURN);
+        selectTimeZoneDD.sendKeys(Keys.chord(Keys.ARROW_DOWN));
+        selectTimeZoneDD.sendKeys(Keys.RETURN);
+        logger.info("Selecting the required option");
+        Thread.sleep(2000);
+        WebElement saveBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("saveBtn"))));
+        saveBtn.click();//"Success\nTime zone changed successfuly"
+
+
+        WebElement SuccessfulMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("SuccessfulMsg"))));
+        System.out.println(SuccessfulMsg.getText());
+        if (SuccessfulMsg.getText().equals("Success\nTime zone changed successfuly"))//"Success\nTime zone changed successfuly" only for execution purpose
+        {
+            logger.info("Time zone changed successfully");
+        }
+        logger.info("After Change Timezone: " + ReqTimeZone);
+        WebElement XIcon = driver.findElement(By.xpath(props.getProperty("XIcon")));
+        actions.moveToElement(XIcon).click().perform();
+        cms.clickOnBackTOListReportButton();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//tbody/tr[1]"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("slideIcon")))).click();
+        Thread.sleep(5000);
+        WebElement timeStampOnSlide = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("scannedOnTime"))));
+        System.out.println("Date :"+timeStampOnSlide.getText());
+       // validateTimeZone(timeStampOnSlide.getText(),ReqTimeZone);
+        //boolean isValid = validateTimeZone(timeStampOnSlide.getText(), ReqTimeZone);
+        String dateTimeString = timeStampOnSlide.getText();
+        // Extract date and time part
+        int lastParenIndex = dateTimeString.lastIndexOf("(");
+        String dateTimePart = dateTimeString.substring(0, lastParenIndex).trim();
+        String timeZoneAbbreviation = dateTimeString.substring(lastParenIndex + 1, dateTimeString.length() - 1).trim();
+        String[] parts = ReqTimeZone.split("\\) ");
+        String utcOffset = parts[0].replace("(", ""); // "UTC+00:00"
+        String zoneId = parts[1]; // "Africa/Abidjan"
+
+
+        System.out.println(dateTimeString);
+        System.out.println(timeZoneAbbreviation);
+        System.out.println(zoneId);
+
+        boolean isValid = verifyTimeZone(dateTimeString, timeZoneAbbreviation, zoneId);
+       // Assert.assertTrue(isValid, "Time zone verification failed.");
+
+      /*  if (isValid) {
+            flag=true;
+            System.out.println("✅ The time and zone are correct.");
+        } else {
+            System.out.println("❌ The time does not match the expected time zone.");
+        }*/
+        WebElement XIconSlideInfo = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("XIconSlideInfo"))));
+        actions.moveToElement(XIconSlideInfo).click().perform();
+        Thread.sleep(2000);
+        cms.clickOnBackTOListReportButton();
+
+        return flag;
+    }
+
+    public static boolean verifyTimeZone(String timeStr, String fromTimeZone, String toTimeZone) {
+        // Use the correct IANA time zone ID for EAT:
+        if (fromTimeZone.equals("EAT")) {
+            fromTimeZone = "Africa/Nairobi"; // Correct IANA ID
+        }
+        if (toTimeZone.equals("EAT")) {
+            toTimeZone = "Africa/Nairobi"; // Correct IANA ID
+        }
+        try {
+            // 1. Parse the time string (with time zone abbreviation)
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy, hh:mm a (z)", Locale.ENGLISH);
+            ZonedDateTime zonedDateTimeFrom = ZonedDateTime.parse(timeStr, formatter.withZone(ZoneId.of(fromTimeZone)));
+
+            // 2. Convert to the 'to' time zone (using withZoneSameInstant)
+            ZonedDateTime zonedDateTimeTo = zonedDateTimeFrom.withZoneSameInstant(ZoneId.of(toTimeZone));
+
+            // 3. Compare the INSTANTS (the most reliable way)
+            boolean areEqual = zonedDateTimeFrom.toInstant().equals(zonedDateTimeTo.toInstant());
+
+            if (areEqual) {
+                // For display purposes, you can format zonedDateTimeTo:
+                DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy, hh:mm a (z)", Locale.ENGLISH); //Same format as input or desired format.
+                String formattedTimeTo = zonedDateTimeTo.format(outputFormatter);
+                System.out.println("✅ Time '" + timeStr + "' in " + fromTimeZone + " is equivalent to '" + formattedTimeTo + "' in " + toTimeZone);
+                return true;
+            } else {
+                // For debugging, you can print the actual times:
+                DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy, hh:mm a (z)", Locale.ENGLISH); //Same format as input or desired format.
+                String formattedTimeFrom = zonedDateTimeFrom.format(outputFormatter);
+                String formattedTimeTo = zonedDateTimeTo.format(outputFormatter);
+
+                System.out.println("❌ Time '" + timeStr + "' in " + fromTimeZone + " is NOT equivalent to '" + formattedTimeTo + "' in " + toTimeZone);
+                return false;
+            }
+
+        } catch (DateTimeParseException e) {
+            System.err.println("❌ Invalid date/time format: " + e.getMessage());
+            return false;
+        } catch (Exception e) {
+            System.err.println("❌ An error occurred: " + e.getMessage());
+            return false;
+        }
+    }
+    public static boolean validateTimeZone(String dateTimeStr, String expectedZone) {
+        // Extract the Zone ID and UTC Offset dynamically
+        String[] zoneParts = extractZoneIdAndOffset(expectedZone);
+        if (zoneParts == null) {
+            System.out.println("❌ Invalid expected time zone format: " + expectedZone);
+            return false;
+        }
+
+        String expectedZoneId = zoneParts[0];  // Extracted Zone ID (e.g., Europe/London)
+        String expectedOffset = zoneParts[1];  // Extracted UTC Offset (e.g., UTC+00:00)
+
+            // Extract time and abbreviation (e.g., "GMT") from input timestamp
+            Pattern pattern = Pattern.compile("(.+)\\(([^)]+)\\)");
+            Matcher matcher = pattern.matcher(dateTimeStr);
+
+            if (!matcher.matches()) {
+                System.out.println("❌ Invalid timestamp format: " + dateTimeStr);
+                return false;
+            }
+
+            String timePart = matcher.group(1).trim();  // "18-Feb-2025, 12:41 PM"
+            String extractedAbbreviation = matcher.group(2).trim();  // "GMT"
+
+            // Convert extracted abbreviation to UTC offset dynamically
+            String formattedOffset = getOffsetFromAbbreviation(extractedAbbreviation, expectedZoneId);
+
+            // Parse date-time without time zone
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy, hh:mm a [(z)]", Locale.ENGLISH);
+
+            LocalDateTime localDateTime = LocalDateTime.parse(dateTimeStr, formatter);
+
+            // Convert to ZonedDateTime in the expected zone
+            ZonedDateTime zonedDateTime = localDateTime.atZone(ZoneId.of(expectedZoneId));
+
+            // Get actual offset of the given time in the expected time zone
+            String actualOffset = zonedDateTime.getOffset().toString();
+            actualOffset = convertOffsetToUTCFormat(actualOffset);
+        System.out.println(actualOffset);
+        System.out.println(formattedOffset);
+        System.out.println(expectedOffset);
+
+            // Compare extracted offset with expected offset
+            if (formattedOffset.equals(actualOffset) && expectedOffset.equals(actualOffset)) {
+                System.out.println("✅ Valid: " + dateTimeStr + " belongs to " + expectedZoneId);
+                return true;
+            } else {
+                System.out.println("❌ Mismatch! Expected: " + expectedOffset + ", Extracted: " + formattedOffset + ", Found: " + actualOffset);
+                return false;
+            }
+
+    }
+
+    private static String[] extractZoneIdAndOffset(String fullZone) {
+        // Extract (UTC±XX:XX) and Zone ID
+        Pattern pattern = Pattern.compile("\\((UTC[+-]\\d{2}:\\d{2})\\)\\s(.+)");
+        Matcher matcher = pattern.matcher(fullZone);
+
+        if (matcher.matches()) {
+            return new String[]{matcher.group(2), matcher.group(1)};
+        }
+        return null;
+    }
+
+    private static String getOffsetFromAbbreviation(String abbreviation, String zoneId) {
+        // Convert abbreviation dynamically
+        ZoneId zone = ZoneId.of(zoneId);
+        ZonedDateTime now = ZonedDateTime.now(zone);
+        String offset = now.getOffset().toString();
+
+        return convertOffsetToUTCFormat(offset);
+    }
+
+    private static String convertOffsetToUTCFormat(String offset) {
+        if (offset.equals("Z")) {
+            return "UTC+00:00";
+        }
+        return "UTC" + offset;
+    }
+
+
+
+
+    //Timezone
+    public boolean TimezoneComparison(String ReqTimeZone) throws InterruptedException {
+        boolean flag = false;
+        // Store timestamps before the time zone change
+        List<String> beforeTimestamps = new ArrayList<>();
+        for (WebElement time : driver.findElements(By.xpath(props.getProperty("beforeTimeStamp")))) {
+            beforeTimestamps.add(time.getText());
+        }
+        //logger.info("Before Change: " + beforeTimestamps);
+        //Change Time Zone in Settings
+        WebElement profileIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("profileIcon"))));
+        actions.moveToElement(profileIcon).click().perform();
+        List<WebElement> ListOfProfileOption = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("ListOfProfileOption"))));
+        for (WebElement option : ListOfProfileOption) {
+            if (option.getText().contains("Time zone")) {
+                logger.info("Clicked on Time zone option");
+                wait.until(ExpectedConditions.elementToBeClickable(option));
+                Thread.sleep(2000);
+                actions.moveToElement(option).click().perform();
+                //option.click();
+                break;
+            } else {
+                actions.moveToElement(option).click().perform();
+                //Assert.fail();
+            }
+        }
+        WebElement editTimeZoneBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("editTimeZoneBtn"))));
+        editTimeZoneBtn.click();
+        WebElement configuredTimeZone = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("configuredTimeZone"))));
+        String BeforeConfiguredTimeZone = configuredTimeZone.getText();
+
+        logger.info("Before Change Timezone: " + BeforeConfiguredTimeZone);
+
+        WebElement selectTimeZoneDD = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("selectTimeZoneDD"))));
+
+        Thread.sleep(2000);
+        selectTimeZoneDD.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+        selectTimeZoneDD.sendKeys(Keys.BACK_SPACE);
+        selectTimeZoneDD.click();
+        selectTimeZoneDD.sendKeys(ReqTimeZone);
+        selectTimeZoneDD.sendKeys(Keys.RETURN);
+        selectTimeZoneDD.sendKeys(Keys.chord(Keys.ARROW_DOWN));
+        selectTimeZoneDD.sendKeys(Keys.RETURN);
+        logger.info("Selecting the required option");
+        Thread.sleep(2000);
+        WebElement saveBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(props.getProperty("saveBtn"))));
+        saveBtn.click();//"Success\nTime zone changed successfuly"
+
+
+        WebElement SuccessfulMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("SuccessfulMsg"))));
+        System.out.println(SuccessfulMsg.getText());
+        if (SuccessfulMsg.getText().equals("Success\nTime zone changed successfuly")) {
+            flag = true;
+        }
+        logger.info("After Change Timezone: " + ReqTimeZone);
+        WebElement XIcon = driver.findElement(By.xpath(props.getProperty("XIcon")));
+        actions.moveToElement(XIcon).click().perform();
+        cms.clickOnBackTOListReportButton();
+        Thread.sleep(2000);
+
+        // Store timestamps after the time zone change
+        List<String> afterTimestamps = new ArrayList<>();
+        for (WebElement time : driver.findElements(By.xpath(props.getProperty("afterTimeStamp")))) {
+            afterTimestamps.add(time.getText());
+        }
+        //logger.info("After Change: " + afterTimestamps);
+
+        // Store timestamp pairs in a list
+        List<String[]> timestampPairs = new ArrayList<>();
+
+        // Validate the Changes by Comparing Arrays
+        for (int i = 0; i < Math.min(beforeTimestamps.size(), afterTimestamps.size()); i++) {
+            timestampPairs.add(new String[]{beforeTimestamps.get(i), afterTimestamps.get(i)});
+            logger.info("Validation: " + beforeTimestamps.get(i) + " -> " + afterTimestamps.get(i));
+        }
+
+
+        // Now pass `timestampPairs` to the validation method
+        validateTimeZones(timestampPairs, BeforeConfiguredTimeZone, ReqTimeZone);
+        return flag;
+
+    }
+
+
+    public void validateTimeZones(List<String[]> timestampPairs, String BeforeZone, String AfterZOne) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy, hh:mm a");
+
+        for (String[] pair : timestampPairs) {
+            String before = pair[0];
+            String after = pair[1];
+
+            try {
+                ZonedDateTime beforeZDT = parseZonedDateTimeBefore(before, formatter, BeforeZone);
+                ZonedDateTime afterZDT = parseZonedDateTimeAfter(after, formatter, AfterZOne);
+
+                if (beforeZDT == null || afterZDT == null) {
+                    System.out.println("❌ Invalid date/time format or time zone in input: " + before + " or " + after);
+                    continue;
+                }
+
+                ZonedDateTime convertedZDT = beforeZDT.withZoneSameInstant(afterZDT.getZone());
+
+                String calculatedAfterTime = convertedZDT.format(formatter);
+                String expectedAfterTime = after.substring(0, after.lastIndexOf(" "));
+
+                if (calculatedAfterTime.equals(expectedAfterTime)) {
+                    System.out.println("✅ Valid: " + before + " -> " + after);
+                } else {
+                    System.out.println("❌ Mismatch! Expected: " + expectedAfterTime + ", Calculated: " + calculatedAfterTime);
+                    System.out.println("   Before ZDT: " + beforeZDT);
+                    System.out.println("   Converted ZDT: " + convertedZDT);
+                    System.out.println("   After ZDT: " + afterZDT);
+                }
+
+            } catch (DateTimeParseException | IllegalArgumentException e) {
+                System.out.println("❌ Error parsing or comparing: " + before + " or " + after + ": " + e.getMessage());
+            }
+        }
+    }
+
+
+    private ZonedDateTime parseZonedDateTimeBefore(String dateTimeStr, DateTimeFormatter formatter, String Before) {
+        String timePart = dateTimeStr.substring(0, dateTimeStr.lastIndexOf(" "));
+        String zonePart = Before.substring(Before.lastIndexOf(" ") + 1);
+
+        try {
+            LocalDateTime ldt = LocalDateTime.parse(timePart, formatter);
+            ZoneId zoneId = ZoneId.of(zonePart);
+            return ZonedDateTime.of(ldt, zoneId);
+
+        } catch (DateTimeParseException | IllegalArgumentException e) {
+            System.err.println("Error parsing date/time: " + e.getMessage());
+            return null;
+        }
+    }
+
+
+    private ZonedDateTime parseZonedDateTimeAfter(String dateTimeStr, DateTimeFormatter formatter, String After) {
+        String timePart = dateTimeStr.substring(0, dateTimeStr.lastIndexOf(" "));
+        String zonePart = After.substring(After.lastIndexOf(" ") + 1);
+
+        try {
+            LocalDateTime ldt = LocalDateTime.parse(timePart, formatter);
+            ZoneId zoneId = ZoneId.of(zonePart);
+            return ZonedDateTime.of(ldt, zoneId);
+
+        } catch (DateTimeParseException | IllegalArgumentException e) {
+            System.err.println("Error parsing date/time: " + e.getMessage());
+            return null;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    private static final Map<String, String> abbreviationToZoneIdMap = new HashMap<>();
+    private static final Map<String, String> daylightSavingMap = new HashMap<>();
+
+    static {
+        // Standard Time Zones
+        abbreviationToZoneIdMap.put("CET", "Europe/Paris");
+        abbreviationToZoneIdMap.put("GMT", "Europe/London");
+        abbreviationToZoneIdMap.put("IST", "Asia/Kolkata");
+        abbreviationToZoneIdMap.put("EST", "America/New_York");
+        abbreviationToZoneIdMap.put("PST", "America/Los_Angeles");
+        abbreviationToZoneIdMap.put("UTC", "UTC");
+        abbreviationToZoneIdMap.put("EET", "Europe/Bucharest");
+        abbreviationToZoneIdMap.put("AST", "America/Halifax");
+        abbreviationToZoneIdMap.put("MST", "America/Denver");
+        abbreviationToZoneIdMap.put("CST", "America/Chicago");
+        abbreviationToZoneIdMap.put("AKST", "America/Anchorage");
+        abbreviationToZoneIdMap.put("HST", "Pacific/Honolulu");
+        abbreviationToZoneIdMap.put("JST", "Asia/Tokyo");
+        abbreviationToZoneIdMap.put("KST", "Asia/Seoul");
+        abbreviationToZoneIdMap.put("AEST", "Australia/Sydney");
+        abbreviationToZoneIdMap.put("ACST", "Australia/Adelaide");
+        abbreviationToZoneIdMap.put("AWST", "Australia/Perth");
+        abbreviationToZoneIdMap.put("NZST", "Pacific/Auckland");
+        abbreviationToZoneIdMap.put("WET", "Europe/Lisbon");
+        abbreviationToZoneIdMap.put("EAT", "Africa/Nairobi");
+        abbreviationToZoneIdMap.put("WAT", "Africa/Lagos");
+        abbreviationToZoneIdMap.put("CAT", "Africa/Harare");
+        abbreviationToZoneIdMap.put("SAST", "Africa/Johannesburg");
+        abbreviationToZoneIdMap.put("HKT", "Asia/Hong_Kong");
+        abbreviationToZoneIdMap.put("SGT", "Asia/Singapore");
+        abbreviationToZoneIdMap.put("PHT", "Asia/Manila");
+        abbreviationToZoneIdMap.put("MYT", "Asia/Kuala_Lumpur");
+        abbreviationToZoneIdMap.put("IRKT", "Asia/Irkutsk");
+        abbreviationToZoneIdMap.put("KRAT", "Asia/Krasnoyarsk");
+        abbreviationToZoneIdMap.put("MSK", "Europe/Moscow");
+        abbreviationToZoneIdMap.put("SAMT", "Europe/Samara");
+        abbreviationToZoneIdMap.put("NOVT", "Asia/Novosibirsk");
+        abbreviationToZoneIdMap.put("OMST", "Asia/Omsk");
+        abbreviationToZoneIdMap.put("VLAT", "Asia/Vladivostok");
+        abbreviationToZoneIdMap.put("MAGT", "Asia/Magadan");
+        abbreviationToZoneIdMap.put("PETT", "Asia/Kamchatka");
+        abbreviationToZoneIdMap.put("CHUT", "Pacific/Chuuk");
+        abbreviationToZoneIdMap.put("CHST", "Pacific/Guam");
+        abbreviationToZoneIdMap.put("SST", "Pacific/Pago_Pago");
+        abbreviationToZoneIdMap.put("WFT", "Pacific/Wallis");
+        abbreviationToZoneIdMap.put("LINT", "Pacific/Kiritimati");
+        abbreviationToZoneIdMap.put("BST", "Europe/London"); // British Summer Time
+
+        // Adding daylight saving time mappings
+        daylightSavingMap.put("CST", "CDT");
+        daylightSavingMap.put("AST", "ADT");
+        daylightSavingMap.put("EST", "EDT");
+        daylightSavingMap.put("MST", "MDT");
+        daylightSavingMap.put("NST", "NDT");
+        daylightSavingMap.put("PST", "PDT");
+        daylightSavingMap.put("EET", "EEST");
+        daylightSavingMap.put("AEST", "AEDT");
+        daylightSavingMap.put("NZST", "NZDT");
+        daylightSavingMap.put("IST", "IDT"); // Israel Daylight Time
+
+        // Adding numeric offsets dynamically (-12:00 to +14:00)
+        for (int i = -12; i <= 14; i++) {
+            String offset = String.format("%+03d:00", i);
+            abbreviationToZoneIdMap.put(offset, "Etc/GMT" + (i == 0 ? "" : (i > 0 ? "-" + i : "+" + (-i))));
+        }
+    }
+
+    public static ZoneId convertAbbreviationToZoneId(String abbreviation) {
+        if (abbreviation.startsWith("+") || abbreviation.startsWith("-")) {
+            return ZoneId.ofOffset("UTC", ZoneOffset.of(abbreviation));
+        }
+        String zoneId = abbreviationToZoneIdMap.get(abbreviation);
+        if (zoneId != null) {
+            return ZoneId.of(zoneId);
+        } else {
+            throw new IllegalArgumentException("Invalid time zone abbreviation: " + abbreviation);
+        }
+    }
+
+    public static String convertToDaylightSaving(String standardAbbreviation) {
+        return daylightSavingMap.getOrDefault(standardAbbreviation, standardAbbreviation);
+    }
+
+   /* public static void main(String[] args) {
+        try {
+            // Convert abbreviation
+            ZoneId zoneId = convertAbbreviationToZoneId("+01:00");
+            System.out.println("Converted Zone ID: " + zoneId);
+
+            // Convert standard time to daylight saving time
+            System.out.println("CST to DST: " + convertToDaylightSaving("CST"));
+            System.out.println("AEST to DST: " + convertToDaylightSaving("AEST"));
+            System.out.println("IST to DST: " + convertToDaylightSaving("IST"));
+        } catch (IllegalArgumentException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+    */}
+
+
+
+
+
+
+
 
 
 

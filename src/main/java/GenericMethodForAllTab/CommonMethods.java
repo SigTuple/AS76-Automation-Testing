@@ -16,18 +16,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import Data.Property;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-
-
-/**
- * @author rupakumari
- *
- */
 public class CommonMethods {
 	private final Logger logger = LogManager.getLogger(CommonMethods.class);
 
 	private final WebDriver driver;
 	public WebDriverWait wait;
+	public Actions actions;
 
 	Properties props;
 
@@ -36,6 +30,8 @@ public class CommonMethods {
 		this.driver = driver;
 		wait =new WebDriverWait(driver,50);
 		props = Property.prop;
+		actions=new Actions(driver);
+
 		Property.readSessionManagement();
 		Property.readCommonMethodProperties();
 		Property.readRBCProperties();
@@ -75,29 +71,40 @@ public class CommonMethods {
 
 	public boolean openAReport(String reportStatus) throws InterruptedException {
 		boolean flag=false;
-		List<WebElement> listOfRows = driver.findElements(By.xpath("//tbody//tr"));
-		List<WebElement> listOfStatus = driver.findElements(By.xpath("//tbody//tr//td[6]//span"));
-		System.out.println(listOfStatus.size());
-		for (int i = 0; i < listOfStatus.size(); i++) {
-			String reviewedStatus = listOfStatus.get(i).getText();
-			System.out.println("Status found: " + reviewedStatus);
-			// Scroll into view if needed
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("arguments[0].scrollIntoView(true);", listOfStatus.get(i));
-			Thread.sleep(2000); // Allow some time for scrolling
-			if (reviewedStatus.contains(reportStatus)) {
-				System.out.println("Matching status found: " + reviewedStatus);
-				// Click the row
-				listOfRows.get(i).click();
-				flag=true;
-				break;
-			}
-			else {
+		boolean foundAtLeastOne = false;
 
-				System.out.println("report is not selected");
+		List<WebElement> listOfRows = driver.findElements(By.xpath("//tbody//tr"));
+
+		for (WebElement row : listOfRows) {
+			try {
+				// Find the status and reviewer selection dynamically within the row
+				WebElement statusElement = row.findElement(By.xpath(".//td[5]//span"));
+				String reviewedStatus = statusElement.getText().trim();
+
+				WebElement reviewerElement = row.findElement(By.xpath(".//td[6]//input"));
+				String selectReviewer = reviewerElement.getAttribute("placeholder").trim();
+
+				// Scroll into view
+				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", statusElement);
+				new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(row));
+
+				// Matching condition
+				if (reviewedStatus.contains(reportStatus) ) {//&& selectReviewer.equalsIgnoreCase("Select reviewer")
+					logger.info("Matching status found, clicking the row: " + reviewedStatus);
+					Thread.sleep(2000);
+					actions.moveToElement(row).click().perform();
+					//row.click();
+					flag = true;
+					break;
+				} else if (!foundAtLeastOne) {
+					// Log only once per iteration, avoiding excessive messages
+					System.out.println("No matching report found in the current batch.");
+					foundAtLeastOne = true;
+				}
+			} catch (NoSuchElementException e) {
+			logger.error("Required elements not found in this row, skipping...");
 			}
 		}
-
 		return flag;
 	}
 
@@ -261,8 +268,7 @@ public class CommonMethods {
 		// verify the containt present in the slide details page
 		public String verifySlideDetailsInInfoPage(String tabName) throws InterruptedException {
 			Thread.sleep(300);
-			WebElement InfoIcon = wait
-					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("infoIconXpath"))));
+			WebElement InfoIcon = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("infoIconXpath"))));
 			String headers = "";
 			if (InfoIcon.isDisplayed()) {
 				InfoIcon.click();
@@ -505,6 +511,25 @@ public class CommonMethods {
 			return flag;
 
 		}
+
+		// click on history
+		public void clickOnHistory(){
+			WebElement KebabMenu = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(props.getProperty("KebabMenuXpath"))));
+			if (KebabMenu.isDisplayed()) {
+				KebabMenu.click();
+
+				List<WebElement> KebabMenuDetails = wait.until(
+						ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(props.getProperty("kebabOptions"))));
+				for (WebElement option:KebabMenuDetails) {
+					if (option.getText().equals("History") && option.isEnabled()) {
+						option.click();
+						logger.info("Click on the history option");
+					}
+				}
+			}
+		}
+
 
 		//serach report and open
 		public void reportOpten(String reportID) {

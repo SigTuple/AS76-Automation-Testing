@@ -5,108 +5,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e36e434-e668-4b85-b9db-45722b65adae" name="Changes" comment="new project">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Data/History.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/History/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/History/HistoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AS76-SanitySuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AS76-SanitySuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/appLogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CommonTools/DownloadPatches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommonTools/DownloadPatches.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CommonTools/ViewOriginalModifiedreports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommonTools/ViewOriginalModifiedreports.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CommonTools/ViewReferenceLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommonTools/ViewReferenceLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/AS76Reporting-RBC-07-02-1043.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/AS76Reporting-RBC-07-02-1456.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-03-02-1525.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-03-02-1528.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-03-02-1632.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-03-02-1636.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-03-02-1641.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-03-02-1752.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-03-02-1811.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-03-02-1813.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-03-02-1817.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-03-02-1823.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1206.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1215.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1225.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1250.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1251.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1255.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1258.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1302.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1309.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1311.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1329.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1430.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1436.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1439.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1449.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1510.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1517.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1519.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1524.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1535.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1539.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1712.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-04-02-1720.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1231.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1253.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1304.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1447.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1453.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1509.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1519.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1529.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1541.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1543.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1547.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1549.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1553.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1554.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1646.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1653.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1712.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-05-02-1715.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-07-02-1429.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-07-02-1458.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-27-01-1421.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-27-01-1735.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-27-01-1740.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-27-01-1750.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-27-01-1804.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-28-01-1026.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-28-01-1031.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-28-01-1049.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-28-01-1125.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-28-01-1215.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-28-01-1645.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-29-01-1152.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-29-01-1212.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-30-01-1127.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-30-01-1237.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-30-01-1242.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-30-01-1247.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-30-01-1251.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-30-01-1259.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-30-01-1302.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-30-01-1701.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_report/AS76Reporting-RBC/Logs/AS76Reporting-RBC-31-01-1506.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/CommonMethod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/CommonMethod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/ReportListing.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/ReportListing.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GenericMethodForAllTab/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GenericMethodForAllTab/CommonMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Platelet/ReviewPatchesInPatchViewAndSplitView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Platelet/ReviewPatchesInPatchViewAndSplitView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Platelet/ReviewPlateletMorphologyCellType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Platelet/ReviewPlateletMorphologyCellType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Platelet/ViewAndModifyThePlateletCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Platelet/ViewAndModifyThePlateletCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcColorSubTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcColorSubTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcInclusionSubTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcInclusionSubTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcShapeSubTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcShapeSubTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifyThePatchViewOfRBC/VerifyThePatchViewOfRBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifyThePatchViewOfRBC/VerifyThePatchViewOfRBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ReportListing/VerifyTheListReportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportListing/VerifyTheListReportPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReportSignOff/verifyReportSignoff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportSignOff/verifyReportSignoff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReportViewer/ReportViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportViewer/ReportViewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SessionManagement/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SessionManagement/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SessionManagement/LoginExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SessionManagement/LoginExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WBC/VerifyWbcParameters/WBCParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WBC/VerifyWbcParameters/WBCParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WBC/VerifyWbcPatches/WBCPatches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WBC/VerifyWbcPatches/WBCPatches.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WBC/WBCSplitView/WBCSplitView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WBC/WBCSplitView/WBCSplitView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/summary/Summary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/summary/Summary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/summary/WBCDCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/summary/WBCDCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommonTools/DownloadPatchesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommonTools/DownloadPatchesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommonTools/ViewOriginalModifiedreportsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommonTools/ViewOriginalModifiedreportsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommonTools/ViewReferenceLibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommonTools/ViewReferenceLibraryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Platelet/ReviewPatchesInPatchViewAndSplitViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Platelet/ReviewPatchesInPatchViewAndSplitViewTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Platelet/ReviewPlateleyMorphologyCellTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Platelet/ReviewPlateleyMorphologyCellTypeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Platelet/ViewAndModifyThePlateletCountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Platelet/ViewAndModifyThePlateletCountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTabTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcColorSubTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcColorSubTabTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcInclusionSubTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcInclusionSubTabTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcShapeSubTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcShapeSubTabTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTabTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifyThePatchViewOfRBC/VerifyThePatchViewOfRBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifyThePatchViewOfRBC/VerifyThePatchViewOfRBCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ReportListing/VerifyTheListReportPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReportListing/VerifyTheListReportPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReportSignOff/verifyReportSignoffTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReportSignOff/verifyReportSignoffTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReportViewer/ReportViewerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReportViewer/ReportViewerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SessionManagement/LoginExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SessionManagement/LoginExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SessionManagement/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SessionManagement/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WBC/VerifyWbcParametersTest/WBCParametersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WBC/VerifyWbcParametersTest/WBCParametersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WBC/VerifyWbcPatchesTest/WBCPatchesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WBC/VerifyWbcPatchesTest/WBCPatchesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WBC/WBCSplitViewTest/WBCSplitViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WBC/WBCSplitViewTest/WBCSplitViewTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/summary/SummaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/summary/SummaryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/summary/WBCDCCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/summary/WBCDCCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommonTools/DownloadPatches.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CommonTools/DownloadPatches.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommonTools/ViewOriginalModifiedreports.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CommonTools/ViewOriginalModifiedreports.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommonTools/ViewReferenceLibrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CommonTools/ViewReferenceLibrary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshot/validLogin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshot/validLogin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Data/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Data/Property.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GenericMethodForAllTab/CommonMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GenericMethodForAllTab/CommonMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Platelet/ReviewPatchesInPatchViewAndSplitView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Platelet/ReviewPatchesInPatchViewAndSplitView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Platelet/ReviewPlateletMorphologyCellType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Platelet/ReviewPlateletMorphologyCellType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Platelet/ViewAndModifyThePlateletCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Platelet/ViewAndModifyThePlateletCount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcColorSubTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcColorSubTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcInclusionSubTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcInclusionSubTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcShapeSubTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcShapeSubTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifyThePatchViewOfRBC/VerifyThePatchViewOfRBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifyThePatchViewOfRBC/VerifyThePatchViewOfRBC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ReportListing/VerifyTheListReportPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReportListing/VerifyTheListReportPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ReportSignOff/verifyReportSignoff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReportSignOff/verifyReportSignoff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ReportViewer/ReportViewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReportViewer/ReportViewer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SessionManagement/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SessionManagement/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SessionManagement/LoginExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SessionManagement/LoginExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WBC/VerifyWbcParameters/WBCParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WBC/VerifyWbcParameters/WBCParameters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WBC/VerifyWbcPatches/WBCPatches.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WBC/VerifyWbcPatches/WBCPatches.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WBC/WbcSplitView/WbcSplitView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WBC/WbcSplitView/WbcSplitView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/summary/Summary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/summary/Summary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/summary/WBCDCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/summary/WBCDCC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CommonTools/DownloadPatchesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CommonTools/DownloadPatchesTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CommonTools/ViewOriginalModifiedreportsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CommonTools/ViewOriginalModifiedreportsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CommonTools/ViewReferenceLibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CommonTools/ViewReferenceLibraryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Platelet/ReviewPatchesInPatchViewAndSplitViewTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Platelet/ReviewPatchesInPatchViewAndSplitViewTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Platelet/ReviewPlateleyMorphologyCellTypeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Platelet/ReviewPlateleyMorphologyCellTypeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Platelet/ViewAndModifyThePlateletCountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Platelet/ViewAndModifyThePlateletCountTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTabTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifySplitViewOfRbcTab/VerifySplitViewOfRBCTabTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcColorSubTabTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcColorSubTabTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcInclusionSubTabTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcInclusionSubTabTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcShapeSubTabTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcShapeSubTabTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTabTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifySubTabOfRBC/VerifyUiOfRbcSizeSubTabTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifyThePatchSizeOfRBC/VerifyThePatchSizeOfRBCTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifyThePatchViewOfRBC/VerifyThePatchViewOfRBCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifyThePatchViewOfRBC/VerifyThePatchViewOfRBCTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RBC/VerifyTheRegradingOfRbcCellTypes/VerifyTheRegradingOfRbcCellTypesTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ReportListing/VerifyTheListReportPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ReportListing/VerifyTheListReportPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ReportSignOff/verifyReportSignoffTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ReportSignOff/verifyReportSignoffTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ReportViewer/ReportViewerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ReportViewer/ReportViewerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SessionManagement/LoginExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SessionManagement/LoginExampleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SessionManagement/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SessionManagement/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WBC/VerifyWbcParametersTest/WBCParametersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WBC/VerifyWbcParametersTest/WBCParametersTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WBC/VerifyWbcPatchesTest/WBCPatchesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WBC/VerifyWbcPatchesTest/WBCPatchesTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WBC/WbcSplitViewTest/WbcSplitViewTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WBC/WbcSplitViewTest/WbcSplitViewTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/summary/SummaryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/summary/SummaryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/summary/WBCDCCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/summary/WBCDCCTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,22 +157,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG./Users/rupakumari/Downloads/AS76-REPORTING/AS76-SanitySuite.xml.executor": "Run",
-    "TestNG./Users/rupakumari/Downloads/AS76-REPORTING/testng.xml.executor": "Run",
-    "TestNG.WbcSplitViewTest.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/manjunathcg/Downloads/AS76-Automation-Testing-main",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG./Users/rupakumari/Downloads/AS76-REPORTING/AS76-SanitySuite.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG./Users/rupakumari/Downloads/AS76-REPORTING/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.WbcSplitViewTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/manjunathcg/Downloads/AS76-Automation-Testing-main&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -408,6 +400,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
